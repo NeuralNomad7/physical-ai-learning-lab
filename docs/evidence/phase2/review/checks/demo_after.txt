@@ -1,0 +1,4 @@
+Demo: baseline on seed 20000, nominal physics; block at (0.440, 0.126) m, target at (0.612, 0.105) m, distance 173.0 mm. Close the window to stop.
+[SUCCESS] seed 20000: pushes 3 (declared 3, unplanned contacts 0), sim 12.20 s, start distance 173.0 mm, final 6.3 mm
+Viewer closed (episode finished) after 22.3 s; 0 physics-option revert(s); final state digest d1392b6bccc39de2
+Headless rerun of seed 20000: identical outcome and state (digest d1392b6bccc39de2); the viewer did not change the episode.

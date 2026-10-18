@@ -1,0 +1,22 @@
+fix seed 21000 speed 0.12 stroke-start z 27.14 mm | contact rows 52 z 22.00..22.27 mm | min z all 21.94 mm | ended -
+fix seed 21001 speed 0.08 stroke-start z 26.94 mm | contact rows 40 z 22.07..22.20 mm | min z all 22.00 mm | ended success at t=4.16 phase=retreat (block 19.9 mm from target, at rest)
+fix seed 21002 speed 0.08 stroke-start z 27.02 mm | contact rows 51 z 22.02..22.12 mm | min z all 21.97 mm | ended -
+fix seed 21003 speed 0.12 stroke-start z 27.10 mm | contact rows 60 z 22.04..22.30 mm | min z all 21.93 mm | ended -
+fix seed 21004 speed 0.08 stroke-start z 27.08 mm | contact rows 48 z 22.04..22.16 mm | min z all 22.00 mm | ended -
+fix seed 21005 speed 0.12 stroke-start z 27.11 mm | contact rows 58 z 21.92..22.17 mm | min z all 21.89 mm | ended -
+fix seed 21006 speed 0.12 stroke-start z 26.94 mm | contact rows 52 z 22.07..22.21 mm | min z all 22.02 mm | ended -
+fix seed 21007 speed 0.08 stroke-start z 26.99 mm | contact rows 58 z 22.07..22.19 mm | min z all 22.02 mm | ended success at t=4.57 phase=retreat (block 14.8 mm from target, at rest)
+fix seed 21008 speed 0.08 stroke-start z 27.02 mm | contact rows 54 z 22.06..22.17 mm | min z all 22.01 mm | ended success at t=4.57 phase=retreat (block 6.7 mm from target, at rest)
+fix seed 21009 speed 0.12 stroke-start z 27.05 mm | contact rows 50 z 22.05..22.22 mm | min z all 22.00 mm | ended -
+fix SUMMARY contact z 21.92..22.30 mm, min z all 21.89 mm (push height 22.0 mm)
+nofix seed 21000 speed 0.12 stroke-start z 23.73 mm | contact rows 56 z 17.33..18.73 mm | min z all 17.33 mm | ended -
+nofix seed 21001 speed 0.08 stroke-start z 19.33 mm | contact rows 42 z 14.54..14.65 mm | min z all 14.48 mm | ended -
+nofix seed 21002 speed 0.08 stroke-start z 21.28 mm | contact rows 53 z 15.82..16.32 mm | min z all 15.81 mm | ended -
+nofix seed 21003 speed 0.12 stroke-start z 22.84 mm | contact rows 50 z 16.09..17.87 mm | min z all 16.09 mm | ended -
+nofix seed 21004 speed 0.08 stroke-start z 22.69 mm | contact rows 55 z 17.83..18.00 mm | min z all 17.83 mm | ended -
+nofix seed 21005 speed 0.12 stroke-start z 24.05 mm | contact rows 56 z 15.98..18.79 mm | min z all 15.98 mm | ended -
+nofix seed 21006 speed 0.12 stroke-start z 19.35 mm | contact rows 44 z 14.81..15.89 mm | min z all 14.81 mm | ended -
+nofix seed 21007 speed 0.08 stroke-start z 20.70 mm | contact rows 64 z 16.03..17.00 mm | min z all 16.03 mm | ended success at t=4.56 phase=retreat (block 12.7 mm from target, at rest)
+nofix seed 21008 speed 0.08 stroke-start z 21.38 mm | contact rows 58 z 16.62..17.07 mm | min z all 16.62 mm | ended success at t=4.58 phase=retreat (block 3.9 mm from target, at rest)
+nofix seed 21009 speed 0.12 stroke-start z 22.39 mm | contact rows 51 z 17.84..18.99 mm | min z all 17.84 mm | ended -
+nofix SUMMARY contact z 14.54..18.99 mm, min z all 14.48 mm (push height 22.0 mm)

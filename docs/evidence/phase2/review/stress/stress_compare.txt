@@ -1,0 +1,54 @@
+== nominal (m=0.25, mu=0.5)
+   successes                      before 30/30                        after 30/30
+   failures                       before none                         after none
+   mean_pushes_all                before 1.9                          after 1.83
+   max_pushes                     before 3                            after 3
+   mean_time_all_s                before 8.3                          after 8.09
+   final_mm_range_successes       before (1.4, 19.4)                  after (1.6, 19.9)
+   min_tcp_mm                     before 13.6                         after 21.88
+   judge_min_tcp_mm               before n/a                          after 21.88
+   max_below_push_mm              before 8.4                          after 0.12
+   contact_z_mm                   before (np.float64(13.67), np.float64(19.84)) after (np.float64(21.92), np.float64(22.3))
+   max_block_rise_mm              before 0.172                        after 0.247
+   episodes_with_table_contact    before 0                            after 0
+   forbidden_contacts             before 0                            after 0
+   max_first_update_ratio         before 0.0                          after 0.2718
+   max_update_ratio               before 1.0                          after 1.0
+   judge_max_joint_speed_ratio    before n/a                          after 0.7094
+   pushes changed on 4 seeds [(21001, 2, 1), (21005, 3, 2), (21009, 3, 2), (21014, 1, 2)]; successes lost [], gained []
+== heavy_grippy (m=0.4, mu=0.8)
+   successes                      before 30/30                        after 30/30
+   failures                       before none                         after none
+   mean_pushes_all                before 1.87                         after 1.87
+   max_pushes                     before 3                            after 3
+   mean_time_all_s                before 8.22                         after 8.26
+   final_mm_range_successes       before (2.7, 19.1)                  after (0.9, 18.2)
+   min_tcp_mm                     before 13.68                        after 21.82
+   judge_min_tcp_mm               before n/a                          after 21.81
+   max_below_push_mm              before 8.32                         after 0.18
+   contact_z_mm                   before (np.float64(13.75), np.float64(19.82)) after (np.float64(21.82), np.float64(23.37))
+   max_block_rise_mm              before 0.947                        after 1.302
+   episodes_with_table_contact    before 0                            after 0
+   forbidden_contacts             before 0                            after 0
+   max_first_update_ratio         before 0.0                          after 0.2718
+   max_update_ratio               before 1.0                          after 0.9997
+   judge_max_joint_speed_ratio    before n/a                          after 0.6325
+   pushes changed on 0 seeds []; successes lost [], gained []
+== light_slippery (m=0.1, mu=0.2)
+   successes                      before 30/30                        after 30/30
+   failures                       before none                         after none
+   mean_pushes_all                before 1.83                         after 1.8
+   max_pushes                     before 3                            after 3
+   mean_time_all_s                before 8.02                         after 7.92
+   final_mm_range_successes       before (2.0, 18.5)                  after (0.6, 19.9)
+   min_tcp_mm                     before 13.67                        after 21.87
+   judge_min_tcp_mm               before n/a                          after 21.87
+   max_below_push_mm              before 8.33                         after 0.13
+   contact_z_mm                   before (np.float64(13.71), np.float64(19.82)) after (np.float64(21.87), np.float64(22.29))
+   max_block_rise_mm              before 0.051                        after 0.061
+   episodes_with_table_contact    before 0                            after 0
+   forbidden_contacts             before 0                            after 0
+   max_first_update_ratio         before 0.0                          after 0.2718
+   max_update_ratio               before 1.0                          after 1.0
+   judge_max_joint_speed_ratio    before n/a                          after 0.7094
+   pushes changed on 3 seeds [(21001, 2, 1), (21010, 2, 1), (21014, 1, 2)]; successes lost [], gained []

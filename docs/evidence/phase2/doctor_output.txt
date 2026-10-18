@@ -1,0 +1,13 @@
+[INFO] python: 3.12.13 64-bit AMD64 (win-amd64) at C:\Users\vivan\OneDrive\Desktop\Projects\Physical AI_Agent\.venv\Scripts\python.exe
+[INFO] os: Windows-11-10.0.26300-SP0 (native CPU ARM64)
+[INFO] emulation: this AMD64 Python runs under emulation on ARM64 (MuJoCo 3.14.0 on PyPI has win_amd64 wheels only; checked 2026-10-02)
+[INFO] versions: physical_ai_lab 0.1.0, mujoco 3.14.0, numpy 2.5.3, pillow 12.3.0, pytest 9.1.1
+[PASS] dependency pins: installed versions match pyproject.toml
+[PASS] Panda asset: OK: 72 files match manifest (Menagerie commit 4d038b3feae2)
+[PASS] scene: panda_push_scene.xml loaded and verified in 0.38 s (nq 16, nv 15, nu 8)
+[PASS] headless step: 1 s simulated in 0.013 s (78x real time); stable
+[PASS] offscreen rendering: 2 cameras rendered; OpenGL 4.6 (Compatibility Profile) Mesa 26.3.0-devel (git-e3fc7749c6) on D3D12 (Qualcomm(R) Adreno(TM) X1-85 GPU)
+[INFO] viewer: not opened by doctor (needs a desktop session); from the project folder run `.\.venv\Scripts\python.exe -m physical_ai_lab view --seed 0`
+[WARN] git: the project folder is not a git repository; changes are not tracked (see docs/PROGRESS.md)
+[WARN] OneDrive: project is in a OneDrive-synced folder; if `uv sync` fails with 'Access is denied', see README.md
+doctor: all required checks passed

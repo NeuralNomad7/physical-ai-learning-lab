@@ -1,0 +1,1276 @@
+{
+  "schema_version": 1,
+  "ok": true,
+  "phase1_gate_passed": true,
+  "counts": {
+    "PASS": 73,
+    "FAIL": 0,
+    "WARN": 2,
+    "INFO": 24,
+    "SKIP": 0
+  },
+  "started_utc": "2026-10-03T02:27:37+00:00",
+  "finished_utc": "2026-10-03T02:27:57+00:00",
+  "command": "python -m physical_ai_lab smoke",
+  "environment": {
+    "python": "3.12.13",
+    "python_implementation": "CPython",
+    "python_executable": "C:\\Users\\vivan\\OneDrive\\Desktop\\Projects\\Physical AI_Agent\\.venv\\Scripts\\python.exe",
+    "python_platform": "win-amd64",
+    "process_machine": "AMD64",
+    "process_bits": 64,
+    "host_machine": "ARM64",
+    "emulated": true,
+    "os": "Windows-11-10.0.26300-SP0",
+    "versions": {
+      "physical_ai_lab": "0.1.0",
+      "mujoco": "3.14.0",
+      "numpy": "2.5.3",
+      "pillow": "12.3.0",
+      "pytest": "9.1.1"
+    },
+    "pins": {
+      "mujoco": "3.14.0",
+      "numpy": "2.5.3",
+      "pillow": "12.3.0",
+      "pytest": "9.1.1"
+    },
+    "pin_mismatches": {},
+    "mujoco_gl": null,
+    "project_root": "C:\\Users\\vivan\\OneDrive\\Desktop\\Projects\\Physical AI_Agent",
+    "onedrive_folder": true,
+    "git_root": null
+  },
+  "asset_source": {
+    "repository": "https://github.com/google-deepmind/mujoco_menagerie",
+    "repository_slug": "google-deepmind/mujoco_menagerie",
+    "commit": "4d038b3feae26ec82b46a4d586379114012a8ac7",
+    "commit_date": "2026-09-29T19:08:06Z",
+    "path": "franka_emika_panda",
+    "last_commit_touching_path": "71f066ad0be9cd271f7ed58c030243ef157af9f4",
+    "last_commit_touching_path_date": "2026-07-04T20:08:40Z",
+    "license": "Apache-2.0",
+    "license_file": "LICENSE",
+    "pinned_at": "2026-10-02T14:19:30+00:00"
+  },
+  "sha256": {
+    "configs\\scene.toml": "d04d248d5d538a936d56635b454dfc9bce0f2bac2983b4ffba69f73d52f17fce",
+    "assets\\scenes\\panda_push_scene.xml": "e194f53adcaa24bac56dbf679bfd6c0b929fc18fe9b8bbf0ccc157b26cf49791",
+    "assets\\third_party\\mujoco_menagerie\\franka_emika_panda.manifest.json": "85c43d8d698ca3b4bba7164f6f4b1a54c0fac5f42c0d46605bc8653528eb7f07"
+  },
+  "screenshot": "runs\\smoke\\20261003T022737Z\\scene_composite.png",
+  "checks": [
+    {
+      "section": "environment",
+      "name": "python",
+      "status": "INFO",
+      "detail": "3.12.13 CPython, 64-bit AMD64 process (C:\\Users\\vivan\\OneDrive\\Desktop\\Projects\\Physical AI_Agent\\.venv\\Scripts\\python.exe)",
+      "data": {}
+    },
+    {
+      "section": "environment",
+      "name": "host",
+      "status": "INFO",
+      "detail": "Windows-11-10.0.26300-SP0; native CPU ARM64; this AMD64 interpreter (win-amd64) runs under emulation",
+      "data": {}
+    },
+    {
+      "section": "environment",
+      "name": "versions",
+      "status": "INFO",
+      "detail": "physical_ai_lab 0.1.0, mujoco 3.14.0, numpy 2.5.3, pillow 12.3.0, pytest 9.1.1",
+      "data": {
+        "physical_ai_lab": "0.1.0",
+        "mujoco": "3.14.0",
+        "numpy": "2.5.3",
+        "pillow": "12.3.0",
+        "pytest": "9.1.1"
+      }
+    },
+    {
+      "section": "environment",
+      "name": "dependency pins",
+      "status": "PASS",
+      "detail": "installed versions match the 4 exact pins in pyproject.toml",
+      "data": {
+        "pins": {
+          "mujoco": "3.14.0",
+          "numpy": "2.5.3",
+          "pillow": "12.3.0",
+          "pytest": "9.1.1"
+        },
+        "mismatches": {}
+      }
+    },
+    {
+      "section": "environment",
+      "name": "version control",
+      "status": "WARN",
+      "detail": "the project folder is not inside a git repository (changes are not tracked)",
+      "data": {}
+    },
+    {
+      "section": "environment",
+      "name": "OneDrive",
+      "status": "WARN",
+      "detail": "the project is in a OneDrive-synced folder; if `uv sync` reports 'Access is denied' see README.md",
+      "data": {}
+    },
+    {
+      "section": "assets",
+      "name": "Panda asset integrity",
+      "status": "PASS",
+      "detail": "OK: 72 files match manifest (Menagerie commit 4d038b3feae2)",
+      "data": {
+        "commit": "4d038b3feae26ec82b46a4d586379114012a8ac7",
+        "checked": 72,
+        "missing": [],
+        "mismatched": []
+      }
+    },
+    {
+      "section": "assets",
+      "name": "asset source",
+      "status": "INFO",
+      "detail": "https://github.com/google-deepmind/mujoco_menagerie @ 4d038b3feae26ec82b46a4d586379114012a8ac7 / franka_emika_panda (Apache-2.0), used unmodified",
+      "data": {}
+    },
+    {
+      "section": "scene",
+      "name": "scene loads and matches configs/scene.toml",
+      "status": "PASS",
+      "detail": "assets\\scenes\\panda_push_scene.xml compiled; verify_scene and verify_actuators passed (0.54 s)",
+      "data": {}
+    },
+    {
+      "section": "scene",
+      "name": "model size",
+      "status": "PASS",
+      "detail": "nq 16, nv 15, nu 8 (7 arm joints + 2 fingers + free block; 7 arm servos + gripper); 16 bodies, 90 geoms, 1 explicit contact pair(s)",
+      "data": {
+        "actual": {
+          "nq": 16,
+          "nv": 15,
+          "nu": 8
+        },
+        "expected": {
+          "nq": 16,
+          "nv": 15,
+          "nu": 8
+        }
+      }
+    },
+    {
+      "section": "scene",
+      "name": "solver",
+      "status": "INFO",
+      "detail": "timestep 0.002 s, integrator mjINT_IMPLICITFAST, cone mjCONE_ELLIPTIC, solver mjSOL_NEWTON, iterations 100, impratio 1",
+      "data": {}
+    },
+    {
+      "section": "scene",
+      "name": "scene",
+      "status": "INFO",
+      "detail": "timestep 0.002 s x 10 substeps = 0.020 s (50 Hz control)",
+      "data": {}
+    },
+    {
+      "section": "scene",
+      "name": "scene",
+      "status": "INFO",
+      "detail": "target disc radius = success tolerance = 0.02 m (centre-based)",
+      "data": {}
+    },
+    {
+      "section": "scene",
+      "name": "scene",
+      "status": "INFO",
+      "detail": "block/table contact generated only by the explicit pair (dynamic contact excluded)",
+      "data": {}
+    },
+    {
+      "section": "scene",
+      "name": "actuator",
+      "status": "INFO",
+      "detail": "panda/actuator1 -> panda/joint1: joint position servo, kp 4500, kv 450, ctrlrange (-2.8973, 2.8973), forcerange (-87.0, 87.0)",
+      "data": {}
+    },
+    {
+      "section": "scene",
+      "name": "actuator",
+      "status": "INFO",
+      "detail": "panda/actuator2 -> panda/joint2: joint position servo, kp 4500, kv 450, ctrlrange (-1.7628, 1.7628), forcerange (-87.0, 87.0)",
+      "data": {}
+    },
+    {
+      "section": "scene",
+      "name": "actuator",
+      "status": "INFO",
+      "detail": "panda/actuator3 -> panda/joint3: joint position servo, kp 3500, kv 350, ctrlrange (-2.8973, 2.8973), forcerange (-87.0, 87.0)",
+      "data": {}
+    },
+    {
+      "section": "scene",
+      "name": "actuator",
+      "status": "INFO",
+      "detail": "panda/actuator4 -> panda/joint4: joint position servo, kp 3500, kv 350, ctrlrange (-3.0718, -0.0698), forcerange (-87.0, 87.0)",
+      "data": {}
+    },
+    {
+      "section": "scene",
+      "name": "actuator",
+      "status": "INFO",
+      "detail": "panda/actuator5 -> panda/joint5: joint position servo, kp 2000, kv 200, ctrlrange (-2.8973, 2.8973), forcerange (-12.0, 12.0)",
+      "data": {}
+    },
+    {
+      "section": "scene",
+      "name": "actuator",
+      "status": "INFO",
+      "detail": "panda/actuator6 -> panda/joint6: joint position servo, kp 2000, kv 200, ctrlrange (-0.0175, 3.7525), forcerange (-12.0, 12.0)",
+      "data": {}
+    },
+    {
+      "section": "scene",
+      "name": "actuator",
+      "status": "INFO",
+      "detail": "panda/actuator7 -> panda/joint7: joint position servo, kp 2000, kv 200, ctrlrange (-2.8973, 2.8973), forcerange (-12.0, 12.0)",
+      "data": {}
+    },
+    {
+      "section": "scene",
+      "name": "actuator",
+      "status": "INFO",
+      "detail": "panda/actuator8 -> panda/split: tendon position servo (0 = closed), kp 100, kv 10, ctrlrange (0.0, 255.0), forcerange (-100.0, 100.0)",
+      "data": {}
+    },
+    {
+      "section": "reset",
+      "name": "reference rollout",
+      "status": "INFO",
+      "detail": "seed 0, nominal hidden physics, 250 control updates (5 s): state digest 9ac3950e3c7ab848 (174 values, mjSTATE_INTEGRATION)",
+      "data": {
+        "digest": "9ac3950e3c7ab848",
+        "updates": 250
+      }
+    },
+    {
+      "section": "reset",
+      "name": "same runner after other episodes",
+      "status": "PASS",
+      "detail": "seed 0 again after a randomized and an explicit-physics episode: max |state difference| 0 (tolerance 0); digest 9ac3950e3c7ab848",
+      "data": {}
+    },
+    {
+      "section": "reset",
+      "name": "fresh runner",
+      "status": "PASS",
+      "detail": "new ScenarioRunner, seed 0: max |state difference| 0 (tolerance 0); digest 9ac3950e3c7ab848",
+      "data": {}
+    },
+    {
+      "section": "reset",
+      "name": "physics options restored",
+      "status": "PASS",
+      "detail": "seed 0 after editing the timestep, the gravity flag and the contact override as the viewer's Physics panel would: max |state difference| 0 (tolerance 0); digest 9ac3950e3c7ab848",
+      "data": {}
+    },
+    {
+      "section": "reset",
+      "name": "initial state",
+      "status": "PASS",
+      "detail": "t = 0 state after reset(0): max |difference| 0",
+      "data": {}
+    },
+    {
+      "section": "reset",
+      "name": "randomized physics is seeded",
+      "status": "PASS",
+      "detail": "seed 5 with randomized hidden physics twice: same hidden values True, max |state difference| 0",
+      "data": {}
+    },
+    {
+      "section": "reset",
+      "name": "different seeds differ",
+      "status": "PASS",
+      "detail": "seed 1 vs seed 0 initial state: max |difference| 1.47",
+      "data": {}
+    },
+    {
+      "section": "reset",
+      "name": "separate process",
+      "status": "PASS",
+      "detail": "`.\\.venv\\Scripts\\python.exe -m physical_ai_lab step --seed 0 --seconds 5 --json` in a new interpreter: digest 9ac3950e3c7ab848 (bitwise identical)",
+      "data": {}
+    },
+    {
+      "section": "reset",
+      "name": "reproducibility scope",
+      "status": "INFO",
+      "detail": "same seed, same machine, same MuJoCo build and config; other machines/CPU architectures/builds not tested",
+      "data": {}
+    },
+    {
+      "section": "layouts",
+      "name": "layouts: block region",
+      "status": "PASS",
+      "detail": "block centre inside x [0.42, 0.62], y [-0.15, 0.15] m: 200/200 seeds",
+      "data": {}
+    },
+    {
+      "section": "layouts",
+      "name": "layouts: target region",
+      "status": "PASS",
+      "detail": "target inside x [0.42, 0.62], y [-0.15, 0.15] m: 200/200 seeds",
+      "data": {}
+    },
+    {
+      "section": "layouts",
+      "name": "layouts: distance",
+      "status": "PASS",
+      "detail": "block-target distance inside [0.08, 0.2] m: 200/200 seeds",
+      "data": {}
+    },
+    {
+      "section": "layouts",
+      "name": "layouts: block pose",
+      "status": "PASS",
+      "detail": "block placed flat on the tabletop at the sampled x, y, yaw: 200/200 seeds",
+      "data": {}
+    },
+    {
+      "section": "layouts",
+      "name": "layouts: target pose",
+      "status": "PASS",
+      "detail": "target marker at the sampled position on the tabletop: 200/200 seeds",
+      "data": {}
+    },
+    {
+      "section": "layouts",
+      "name": "layouts: contact",
+      "status": "PASS",
+      "detail": "no robot/block or robot/table contact at reset: 200/200 seeds",
+      "data": {}
+    },
+    {
+      "section": "layouts",
+      "name": "layouts: motion",
+      "status": "PASS",
+      "detail": "everything starts at rest: 200/200 seeds",
+      "data": {}
+    },
+    {
+      "section": "layouts",
+      "name": "layouts: distinct",
+      "status": "PASS",
+      "detail": "200 distinct layouts from 200 seeds",
+      "data": {}
+    },
+    {
+      "section": "layouts",
+      "name": "layout independent of physics randomization",
+      "status": "PASS",
+      "detail": "seeds 0-19 give the same layout with nominal and randomized hidden physics",
+      "data": {}
+    },
+    {
+      "section": "layouts",
+      "name": "layout coverage",
+      "status": "INFO",
+      "detail": "block x 0.421..0.619, y -0.147..0.150; target x 0.421..0.620, y -0.148..0.148; distance 0.080..0.198 m; yaw -3.13..3.12 rad; 942 resets/s",
+      "data": {}
+    },
+    {
+      "section": "hidden_physics",
+      "name": "kick m=0.100 kg, mu=0.200",
+      "status": "PASS",
+      "detail": "slid 63.6 mm from 0.5 m/s -> mu_eff 0.2002 (+0.11%); normal force 0.9810 N vs m*g 0.9810 N (0.000%); 4 contacts at mu 0.2; stopped after 0.30 s, yaw change +9.9e-04 rad",
+      "data": {
+        "physics": {
+          "block_mass": 0.1,
+          "sliding_friction": 0.2
+        },
+        "direction_deg": 0.0,
+        "v0": 0.5,
+        "distance": 0.06363998532197823,
+        "mu_effective": 0.2002216033456985,
+        "relative_error": 0.0011080167284924225,
+        "stop_time": 0.3,
+        "final_speed": 1.3131800056577482e-10,
+        "yaw_change": 0.0009866237192928118,
+        "normal_force": 0.9810000011968378,
+        "expected_normal_force": 0.9810000000000001,
+        "contact_frictions": [
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        "inertia": [
+          4.166666666666668e-05,
+          4.166666666666668e-05,
+          4.166666666666668e-05
+        ]
+      }
+    },
+    {
+      "section": "hidden_physics",
+      "name": "kick m=0.100 kg, mu=0.500",
+      "status": "PASS",
+      "detail": "slid 25.1 mm from 0.5 m/s -> mu_eff 0.5079 (+1.58%); normal force 0.9810 N vs m*g 0.9810 N (0.000%); 4 contacts at mu 0.5; stopped after 0.16 s, yaw change -4.5e-03 rad",
+      "data": {
+        "physics": {
+          "block_mass": 0.1,
+          "sliding_friction": 0.5
+        },
+        "direction_deg": 0.0,
+        "v0": 0.5,
+        "distance": 0.025088805402891892,
+        "mu_effective": 0.5078798967683996,
+        "relative_error": 0.015759793536799238,
+        "stop_time": 0.16,
+        "final_speed": 1.171766976480348e-10,
+        "yaw_change": -0.004450504998669169,
+        "normal_force": 0.9810000011968378,
+        "expected_normal_force": 0.9810000000000001,
+        "contact_frictions": [
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "inertia": [
+          4.166666666666668e-05,
+          4.166666666666668e-05,
+          4.166666666666668e-05
+        ]
+      }
+    },
+    {
+      "section": "hidden_physics",
+      "name": "kick m=0.100 kg, mu=0.800",
+      "status": "PASS",
+      "detail": "slid 16.3 mm from 0.5 m/s -> mu_eff 0.7817 (-2.29%); normal force 0.9810 N vs m*g 0.9810 N (0.000%); 4 contacts at mu 0.8; stopped after 0.14 s, yaw change +2.5e-04 rad",
+      "data": {
+        "physics": {
+          "block_mass": 0.1,
+          "sliding_friction": 0.8
+        },
+        "direction_deg": 0.0,
+        "v0": 0.5,
+        "distance": 0.01630066074507374,
+        "mu_effective": 0.7816922330534374,
+        "relative_error": -0.02288470868320333,
+        "stop_time": 0.14,
+        "final_speed": 1.2985361694485894e-10,
+        "yaw_change": 0.0002548107348561146,
+        "normal_force": 0.9810000011968378,
+        "expected_normal_force": 0.9810000000000001,
+        "contact_frictions": [
+          0.8,
+          0.8,
+          0.8,
+          0.8
+        ],
+        "inertia": [
+          4.166666666666668e-05,
+          4.166666666666668e-05,
+          4.166666666666668e-05
+        ]
+      }
+    },
+    {
+      "section": "hidden_physics",
+      "name": "kick m=0.250 kg, mu=0.200",
+      "status": "PASS",
+      "detail": "slid 63.6 mm from 0.5 m/s -> mu_eff 0.2002 (+0.11%); normal force 2.4525 N vs m*g 2.4525 N (0.000%); 4 contacts at mu 0.2; stopped after 0.30 s, yaw change +9.9e-04 rad",
+      "data": {
+        "physics": {
+          "block_mass": 0.25,
+          "sliding_friction": 0.2
+        },
+        "direction_deg": 0.0,
+        "v0": 0.5,
+        "distance": 0.06363998532197823,
+        "mu_effective": 0.2002216033456985,
+        "relative_error": 0.0011080167284924225,
+        "stop_time": 0.3,
+        "final_speed": 1.3131824310255082e-10,
+        "yaw_change": 0.0009866237192930338,
+        "normal_force": 2.4525000029920947,
+        "expected_normal_force": 2.4525,
+        "contact_frictions": [
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        "inertia": [
+          0.00010416666666666669,
+          0.00010416666666666669,
+          0.00010416666666666669
+        ]
+      }
+    },
+    {
+      "section": "hidden_physics",
+      "name": "kick m=0.250 kg, mu=0.500",
+      "status": "PASS",
+      "detail": "slid 25.1 mm from 0.5 m/s -> mu_eff 0.5079 (+1.58%); normal force 2.4525 N vs m*g 2.4525 N (0.000%); 4 contacts at mu 0.5; stopped after 0.16 s, yaw change -4.5e-03 rad",
+      "data": {
+        "physics": {
+          "block_mass": 0.25,
+          "sliding_friction": 0.5
+        },
+        "direction_deg": 0.0,
+        "v0": 0.5,
+        "distance": 0.025088805402891667,
+        "mu_effective": 0.5078798967684042,
+        "relative_error": 0.015759793536808342,
+        "stop_time": 0.16,
+        "final_speed": 1.1717684103230226e-10,
+        "yaw_change": -0.004450504998669169,
+        "normal_force": 2.4525000029920947,
+        "expected_normal_force": 2.4525,
+        "contact_frictions": [
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "inertia": [
+          0.00010416666666666669,
+          0.00010416666666666669,
+          0.00010416666666666669
+        ]
+      }
+    },
+    {
+      "section": "hidden_physics",
+      "name": "kick m=0.250 kg, mu=0.800",
+      "status": "PASS",
+      "detail": "slid 16.3 mm from 0.5 m/s -> mu_eff 0.7817 (-2.29%); normal force 2.4525 N vs m*g 2.4525 N (0.000%); 4 contacts at mu 0.8; stopped after 0.14 s, yaw change +2.5e-04 rad",
+      "data": {
+        "physics": {
+          "block_mass": 0.25,
+          "sliding_friction": 0.8
+        },
+        "direction_deg": 0.0,
+        "v0": 0.5,
+        "distance": 0.016300660745074073,
+        "mu_effective": 0.7816922330534214,
+        "relative_error": -0.022884708683223315,
+        "stop_time": 0.14,
+        "final_speed": 1.2985443394709178e-10,
+        "yaw_change": 0.0002548107348574469,
+        "normal_force": 2.4525000029920947,
+        "expected_normal_force": 2.4525,
+        "contact_frictions": [
+          0.8,
+          0.8,
+          0.8,
+          0.8
+        ],
+        "inertia": [
+          0.00010416666666666669,
+          0.00010416666666666669,
+          0.00010416666666666669
+        ]
+      }
+    },
+    {
+      "section": "hidden_physics",
+      "name": "kick m=0.400 kg, mu=0.200",
+      "status": "PASS",
+      "detail": "slid 63.6 mm from 0.5 m/s -> mu_eff 0.2002 (+0.11%); normal force 3.9240 N vs m*g 3.9240 N (0.000%); 4 contacts at mu 0.2; stopped after 0.30 s, yaw change +9.9e-04 rad",
+      "data": {
+        "physics": {
+          "block_mass": 0.4,
+          "sliding_friction": 0.2
+        },
+        "direction_deg": 0.0,
+        "v0": 0.5,
+        "distance": 0.06363998532197823,
+        "mu_effective": 0.2002216033456985,
+        "relative_error": 0.0011080167284924225,
+        "stop_time": 0.3,
+        "final_speed": 1.313188535405325e-10,
+        "yaw_change": 0.0009866237192930338,
+        "normal_force": 3.9240000047873798,
+        "expected_normal_force": 3.9240000000000004,
+        "contact_frictions": [
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        "inertia": [
+          0.00016666666666666672,
+          0.00016666666666666672,
+          0.00016666666666666672
+        ]
+      }
+    },
+    {
+      "section": "hidden_physics",
+      "name": "kick m=0.400 kg, mu=0.500",
+      "status": "PASS",
+      "detail": "slid 25.1 mm from 0.5 m/s -> mu_eff 0.5079 (+1.58%); normal force 3.9240 N vs m*g 3.9240 N (0.000%); 4 contacts at mu 0.5; stopped after 0.16 s, yaw change -4.5e-03 rad",
+      "data": {
+        "physics": {
+          "block_mass": 0.4,
+          "sliding_friction": 0.5
+        },
+        "direction_deg": 0.0,
+        "v0": 0.5,
+        "distance": 0.025088805402891334,
+        "mu_effective": 0.5078798967684109,
+        "relative_error": 0.015759793536821887,
+        "stop_time": 0.16,
+        "final_speed": 1.1717602797148909e-10,
+        "yaw_change": -0.004450504998668947,
+        "normal_force": 3.9240000047873798,
+        "expected_normal_force": 3.9240000000000004,
+        "contact_frictions": [
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "inertia": [
+          0.00016666666666666672,
+          0.00016666666666666672,
+          0.00016666666666666672
+        ]
+      }
+    },
+    {
+      "section": "hidden_physics",
+      "name": "kick m=0.400 kg, mu=0.800",
+      "status": "PASS",
+      "detail": "slid 16.3 mm from 0.5 m/s -> mu_eff 0.7817 (-2.29%); normal force 3.9240 N vs m*g 3.9240 N (0.000%); 4 contacts at mu 0.8; stopped after 0.14 s, yaw change +2.5e-04 rad",
+      "data": {
+        "physics": {
+          "block_mass": 0.4,
+          "sliding_friction": 0.8
+        },
+        "direction_deg": 0.0,
+        "v0": 0.5,
+        "distance": 0.01630066074507374,
+        "mu_effective": 0.7816922330534374,
+        "relative_error": -0.02288470868320333,
+        "stop_time": 0.14,
+        "final_speed": 1.2985408967801205e-10,
+        "yaw_change": 0.0002548107348561146,
+        "normal_force": 3.9240000047873798,
+        "expected_normal_force": 3.9240000000000004,
+        "contact_frictions": [
+          0.8,
+          0.8,
+          0.8,
+          0.8
+        ],
+        "inertia": [
+          0.00016666666666666672,
+          0.00016666666666666672,
+          0.00016666666666666672
+        ]
+      }
+    },
+    {
+      "section": "hidden_physics",
+      "name": "slide distance independent of mass (mu=0.200)",
+      "status": "PASS",
+      "detail": "distances 63.6, 63.6, 63.6 mm for m = 0.1, 0.25, 0.4 kg; spread 0.00% (limit 5%)",
+      "data": {}
+    },
+    {
+      "section": "hidden_physics",
+      "name": "slide distance independent of mass (mu=0.500)",
+      "status": "PASS",
+      "detail": "distances 25.1, 25.1, 25.1 mm for m = 0.1, 0.25, 0.4 kg; spread 0.00% (limit 5%)",
+      "data": {}
+    },
+    {
+      "section": "hidden_physics",
+      "name": "slide distance independent of mass (mu=0.800)",
+      "status": "PASS",
+      "detail": "distances 16.3, 16.3, 16.3 mm for m = 0.1, 0.25, 0.4 kg; spread 0.00% (limit 5%)",
+      "data": {}
+    },
+    {
+      "section": "hidden_physics",
+      "name": "higher friction, shorter slide (m=0.100)",
+      "status": "PASS",
+      "detail": "63.6, 25.1, 16.3 mm for mu = 0.2, 0.5, 0.8",
+      "data": {}
+    },
+    {
+      "section": "hidden_physics",
+      "name": "higher friction, shorter slide (m=0.250)",
+      "status": "PASS",
+      "detail": "63.6, 25.1, 16.3 mm for mu = 0.2, 0.5, 0.8",
+      "data": {}
+    },
+    {
+      "section": "hidden_physics",
+      "name": "higher friction, shorter slide (m=0.400)",
+      "status": "PASS",
+      "detail": "63.6, 25.1, 16.3 mm for mu = 0.2, 0.5, 0.8",
+      "data": {}
+    },
+    {
+      "section": "hidden_physics",
+      "name": "kick direction 45 deg",
+      "status": "PASS",
+      "detail": "mu_eff 0.4998 vs 0.5 (-0.05%); elliptic friction cone is isotropic",
+      "data": {}
+    },
+    {
+      "section": "hidden_physics",
+      "name": "kick direction 90 deg",
+      "status": "PASS",
+      "detail": "mu_eff 0.5079 vs 0.5 (+1.58%); elliptic friction cone is isotropic",
+      "data": {}
+    },
+    {
+      "section": "hidden_physics",
+      "name": "randomized hidden physics",
+      "status": "PASS",
+      "detail": "seeds 0-49: mass 0.108..0.398 kg within [0.1, 0.4], friction 0.208..0.790 within [0.2, 0.8]; 50 distinct; applied to the model and repeatable",
+      "data": {}
+    },
+    {
+      "section": "observation",
+      "name": "allow-listed fields",
+      "status": "PASS",
+      "detail": "18 fields: time, control_step, pose_source, arm_qpos, arm_qvel, arm_qpos_target, gripper_opening, tcp_pos, tcp_quat, block_pos, block_quat, block_yaw, block_linvel, block_angvel, target_pos, target_tolerance, robot_block_contact, robot_table_contact",
+      "data": {}
+    },
+    {
+      "section": "observation",
+      "name": "no hidden-quantity fields",
+      "status": "PASS",
+      "detail": "no field names mass, friction, inertia, force, seed, scenario, truth, future state or labels",
+      "data": {}
+    },
+    {
+      "section": "observation",
+      "name": "plain read-only values",
+      "status": "PASS",
+      "detail": "every field is a read-only float64 array or a Python scalar; no MuJoCo objects",
+      "data": {}
+    },
+    {
+      "section": "observation",
+      "name": "copies, not views",
+      "status": "PASS",
+      "detail": "no observation array shares memory with 31 MjData/MjModel arrays",
+      "data": {}
+    },
+    {
+      "section": "observation",
+      "name": "snapshot isolation",
+      "status": "PASS",
+      "detail": "an observation does not change when the simulation steps",
+      "data": {}
+    },
+    {
+      "section": "observation",
+      "name": "immutable",
+      "status": "PASS",
+      "detail": "array and attribute writes raise",
+      "data": {}
+    },
+    {
+      "section": "observation",
+      "name": "JSON round trip",
+      "status": "PASS",
+      "detail": "to_json -> from_dict reproduces the observation exactly",
+      "data": {}
+    },
+    {
+      "section": "observation",
+      "name": "schema enforced",
+      "status": "PASS",
+      "detail": "from_dict rejects: extra key block_mass, missing key block_pos",
+      "data": {}
+    },
+    {
+      "section": "observation",
+      "name": "hidden physics invisible at reset",
+      "status": "PASS",
+      "detail": "seeds 0-2, nominal vs randomized, light/low friction, heavy/high friction: max observation difference 0",
+      "data": {}
+    },
+    {
+      "section": "observation",
+      "name": "hidden physics at rest after 1 s",
+      "status": "PASS",
+      "detail": "max observation difference 4.3e-09 (block_angvel) across hidden physics (limit 1e-06); the block rests at the same height for every mass",
+      "data": {
+        "per_field": {
+          "time": 0.0,
+          "control_step": 0.0,
+          "pose_source": 0.0,
+          "arm_qpos": 4.1359030627651384e-25,
+          "arm_qvel": 5.929230630780102e-21,
+          "arm_qpos_target": 0.0,
+          "gripper_opening": 2.3161057151484775e-22,
+          "tcp_pos": 0.0,
+          "tcp_quat": 0.0,
+          "block_pos": 4.055266539237934e-11,
+          "block_quat": 6.274507803490628e-11,
+          "block_yaw": 0.0,
+          "block_linvel": 1.5546665827970927e-10,
+          "block_angvel": 4.297611085187034e-09,
+          "target_pos": 0.0,
+          "target_tolerance": 0.0,
+          "robot_block_contact": 0.0,
+          "robot_table_contact": 0.0
+        }
+      }
+    },
+    {
+      "section": "observation",
+      "name": "hidden physics at rest after 5 s",
+      "status": "PASS",
+      "detail": "max observation difference 4.45e-09 (block_angvel) across hidden physics (limit 1e-06); the block rests at the same height for every mass",
+      "data": {
+        "per_field": {
+          "time": 0.0,
+          "control_step": 0.0,
+          "pose_source": 0.0,
+          "arm_qpos": 2.2593424235205084e-24,
+          "arm_qvel": 4.003626068481532e-20,
+          "arm_qpos_target": 0.0,
+          "gripper_opening": 2.0311585377362105e-18,
+          "tcp_pos": 0.0,
+          "tcp_quat": 0.0,
+          "block_pos": 6.16887568805069e-10,
+          "block_quat": 6.455669945803527e-11,
+          "block_yaw": 0.0,
+          "block_linvel": 1.579810843816571e-10,
+          "block_angvel": 4.451737864409724e-09,
+          "target_pos": 0.0,
+          "target_tolerance": 0.0,
+          "robot_block_contact": 0.0,
+          "robot_table_contact": 0.0
+        }
+      }
+    },
+    {
+      "section": "observation",
+      "name": "pose source",
+      "status": "INFO",
+      "detail": "poses come from simulator state (pose_source = 'simulator_state'); contact forces are not observed",
+      "data": {}
+    },
+    {
+      "section": "stability",
+      "name": "hold seed 0, nominal physics, 5 s",
+      "status": "PASS",
+      "detail": "5 s: max |qvel| 5.39e-02, final 1.58e-09; block drift 4.2e-10 m, settled -0.1078 mm; arm sag 0.0066 rad; 23x real time",
+      "data": {
+        "seed": 0,
+        "physics_source": "nominal",
+        "seconds": 5.0,
+        "stable": true,
+        "reason": "stable",
+        "max_abs_qvel": 0.053860219790292874,
+        "final_max_abs_qvel": 1.5756775941231154e-09,
+        "block_planar_drift": 4.2149297517987945e-10,
+        "block_height_change": -0.00010775542021615805,
+        "arm_max_deviation": 0.006581714242672357,
+        "robot_contacts": false,
+        "wall_seconds": 0.21307130000786856
+      }
+    },
+    {
+      "section": "stability",
+      "name": "hold seed 0, randomized physics, 5 s",
+      "status": "PASS",
+      "detail": "5 s: max |qvel| 5.39e-02, final 3.48e-09; block drift 4.2e-10 m, settled -0.1078 mm; arm sag 0.0066 rad; 22x real time",
+      "data": {
+        "seed": 0,
+        "physics_source": "randomized",
+        "seconds": 5.0,
+        "stable": true,
+        "reason": "stable",
+        "max_abs_qvel": 0.053860219790292874,
+        "final_max_abs_qvel": 3.4815030027066807e-09,
+        "block_planar_drift": 4.21408688555424e-10,
+        "block_height_change": -0.00010775542021616846,
+        "arm_max_deviation": 0.006581714242672357,
+        "robot_contacts": false,
+        "wall_seconds": 0.23180809999757912
+      }
+    },
+    {
+      "section": "stability",
+      "name": "hold seed 1, nominal physics, 5 s",
+      "status": "PASS",
+      "detail": "5 s: max |qvel| 5.39e-02, final 2.53e-10; block drift 4.2e-10 m, settled -0.1078 mm; arm sag 0.0066 rad; 17x real time",
+      "data": {
+        "seed": 1,
+        "physics_source": "nominal",
+        "seconds": 5.0,
+        "stable": true,
+        "reason": "stable",
+        "max_abs_qvel": 0.053860219790292874,
+        "final_max_abs_qvel": 2.528205715436324e-10,
+        "block_planar_drift": 4.2312707206467387e-10,
+        "block_height_change": -0.00010775542021614765,
+        "arm_max_deviation": 0.006581714242672357,
+        "robot_contacts": false,
+        "wall_seconds": 0.3020486000023084
+      }
+    },
+    {
+      "section": "stability",
+      "name": "hold seed 1, randomized physics, 5 s",
+      "status": "PASS",
+      "detail": "5 s: max |qvel| 5.39e-02, final 4.20e-10; block drift 4.2e-10 m, settled -0.1078 mm; arm sag 0.0066 rad; 30x real time",
+      "data": {
+        "seed": 1,
+        "physics_source": "randomized",
+        "seconds": 5.0,
+        "stable": true,
+        "reason": "stable",
+        "max_abs_qvel": 0.053860219790292874,
+        "final_max_abs_qvel": 4.2017648213807083e-10,
+        "block_planar_drift": 4.2315624057042713e-10,
+        "block_height_change": -0.00010775542021615458,
+        "arm_max_deviation": 0.006581714242672357,
+        "robot_contacts": false,
+        "wall_seconds": 0.16782079999393318
+      }
+    },
+    {
+      "section": "stability",
+      "name": "hold seed 2, nominal physics, 5 s",
+      "status": "PASS",
+      "detail": "5 s: max |qvel| 5.39e-02, final 1.79e-09; block drift 4.2e-10 m, settled -0.1078 mm; arm sag 0.0066 rad; 26x real time",
+      "data": {
+        "seed": 2,
+        "physics_source": "nominal",
+        "seconds": 5.0,
+        "stable": true,
+        "reason": "stable",
+        "max_abs_qvel": 0.053860219790292874,
+        "final_max_abs_qvel": 1.7945679033611358e-09,
+        "block_planar_drift": 4.229598346412256e-10,
+        "block_height_change": -0.00010775542021614418,
+        "arm_max_deviation": 0.006581714242672357,
+        "robot_contacts": false,
+        "wall_seconds": 0.19403320000856183
+      }
+    },
+    {
+      "section": "stability",
+      "name": "hold seed 2, randomized physics, 5 s",
+      "status": "PASS",
+      "detail": "5 s: max |qvel| 5.39e-02, final 1.94e-09; block drift 4.2e-10 m, settled -0.1078 mm; arm sag 0.0066 rad; 18x real time",
+      "data": {
+        "seed": 2,
+        "physics_source": "randomized",
+        "seconds": 5.0,
+        "stable": true,
+        "reason": "stable",
+        "max_abs_qvel": 0.053860219790292874,
+        "final_max_abs_qvel": 1.941960002894595e-09,
+        "block_planar_drift": 4.225085217204469e-10,
+        "block_height_change": -0.00010775542021615805,
+        "arm_max_deviation": 0.006581714242672357,
+        "robot_contacts": false,
+        "wall_seconds": 0.2729103000019677
+      }
+    },
+    {
+      "section": "stability",
+      "name": "hold seed 3, nominal physics, 5 s",
+      "status": "PASS",
+      "detail": "5 s: max |qvel| 5.39e-02, final 1.59e-09; block drift 4.2e-10 m, settled -0.1078 mm; arm sag 0.0066 rad; 23x real time",
+      "data": {
+        "seed": 3,
+        "physics_source": "nominal",
+        "seconds": 5.0,
+        "stable": true,
+        "reason": "stable",
+        "max_abs_qvel": 0.053860219790292874,
+        "final_max_abs_qvel": 1.5943941281259333e-09,
+        "block_planar_drift": 4.231450725083669e-10,
+        "block_height_change": -0.00010775542021619275,
+        "arm_max_deviation": 0.006581714242672357,
+        "robot_contacts": false,
+        "wall_seconds": 0.2222018000029493
+      }
+    },
+    {
+      "section": "stability",
+      "name": "hold seed 3, randomized physics, 5 s",
+      "status": "PASS",
+      "detail": "5 s: max |qvel| 5.39e-02, final 3.63e-09; block drift 4.2e-10 m, settled -0.1078 mm; arm sag 0.0066 rad; 22x real time",
+      "data": {
+        "seed": 3,
+        "physics_source": "randomized",
+        "seconds": 5.0,
+        "stable": true,
+        "reason": "stable",
+        "max_abs_qvel": 0.053860219790292874,
+        "final_max_abs_qvel": 3.634512548038975e-09,
+        "block_planar_drift": 4.2105976136218636e-10,
+        "block_height_change": -0.00010775542021617887,
+        "arm_max_deviation": 0.006581714242672357,
+        "robot_contacts": false,
+        "wall_seconds": 0.2273332000040682
+      }
+    },
+    {
+      "section": "stability",
+      "name": "hold seed 4, nominal physics, 5 s",
+      "status": "PASS",
+      "detail": "5 s: max |qvel| 5.39e-02, final 9.82e-10; block drift 4.2e-10 m, settled -0.1078 mm; arm sag 0.0066 rad; 21x real time",
+      "data": {
+        "seed": 4,
+        "physics_source": "nominal",
+        "seconds": 5.0,
+        "stable": true,
+        "reason": "stable",
+        "max_abs_qvel": 0.053860219790292874,
+        "final_max_abs_qvel": 9.816332739936755e-10,
+        "block_planar_drift": 4.232431006328459e-10,
+        "block_height_change": -0.00010775542021616152,
+        "arm_max_deviation": 0.006581714242672357,
+        "robot_contacts": false,
+        "wall_seconds": 0.23418100000708364
+      }
+    },
+    {
+      "section": "stability",
+      "name": "hold seed 4, randomized physics, 5 s",
+      "status": "PASS",
+      "detail": "5 s: max |qvel| 5.39e-02, final 1.57e-09; block drift 4.2e-10 m, settled -0.1078 mm; arm sag 0.0066 rad; 17x real time",
+      "data": {
+        "seed": 4,
+        "physics_source": "randomized",
+        "seconds": 5.0,
+        "stable": true,
+        "reason": "stable",
+        "max_abs_qvel": 0.053860219790292874,
+        "final_max_abs_qvel": 1.5692146794919843e-09,
+        "block_planar_drift": 4.2225519209759595e-10,
+        "block_height_change": -0.00010775542021616499,
+        "arm_max_deviation": 0.006581714242672357,
+        "robot_contacts": false,
+        "wall_seconds": 0.299840999985463
+      }
+    },
+    {
+      "section": "stability",
+      "name": "hold seed 0, nominal physics, 30 s",
+      "status": "PASS",
+      "detail": "30 s: max |qvel| 5.39e-02, final 2.18e-10; block drift 2.9e-09 m, settled -0.1078 mm; arm sag 0.0066 rad; 22x real time",
+      "data": {
+        "seed": 0,
+        "physics_source": "nominal",
+        "seconds": 30.0,
+        "stable": true,
+        "reason": "stable",
+        "max_abs_qvel": 0.053860219790292874,
+        "final_max_abs_qvel": 2.17975919876552e-10,
+        "block_planar_drift": 2.8809860718161814e-09,
+        "block_height_change": -0.00010775542021615805,
+        "arm_max_deviation": 0.0065817142426731244,
+        "robot_contacts": false,
+        "wall_seconds": 1.3742067999992287
+      }
+    },
+    {
+      "section": "stability",
+      "name": "hold seed 1, randomized physics, 30 s",
+      "status": "PASS",
+      "detail": "30 s: max |qvel| 5.39e-02, final 3.19e-09; block drift 2.9e-09 m, settled -0.1078 mm; arm sag 0.0066 rad; 25x real time",
+      "data": {
+        "seed": 1,
+        "physics_source": "randomized",
+        "seconds": 30.0,
+        "stable": true,
+        "reason": "stable",
+        "max_abs_qvel": 0.053860219790292874,
+        "final_max_abs_qvel": 3.189634892551448e-09,
+        "block_planar_drift": 2.883378325316622e-09,
+        "block_height_change": -0.00010775542021615458,
+        "arm_max_deviation": 0.0065817142426731244,
+        "robot_contacts": false,
+        "wall_seconds": 1.199372900009621
+      }
+    },
+    {
+      "section": "stability",
+      "name": "instability detector: NaN joint velocity",
+      "status": "PASS",
+      "detail": "SimulationUnstable raised (t=0.020 s: MuJoCo warnings {'mjWARN_BADQVEL': 1}); MuJoCo warning captured: 'Nan, Inf or huge value in QVEL at DOF 0. The simulation is unstable. Time = 0.0000.'; reset(0) restores the exact initial state: True",
+      "data": {}
+    },
+    {
+      "section": "stability",
+      "name": "instability detector: block at 200 m/s",
+      "status": "PASS",
+      "detail": "SimulationUnstable raised (t=0.020 s: |qvel| 192 exceeds 50.0); reset(0) restores the exact initial state: True",
+      "data": {}
+    },
+    {
+      "section": "stability",
+      "name": "actuator response",
+      "status": "PASS",
+      "detail": "servos track their targets: +0.1 rad on all 7 joints -> worst error 0.0073 rad after 1 s (limit 0.02); gripper open 80.00 mm (expected 80.00), closed 0.003 mm",
+      "data": {
+        "arm_step": 0.1,
+        "seconds": 1.0,
+        "arm_errors": [
+          2.328284197716801e-06,
+          0.007282741381077096,
+          0.000122948205404122,
+          0.006363519365541359,
+          0.00040821666118487365,
+          0.0012189583324364595,
+          2.513471866638639e-06
+        ],
+        "gripper_open_command": 255.0,
+        "gripper_open_opening": 0.07999690173583478,
+        "gripper_open_expected": 0.08,
+        "gripper_closed_opening": 3.09818254113761e-06,
+        "max_abs_qvel": 0.941949073162731,
+        "ok": true,
+        "reason": "servos track their targets"
+      }
+    },
+    {
+      "section": "reach",
+      "name": "TCP-down reach over the block region",
+      "status": "PASS",
+      "detail": "50/50 TCP-down poses reachable over x 0.32..0.72, y -0.25..0.25 m at heights 0.025, 0.120 m; worst position error 0.289 mm, worst orientation error 0.0001 rad, min joint margin 0.095 rad (required 0.050), robot/table contacts 0, self contacts 0",
+      "data": {}
+    },
+    {
+      "section": "speed",
+      "name": "headless stepping speed",
+      "status": "INFO",
+      "detail": "10 s simulated (5000 physics steps) in 0.407 s: 25x real time, 12288 steps/s (this process; varies with load)",
+      "data": {}
+    },
+    {
+      "section": "rendering",
+      "name": "OpenGL",
+      "status": "INFO",
+      "detail": "vendor: Microsoft Corporation | renderer: D3D12 (Qualcomm(R) Adreno(TM) X1-85 GPU) | version: 4.6 (Compatibility Profile) Mesa 26.3.0-devel (git-e3fc7749c6)",
+      "data": {
+        "vendor": "Microsoft Corporation",
+        "renderer": "D3D12 (Qualcomm(R) Adreno(TM) X1-85 GPU)",
+        "version": "4.6 (Compatibility Profile) Mesa 26.3.0-devel (git-e3fc7749c6)"
+      }
+    },
+    {
+      "section": "rendering",
+      "name": "camera overhead",
+      "status": "PASS",
+      "detail": "800x600 px, mean 166.0, std 74.4, 4299 colours",
+      "data": {
+        "mean": 166.0000638888889,
+        "std": 74.35836181774138,
+        "unique_colours": 4299.0
+      }
+    },
+    {
+      "section": "rendering",
+      "name": "camera oblique",
+      "status": "PASS",
+      "detail": "800x600 px, mean 139.7, std 71.3, 4846 colours",
+      "data": {
+        "mean": 139.7180486111111,
+        "std": 71.32423182257885,
+        "unique_colours": 4846.0
+      }
+    },
+    {
+      "section": "rendering",
+      "name": "screenshots",
+      "status": "INFO",
+      "detail": "runs\\smoke\\20261003T022737Z\\scene_overhead.png, runs\\smoke\\20261003T022737Z\\scene_oblique.png, runs\\smoke\\20261003T022737Z\\scene_composite.png",
+      "data": {}
+    },
+    {
+      "section": "camera_views",
+      "name": "method",
+      "status": "INFO",
+      "detail": "640x480 segmentation renders at reset (arm in the home pose), seeds 0..49; robot occlusion = 1 - pixels / pixels with the robot's 81 geoms not drawn",
+      "data": {}
+    },
+    {
+      "section": "camera_views",
+      "name": "overhead: robot hides <= 5% of block",
+      "status": "PASS",
+      "detail": "worst 0.0% (seed 0) over the 50 seeds where it is in view",
+      "data": {
+        "worst": 0.0,
+        "worst_seed": 0,
+        "seeds_in_view": 50
+      }
+    },
+    {
+      "section": "camera_views",
+      "name": "overhead: robot hides <= 5% of target_zone",
+      "status": "PASS",
+      "detail": "worst 0.0% (seed 0) over the 50 seeds where it is in view",
+      "data": {
+        "worst": 0.0,
+        "worst_seed": 0,
+        "seeds_in_view": 50
+      }
+    },
+    {
+      "section": "camera_views",
+      "name": "oblique: robot hides <= 5% of block",
+      "status": "PASS",
+      "detail": "worst 0.0% (seed 0) over the 50 seeds where it is in view",
+      "data": {
+        "worst": 0.0,
+        "worst_seed": 0,
+        "seeds_in_view": 50
+      }
+    },
+    {
+      "section": "camera_views",
+      "name": "oblique: robot hides <= 5% of target_zone",
+      "status": "PASS",
+      "detail": "worst 0.0% (seed 0) over the 50 seeds where it is in view",
+      "data": {
+        "worst": 0.0,
+        "worst_seed": 0,
+        "seeds_in_view": 50
+      }
+    },
+    {
+      "section": "camera_views",
+      "name": "block in view in every camera",
+      "status": "PASS",
+      "detail": "all 50 seeds, 2 cameras",
+      "data": {
+        "not_in_view": {
+          "overhead": [],
+          "oblique": []
+        }
+      }
+    },
+    {
+      "section": "camera_views",
+      "name": "target_zone in view in at least one camera",
+      "status": "PASS",
+      "detail": "all 50 seeds",
+      "data": {
+        "seeds_not_in_view": []
+      }
+    }
+  ]
+}

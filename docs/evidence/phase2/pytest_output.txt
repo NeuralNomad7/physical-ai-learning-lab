@@ -1,0 +1,25 @@
+============================= test session starts =============================
+platform win32 -- Python 3.12.13, pytest-9.1.1, pluggy-1.6.0
+rootdir: C:\Users\vivan\OneDrive\Desktop\Projects\Physical AI_Agent
+configfile: pyproject.toml
+testpaths: tests
+collected 180 items
+
+tests\test_assets.py ....                                                [  2%]
+tests\test_cli.py ..............                                         [ 10%]
+tests\test_config.py .............                                       [ 17%]
+tests\test_environment.py ...                                            [ 18%]
+tests\test_evaluation.py ........................                        [ 32%]
+tests\test_hidden_physics.py .....                                       [ 35%]
+tests\test_kinematics.py .........                                       [ 40%]
+tests\test_manual_control.py ........................                    [ 53%]
+tests\test_observation.py ......                                         [ 56%]
+tests\test_push_controller.py ..............                             [ 64%]
+tests\test_reach.py .                                                    [ 65%]
+tests\test_render.py ...........                                         [ 71%]
+tests\test_reset.py .....................                                [ 82%]
+tests\test_scene.py ......                                               [ 86%]
+tests\test_stability.py ...........                                      [ 92%]
+tests\test_viewer_helpers.py ..............                              [100%]
+
+============================ 180 passed in 19.52s =============================

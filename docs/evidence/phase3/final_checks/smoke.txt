@@ -1,0 +1,159 @@
+START_UTC 2026-10-03T18:24:09Z
+Physical AI Lab - Phase 1 smoke test
+command      : python -m physical_ai_lab smoke
+started (UTC): 2026-10-03T18:24:10+00:00
+package      : physical_ai_lab 0.1.0
+python       : 3.12.13 (64-bit AMD64; host CPU ARM64, emulated) C:\Users\vivan\OneDrive\Desktop\Projects\Physical AI_Agent\.venv\Scripts\python.exe
+os           : Windows-11-10.0.26300-SP0
+versions     : physical_ai_lab 0.1.0, mujoco 3.14.0, numpy 2.5.3, pillow 12.3.0, pytest 9.1.1
+asset        : google-deepmind/mujoco_menagerie@4d038b3feae26ec82b46a4d586379114012a8ac7 (franka_emika_panda, Apache-2.0)
+sha256       : d04d248d5d538a936d56635b454dfc9bce0f2bac2983b4ffba69f73d52f17fce  configs\scene.toml
+sha256       : e194f53adcaa24bac56dbf679bfd6c0b929fc18fe9b8bbf0ccc157b26cf49791  assets\scenes\panda_push_scene.xml
+sha256       : 85c43d8d698ca3b4bba7164f6f4b1a54c0fac5f42c0d46605bc8653528eb7f07  assets\third_party\mujoco_menagerie\franka_emika_panda.manifest.json
+git          : not a git repository
+output       : runs\smoke\20261003T182410Z
+
+== Environment
+[INFO] python: 3.12.13 CPython, 64-bit AMD64 process (C:\Users\vivan\OneDrive\Desktop\Projects\Physical AI_Agent\.venv\Scripts\python.exe)
+[INFO] host: Windows-11-10.0.26300-SP0; native CPU ARM64; this AMD64 interpreter (win-amd64) runs under emulation
+[INFO] versions: physical_ai_lab 0.1.0, mujoco 3.14.0, numpy 2.5.3, pillow 12.3.0, pytest 9.1.1
+[PASS] dependency pins: installed versions match the 4 exact pins in pyproject.toml
+[WARN] version control: the project folder is not inside a git repository (changes are not tracked)
+[WARN] OneDrive: the project is in a OneDrive-synced folder; if `uv sync` reports 'Access is denied' see README.md
+   (0.00 s)
+
+== Vendored Panda asset
+[PASS] Panda asset integrity: OK: 72 files match manifest (Menagerie commit 4d038b3feae2)
+[INFO] asset source: https://github.com/google-deepmind/mujoco_menagerie @ 4d038b3feae26ec82b46a4d586379114012a8ac7 / franka_emika_panda (Apache-2.0), used unmodified
+   (0.10 s)
+
+== Scene
+[PASS] scene loads and matches configs/scene.toml: assets\scenes\panda_push_scene.xml compiled; verify_scene and verify_actuators passed (0.34 s)
+[PASS] model size: nq 16, nv 15, nu 8 (7 arm joints + 2 fingers + free block; 7 arm servos + gripper); 16 bodies, 90 geoms, 1 explicit contact pair(s)
+[INFO] solver: timestep 0.002 s, integrator mjINT_IMPLICITFAST, cone mjCONE_ELLIPTIC, solver mjSOL_NEWTON, iterations 100, impratio 1
+[INFO] scene: timestep 0.002 s x 10 substeps = 0.020 s (50 Hz control)
+[INFO] scene: target disc radius = success tolerance = 0.02 m (centre-based)
+[INFO] scene: block/table contact generated only by the explicit pair (dynamic contact excluded)
+[INFO] actuator: panda/actuator1 -> panda/joint1: joint position servo, kp 4500, kv 450, ctrlrange (-2.8973, 2.8973), forcerange (-87.0, 87.0)
+[INFO] actuator: panda/actuator2 -> panda/joint2: joint position servo, kp 4500, kv 450, ctrlrange (-1.7628, 1.7628), forcerange (-87.0, 87.0)
+[INFO] actuator: panda/actuator3 -> panda/joint3: joint position servo, kp 3500, kv 350, ctrlrange (-2.8973, 2.8973), forcerange (-87.0, 87.0)
+[INFO] actuator: panda/actuator4 -> panda/joint4: joint position servo, kp 3500, kv 350, ctrlrange (-3.0718, -0.0698), forcerange (-87.0, 87.0)
+[INFO] actuator: panda/actuator5 -> panda/joint5: joint position servo, kp 2000, kv 200, ctrlrange (-2.8973, 2.8973), forcerange (-12.0, 12.0)
+[INFO] actuator: panda/actuator6 -> panda/joint6: joint position servo, kp 2000, kv 200, ctrlrange (-0.0175, 3.7525), forcerange (-12.0, 12.0)
+[INFO] actuator: panda/actuator7 -> panda/joint7: joint position servo, kp 2000, kv 200, ctrlrange (-2.8973, 2.8973), forcerange (-12.0, 12.0)
+[INFO] actuator: panda/actuator8 -> panda/split: tendon position servo (0 = closed), kp 100, kv 10, ctrlrange (0.0, 255.0), forcerange (-100.0, 100.0)
+   (0.34 s)
+
+== Seeded reset reproducibility
+[INFO] reference rollout: seed 0, nominal hidden physics, 250 control updates (5 s): state digest 9ac3950e3c7ab848 (174 values, mjSTATE_INTEGRATION)
+[PASS] same runner after other episodes: seed 0 again after a randomized and an explicit-physics episode: max |state difference| 0 (tolerance 0); digest 9ac3950e3c7ab848
+[PASS] fresh runner: new ScenarioRunner, seed 0: max |state difference| 0 (tolerance 0); digest 9ac3950e3c7ab848
+[PASS] physics options restored: seed 0 after editing the timestep, the gravity flag and the contact override as the viewer's Physics panel would: max |state difference| 0 (tolerance 0); digest 9ac3950e3c7ab848
+[PASS] initial state: t = 0 state after reset(0): max |difference| 0
+[PASS] randomized physics is seeded: seed 5 with randomized hidden physics twice: same hidden values True, max |state difference| 0
+[PASS] different seeds differ: seed 1 vs seed 0 initial state: max |difference| 1.47
+[PASS] separate process: `.\.venv\Scripts\python.exe -m physical_ai_lab step --seed 0 --seconds 5 --json` in a new interpreter: digest 9ac3950e3c7ab848 (bitwise identical)
+[INFO] reproducibility scope: same seed, same machine, same MuJoCo build and config; other machines/CPU architectures/builds not tested
+   (1.60 s)
+
+== Reset layouts (200 seeds)
+[PASS] layouts: block region: block centre inside x [0.42, 0.62], y [-0.15, 0.15] m: 200/200 seeds
+[PASS] layouts: target region: target inside x [0.42, 0.62], y [-0.15, 0.15] m: 200/200 seeds
+[PASS] layouts: distance: block-target distance inside [0.08, 0.2] m: 200/200 seeds
+[PASS] layouts: block pose: block placed flat on the tabletop at the sampled x, y, yaw: 200/200 seeds
+[PASS] layouts: target pose: target marker at the sampled position on the tabletop: 200/200 seeds
+[PASS] layouts: contact: no robot/block or robot/table contact at reset: 200/200 seeds
+[PASS] layouts: motion: everything starts at rest: 200/200 seeds
+[PASS] layouts: distinct: 200 distinct layouts from 200 seeds
+[PASS] layout independent of physics randomization: seeds 0-19 give the same layout with nominal and randomized hidden physics
+[INFO] layout coverage: block x 0.421..0.619, y -0.147..0.150; target x 0.421..0.620, y -0.148..0.148; distance 0.080..0.198 m; yaw -3.13..3.12 rad; 2253 resets/s
+   (0.11 s)
+
+== Hidden physics (kick test)
+[PASS] kick m=0.100 kg, mu=0.200: slid 63.6 mm from 0.5 m/s -> mu_eff 0.2002 (+0.11%); normal force 0.9810 N vs m*g 0.9810 N (0.000%); 4 contacts at mu 0.2; stopped after 0.30 s, yaw change +9.9e-04 rad
+[PASS] kick m=0.100 kg, mu=0.500: slid 25.1 mm from 0.5 m/s -> mu_eff 0.5079 (+1.58%); normal force 0.9810 N vs m*g 0.9810 N (0.000%); 4 contacts at mu 0.5; stopped after 0.16 s, yaw change -4.5e-03 rad
+[PASS] kick m=0.100 kg, mu=0.800: slid 16.3 mm from 0.5 m/s -> mu_eff 0.7817 (-2.29%); normal force 0.9810 N vs m*g 0.9810 N (0.000%); 4 contacts at mu 0.8; stopped after 0.14 s, yaw change +2.5e-04 rad
+[PASS] kick m=0.250 kg, mu=0.200: slid 63.6 mm from 0.5 m/s -> mu_eff 0.2002 (+0.11%); normal force 2.4525 N vs m*g 2.4525 N (0.000%); 4 contacts at mu 0.2; stopped after 0.30 s, yaw change +9.9e-04 rad
+[PASS] kick m=0.250 kg, mu=0.500: slid 25.1 mm from 0.5 m/s -> mu_eff 0.5079 (+1.58%); normal force 2.4525 N vs m*g 2.4525 N (0.000%); 4 contacts at mu 0.5; stopped after 0.16 s, yaw change -4.5e-03 rad
+[PASS] kick m=0.250 kg, mu=0.800: slid 16.3 mm from 0.5 m/s -> mu_eff 0.7817 (-2.29%); normal force 2.4525 N vs m*g 2.4525 N (0.000%); 4 contacts at mu 0.8; stopped after 0.14 s, yaw change +2.5e-04 rad
+[PASS] kick m=0.400 kg, mu=0.200: slid 63.6 mm from 0.5 m/s -> mu_eff 0.2002 (+0.11%); normal force 3.9240 N vs m*g 3.9240 N (0.000%); 4 contacts at mu 0.2; stopped after 0.30 s, yaw change +9.9e-04 rad
+[PASS] kick m=0.400 kg, mu=0.500: slid 25.1 mm from 0.5 m/s -> mu_eff 0.5079 (+1.58%); normal force 3.9240 N vs m*g 3.9240 N (0.000%); 4 contacts at mu 0.5; stopped after 0.16 s, yaw change -4.5e-03 rad
+[PASS] kick m=0.400 kg, mu=0.800: slid 16.3 mm from 0.5 m/s -> mu_eff 0.7817 (-2.29%); normal force 3.9240 N vs m*g 3.9240 N (0.000%); 4 contacts at mu 0.8; stopped after 0.14 s, yaw change +2.5e-04 rad
+[PASS] slide distance independent of mass (mu=0.200): distances 63.6, 63.6, 63.6 mm for m = 0.1, 0.25, 0.4 kg; spread 0.00% (limit 5%)
+[PASS] slide distance independent of mass (mu=0.500): distances 25.1, 25.1, 25.1 mm for m = 0.1, 0.25, 0.4 kg; spread 0.00% (limit 5%)
+[PASS] slide distance independent of mass (mu=0.800): distances 16.3, 16.3, 16.3 mm for m = 0.1, 0.25, 0.4 kg; spread 0.00% (limit 5%)
+[PASS] higher friction, shorter slide (m=0.100): 63.6, 25.1, 16.3 mm for mu = 0.2, 0.5, 0.8
+[PASS] higher friction, shorter slide (m=0.250): 63.6, 25.1, 16.3 mm for mu = 0.2, 0.5, 0.8
+[PASS] higher friction, shorter slide (m=0.400): 63.6, 25.1, 16.3 mm for mu = 0.2, 0.5, 0.8
+[PASS] kick direction 45 deg: mu_eff 0.4998 vs 0.5 (-0.05%); elliptic friction cone is isotropic
+[PASS] kick direction 90 deg: mu_eff 0.5079 vs 0.5 (+1.58%); elliptic friction cone is isotropic
+[PASS] randomized hidden physics: seeds 0-49: mass 0.108..0.398 kg within [0.1, 0.4], friction 0.208..0.790 within [0.2, 0.8]; 50 distinct; applied to the model and repeatable
+   (0.45 s)
+
+== Observation boundary
+[PASS] allow-listed fields: 18 fields: time, control_step, pose_source, arm_qpos, arm_qvel, arm_qpos_target, gripper_opening, tcp_pos, tcp_quat, block_pos, block_quat, block_yaw, block_linvel, block_angvel, target_pos, target_tolerance, robot_block_contact, robot_table_contact
+[PASS] no hidden-quantity fields: no field names mass, friction, inertia, force, seed, scenario, truth, future state or labels
+[PASS] plain read-only values: every field is a read-only float64 array or a Python scalar; no MuJoCo objects
+[PASS] copies, not views: no observation array shares memory with 31 MjData/MjModel arrays
+[PASS] snapshot isolation: an observation does not change when the simulation steps
+[PASS] immutable: array and attribute writes raise
+[PASS] JSON round trip: to_json -> from_dict reproduces the observation exactly
+[PASS] schema enforced: from_dict rejects: extra key block_mass, missing key block_pos
+[PASS] hidden physics invisible at reset: seeds 0-2, nominal vs randomized, light/low friction, heavy/high friction: max observation difference 0
+[PASS] hidden physics at rest after 1 s: max observation difference 4.3e-09 (block_angvel) across hidden physics (limit 1e-06); the block rests at the same height for every mass
+[PASS] hidden physics at rest after 5 s: max observation difference 4.45e-09 (block_angvel) across hidden physics (limit 1e-06); the block rests at the same height for every mass
+[INFO] pose source: poses come from simulator state (pose_source = 'simulator_state'); contact forces are not observed
+   (0.35 s)
+
+== Stability, instability detector, actuators
+[PASS] hold seed 0, nominal physics, 5 s: 5 s: max |qvel| 5.39e-02, final 1.58e-09; block drift 4.2e-10 m, settled -0.1078 mm; arm sag 0.0066 rad; 39x real time
+[PASS] hold seed 0, randomized physics, 5 s: 5 s: max |qvel| 5.39e-02, final 3.48e-09; block drift 4.2e-10 m, settled -0.1078 mm; arm sag 0.0066 rad; 49x real time
+[PASS] hold seed 1, nominal physics, 5 s: 5 s: max |qvel| 5.39e-02, final 2.53e-10; block drift 4.2e-10 m, settled -0.1078 mm; arm sag 0.0066 rad; 47x real time
+[PASS] hold seed 1, randomized physics, 5 s: 5 s: max |qvel| 5.39e-02, final 4.20e-10; block drift 4.2e-10 m, settled -0.1078 mm; arm sag 0.0066 rad; 49x real time
+[PASS] hold seed 2, nominal physics, 5 s: 5 s: max |qvel| 5.39e-02, final 1.79e-09; block drift 4.2e-10 m, settled -0.1078 mm; arm sag 0.0066 rad; 48x real time
+[PASS] hold seed 2, randomized physics, 5 s: 5 s: max |qvel| 5.39e-02, final 1.94e-09; block drift 4.2e-10 m, settled -0.1078 mm; arm sag 0.0066 rad; 48x real time
+[PASS] hold seed 3, nominal physics, 5 s: 5 s: max |qvel| 5.39e-02, final 1.59e-09; block drift 4.2e-10 m, settled -0.1078 mm; arm sag 0.0066 rad; 48x real time
+[PASS] hold seed 3, randomized physics, 5 s: 5 s: max |qvel| 5.39e-02, final 3.63e-09; block drift 4.2e-10 m, settled -0.1078 mm; arm sag 0.0066 rad; 48x real time
+[PASS] hold seed 4, nominal physics, 5 s: 5 s: max |qvel| 5.39e-02, final 9.82e-10; block drift 4.2e-10 m, settled -0.1078 mm; arm sag 0.0066 rad; 47x real time
+[PASS] hold seed 4, randomized physics, 5 s: 5 s: max |qvel| 5.39e-02, final 1.57e-09; block drift 4.2e-10 m, settled -0.1078 mm; arm sag 0.0066 rad; 48x real time
+[PASS] hold seed 0, nominal physics, 30 s: 30 s: max |qvel| 5.39e-02, final 2.18e-10; block drift 2.9e-09 m, settled -0.1078 mm; arm sag 0.0066 rad; 47x real time
+[PASS] hold seed 1, randomized physics, 30 s: 30 s: max |qvel| 5.39e-02, final 3.19e-09; block drift 2.9e-09 m, settled -0.1078 mm; arm sag 0.0066 rad; 48x real time
+[PASS] instability detector: NaN joint velocity: SimulationUnstable raised (t=0.020 s: MuJoCo warnings {'mjWARN_BADQVEL': 1}); MuJoCo warning captured: 'Nan, Inf or huge value in QVEL at DOF 0. The simulation is unstable. Time = 0.0000.'; reset(0) restores the exact initial state: True
+[PASS] instability detector: block at 200 m/s: SimulationUnstable raised (t=0.020 s: |qvel| 192 exceeds 50.0); reset(0) restores the exact initial state: True
+[PASS] actuator response: servos track their targets: +0.1 rad on all 7 joints -> worst error 0.0073 rad after 1 s (limit 0.02); gripper open 80.00 mm (expected 80.00), closed 0.003 mm
+   (2.41 s)
+
+== Reachability
+[PASS] TCP-down reach over the block region: 50/50 TCP-down poses reachable over x 0.32..0.72, y -0.25..0.25 m at heights 0.025, 0.120 m; worst position error 0.289 mm, worst orientation error 0.0001 rad, min joint margin 0.095 rad (required 0.050), robot/table contacts 0, self contacts 0
+   (0.06 s)
+
+== Headless speed
+[INFO] headless stepping speed: 10 s simulated (5000 physics steps) in 0.134 s: 75x real time, 37291 steps/s (this process; varies with load)
+   (0.14 s)
+
+== Offscreen rendering
+[INFO] OpenGL: vendor: Microsoft Corporation | renderer: D3D12 (Qualcomm(R) Adreno(TM) X1-85 GPU) | version: 4.6 (Compatibility Profile) Mesa 26.3.0-devel (git-e3fc7749c6)
+[PASS] camera overhead: 800x600 px, mean 166.0, std 74.4, 4299 colours
+[PASS] camera oblique: 800x600 px, mean 139.7, std 71.3, 4846 colours
+[INFO] screenshots: runs\smoke\20261003T182410Z\scene_overhead.png, runs\smoke\20261003T182410Z\scene_oblique.png, runs\smoke\20261003T182410Z\scene_composite.png
+   (0.81 s)
+
+== Camera views: arm occlusion at reset (50 seeds)
+[INFO] method: 640x480 segmentation renders at reset (arm in the home pose), seeds 0..49; robot occlusion = 1 - pixels / pixels with the robot's 81 geoms not drawn
+[PASS] overhead: robot hides <= 5% of block: worst 0.0% (seed 0) over the 50 seeds where it is in view
+[PASS] overhead: robot hides <= 5% of target_zone: worst 0.0% (seed 0) over the 50 seeds where it is in view
+[PASS] oblique: robot hides <= 5% of block: worst 0.0% (seed 0) over the 50 seeds where it is in view
+[PASS] oblique: robot hides <= 5% of target_zone: worst 0.0% (seed 0) over the 50 seeds where it is in view
+[PASS] block in view in every camera: all 50 seeds, 2 cameras
+[PASS] target_zone in view in at least one camera: all 50 seeds
+   (3.79 s)
+
+== Summary
+PASS 73  FAIL 0  WARN 2  INFO 24  SKIP 0
+Phase 1 gate (scene loads, resets reproducibly, steps stably, screenshot saved): PASSED
+Not covered here: the interactive viewer window (from the project folder run `.\.venv\Scripts\python.exe -m physical_ai_lab view --seed 0`) and determinism across machines, CPU architectures or MuJoCo builds.
+finished (UTC): 2026-10-03T18:24:20+00:00 (10.2 s)
+log: runs\smoke\20261003T182410Z\smoke_log.txt  results: runs\smoke\20261003T182410Z\smoke_result.json
+
+END_UTC 2026-10-03T18:24:20Z
+EXIT 0

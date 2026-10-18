@@ -1,0 +1,42 @@
+== original gate (before the fix): docs\evidence\phase2\gate_result.json
+   started 2026-10-03T03:05:38+00:00  successes 20/20  gate_passed True  failures {}
+   successful episodes: pushes mean 1.95 max 3 | sim time mean 8.58 s max 13.18 s
+   final distance mm 2.8 .. 19.7
+   lowest measured TCP mm 13.76 | lowest commanded TCP mm 22.00
+   max joint speed ratio 0.7093 | max joint range excess 0.0
+   rate-limited updates 120 of 8596 control updates
+   max IK position error 0.500 mm | max IK orientation error 0.004365
+   contact events 3315, forbidden 0, unplanned robot-block contacts 0
+== gate after the fix: runs\phase2\review\gate_after_20261003T160555Z\gate_result.json
+   started 2026-10-03T16:05:56+00:00  successes 20/20  gate_passed True  failures {}
+   successful episodes: pushes mean 1.85 max 3 | sim time mean 8.06 s max 12.20 s
+   final distance mm 0.9 .. 18.5
+   lowest measured TCP mm 21.88 | lowest commanded TCP mm 22.00
+   max joint speed ratio 0.7092 | max joint range excess 0.0
+   rate-limited updates 67 of 8074 control updates
+   max IK position error 0.500 mm | max IK orientation error 0.004671
+   contact events 3209, forbidden 0, unplanned robot-block contacts 0
+
+seed | pushes | final mm | lowest TCP mm | rate-limited updates | first push plan identical
+20000 | 3 -> 3 |  10.8 ->   6.3 | 14.92 -> 21.90 |   2 ->   2 | True
+20001 | 2 -> 2 |  10.9 ->  10.9 | 14.93 -> 21.91 |   0 ->   0 | True
+20002 | 2 -> 2 |  19.7 ->  16.0 | 13.79 -> 21.93 |   0 ->   0 | True
+20003 | 3 -> 2 |   5.9 ->  17.3 | 14.79 -> 21.89 |   0 ->   0 | True
+20004 | 2 -> 2 |  12.3 ->  13.7 | 15.11 -> 21.97 |   0 ->   0 | True
+20005 | 2 -> 2 |   2.9 ->   0.9 | 15.68 -> 21.90 |   0 ->   0 | True
+20006 | 1 -> 1 |  17.9 ->  17.4 | 16.38 -> 21.90 |   6 ->   6 | True
+20007 | 2 -> 2 |   9.4 ->  17.3 | 14.67 -> 21.96 |   0 ->   0 | True
+20008 | 1 -> 1 |  10.9 ->   7.5 | 14.27 -> 22.00 |   0 ->   0 | True
+20009 | 2 -> 2 |  10.6 ->   9.7 | 15.90 -> 22.00 |   0 ->   0 | True
+20010 | 2 -> 2 |  14.0 ->  18.5 | 15.06 -> 21.96 |   0 ->   0 | True
+20011 | 2 -> 2 |  13.3 ->  12.2 | 16.58 -> 22.00 |   0 ->   0 | True
+20012 | 2 -> 2 |   8.9 ->   3.9 | 14.68 -> 21.88 |   0 ->   0 | True
+20013 | 2 -> 2 |  17.1 ->  16.8 | 14.43 -> 21.99 |   0 ->   0 | True
+20014 | 2 -> 2 |   3.7 ->   4.4 | 14.09 -> 22.00 |   0 ->   0 | True
+20015 | 1 -> 1 |   3.6 ->   8.6 | 13.76 -> 22.02 |   0 ->   0 | True
+20016 | 3 -> 2 |   2.8 ->  17.2 | 16.90 -> 21.93 |  54 ->   0 | True
+20017 | 1 -> 1 |  19.2 ->  17.3 | 17.22 -> 21.94 |   3 ->   3 | True
+20018 | 2 -> 2 |   4.8 ->   3.4 | 17.72 -> 21.88 |   5 ->   5 | True
+20019 | 2 -> 2 |  18.2 ->   5.9 | 17.51 -> 21.89 |  50 ->  51 | True
+seeds with a different number of pushes: 2
+first push plan identical (all fields) on 20 of 20 seeds

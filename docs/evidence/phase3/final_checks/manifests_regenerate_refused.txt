@@ -1,0 +1,5 @@
+START_UTC 2026-10-03T18:26:19Z
+REFUSED: manifests already exist in C:\Users\vivan\OneDrive\Desktop\Projects\Physical AI_Agent\configs\manifests (hashes.json); they are frozen. Regenerating them needs a revised, declared benchmark (BUILD_PLAN.md section 6). Use --verify to check them.
+
+END_UTC 2026-10-03T18:26:20Z
+EXIT 2

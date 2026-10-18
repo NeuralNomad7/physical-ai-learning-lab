@@ -1,0 +1,109 @@
+[review2_nofix] gravity feedforward disabled (mode=servo)
+............F.F..........F.                                              [100%]
+================================== FAILURES ===================================
+________________________ test_send_limits_joint_speed _________________________
+
+skill = <physical_ai_lab.controller.PushSkill object at 0x0000022F4F952A50>
+runner = <physical_ai_lab.scenario.ScenarioRunner object at 0x0000022F4F839580>
+push = PushConfig(source=WindowsPath('C:/Users/vivan/OneDrive/Desktop/Projects/Physical AI_Agent/configs/push.toml'), episode...1013, 21014, 21015, 21016, 21017, 21018, 21019, 21020, 21021, 21022, 21023, 21024, 21025, 21026, 21027, 21028, 21029)))
+
+    def test_send_limits_joint_speed(skill: PushSkill, runner: ScenarioRunner, push: PushConfig) -> None:
+        plant = FakePlant(runner.reset(DEV_SEED))
+        skill.q_cmd = skill.kin.home_q.copy()
+        target = skill.kin.home_q + 1.0
+        step = np.asarray(push.controller.max_joint_speed) * plant.control_dt
+        previous = skill.q_cmd.copy()
+        for _ in range(5):
+            skill._send(plant, target)
+            assert np.all(np.abs(skill.q_cmd - previous) <= step + 1e-12)
+            # The servos get the limited command plus the arm's static gravity offset.
+            sent = plant.commands[-1][0]
+>           np.testing.assert_array_equal(sent, skill.q_cmd + skill.kin.gravity_offset(skill.q_cmd))
+E           AssertionError: 
+E           Arrays are not equal
+E           
+E           Mismatched elements: 6 / 7 (85.7%)
+E           First 5 mismatches are at indices:
+E            [1]: 0.024 (ACTUAL), 0.01729724045715128 (DESIRED)
+E            [2]: 0.024 (ACTUAL), 0.02401162977017408 (DESIRED)
+E            [3]: -1.5467899999999999 (ACTUAL), -1.5404749562609463 (DESIRED)
+E            [4]: 0.032 (ACTUAL), 0.032358293913142086 (DESIRED)
+E            [5]: 1.60279 (ACTUAL), 1.6039693113247833 (DESIRED)
+E           Max absolute difference among violations: 0.00670276
+E           Max relative difference among violations: 0.38750456
+E            ACTUAL: array([ 0.024  ,  0.024  ,  0.024  , -1.54679,  0.032  ,  1.60279,
+E                  -0.7533 ])
+E            DESIRED: array([ 0.024   ,  0.017297,  0.024012, -1.540475,  0.032358,  1.603969,
+E                  -0.7533  ])
+
+tests\test_push_controller.py:85: AssertionError
+___________________ test_hold_repeats_the_commanded_targets ___________________
+
+skill = <physical_ai_lab.controller.PushSkill object at 0x0000022F4F99C3E0>
+runner = <physical_ai_lab.scenario.ScenarioRunner object at 0x0000022F4F839580>
+
+    def test_hold_repeats_the_commanded_targets(skill: PushSkill, runner: ScenarioRunner) -> None:
+        obs = runner.reset(DEV_SEED)
+        plant = FakePlant(obs)
+        skill.hold(plant, 0.1)
+        assert len(plant.commands) == 5
+        np.testing.assert_array_equal(skill.q_cmd, obs.arm_qpos_target)  # the reset pose is the command
+        held = obs.arm_qpos_target + skill.kin.gravity_offset(obs.arm_qpos_target)
+        for sent, _ in plant.commands:
+>           np.testing.assert_array_equal(sent, held)
+E           AssertionError: 
+E           Arrays are not equal
+E           
+E           Mismatched elements: 4 / 7 (57.1%)
+E           Mismatch at indices:
+E            [1]: 0.0 (ACTUAL), -0.006523545139340257 (DESIRED)
+E            [3]: -1.57079 (ACTUAL), -1.5644902255978916 (DESIRED)
+E            [4]: 0.0 (ACTUAL), 0.000334773897324906 (DESIRED)
+E            [5]: 1.57079 (ACTUAL), 1.5719431947826037 (DESIRED)
+E           Max absolute difference among violations: 0.00652355
+E           Max relative difference among violations: 1.
+E            ACTUAL: array([ 0.     ,  0.     ,  0.     , -1.57079,  0.     ,  1.57079,
+E                  -0.7853 ])
+E            DESIRED: array([ 0.000000e+00, -6.523545e-03,  0.000000e+00, -1.564490e+00,
+E                   3.347739e-04,  1.571943e+00, -7.853000e-01])
+
+tests\test_push_controller.py:119: AssertionError
+___________________ test_executed_tcp_holds_the_push_height ___________________
+
+cfg = SceneConfig(source=WindowsPath('C:/Users/vivan/OneDrive/Desktop/Projects/Physical AI_Agent/configs/scene.toml'), mjcf_...olerance=0.02, gripper_tolerance=0.002, observation_rest_tolerance=1e-06, visibility_seeds=50, max_arm_occlusion=0.05))
+push = PushConfig(source=WindowsPath('C:/Users/vivan/OneDrive/Desktop/Projects/Physical AI_Agent/configs/push.toml'), episode...1013, 21014, 21015, 21016, 21017, 21018, 21019, 21020, 21021, 21022, 21023, 21024, 21025, 21026, 21027, 21028, 21029)))
+skill = <physical_ai_lab.controller.PushSkill object at 0x0000022F395ABC50>
+runner = <physical_ai_lab.scenario.ScenarioRunner object at 0x0000022F4F839580>
+
+    def test_executed_tcp_holds_the_push_height(cfg: SceneConfig, push: PushConfig, skill: PushSkill,
+                                                runner: ScenarioRunner) -> None:
+        """The measured TCP, not only the command, stays at the push height through the stroke (D25)."""
+        obs = runner.reset(DEV_SEED)
+        plan, _ = FeedbackBaseline(cfg, push, skill).choose(obs)
+        assert plan is not None
+        judge = EpisodeJudge(runner, push)
+        plant = EvaluatedPlant(runner, judge, push)
+        plant.note("push_start", index=1, plan=plan.summary(), candidates=[])
+        skill.execute(plant, obs, plan)
+        plant.note("push_end", index=1, aborted=None)
+        column = TRAJECTORY_COLUMNS.index
+        height = push.controller.push_height
+        # The stroke starts while the TCP is still settling from above after the descent (servo lag,
+        # ~5 mm); the standoff lets it settle before contact, so check the rows that touch the block.
+        contact = [row for row in plant.trajectory if row[column("robot_block_contact")]]
+        assert contact and all(row[column("phase")] in ("stroke", "dwell", "back-off") for row in contact)
+        z = np.array([row[column("tcp_z")] for row in contact])
+>       assert np.all(np.abs(z - height) <= 0.002), (z.min(), z.max())
+E       AssertionError: (np.float64(0.017329), np.float64(0.01873))
+E       assert np.False_
+E        +  where np.False_ = <function all at 0x0000022F4BF4F970>(array([0.00327 , 0.003308, 0.003391, 0.003426, 0.003457, 0.003479,\n       0.003495, 0.003529, 0.003549, 0.003578, 0.00...57 , 0.004579, 0.004598,\n       0.004609, 0.004615, 0.004628, 0.004635, 0.004652, 0.004664,\n       0.004671, 0.00467 ]) <= 0.002)
+E        +    where <function all at 0x0000022F4BF4F970> = np.all
+E        +    and   array([0.00327 , 0.003308, 0.003391, 0.003426, 0.003457, 0.003479,\n       0.003495, 0.003529, 0.003549, 0.003578, 0.00...57 , 0.004579, 0.004598,\n       0.004609, 0.004615, 0.004628, 0.004635, 0.004652, 0.004664,\n       0.004671, 0.00467 ]) = <ufunc 'absolute'>((array([0.01873 , 0.018692, 0.018609, 0.018574, 0.018543, 0.018521,\n       0.018505, 0.018471, 0.018451, 0.018422, 0.01...43 , 0.017421, 0.017402,\n       0.017391, 0.017385, 0.017372, 0.017365, 0.017348, 0.017336,\n       0.017329, 0.01733 ]) - 0.022))
+E        +      where <ufunc 'absolute'> = np.abs
+
+tests\test_push_controller.py:290: AssertionError
+=========================== short test summary info ===========================
+FAILED tests/test_push_controller.py::test_send_limits_joint_speed - Assertio...
+FAILED tests/test_push_controller.py::test_hold_repeats_the_commanded_targets
+FAILED tests/test_push_controller.py::test_executed_tcp_holds_the_push_height
+3 failed, 24 passed in 5.79s

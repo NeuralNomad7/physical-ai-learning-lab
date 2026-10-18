@@ -1,0 +1,16 @@
+# Line endings for when this folder is put under git (it is not a repository yet).
+#
+# The vendored Panda files are checked byte for byte against the SHA-256 hashes in
+# assets/third_party/mujoco_menagerie/franka_emika_panda.manifest.json. With
+# core.autocrlf=true (the Git for Windows default, also set on the test machine), a
+# checkout would rewrite their LF line endings as CRLF and that check would fail.
+assets/third_party/** -text
+
+# Phase evidence files stay exactly as the runs wrote them.
+docs/evidence/** -text
+
+# Phase 3: the manifests are checked against configs/manifests/hashes.json, and each manifest
+# records the SHA-256 of configs/benchmark.toml, which open_split checks. Keep their bytes.
+configs/benchmark.toml -text
+configs/manifests/** -text
+freezes/** -text

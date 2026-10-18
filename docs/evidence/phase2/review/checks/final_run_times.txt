@@ -1,0 +1,7 @@
+Final check run of the Phase 2 review. Times are UTC, recorded by the PowerShell wrapper immediately before and after each command; each command's output was redirected with cmd.exe to the named file.
+
+final_doctor.txt          started 16:27:23  finished 16:27:26  exit 0  .\.venv\Scripts\python.exe -m physical_ai_lab doctor
+final_pytest.txt          started 16:27:26  finished 16:27:47  exit 0  .\.venv\Scripts\python.exe -m pytest
+final_smoke.txt           started 16:27:47  finished 16:27:58  exit 0  .\.venv\Scripts\python.exe -m physical_ai_lab smoke
+final_step_seed0.txt      started 16:27:58  finished 16:28:00  exit 0  .\.venv\Scripts\python.exe -m physical_ai_lab step --seed 0 --seconds 8
+final_uv_lock_check.txt   started 16:28:00  finished 16:28:00  exit 0  uv lock --check --offline

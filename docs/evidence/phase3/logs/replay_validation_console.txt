@@ -1,0 +1,13 @@
+START_UTC 2026-10-03T18:11:42Z
+replay validation episode 1: 469 control updates; command replay IDENTICAL; rerun through the agent IDENTICAL
+replay validation episode 2: 656 control updates; command replay IDENTICAL; rerun through the agent IDENTICAL
+replay validation episode 3: 447 control updates; command replay IDENTICAL; rerun through the agent IDENTICAL
+replay validation episode 4: 236 control updates; command replay IDENTICAL; rerun through the agent IDENTICAL
+replay validation episode 5: 470 control updates; command replay IDENTICAL; rerun through the agent IDENTICAL
+replay validation episode 6: 447 control updates; command replay IDENTICAL; rerun through the agent IDENTICAL
+replay validation episode 7: 608 control updates; command replay IDENTICAL; rerun through the agent IDENTICAL
+replay validation episode 8: 445 control updates; command replay IDENTICAL; rerun through the agent IDENTICAL
+replay validation episode 9: 231 control updates; command replay IDENTICAL; rerun through the agent IDENTICAL
+replay validation episode 10: 232 control updates; command replay IDENTICAL; rerun through the agent IDENTICAL
+ALL IDENTICAL: 10 episodes; report runs\phase3\evaluate\validation\20261003T180737Z\replay.json
+EXIT 0 END_UTC 2026-10-03T18:12:07Z

@@ -1,0 +1,202 @@
+{
+ "before": "runs\\phase2\\review\\stress_before_20261003T154116Z",
+ "after": "runs\\phase2\\review\\stress_after_20261003T160235Z",
+ "settings": {
+  "nominal": {
+   "before": {
+    "successes": "30/30",
+    "failures": "none",
+    "mean_pushes_all": 1.9,
+    "max_pushes": 3,
+    "mean_time_all_s": 8.3,
+    "final_mm_range_successes": [
+     1.4,
+     19.4
+    ],
+    "min_tcp_mm": 13.6,
+    "judge_min_tcp_mm": "n/a",
+    "max_below_push_mm": 8.4,
+    "contact_z_mm": [
+     13.67,
+     19.84
+    ],
+    "max_block_rise_mm": 0.172,
+    "episodes_with_table_contact": 0,
+    "forbidden_contacts": 0,
+    "max_first_update_ratio": 0.0,
+    "max_update_ratio": 1.0,
+    "judge_max_joint_speed_ratio": "n/a"
+   },
+   "after": {
+    "successes": "30/30",
+    "failures": "none",
+    "mean_pushes_all": 1.83,
+    "max_pushes": 3,
+    "mean_time_all_s": 8.09,
+    "final_mm_range_successes": [
+     1.6,
+     19.9
+    ],
+    "min_tcp_mm": 21.88,
+    "judge_min_tcp_mm": 21.88,
+    "max_below_push_mm": 0.12,
+    "contact_z_mm": [
+     21.92,
+     22.3
+    ],
+    "max_block_rise_mm": 0.247,
+    "episodes_with_table_contact": 0,
+    "forbidden_contacts": 0,
+    "max_first_update_ratio": 0.2718,
+    "max_update_ratio": 1.0,
+    "judge_max_joint_speed_ratio": 0.7094
+   },
+   "seeds_with_changed_pushes": [
+    [
+     21001,
+     2,
+     1
+    ],
+    [
+     21005,
+     3,
+     2
+    ],
+    [
+     21009,
+     3,
+     2
+    ],
+    [
+     21014,
+     1,
+     2
+    ]
+   ],
+   "successes_lost": [],
+   "successes_gained": []
+  },
+  "heavy_grippy": {
+   "before": {
+    "successes": "30/30",
+    "failures": "none",
+    "mean_pushes_all": 1.87,
+    "max_pushes": 3,
+    "mean_time_all_s": 8.22,
+    "final_mm_range_successes": [
+     2.7,
+     19.1
+    ],
+    "min_tcp_mm": 13.68,
+    "judge_min_tcp_mm": "n/a",
+    "max_below_push_mm": 8.32,
+    "contact_z_mm": [
+     13.75,
+     19.82
+    ],
+    "max_block_rise_mm": 0.947,
+    "episodes_with_table_contact": 0,
+    "forbidden_contacts": 0,
+    "max_first_update_ratio": 0.0,
+    "max_update_ratio": 1.0,
+    "judge_max_joint_speed_ratio": "n/a"
+   },
+   "after": {
+    "successes": "30/30",
+    "failures": "none",
+    "mean_pushes_all": 1.87,
+    "max_pushes": 3,
+    "mean_time_all_s": 8.26,
+    "final_mm_range_successes": [
+     0.9,
+     18.2
+    ],
+    "min_tcp_mm": 21.82,
+    "judge_min_tcp_mm": 21.81,
+    "max_below_push_mm": 0.18,
+    "contact_z_mm": [
+     21.82,
+     23.37
+    ],
+    "max_block_rise_mm": 1.302,
+    "episodes_with_table_contact": 0,
+    "forbidden_contacts": 0,
+    "max_first_update_ratio": 0.2718,
+    "max_update_ratio": 0.9997,
+    "judge_max_joint_speed_ratio": 0.6325
+   },
+   "seeds_with_changed_pushes": [],
+   "successes_lost": [],
+   "successes_gained": []
+  },
+  "light_slippery": {
+   "before": {
+    "successes": "30/30",
+    "failures": "none",
+    "mean_pushes_all": 1.83,
+    "max_pushes": 3,
+    "mean_time_all_s": 8.02,
+    "final_mm_range_successes": [
+     2.0,
+     18.5
+    ],
+    "min_tcp_mm": 13.67,
+    "judge_min_tcp_mm": "n/a",
+    "max_below_push_mm": 8.33,
+    "contact_z_mm": [
+     13.71,
+     19.82
+    ],
+    "max_block_rise_mm": 0.051,
+    "episodes_with_table_contact": 0,
+    "forbidden_contacts": 0,
+    "max_first_update_ratio": 0.0,
+    "max_update_ratio": 1.0,
+    "judge_max_joint_speed_ratio": "n/a"
+   },
+   "after": {
+    "successes": "30/30",
+    "failures": "none",
+    "mean_pushes_all": 1.8,
+    "max_pushes": 3,
+    "mean_time_all_s": 7.92,
+    "final_mm_range_successes": [
+     0.6,
+     19.9
+    ],
+    "min_tcp_mm": 21.87,
+    "judge_min_tcp_mm": 21.87,
+    "max_below_push_mm": 0.13,
+    "contact_z_mm": [
+     21.87,
+     22.29
+    ],
+    "max_block_rise_mm": 0.061,
+    "episodes_with_table_contact": 0,
+    "forbidden_contacts": 0,
+    "max_first_update_ratio": 0.2718,
+    "max_update_ratio": 1.0,
+    "judge_max_joint_speed_ratio": 0.7094
+   },
+   "seeds_with_changed_pushes": [
+    [
+     21001,
+     2,
+     1
+    ],
+    [
+     21010,
+     2,
+     1
+    ],
+    [
+     21014,
+     1,
+     2
+    ]
+   ],
+   "successes_lost": [],
+   "successes_gained": []
+  }
+ }
+}

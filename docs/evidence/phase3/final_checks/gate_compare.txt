@@ -1,0 +1,13 @@
+Phase 2 gate in the Phase 3 final checks, compared with the Phase 2 review's gate
+(docs/evidence/phase2/review/gate_after/), 2026-10-03.
+
+new run:   runs/phase2/gate/20261003T182421Z  (started 18:24:20Z, exit 0, 20/20, PASS)
+reference: docs/evidence/phase2/review/gate_after
+
+- trajectory CSV files: 20 of 20 byte-identical
+- gate_result.json: every field equal except command, started_utc, finished_utc,
+  records[].wall_seconds and records[].trajectory_file (43 differing leaves, all of these kinds)
+
+So the Phase 3 changes did not alter the Phase 2 baseline's behaviour on the gate seeds.
+The comparison was made with a short Python script (recursive field comparison and a
+byte comparison of the CSV files); this file records its output.

@@ -1,0 +1,226 @@
+START_UTC 2026-10-03T18:00:03Z
+train: 200 scenarios, mode baseline, manifest 6eadee60c6ae2a2f; writing to C:\Users\vivan\OneDrive\Desktop\Projects\Physical AI_Agent\runs\phase3\evaluate\train\20261003T180003Z
+[1/200] in_range     SUCCESS: pushes 2, sim 8.97 s, final 4.0 mm, lift 0.12 mm, tilt 0.35 deg, wall 2.2 s
+[2/200] in_range     SUCCESS: pushes 2, sim 8.24 s, final 19.2 mm, lift 0.14 mm, tilt 0.30 deg, wall 2.3 s
+[3/200] in_range     SUCCESS: pushes 1, sim 4.61 s, final 15.4 mm, lift 0.19 mm, tilt 0.45 deg, wall 1.2 s
+[4/200] in_range     SUCCESS: pushes 2, sim 7.96 s, final 8.3 mm, lift 0.15 mm, tilt 0.34 deg, wall 2.4 s
+[5/200] in_range     SUCCESS: pushes 1, sim 4.66 s, final 13.6 mm, lift 0.06 mm, tilt 0.27 deg, wall 1.5 s
+[6/200] in_range     SUCCESS: pushes 2, sim 9.31 s, final 13.0 mm, lift 0.14 mm, tilt 0.35 deg, wall 2.4 s
+[7/200] in_range     SUCCESS: pushes 2, sim 9.44 s, final 4.3 mm, lift 0.47 mm, tilt 1.12 deg, wall 2.5 s
+[8/200] in_range     SUCCESS: pushes 2, sim 8.88 s, final 11.0 mm, lift 0.07 mm, tilt 0.22 deg, wall 2.3 s
+[9/200] in_range     SUCCESS: pushes 2, sim 8.84 s, final 12.5 mm, lift 0.16 mm, tilt 0.36 deg, wall 2.5 s
+[10/200] in_range     SUCCESS: pushes 1, sim 4.61 s, final 8.8 mm, lift 0.04 mm, tilt 0.25 deg, wall 1.4 s
+[11/200] in_range     SUCCESS: pushes 3, sim 12.24 s, final 6.5 mm, lift 0.19 mm, tilt 0.38 deg, wall 3.2 s
+[12/200] in_range     SUCCESS: pushes 2, sim 8.89 s, final 9.5 mm, lift 0.19 mm, tilt 0.50 deg, wall 2.3 s
+[13/200] in_range     SUCCESS: pushes 1, sim 4.67 s, final 12.9 mm, lift 0.05 mm, tilt 0.24 deg, wall 1.3 s
+[14/200] in_range     SUCCESS: pushes 2, sim 9.35 s, final 15.0 mm, lift 0.10 mm, tilt 0.27 deg, wall 2.6 s
+[15/200] in_range     SUCCESS: pushes 1, sim 4.61 s, final 4.5 mm, lift 0.08 mm, tilt 0.33 deg, wall 1.4 s
+[16/200] in_range     SUCCESS: pushes 2, sim 7.98 s, final 5.5 mm, lift 0.15 mm, tilt 0.35 deg, wall 2.5 s
+[17/200] in_range     SUCCESS: pushes 1, sim 4.72 s, final 5.0 mm, lift 0.28 mm, tilt 0.43 deg, wall 1.4 s
+[18/200] in_range     SUCCESS: pushes 3, sim 13.18 s, final 1.3 mm, lift 0.17 mm, tilt 0.37 deg, wall 3.8 s
+[19/200] in_range     SUCCESS: pushes 1, sim 4.67 s, final 9.1 mm, lift 0.23 mm, tilt 0.37 deg, wall 1.3 s
+[20/200] in_range     SUCCESS: pushes 2, sim 9.44 s, final 10.4 mm, lift 0.15 mm, tilt 0.32 deg, wall 2.3 s
+[21/200] in_range     SUCCESS: pushes 2, sim 7.81 s, final 18.7 mm, lift 0.14 mm, tilt 0.35 deg, wall 2.2 s
+[22/200] in_range     SUCCESS: pushes 2, sim 9.35 s, final 16.5 mm, lift 0.43 mm, tilt 0.94 deg, wall 2.4 s
+[23/200] in_range     SUCCESS: pushes 3, sim 13.66 s, final 4.7 mm, lift 0.13 mm, tilt 0.39 deg, wall 3.4 s
+[24/200] in_range     SUCCESS: pushes 2, sim 9.42 s, final 3.5 mm, lift 0.27 mm, tilt 0.50 deg, wall 2.5 s
+[25/200] in_range     SUCCESS: pushes 1, sim 4.66 s, final 6.9 mm, lift 0.45 mm, tilt 0.98 deg, wall 1.6 s
+[26/200] in_range     SUCCESS: pushes 2, sim 8.95 s, final 16.6 mm, lift 0.39 mm, tilt 0.55 deg, wall 2.5 s
+[27/200] in_range     SUCCESS: pushes 2, sim 9.35 s, final 11.3 mm, lift 0.26 mm, tilt 0.47 deg, wall 2.3 s
+[28/200] in_range     SUCCESS: pushes 1, sim 4.62 s, final 16.0 mm, lift 0.36 mm, tilt 0.60 deg, wall 1.3 s
+[29/200] in_range     SUCCESS: pushes 3, sim 12.10 s, final 10.8 mm, lift 0.14 mm, tilt 0.40 deg, wall 3.1 s
+[30/200] in_range     SUCCESS: pushes 1, sim 4.76 s, final 14.6 mm, lift 0.14 mm, tilt 0.34 deg, wall 1.5 s
+[31/200] in_range     SUCCESS: pushes 2, sim 7.30 s, final 5.5 mm, lift 0.09 mm, tilt 0.21 deg, wall 2.0 s
+[32/200] in_range     SUCCESS: pushes 1, sim 4.57 s, final 6.4 mm, lift 0.04 mm, tilt 0.27 deg, wall 1.1 s
+[33/200] in_range     SUCCESS: pushes 2, sim 9.37 s, final 3.8 mm, lift 0.19 mm, tilt 0.43 deg, wall 2.4 s
+[34/200] in_range     SUCCESS: pushes 2, sim 8.86 s, final 6.1 mm, lift 0.09 mm, tilt 0.35 deg, wall 2.1 s
+[35/200] in_range     SUCCESS: pushes 2, sim 8.25 s, final 5.6 mm, lift 0.17 mm, tilt 0.36 deg, wall 2.3 s
+[36/200] in_range     SUCCESS: pushes 3, sim 13.15 s, final 1.7 mm, lift 0.82 mm, tilt 1.21 deg, wall 3.3 s
+[37/200] in_range     SUCCESS: pushes 2, sim 8.82 s, final 2.4 mm, lift 0.08 mm, tilt 0.30 deg, wall 2.7 s
+[38/200] in_range     SUCCESS: pushes 2, sim 8.86 s, final 2.7 mm, lift 0.49 mm, tilt 0.74 deg, wall 2.4 s
+[39/200] in_range     SUCCESS: pushes 1, sim 4.60 s, final 19.4 mm, lift 0.43 mm, tilt 0.77 deg, wall 1.2 s
+[40/200] in_range     SUCCESS: pushes 1, sim 4.61 s, final 13.0 mm, lift 0.06 mm, tilt 0.18 deg, wall 1.2 s
+[41/200] in_range     SUCCESS: pushes 2, sim 9.32 s, final 13.1 mm, lift 0.08 mm, tilt 0.32 deg, wall 2.3 s
+[42/200] in_range     SUCCESS: pushes 2, sim 9.42 s, final 5.8 mm, lift 0.14 mm, tilt 0.44 deg, wall 2.5 s
+[43/200] in_range     SUCCESS: pushes 2, sim 9.33 s, final 13.5 mm, lift 0.19 mm, tilt 0.50 deg, wall 2.3 s
+[44/200] in_range     SUCCESS: pushes 2, sim 8.84 s, final 15.4 mm, lift 0.10 mm, tilt 0.28 deg, wall 2.2 s
+[45/200] in_range     SUCCESS: pushes 2, sim 7.36 s, final 2.8 mm, lift 0.14 mm, tilt 0.30 deg, wall 2.2 s
+[46/200] in_range     SUCCESS: pushes 1, sim 4.65 s, final 13.5 mm, lift 0.62 mm, tilt 1.05 deg, wall 1.5 s
+[47/200] in_range     SUCCESS: pushes 1, sim 4.59 s, final 7.2 mm, lift 0.06 mm, tilt 0.21 deg, wall 1.2 s
+[48/200] in_range     SUCCESS: pushes 2, sim 7.79 s, final 4.6 mm, lift 0.05 mm, tilt 0.25 deg, wall 2.2 s
+[49/200] in_range     SUCCESS: pushes 2, sim 8.85 s, final 7.7 mm, lift 0.04 mm, tilt 0.22 deg, wall 2.3 s
+[50/200] in_range     SUCCESS: pushes 1, sim 4.57 s, final 15.6 mm, lift 0.25 mm, tilt 0.47 deg, wall 1.3 s
+[51/200] in_range     SUCCESS: pushes 2, sim 8.88 s, final 4.2 mm, lift 0.06 mm, tilt 0.26 deg, wall 2.3 s
+[52/200] in_range     SUCCESS: pushes 2, sim 8.25 s, final 0.7 mm, lift 0.11 mm, tilt 0.26 deg, wall 2.4 s
+[53/200] in_range     SUCCESS: pushes 2, sim 8.93 s, final 5.2 mm, lift 0.28 mm, tilt 0.52 deg, wall 2.3 s
+[54/200] in_range     SUCCESS: pushes 1, sim 4.62 s, final 18.0 mm, lift 0.08 mm, tilt 0.32 deg, wall 1.4 s
+[55/200] in_range     SUCCESS: pushes 2, sim 9.33 s, final 18.3 mm, lift 0.10 mm, tilt 0.30 deg, wall 2.3 s
+[56/200] in_range     SUCCESS: pushes 2, sim 9.45 s, final 13.7 mm, lift 0.13 mm, tilt 0.30 deg, wall 2.5 s
+[57/200] in_range     SUCCESS: pushes 2, sim 7.84 s, final 4.8 mm, lift 0.05 mm, tilt 0.31 deg, wall 2.1 s
+[58/200] in_range     SUCCESS: pushes 2, sim 8.92 s, final 3.6 mm, lift 0.13 mm, tilt 0.42 deg, wall 2.1 s
+[59/200] in_range     SUCCESS: pushes 1, sim 4.64 s, final 16.5 mm, lift 0.33 mm, tilt 0.64 deg, wall 1.3 s
+[60/200] in_range     SUCCESS: pushes 1, sim 4.65 s, final 10.9 mm, lift 0.05 mm, tilt 0.25 deg, wall 1.3 s
+[61/200] in_range     SUCCESS: pushes 1, sim 4.65 s, final 19.0 mm, lift 0.26 mm, tilt 0.49 deg, wall 1.2 s
+[62/200] in_range     SUCCESS: pushes 1, sim 4.65 s, final 13.8 mm, lift 0.28 mm, tilt 0.64 deg, wall 1.3 s
+[63/200] in_range     SUCCESS: pushes 2, sim 7.86 s, final 7.5 mm, lift 0.13 mm, tilt 0.37 deg, wall 2.1 s
+[64/200] in_range     SUCCESS: pushes 2, sim 8.97 s, final 8.6 mm, lift 0.75 mm, tilt 0.82 deg, wall 2.3 s
+[65/200] in_range     SUCCESS: pushes 1, sim 4.69 s, final 14.5 mm, lift 0.31 mm, tilt 0.82 deg, wall 1.3 s
+[66/200] in_range     SUCCESS: pushes 2, sim 8.33 s, final 7.3 mm, lift 0.06 mm, tilt 0.20 deg, wall 2.2 s
+[67/200] in_range     SUCCESS: pushes 2, sim 9.34 s, final 18.5 mm, lift 0.06 mm, tilt 0.32 deg, wall 2.9 s
+[68/200] in_range     SUCCESS: pushes 3, sim 12.65 s, final 1.8 mm, lift 0.28 mm, tilt 0.44 deg, wall 3.4 s
+[69/200] in_range     SUCCESS: pushes 2, sim 8.90 s, final 13.1 mm, lift 0.11 mm, tilt 0.29 deg, wall 2.2 s
+[70/200] in_range     SUCCESS: pushes 1, sim 4.58 s, final 9.8 mm, lift 0.12 mm, tilt 0.34 deg, wall 1.2 s
+[71/200] in_range     SUCCESS: pushes 2, sim 7.41 s, final 8.6 mm, lift 0.13 mm, tilt 0.35 deg, wall 2.2 s
+[72/200] in_range     SUCCESS: pushes 2, sim 8.88 s, final 7.3 mm, lift 0.40 mm, tilt 0.52 deg, wall 2.6 s
+[73/200] in_range     SUCCESS: pushes 2, sim 8.99 s, final 2.0 mm, lift 0.27 mm, tilt 0.57 deg, wall 2.3 s
+[74/200] in_range     SUCCESS: pushes 1, sim 4.62 s, final 18.7 mm, lift 0.08 mm, tilt 0.28 deg, wall 1.2 s
+[75/200] in_range     SUCCESS: pushes 2, sim 8.89 s, final 8.4 mm, lift 0.39 mm, tilt 0.52 deg, wall 2.3 s
+[76/200] in_range     SUCCESS: pushes 2, sim 7.79 s, final 14.5 mm, lift 0.07 mm, tilt 0.27 deg, wall 2.3 s
+[77/200] in_range     SUCCESS: pushes 1, sim 4.60 s, final 14.9 mm, lift 0.15 mm, tilt 0.33 deg, wall 1.4 s
+[78/200] in_range     SUCCESS: pushes 2, sim 8.83 s, final 18.9 mm, lift 0.11 mm, tilt 0.31 deg, wall 2.2 s
+[79/200] in_range     SUCCESS: pushes 1, sim 4.59 s, final 20.0 mm, lift 0.18 mm, tilt 0.34 deg, wall 1.3 s
+[80/200] in_range     SUCCESS: pushes 2, sim 9.37 s, final 4.9 mm, lift 0.07 mm, tilt 0.30 deg, wall 2.3 s
+[81/200] in_range     SUCCESS: pushes 1, sim 4.66 s, final 14.3 mm, lift 0.06 mm, tilt 0.23 deg, wall 1.2 s
+[82/200] in_range     SUCCESS: pushes 2, sim 7.36 s, final 8.3 mm, lift 0.26 mm, tilt 0.52 deg, wall 2.6 s
+[83/200] in_range     SUCCESS: pushes 2, sim 8.40 s, final 8.6 mm, lift 0.07 mm, tilt 0.25 deg, wall 2.3 s
+[84/200] in_range     SUCCESS: pushes 2, sim 8.83 s, final 15.6 mm, lift 0.07 mm, tilt 0.28 deg, wall 2.2 s
+[85/200] in_range     SUCCESS: pushes 1, sim 4.66 s, final 14.7 mm, lift 0.11 mm, tilt 0.26 deg, wall 1.3 s
+[86/200] in_range     SUCCESS: pushes 1, sim 4.67 s, final 14.4 mm, lift 0.04 mm, tilt 0.27 deg, wall 1.3 s
+[87/200] in_range     SUCCESS: pushes 2, sim 8.88 s, final 16.5 mm, lift 0.18 mm, tilt 0.35 deg, wall 2.1 s
+[88/200] in_range     SUCCESS: pushes 1, sim 4.63 s, final 14.1 mm, lift 0.04 mm, tilt 0.22 deg, wall 1.3 s
+[89/200] in_range     SUCCESS: pushes 1, sim 4.69 s, final 5.4 mm, lift 0.06 mm, tilt 0.22 deg, wall 1.3 s
+[90/200] in_range     SUCCESS: pushes 2, sim 8.97 s, final 12.1 mm, lift 0.28 mm, tilt 0.98 deg, wall 2.2 s
+[91/200] in_range     SUCCESS: pushes 2, sim 8.82 s, final 1.1 mm, lift 0.21 mm, tilt 0.33 deg, wall 2.4 s
+[92/200] in_range     SUCCESS: pushes 1, sim 4.61 s, final 10.3 mm, lift 0.13 mm, tilt 0.39 deg, wall 1.4 s
+[93/200] in_range     SUCCESS: pushes 2, sim 8.83 s, final 5.2 mm, lift 0.15 mm, tilt 0.32 deg, wall 2.1 s
+[94/200] in_range     SUCCESS: pushes 3, sim 13.05 s, final 5.8 mm, lift 0.05 mm, tilt 0.27 deg, wall 3.3 s
+[95/200] in_range     SUCCESS: pushes 2, sim 8.86 s, final 6.8 mm, lift 0.31 mm, tilt 0.64 deg, wall 2.1 s
+[96/200] in_range     SUCCESS: pushes 2, sim 8.39 s, final 16.1 mm, lift 0.16 mm, tilt 0.39 deg, wall 2.1 s
+[97/200] in_range     SUCCESS: pushes 1, sim 4.72 s, final 13.8 mm, lift 0.23 mm, tilt 0.49 deg, wall 1.3 s
+[98/200] in_range     SUCCESS: pushes 1, sim 4.61 s, final 6.6 mm, lift 0.19 mm, tilt 0.32 deg, wall 1.2 s
+[99/200] in_range     SUCCESS: pushes 1, sim 4.64 s, final 17.2 mm, lift 0.69 mm, tilt 0.80 deg, wall 1.4 s
+[100/200] in_range     SUCCESS: pushes 2, sim 8.85 s, final 2.4 mm, lift 0.11 mm, tilt 0.33 deg, wall 2.1 s
+[101/200] in_range     SUCCESS: pushes 1, sim 4.60 s, final 6.7 mm, lift 0.09 mm, tilt 0.33 deg, wall 1.2 s
+[102/200] in_range     SUCCESS: pushes 1, sim 4.69 s, final 9.9 mm, lift 0.07 mm, tilt 0.25 deg, wall 1.4 s
+[103/200] in_range     SUCCESS: pushes 2, sim 8.83 s, final 4.8 mm, lift 0.15 mm, tilt 0.33 deg, wall 2.1 s
+[104/200] in_range     SUCCESS: pushes 1, sim 4.68 s, final 14.5 mm, lift 0.19 mm, tilt 0.41 deg, wall 1.3 s
+[105/200] in_range     SUCCESS: pushes 2, sim 8.87 s, final 6.0 mm, lift 0.20 mm, tilt 0.37 deg, wall 2.2 s
+[106/200] in_range     SUCCESS: pushes 2, sim 9.37 s, final 17.2 mm, lift 0.17 mm, tilt 0.47 deg, wall 2.8 s
+[107/200] in_range     SUCCESS: pushes 2, sim 9.39 s, final 17.3 mm, lift 0.09 mm, tilt 0.27 deg, wall 2.2 s
+[108/200] in_range     SUCCESS: pushes 3, sim 13.20 s, final 2.0 mm, lift 0.14 mm, tilt 0.31 deg, wall 3.2 s
+[109/200] in_range     SUCCESS: pushes 2, sim 7.91 s, final 11.1 mm, lift 0.06 mm, tilt 0.24 deg, wall 2.0 s
+[110/200] in_range     SUCCESS: pushes 2, sim 9.38 s, final 13.5 mm, lift 0.12 mm, tilt 0.31 deg, wall 2.4 s
+[111/200] in_range     SUCCESS: pushes 1, sim 4.63 s, final 11.4 mm, lift 0.10 mm, tilt 0.23 deg, wall 1.1 s
+[112/200] in_range     SUCCESS: pushes 2, sim 8.83 s, final 4.6 mm, lift 0.21 mm, tilt 0.51 deg, wall 2.2 s
+[113/200] in_range     SUCCESS: pushes 2, sim 8.87 s, final 3.7 mm, lift 0.13 mm, tilt 0.33 deg, wall 2.3 s
+[114/200] in_range     SUCCESS: pushes 1, sim 4.60 s, final 6.4 mm, lift 0.16 mm, tilt 0.30 deg, wall 1.2 s
+[115/200] in_range     SUCCESS: pushes 1, sim 4.74 s, final 3.6 mm, lift 1.22 mm, tilt 2.97 deg, wall 1.4 s
+[116/200] in_range     SUCCESS: pushes 2, sim 8.86 s, final 4.3 mm, lift 0.08 mm, tilt 0.25 deg, wall 2.5 s
+[117/200] in_range     SUCCESS: pushes 2, sim 8.96 s, final 15.8 mm, lift 0.25 mm, tilt 0.51 deg, wall 2.3 s
+[118/200] in_range     SUCCESS: pushes 2, sim 7.79 s, final 10.2 mm, lift 0.16 mm, tilt 0.31 deg, wall 2.6 s
+[119/200] in_range     SUCCESS: pushes 2, sim 7.89 s, final 14.3 mm, lift 0.14 mm, tilt 0.32 deg, wall 2.0 s
+[120/200] in_range     SUCCESS: pushes 2, sim 9.44 s, final 13.4 mm, lift 0.32 mm, tilt 0.50 deg, wall 2.5 s
+[121/200] in_range     SUCCESS: pushes 2, sim 7.83 s, final 2.4 mm, lift 0.06 mm, tilt 0.27 deg, wall 2.2 s
+[122/200] in_range     SUCCESS: pushes 2, sim 8.88 s, final 14.1 mm, lift 0.25 mm, tilt 1.02 deg, wall 2.3 s
+[123/200] in_range     SUCCESS: pushes 2, sim 8.93 s, final 11.9 mm, lift 0.10 mm, tilt 0.26 deg, wall 2.2 s
+[124/200] in_range     SUCCESS: pushes 2, sim 8.00 s, final 14.8 mm, lift 0.23 mm, tilt 0.56 deg, wall 2.3 s
+[125/200] in_range     SUCCESS: pushes 2, sim 9.38 s, final 4.5 mm, lift 0.06 mm, tilt 0.27 deg, wall 2.4 s
+[126/200] in_range     SUCCESS: pushes 1, sim 4.69 s, final 15.3 mm, lift 0.04 mm, tilt 0.21 deg, wall 1.2 s
+[127/200] in_range     SUCCESS: pushes 1, sim 4.66 s, final 11.0 mm, lift 0.37 mm, tilt 0.62 deg, wall 1.3 s
+[128/200] in_range     SUCCESS: pushes 1, sim 4.61 s, final 11.4 mm, lift 0.08 mm, tilt 0.27 deg, wall 1.2 s
+[129/200] in_range     SUCCESS: pushes 1, sim 4.69 s, final 11.9 mm, lift 0.07 mm, tilt 0.32 deg, wall 1.4 s
+[130/200] in_range     SUCCESS: pushes 2, sim 7.89 s, final 6.0 mm, lift 0.09 mm, tilt 0.22 deg, wall 2.3 s
+[131/200] in_range     SUCCESS: pushes 2, sim 9.43 s, final 5.3 mm, lift 0.87 mm, tilt 2.81 deg, wall 2.7 s
+[132/200] in_range     SUCCESS: pushes 1, sim 4.65 s, final 12.5 mm, lift 0.31 mm, tilt 0.75 deg, wall 1.2 s
+[133/200] in_range     SUCCESS: pushes 1, sim 4.68 s, final 19.1 mm, lift 0.07 mm, tilt 0.36 deg, wall 1.3 s
+[134/200] in_range     SUCCESS: pushes 2, sim 8.23 s, final 11.6 mm, lift 0.54 mm, tilt 0.91 deg, wall 2.1 s
+[135/200] in_range     SUCCESS: pushes 2, sim 9.36 s, final 16.3 mm, lift 0.52 mm, tilt 0.99 deg, wall 2.4 s
+[136/200] in_range     SUCCESS: pushes 3, sim 13.22 s, final 3.5 mm, lift 0.41 mm, tilt 0.86 deg, wall 3.1 s
+[137/200] in_range     SUCCESS: pushes 1, sim 4.63 s, final 10.8 mm, lift 0.07 mm, tilt 0.25 deg, wall 1.2 s
+[138/200] in_range     SUCCESS: pushes 2, sim 9.45 s, final 8.4 mm, lift 0.14 mm, tilt 0.32 deg, wall 2.4 s
+[139/200] in_range     SUCCESS: pushes 1, sim 4.68 s, final 6.0 mm, lift 0.10 mm, tilt 0.36 deg, wall 1.3 s
+[140/200] in_range     SUCCESS: pushes 2, sim 8.83 s, final 5.2 mm, lift 0.08 mm, tilt 0.27 deg, wall 2.4 s
+[141/200] in_range     SUCCESS: pushes 2, sim 8.87 s, final 18.2 mm, lift 0.15 mm, tilt 0.33 deg, wall 2.1 s
+[142/200] in_range     SUCCESS: pushes 1, sim 4.65 s, final 19.6 mm, lift 0.40 mm, tilt 0.78 deg, wall 1.2 s
+[143/200] in_range     SUCCESS: pushes 1, sim 4.71 s, final 11.2 mm, lift 0.26 mm, tilt 0.53 deg, wall 1.3 s
+[144/200] in_range     SUCCESS: pushes 1, sim 4.74 s, final 8.5 mm, lift 0.48 mm, tilt 0.81 deg, wall 1.2 s
+[145/200] in_range     SUCCESS: pushes 2, sim 8.94 s, final 13.3 mm, lift 0.08 mm, tilt 0.31 deg, wall 2.3 s
+[146/200] in_range     SUCCESS: pushes 2, sim 9.39 s, final 5.4 mm, lift 0.19 mm, tilt 0.48 deg, wall 2.3 s
+[147/200] in_range     SUCCESS: pushes 2, sim 9.43 s, final 10.2 mm, lift 0.06 mm, tilt 0.23 deg, wall 2.2 s
+[148/200] in_range     SUCCESS: pushes 1, sim 4.59 s, final 19.5 mm, lift 0.04 mm, tilt 0.27 deg, wall 1.3 s
+[149/200] in_range     SUCCESS: pushes 2, sim 8.81 s, final 2.3 mm, lift 0.05 mm, tilt 0.20 deg, wall 2.2 s
+[150/200] in_range     SUCCESS: pushes 2, sim 7.29 s, final 2.1 mm, lift 0.04 mm, tilt 0.17 deg, wall 1.8 s
+[151/200] in_range     SUCCESS: pushes 1, sim 4.69 s, final 11.9 mm, lift 0.32 mm, tilt 0.45 deg, wall 1.3 s
+[152/200] in_range     SUCCESS: pushes 2, sim 8.82 s, final 10.3 mm, lift 0.22 mm, tilt 0.42 deg, wall 2.4 s
+[153/200] in_range     SUCCESS: pushes 2, sim 8.83 s, final 10.7 mm, lift 0.05 mm, tilt 0.30 deg, wall 2.3 s
+[154/200] in_range     SUCCESS: pushes 2, sim 8.90 s, final 6.4 mm, lift 0.25 mm, tilt 0.71 deg, wall 2.4 s
+[155/200] in_range     SUCCESS: pushes 2, sim 7.31 s, final 2.1 mm, lift 0.07 mm, tilt 0.19 deg, wall 2.2 s
+[156/200] in_range     SUCCESS: pushes 2, sim 8.95 s, final 13.2 mm, lift 0.26 mm, tilt 0.34 deg, wall 2.5 s
+[157/200] in_range     SUCCESS: pushes 1, sim 4.65 s, final 13.4 mm, lift 0.20 mm, tilt 0.39 deg, wall 1.4 s
+[158/200] in_range     SUCCESS: pushes 2, sim 9.39 s, final 8.9 mm, lift 0.16 mm, tilt 0.39 deg, wall 2.4 s
+[159/200] in_range     SUCCESS: pushes 2, sim 8.81 s, final 14.0 mm, lift 0.06 mm, tilt 0.25 deg, wall 2.3 s
+[160/200] in_range     SUCCESS: pushes 2, sim 7.87 s, final 14.4 mm, lift 0.19 mm, tilt 0.35 deg, wall 2.0 s
+[161/200] in_range     SUCCESS: pushes 2, sim 7.89 s, final 7.7 mm, lift 0.04 mm, tilt 0.23 deg, wall 2.2 s
+[162/200] in_range     SUCCESS: pushes 1, sim 4.59 s, final 13.6 mm, lift 0.19 mm, tilt 0.43 deg, wall 1.3 s
+[163/200] in_range     SUCCESS: pushes 2, sim 8.94 s, final 13.8 mm, lift 0.09 mm, tilt 0.27 deg, wall 2.3 s
+[164/200] in_range     SUCCESS: pushes 2, sim 8.81 s, final 10.6 mm, lift 0.06 mm, tilt 0.25 deg, wall 2.3 s
+[165/200] in_range     SUCCESS: pushes 2, sim 8.97 s, final 1.9 mm, lift 0.53 mm, tilt 1.91 deg, wall 2.5 s
+[166/200] in_range     SUCCESS: pushes 2, sim 9.40 s, final 2.4 mm, lift 0.55 mm, tilt 0.84 deg, wall 2.7 s
+[167/200] in_range     SUCCESS: pushes 1, sim 4.69 s, final 17.8 mm, lift 0.08 mm, tilt 0.36 deg, wall 1.3 s
+[168/200] in_range     SUCCESS: pushes 1, sim 4.71 s, final 9.0 mm, lift 0.10 mm, tilt 0.25 deg, wall 1.4 s
+[169/200] in_range     SUCCESS: pushes 2, sim 7.31 s, final 4.9 mm, lift 0.09 mm, tilt 0.25 deg, wall 2.0 s
+[170/200] in_range     SUCCESS: pushes 1, sim 4.71 s, final 16.2 mm, lift 0.18 mm, tilt 0.40 deg, wall 1.1 s
+[171/200] in_range     SUCCESS: pushes 2, sim 7.88 s, final 8.5 mm, lift 0.10 mm, tilt 0.32 deg, wall 2.2 s
+[172/200] in_range     SUCCESS: pushes 2, sim 7.82 s, final 6.4 mm, lift 0.11 mm, tilt 0.25 deg, wall 2.3 s
+[173/200] in_range     SUCCESS: pushes 2, sim 9.35 s, final 8.4 mm, lift 0.17 mm, tilt 0.38 deg, wall 2.5 s
+[174/200] in_range     SUCCESS: pushes 1, sim 4.61 s, final 4.6 mm, lift 0.24 mm, tilt 0.62 deg, wall 1.3 s
+[175/200] in_range     SUCCESS: pushes 2, sim 8.90 s, final 15.3 mm, lift 0.20 mm, tilt 0.38 deg, wall 2.4 s
+[176/200] in_range     SUCCESS: pushes 2, sim 8.83 s, final 2.0 mm, lift 0.07 mm, tilt 0.23 deg, wall 2.1 s
+[177/200] in_range     SUCCESS: pushes 3, sim 11.14 s, final 13.0 mm, lift 1.04 mm, tilt 2.95 deg, wall 3.1 s
+[178/200] in_range     SUCCESS: pushes 2, sim 7.89 s, final 7.2 mm, lift 0.14 mm, tilt 0.39 deg, wall 2.0 s
+[179/200] in_range     SUCCESS: pushes 2, sim 8.80 s, final 7.0 mm, lift 0.13 mm, tilt 0.32 deg, wall 2.4 s
+[180/200] in_range     SUCCESS: pushes 2, sim 9.41 s, final 9.7 mm, lift 0.16 mm, tilt 0.35 deg, wall 2.7 s
+[181/200] in_range     SUCCESS: pushes 2, sim 7.34 s, final 6.4 mm, lift 0.08 mm, tilt 0.25 deg, wall 2.0 s
+[182/200] in_range     SUCCESS: pushes 1, sim 4.62 s, final 18.9 mm, lift 0.06 mm, tilt 0.18 deg, wall 1.3 s
+[183/200] in_range     SUCCESS: pushes 2, sim 9.32 s, final 13.6 mm, lift 0.10 mm, tilt 0.29 deg, wall 2.2 s
+[184/200] in_range     SUCCESS: pushes 2, sim 8.33 s, final 15.6 mm, lift 0.21 mm, tilt 0.43 deg, wall 2.1 s
+[185/200] in_range     SUCCESS: pushes 2, sim 8.84 s, final 4.8 mm, lift 0.20 mm, tilt 0.37 deg, wall 2.3 s
+[186/200] in_range     SUCCESS: pushes 2, sim 9.40 s, final 10.5 mm, lift 0.20 mm, tilt 0.37 deg, wall 2.4 s
+[187/200] in_range     SUCCESS: pushes 2, sim 8.89 s, final 3.9 mm, lift 1.26 mm, tilt 2.99 deg, wall 2.2 s
+[188/200] in_range     SUCCESS: pushes 1, sim 4.69 s, final 9.5 mm, lift 0.24 mm, tilt 0.37 deg, wall 1.3 s
+[189/200] in_range     SUCCESS: pushes 1, sim 4.63 s, final 12.2 mm, lift 0.17 mm, tilt 0.47 deg, wall 1.3 s
+[190/200] in_range     SUCCESS: pushes 2, sim 9.38 s, final 10.0 mm, lift 0.13 mm, tilt 0.31 deg, wall 2.3 s
+[191/200] in_range     SUCCESS: pushes 2, sim 9.40 s, final 11.3 mm, lift 0.08 mm, tilt 0.25 deg, wall 2.2 s
+[192/200] in_range     SUCCESS: pushes 2, sim 9.41 s, final 17.1 mm, lift 0.25 mm, tilt 0.47 deg, wall 2.9 s
+[193/200] in_range     SUCCESS: pushes 1, sim 4.68 s, final 9.4 mm, lift 0.07 mm, tilt 0.34 deg, wall 1.3 s
+[194/200] in_range     SUCCESS: pushes 1, sim 4.60 s, final 18.5 mm, lift 0.12 mm, tilt 0.33 deg, wall 1.3 s
+[195/200] in_range     SUCCESS: pushes 2, sim 9.40 s, final 2.4 mm, lift 0.16 mm, tilt 0.32 deg, wall 2.4 s
+[196/200] in_range     SUCCESS: pushes 2, sim 8.84 s, final 4.7 mm, lift 0.15 mm, tilt 0.32 deg, wall 2.3 s
+[197/200] in_range     SUCCESS: pushes 1, sim 4.77 s, final 19.8 mm, lift 0.43 mm, tilt 0.69 deg, wall 1.4 s
+[198/200] in_range     SUCCESS: pushes 2, sim 9.47 s, final 15.1 mm, lift 0.48 mm, tilt 0.76 deg, wall 2.5 s
+[199/200] in_range     SUCCESS: pushes 1, sim 4.70 s, final 9.0 mm, lift 0.08 mm, tilt 0.29 deg, wall 1.3 s
+[200/200] in_range     SUCCESS: pushes 3, sim 12.09 s, final 11.9 mm, lift 0.11 mm, tilt 0.40 deg, wall 3.1 s
+Phase 3 baseline evaluation: split train, mode baseline (phase3-v1, config 140e4f7d70340cc3, manifest 6eadee60c6ae2a2f, metrics v1, episode schema v1)
+started 2026-10-03T18:00:03+00:00, finished 2026-10-03T18:06:51+00:00, 200/200 episodes
+[all] 200/200 successes = 100.0% over 40 physical conditions; 95% CI cluster bootstrap [100.0, 100.0]%, Wilson (n = conditions) [91.2, 100.0]%
+  final distance mm (all): mean 10.13, median 10.23, p90 17.16, max 19.97; above 15 mm: 40
+  pushes: all mean 1.72 (max 3.00); successes mean 1.72
+  sim time s: all mean 7.59 (max 13.66); successes mean 7.59
+  failures by reason: none
+  violations: limit 0, forbidden-collision episodes 0, forbidden contact events 0, aborted pushes 1, probe pushes 0
+  contact: robot/block contact s mean 1.76, max normal force N max 41.38, max lift mm 1.26, max tilt deg 2.99, table normal ratio [0.00, 14.35]
+  compute: 404.1 s wall, 2.02 s/episode (agent wait 1.30 s)
+  traffic scan: 79210 messages to the agent, hidden-value hits 0
+  CEILING: the fixed baseline succeeded in all 200 episodes; this split cannot show a learner beating it on success rate (BUILD_PLAN.md section 6: report the ceiling).
+[in_range] 200/200 successes = 100.0% over 40 physical conditions; 95% CI cluster bootstrap [100.0, 100.0]%, Wilson (n = conditions) [91.2, 100.0]%
+  final distance mm (all): mean 10.13, median 10.23, p90 17.16, max 19.97; above 15 mm: 40
+  pushes: all mean 1.72 (max 3.00); successes mean 1.72
+  sim time s: all mean 7.59 (max 13.66); successes mean 7.59
+  failures by reason: none
+  violations: limit 0, forbidden-collision episodes 0, forbidden contact events 0, aborted pushes 1, probe pushes 0
+  contact: robot/block contact s mean 1.76, max normal force N max 41.38, max lift mm 1.26, max tilt deg 2.99, table normal ratio [0.00, 14.35]
+  compute: 404.1 s wall, 2.02 s/episode (agent wait 1.30 s)
+  traffic scan: 79210 messages to the agent, hidden-value hits 0
+  CEILING: the fixed baseline succeeded in all 200 episodes; this split cannot show a learner beating it on success rate (BUILD_PLAN.md section 6: report the ceiling).
+report: C:\Users\vivan\OneDrive\Desktop\Projects\Physical AI_Agent\runs\phase3\evaluate\train\20261003T180003Z\summary.txt
+EXIT 0 END_UTC 2026-10-03T18:06:51Z

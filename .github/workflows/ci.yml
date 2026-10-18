@@ -1,0 +1,20 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    # Windows matches the machine the phase gates were run on.
+    runs-on: windows-latest
+    steps:
+      # Check out the exact bytes (LF) the hash manifests were written against.
+      - run: git config --global core.autocrlf false
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - run: uv sync --locked
+      - run: uv run --locked pytest -q

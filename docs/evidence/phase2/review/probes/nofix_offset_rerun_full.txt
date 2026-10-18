@@ -1,0 +1,113 @@
+[review2_nofix] gravity feedforward disabled (mode=offset)
+.........FF..............F.                                              [100%]
+================================== FAILURES ===================================
+______________ test_gravity_offset_holds_the_tcp_where_commanded ______________
+
+cfg = SceneConfig(source=WindowsPath('C:/Users/vivan/OneDrive/Desktop/Projects/Physical AI_Agent/configs/scene.toml'), mjcf_...olerance=0.02, gripper_tolerance=0.002, observation_rest_tolerance=1e-06, visibility_seeds=50, max_arm_occlusion=0.05))
+kin = <physical_ai_lab.kinematics.ArmKinematics object at 0x000002A67BBC54F0>
+push = PushConfig(source=WindowsPath('C:/Users/vivan/OneDrive/Desktop/Projects/Physical AI_Agent/configs/push.toml'), episode...1013, 21014, 21015, 21016, 21017, 21018, 21019, 21020, 21021, 21022, 21023, 21024, 21025, 21026, 21027, 21028, 21029)))
+
+    def test_gravity_offset_holds_the_tcp_where_commanded(cfg: SceneConfig, kin: ArmKinematics,
+                                                          push: PushConfig) -> None:
+        """In a separate simulation, servo targets q + offset come to rest at q; targets q sag."""
+        model = mujoco.MjModel.from_xml_path(str(cfg.mjcf_path))
+        data = mujoco.MjData(model)
+        arm = [model.actuator(name).id for name in cfg.robot.arm_actuators]
+        gripper = model.actuator(cfg.robot.gripper_actuator).id
+        fingers = [model.joint(name).qposadr[0] for name in cfg.robot.finger_joints]
+        hand = model.body(cfg.robot.tcp_body).id
+        robot = model.body_rootid[hand]
+    
+        def resting_tcp(q: np.ndarray, servo_targets: np.ndarray) -> tuple[np.ndarray, float]:
+            mujoco.mj_resetDataKeyframe(model, data, model.key(cfg.robot.home_keyframe).id)
+            data.qpos[kin.arm_qadr] = q
+            data.qpos[fingers] = 0.0
+            data.ctrl[arm] = servo_targets
+            data.ctrl[gripper] = cfg.robot.gripper_ctrl_closed
+            for _ in range(round(1.0 / model.opt.timestep)):
+                mujoco.mj_step(model, data)
+                for contact in data.contact[: data.ncon]:  # the arm hangs free: no contact holds it up
+                    assert robot not in model.body_rootid[model.geom_bodyid[[contact.geom1, contact.geom2]]]
+            rotation = data.xmat[hand].reshape(3, 3)
+            return data.xpos[hand] + rotation @ kin.tcp_offset, float(np.max(np.abs(data.qvel[kin.arm_dadr])))
+    
+        sags = []
+        for x, y, yaw in HOLD_POSES:
+            q = push_height_pose(kin, push, x, y, yaw)
+            commanded, _ = kin.forward(q)
+            held, speed = resting_tcp(q, q + kin.gravity_offset(q))
+>           assert speed < 1e-6  # at rest
+            ^^^^^^^^^^^^^^^^^^^
+E           assert 1.5817657143625794e-06 < 1e-06
+
+tests\test_kinematics.py:142: AssertionError
+_______ test_gravity_offset_matches_the_simulator_and_ignores_the_block _______
+
+cfg = SceneConfig(source=WindowsPath('C:/Users/vivan/OneDrive/Desktop/Projects/Physical AI_Agent/configs/scene.toml'), mjcf_...olerance=0.02, gripper_tolerance=0.002, observation_rest_tolerance=1e-06, visibility_seeds=50, max_arm_occlusion=0.05))
+runner = <physical_ai_lab.scenario.ScenarioRunner object at 0x000002A6124C83B0>
+push = PushConfig(source=WindowsPath('C:/Users/vivan/OneDrive/Desktop/Projects/Physical AI_Agent/configs/push.toml'), episode...1013, 21014, 21015, 21016, 21017, 21018, 21019, 21020, 21021, 21022, 21023, 21024, 21025, 21026, 21027, 21028, 21029)))
+
+    def test_gravity_offset_matches_the_simulator_and_ignores_the_block(cfg: SceneConfig, runner: ScenarioRunner,
+                                                                       push: PushConfig) -> None:
+        kin = ArmKinematics(cfg)  # a private instance: this test edits its model
+        p = cfg.physics
+        for physics in (HiddenPhysics(p.mass_range.low, p.sliding_friction_range.low),
+                        HiddenPhysics(p.mass_range.high, p.sliding_friction_range.high)):
+            obs = runner.reset(DEV_SEED, physics=physics)
+            at_rest = runner.sim_data.qfrc_bias[kin.arm_dadr] / kin.servo_kp  # reset state: zero velocity
+>           np.testing.assert_allclose(kin.gravity_offset(obs.arm_qpos), at_rest, rtol=0, atol=1e-12)
+E           AssertionError: 
+E           Not equal to tolerance rtol=0, atol=1e-12
+E           
+E           Mismatched elements: 4 / 7 (57.1%)
+E           Mismatch at indices:
+E            [1]: 0.0 (ACTUAL), -0.006523545139340257 (DESIRED)
+E            [3]: 0.0 (ACTUAL), 0.00629977440210837 (DESIRED)
+E            [4]: 0.0 (ACTUAL), 0.000334773897324906 (DESIRED)
+E            [5]: 0.0 (ACTUAL), 0.001153194782603748 (DESIRED)
+E           Max absolute difference among violations: 0.00652355
+E           Max relative difference among violations: 1.
+E            ACTUAL: array([0., 0., 0., 0., 0., 0., 0.])
+E            DESIRED: array([ 0.000000e+00, -6.523545e-03,  0.000000e+00,  6.299774e-03,
+E                   3.347739e-04,  1.153195e-03,  5.867279e-22])
+
+tests\test_kinematics.py:158: AssertionError
+___________________ test_executed_tcp_holds_the_push_height ___________________
+
+cfg = SceneConfig(source=WindowsPath('C:/Users/vivan/OneDrive/Desktop/Projects/Physical AI_Agent/configs/scene.toml'), mjcf_...olerance=0.02, gripper_tolerance=0.002, observation_rest_tolerance=1e-06, visibility_seeds=50, max_arm_occlusion=0.05))
+push = PushConfig(source=WindowsPath('C:/Users/vivan/OneDrive/Desktop/Projects/Physical AI_Agent/configs/push.toml'), episode...1013, 21014, 21015, 21016, 21017, 21018, 21019, 21020, 21021, 21022, 21023, 21024, 21025, 21026, 21027, 21028, 21029)))
+skill = <physical_ai_lab.controller.PushSkill object at 0x000002A6125C89E0>
+runner = <physical_ai_lab.scenario.ScenarioRunner object at 0x000002A6124C83B0>
+
+    def test_executed_tcp_holds_the_push_height(cfg: SceneConfig, push: PushConfig, skill: PushSkill,
+                                                runner: ScenarioRunner) -> None:
+        """The measured TCP, not only the command, stays at the push height through the stroke (D25)."""
+        obs = runner.reset(DEV_SEED)
+        plan, _ = FeedbackBaseline(cfg, push, skill).choose(obs)
+        assert plan is not None
+        judge = EpisodeJudge(runner, push)
+        plant = EvaluatedPlant(runner, judge, push)
+        plant.note("push_start", index=1, plan=plan.summary(), candidates=[])
+        skill.execute(plant, obs, plan)
+        plant.note("push_end", index=1, aborted=None)
+        column = TRAJECTORY_COLUMNS.index
+        height = push.controller.push_height
+        # The stroke starts while the TCP is still settling from above after the descent (servo lag,
+        # ~5 mm); the standoff lets it settle before contact, so check the rows that touch the block.
+        contact = [row for row in plant.trajectory if row[column("robot_block_contact")]]
+        assert contact and all(row[column("phase")] in ("stroke", "dwell", "back-off") for row in contact)
+        z = np.array([row[column("tcp_z")] for row in contact])
+>       assert np.all(np.abs(z - height) <= 0.002), (z.min(), z.max())
+E       AssertionError: (np.float64(0.017329), np.float64(0.01873))
+E       assert np.False_
+E        +  where np.False_ = <function all at 0x000002A67E4D31F0>(array([0.00327 , 0.003308, 0.003391, 0.003426, 0.003457, 0.003479,\n       0.003495, 0.003529, 0.003549, 0.003578, 0.00...57 , 0.004579, 0.004598,\n       0.004609, 0.004615, 0.004628, 0.004635, 0.004652, 0.004664,\n       0.004671, 0.00467 ]) <= 0.002)
+E        +    where <function all at 0x000002A67E4D31F0> = np.all
+E        +    and   array([0.00327 , 0.003308, 0.003391, 0.003426, 0.003457, 0.003479,\n       0.003495, 0.003529, 0.003549, 0.003578, 0.00...57 , 0.004579, 0.004598,\n       0.004609, 0.004615, 0.004628, 0.004635, 0.004652, 0.004664,\n       0.004671, 0.00467 ]) = <ufunc 'absolute'>((array([0.01873 , 0.018692, 0.018609, 0.018574, 0.018543, 0.018521,\n       0.018505, 0.018471, 0.018451, 0.018422, 0.01...43 , 0.017421, 0.017402,\n       0.017391, 0.017385, 0.017372, 0.017365, 0.017348, 0.017336,\n       0.017329, 0.01733 ]) - 0.022))
+E        +      where <ufunc 'absolute'> = np.abs
+
+tests\test_push_controller.py:290: AssertionError
+=========================== short test summary info ===========================
+FAILED tests/test_kinematics.py::test_gravity_offset_holds_the_tcp_where_commanded
+FAILED tests/test_kinematics.py::test_gravity_offset_matches_the_simulator_and_ignores_the_block
+FAILED tests/test_push_controller.py::test_executed_tcp_holds_the_push_height
+3 failed, 24 passed in 5.24s

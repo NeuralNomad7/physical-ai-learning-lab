@@ -1,0 +1,19 @@
+# Python / uv (the environment is rebuilt from pyproject.toml + uv.lock; see README.md)
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+
+# Run outputs (BUILD_PLAN.md section 8). Curated evidence is copied to docs/evidence/.
+runs/
+
+# MuJoCo and editor leftovers
+MUJOCO_LOG.TXT
+*.tmp
+
+# Windows / OneDrive
+Thumbs.db
+desktop.ini

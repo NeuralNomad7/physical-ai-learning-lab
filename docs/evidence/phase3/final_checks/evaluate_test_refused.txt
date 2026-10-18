@@ -1,0 +1,5 @@
+START_UTC 2026-10-03T18:26:18Z
+REFUSED: the test split is sealed: it opens only after a candidate is frozen (BUILD_PLAN.md Phase 5); no valid freeze record in C:\Users\vivan\OneDrive\Desktop\Projects\Physical AI_Agent\freezes. This applies to the baseline too.
+
+END_UTC 2026-10-03T18:26:18Z
+EXIT 2

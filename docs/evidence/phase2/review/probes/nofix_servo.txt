@@ -1,0 +1,6 @@
+=== REVIEW2_NOFIX=servo ===
+[review2_nofix] gravity feedforward disabled (mode=servo)
+FAILED tests/test_push_controller.py::test_send_limits_joint_speed - Assertio...
+FAILED tests/test_push_controller.py::test_hold_repeats_the_commanded_targets
+FAILED tests/test_push_controller.py::test_executed_tcp_holds_the_push_height
+3 failed, 24 passed in 5.34s

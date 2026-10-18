@@ -1,0 +1,77 @@
+# Phase 2 push skill, fixed-feedback baseline and episode rules (BUILD_PLAN.md sections 4, 6 and 7).
+#
+# Scene, timing, regions and hidden-physics ranges stay in configs/scene.toml. This file holds the
+# episode budget and success/failure rules, the evaluator's limits, the push skill's parameters,
+# the admissible push actions, the baseline policy's parameters and the seed lists.
+#
+# Seed lists were fixed on 2026-10-03 before any Phase 2 episode was run (docs/DECISIONS.md D19).
+# Tune only on [seeds].development. Never tune on [seeds].gate, never rerun or drop a gate episode.
+schema_version = 1
+
+[episode]
+# BUILD_PLAN.md section 4. Every push counts, including exploratory ones and pushes that miss.
+max_pushes = 8
+max_seconds = 30.0              # simulated time, including approach and retreat
+success_hold_seconds = 0.5      # the block must stay within scene.toml target_tolerance ...
+success_max_planar_speed = 0.02 # ... and below this planar speed (m/s) continuously for this long
+
+[limits]
+# Evaluator-side limits; any violation fails the episode ("limit_violation").
+# Franka Panda datasheet joint speed limits (rad/s), joints 1-7.
+max_joint_speed = [2.175, 2.175, 2.175, 2.175, 2.61, 2.61, 2.61]
+# Measured joint angle may exceed the joint range by at most this much (rad; soft limits).
+joint_range_tolerance = 0.01
+# Lowest allowed TCP height above the tabletop (m). Robot/table contact starts below about 0.009.
+min_tcp_z = 0.010
+# Robot bodies that may touch the block. Contact by any other robot body, any robot/table
+# contact and any robot self-contact is a forbidden collision.
+pusher_bodies = ["panda/left_finger", "panda/right_finger"]
+
+[controller]
+# Heights of the TCP above the tabletop (m).
+push_height = 0.022             # fingertips about 13 mm above the table, mid-height of the 50 mm block
+safe_height = 0.10              # transit height: fingertips about 41 mm above the block top
+# Distance from the TCP to the front face of the closed fingers along the hand x-axis (m).
+pusher_half_thickness = 0.0145
+standoff = 0.012                # gap between pusher and block face before the stroke starts (m)
+retreat_distance = 0.03         # back-off along the push direction before rising (m)
+transit_speed = 0.30            # Cartesian speed limit for approach/retreat moves (m/s)
+descend_speed = 0.15            # Cartesian speed limit for vertical moves near the block (m/s)
+ramp_seconds = 0.15             # acceleration / deceleration time of every move
+dwell_seconds = 0.10            # hold after the stroke before retreating (s)
+# Controller joint-speed limit on commanded joint targets (rad/s), below the datasheet values.
+max_joint_speed = [1.2, 1.2, 1.2, 1.2, 1.6, 1.6, 1.6]
+joint_margin = 0.05             # commanded joints stay this far inside their ranges (rad)
+min_tcp_z = 0.015               # commanded TCP never lower than this (m)
+table_margin = 0.05             # commanded TCP stays this far inside the table outline (m)
+block_margin = 0.03             # predicted block centre stays this far inside the allowed region (m)
+max_off_normal_deg = 20.0       # largest angle between push direction and contacted face normal
+ik_position_tolerance = 0.0005  # m, for planning waypoints
+ik_orientation_tolerance = 0.005  # rad
+settle_speed = 0.005            # block planar speed (m/s) regarded as at rest before a decision
+settle_max_seconds = 1.0        # longest wait for the block to come to rest
+
+[action]
+# Push primitive: approach side (contacted face), direction, speed and duration.
+# Stroke length = speed x duration, measured from the pre-contact standoff.
+speeds = [0.04, 0.08, 0.12]     # m/s
+durations = [0.5, 1.0, 1.5]     # s
+
+[baseline]
+# Fixed feedback policy: no learning, no stored state between episodes.
+stop_tolerance = 0.012          # stop pushing when the block centre is this close to the target (m)
+speed_preference = 0.002        # tie-break cost per m/s (prefer slower pushes when equally good)
+
+[seeds]
+# Gate: 20 nominal-physics episodes, fixed before any result was seen.
+gate = [
+    20000, 20001, 20002, 20003, 20004, 20005, 20006, 20007, 20008, 20009,
+    20010, 20011, 20012, 20013, 20014, 20015, 20016, 20017, 20018, 20019,
+]
+gate_required_successes = 18
+# Development (tuning) seeds; disjoint from the gate seeds.
+development = [
+    21000, 21001, 21002, 21003, 21004, 21005, 21006, 21007, 21008, 21009,
+    21010, 21011, 21012, 21013, 21014, 21015, 21016, 21017, 21018, 21019,
+    21020, 21021, 21022, 21023, 21024, 21025, 21026, 21027, 21028, 21029,
+]
