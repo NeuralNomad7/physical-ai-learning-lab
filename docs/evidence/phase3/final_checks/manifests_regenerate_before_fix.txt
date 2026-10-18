@@ -1,0 +1,20 @@
+START_UTC 2026-10-03T18:17:27Z
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\vivan\OneDrive\Desktop\Projects\Physical AI_Agent\src\physical_ai_lab\__main__.py", line 3, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "C:\Users\vivan\OneDrive\Desktop\Projects\Physical AI_Agent\src\physical_ai_lab\cli.py", line 673, in main
+    return int(args.handler(args))
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vivan\OneDrive\Desktop\Projects\Physical AI_Agent\src\physical_ai_lab\cli.py", line 471, in cmd_manifests
+    record = mf.write_manifests(docs, out_dir, command=command)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vivan\OneDrive\Desktop\Projects\Physical AI_Agent\src\physical_ai_lab\manifest.py", line 334, in write_manifests
+    raise ManifestError(f"{hashes_path} exists: manifests are already written (regenerating needs a revised benchmark)")
+physical_ai_lab.manifest.ManifestError: C:\Users\vivan\OneDrive\Desktop\Projects\Physical AI_Agent\configs\manifests\hashes.json exists: manifests are already written (regenerating needs a revised benchmark)
+Generating benchmark manifests (phase3-v1, config 140e4f7d70340cc3) into C:\Users\vivan\OneDrive\Desktop\Projects\Physical AI_Agent\configs\manifests
+
+END_UTC 2026-10-03T18:17:29Z
+EXIT 1

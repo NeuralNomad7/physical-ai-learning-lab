@@ -1,0 +1,36 @@
+Phase 3 baseline evaluation: split validation, mode baseline (phase3-v1, config 140e4f7d70340cc3, manifest 88dabaa6cb811ea4, metrics v1, episode schema v1)
+started 2026-10-03T18:07:37+00:00, finished 2026-10-03T18:11:04+00:00, 100/100 episodes
+[all] 100/100 successes = 100.0% over 20 physical conditions; 95% CI cluster bootstrap [100.0, 100.0]%, Wilson (n = conditions) [83.9, 100.0]%
+  final distance mm (all): mean 10.57, median 11.01, p90 16.21, max 18.45; above 15 mm: 18
+  pushes: all mean 1.75 (max 3.00); successes mean 1.75
+  sim time s: all mean 7.73 (max 13.12); successes mean 7.73
+  failures by reason: none
+  violations: limit 0, forbidden-collision episodes 0, forbidden contact events 0, aborted pushes 0, probe pushes 0
+  contact: robot/block contact s mean 1.78, max normal force N max 42.71, max lift mm 1.49, max tilt deg 3.40, table normal ratio [0.00, 18.92]
+  compute: 204.5 s wall, 2.04 s/episode (agent wait 1.31 s)
+  traffic scan: 40350 messages to the agent, hidden-value hits 0
+  CEILING: the fixed baseline succeeded in all 100 episodes; this split cannot show a learner beating it on success rate (BUILD_PLAN.md section 6: report the ceiling).
+[in_range] 60/60 successes = 100.0% over 12 physical conditions; 95% CI cluster bootstrap [100.0, 100.0]%, Wilson (n = conditions) [75.8, 100.0]%
+  final distance mm (all): mean 10.81, median 11.55, p90 16.08, max 16.99; above 15 mm: 11
+  pushes: all mean 1.70 (max 3.00); successes mean 1.70
+  sim time s: all mean 7.60 (max 13.10); successes mean 7.60
+  failures by reason: none
+  violations: limit 0, forbidden-collision episodes 0, forbidden contact events 0, aborted pushes 0, probe pushes 0
+  contact: robot/block contact s mean 1.75, max normal force N max 28.02, max lift mm 0.83, max tilt deg 1.28, table normal ratio [0.00, 18.92]
+  compute: 119.7 s wall, 1.99 s/episode (agent wait 1.28 s)
+  traffic scan: 23792 messages to the agent, hidden-value hits 0
+  CEILING: the fixed baseline succeeded in all 60 episodes; this split cannot show a learner beating it on success rate (BUILD_PLAN.md section 6: report the ceiling).
+[out_of_range] 40/40 successes = 100.0% over 8 physical conditions; 95% CI cluster bootstrap [100.0, 100.0]%, Wilson (n = conditions) [67.6, 100.0]%
+  final distance mm (all): mean 10.22, median 10.00, p90 16.42, max 18.45; above 15 mm: 7
+  pushes: all mean 1.82 (max 3.00); successes mean 1.82
+  sim time s: all mean 7.92 (max 13.12); successes mean 7.92
+  failures by reason: none
+  violations: limit 0, forbidden-collision episodes 0, forbidden contact events 0, aborted pushes 0, probe pushes 0
+  contact: robot/block contact s mean 1.84, max normal force N max 42.71, max lift mm 1.49, max tilt deg 3.40, table normal ratio [0.00, 12.35]
+  compute: 84.8 s wall, 2.12 s/episode (agent wait 1.36 s)
+  traffic scan: 16558 messages to the agent, hidden-value hits 0
+  CEILING: the fixed baseline succeeded in all 40 episodes; this split cannot show a learner beating it on success rate (BUILD_PLAN.md section 6: report the ceiling).
+  band friction_high  10/10 successes (2 conditions); final distance mean 12.86 mm
+  band friction_low   10/10 successes (2 conditions); final distance mean 9.23 mm
+  band mass_high      10/10 successes (2 conditions); final distance mean 10.81 mm
+  band mass_low       10/10 successes (2 conditions); final distance mean 7.97 mm

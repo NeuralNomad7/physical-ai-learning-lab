@@ -1,0 +1,7 @@
+original: docs\evidence\phase2 (started 2026-10-03T03:05:38+00:00), rerun: runs\phase2\gate\20261003T152746Z (started 2026-10-03T15:27:46+00:00)
+successes 20/20 vs 20/20
+top-level fields that differ: ['finished_utc', 'started_utc']
+record fields that differ (count over the 20 records):
+    20  /trajectory_file
+    20  /wall_seconds
+trajectory CSVs byte-identical: 20 of 20

@@ -1,0 +1,6 @@
+[SUCCESS] seed 20000: pushes 3 (declared 3, unplanned contacts 0), sim 12.20 s, start distance 173.0 mm, final 6.3 mm
+start: docs\evidence\phase2\review\frames\seed20000_start_composite.png
+push1_mid_stroke: docs\evidence\phase2\review\frames\seed20000_push1_mid_stroke_composite.png
+push2_mid_stroke: docs\evidence\phase2\review\frames\seed20000_push2_mid_stroke_composite.png
+push3_mid_stroke: docs\evidence\phase2\review\frames\seed20000_push3_mid_stroke_composite.png
+end: docs\evidence\phase2\review\frames\seed20000_end_composite.png

@@ -1,0 +1,22 @@
+Phase 3 baseline evaluation: split train, mode baseline (phase3-v1, config 140e4f7d70340cc3, manifest 6eadee60c6ae2a2f, metrics v1, episode schema v1)
+started 2026-10-03T18:00:03+00:00, finished 2026-10-03T18:06:51+00:00, 200/200 episodes
+[all] 200/200 successes = 100.0% over 40 physical conditions; 95% CI cluster bootstrap [100.0, 100.0]%, Wilson (n = conditions) [91.2, 100.0]%
+  final distance mm (all): mean 10.13, median 10.23, p90 17.16, max 19.97; above 15 mm: 40
+  pushes: all mean 1.72 (max 3.00); successes mean 1.72
+  sim time s: all mean 7.59 (max 13.66); successes mean 7.59
+  failures by reason: none
+  violations: limit 0, forbidden-collision episodes 0, forbidden contact events 0, aborted pushes 1, probe pushes 0
+  contact: robot/block contact s mean 1.76, max normal force N max 41.38, max lift mm 1.26, max tilt deg 2.99, table normal ratio [0.00, 14.35]
+  compute: 404.1 s wall, 2.02 s/episode (agent wait 1.30 s)
+  traffic scan: 79210 messages to the agent, hidden-value hits 0
+  CEILING: the fixed baseline succeeded in all 200 episodes; this split cannot show a learner beating it on success rate (BUILD_PLAN.md section 6: report the ceiling).
+[in_range] 200/200 successes = 100.0% over 40 physical conditions; 95% CI cluster bootstrap [100.0, 100.0]%, Wilson (n = conditions) [91.2, 100.0]%
+  final distance mm (all): mean 10.13, median 10.23, p90 17.16, max 19.97; above 15 mm: 40
+  pushes: all mean 1.72 (max 3.00); successes mean 1.72
+  sim time s: all mean 7.59 (max 13.66); successes mean 7.59
+  failures by reason: none
+  violations: limit 0, forbidden-collision episodes 0, forbidden contact events 0, aborted pushes 1, probe pushes 0
+  contact: robot/block contact s mean 1.76, max normal force N max 41.38, max lift mm 1.26, max tilt deg 2.99, table normal ratio [0.00, 14.35]
+  compute: 404.1 s wall, 2.02 s/episode (agent wait 1.30 s)
+  traffic scan: 79210 messages to the agent, hidden-value hits 0
+  CEILING: the fixed baseline succeeded in all 200 episodes; this split cannot show a learner beating it on success rate (BUILD_PLAN.md section 6: report the ceiling).

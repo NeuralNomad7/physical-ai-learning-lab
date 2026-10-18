@@ -1,0 +1,29 @@
+Scene: seed 0, hidden physics nominal; block at (0.505, 0.044) m, target at (0.431, 0.096) m, distance 89.4 mm
+Stepping in real time: 10 x 0.002 s per 0.02 s update.
+Viewer controls (MuJoCo simulate window; click the 3D view first so that it has keyboard focus):
+  Up / Down arrows     select an arm joint, J1 (base) to J7 (flange); an orange disc marks it
+  Left / Right arrows  turn the selected joint by one step (Right = positive angle)
+  - and +              smaller / larger step: 1, 2, 5, 10 or 20 degrees, default 5 (+ is the = key)
+  Enter                open / close the gripper
+  Home                 back to the home pose with the gripper closed (the block stays where it is)
+  Space                pause / resume (keys still set targets while paused)
+  Backspace            reset to the same seed (the scenario is restored)
+  Left drag            rotate camera;  right drag: pan;  scroll: zoom
+  [ and ]              cycle the fixed cameras (overhead, oblique);  Esc: free camera
+  Tab / Shift+Tab      show / hide the left / right UI panels
+  F1                   MuJoCo help overlay
+  Double-click a body, then Ctrl+right drag: push it with a force (manual inspection only)
+  Close the window (or press Ctrl+C in this terminal) to exit.
+Each key press is one step; holding a key does not repeat. The keys and the Control sliders
+(right UI panel) only set the servo targets: the arm moves through its motors and contacts,
+and the block moves only when the robot pushes it. Joint sliders and other direct edits
+restore the seed. Physics options edited in the left UI panel are put back to the scene's
+values before the next step (the panel can show the edited number until it is redrawn).
+The green arrow marks the goal (viewer only). MuJoCo's own text (F1 help, UI panels) can
+show garbled letters with some OpenGL drivers (seen with Mesa D3D12 on Windows on Arm);
+the status panels on the right are drawn as images and are not affected.
+Captured the viewer window (2560x1440 px) at 3.0 s; status panels pixel-exact.
+Viewer closed (duration of 8 s elapsed) after 8.0 s: 375 control updates (7.50 s simulated, 0.94x real time while running), 0 operator command(s), 0 scenario restore(s), 0 physics-option revert(s), 0 instability event(s), 1 stall resync(s); window closed in 0.13 s.
+Final state: t = 7.50 s since the last reset, block-target distance 89.4 mm, state digest 5121475b4b614a3f
+Headless replay of 375 updates from seed 0: identical state (digest 5121475b4b614a3f); the viewer did not change the physics.
+Screenshot: runs\viewer\viewer_seed0.png (status panels pixel-exact)

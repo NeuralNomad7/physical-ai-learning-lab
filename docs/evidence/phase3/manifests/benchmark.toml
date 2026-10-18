@@ -1,0 +1,149 @@
+# Phase 3 benchmark definition (BUILD_PLAN.md sections 4, 6 and 7): episode budgets and success
+# conditions as used by every evaluation, cohorts, split sizes, manifest generation, sealing,
+# metrics, statistics, replay tolerances and the effective-contact / feasibility checks.
+#
+# Versioning: `schema_version` is the layout of this file; `benchmark_version` names the benchmark.
+# Any change to cohorts, split sizes, generator seed, budgets, success rule or metric definitions
+# after manifests exist is a revised benchmark: bump benchmark_version, regenerate every manifest
+# with a fresh generator seed and draw a fresh, untouched test split (section 6).
+schema_version = 1
+benchmark_version = "phase3-v1"
+
+[rules]
+# Must equal configs/push.toml [episode] (schema_version 1) and scene.toml workspace.target_tolerance;
+# the loader refuses to start if they differ. The evaluator uses push.toml; this copy versions them.
+push_config_schema_version = 1
+max_pushes = 8
+max_seconds = 30.0
+success_tolerance = 0.02
+success_hold_seconds = 0.5
+success_max_planar_speed = 0.02
+# Every robot/block contact outside a declared push counts as a push; probe (diagnostic) pushes count too.
+count_unplanned_contacts_as_pushes = true
+count_probe_pushes = true
+
+[agent]
+# Learner-facing boundary (learner_interface.py): the agent runs in a separate process and exchanges
+# JSON lines with the evaluator. Longest wait for one agent reply before the episode fails.
+protocol_version = 1
+reply_timeout_seconds = 120.0
+
+[cohorts.in_range]
+# Must equal scene.toml [physics] mass_range and sliding_friction_range (development ranges).
+mass = [0.10, 0.40]
+sliding_friction = [0.20, 0.80]
+
+[cohorts.out_of_range]
+# Harder cohort: at least one parameter outside the in-range box, inside the outer box below.
+# status "candidate" = proposed, manifests refuse to generate; "fixed" = chosen after the
+# feasibility checks ([feasibility]) and before any benchmark episode ran (fixed_utc).
+# Fixed from `contact-check` run started 2026-10-03T17:29:22Z (evidence: docs/evidence/phase3/contact_checks/):
+# readback 17/17, kick 17/17, hold 9/9, pushes 9/9 -> the candidate box was accepted unchanged.
+status = "fixed"
+fixed_utc = "2026-10-03T17:31:59Z"
+mass = [0.05, 0.60]
+sliding_friction = [0.10, 1.00]
+# Each out-of-range condition takes one parameter from one outer band (bands are cycled so all four
+# sides are covered) and the other parameter uniformly from the whole outer box.
+mass_low_band = [0.05, 0.08]
+mass_high_band = [0.42, 0.60]
+friction_low_band = [0.10, 0.16]
+friction_high_band = [0.84, 1.00]
+
+[splits.train]
+in_range_conditions = 40
+out_of_range_conditions = 0
+layouts_per_condition = 5
+sealed = false
+
+[splits.validation]
+in_range_conditions = 12
+out_of_range_conditions = 8
+layouts_per_condition = 5
+sealed = false
+
+[splits.test]
+# Final test: 100 paired scenarios. Opened only after a candidate is frozen (Phase 5).
+in_range_conditions = 14
+out_of_range_conditions = 6
+layouts_per_condition = 5
+sealed = true
+
+[splits.retention]
+# Held-out initial states under previously learned (training) physical conditions.
+from_split = "train"
+in_range_conditions = 10
+out_of_range_conditions = 0
+layouts_per_condition = 5
+sealed = true
+
+[manifests]
+manifest_schema_version = 1
+generator_seed = 3141593
+# Reset seeds recorded per scenario (the layout and physics are explicit, so the seed only labels
+# the reset). Range chosen disjoint from every seed used before: 0-199, 20000-20019, 21000-21029,
+# and the Phase 3 feasibility seeds below.
+reset_seed_start = 31000
+# Physical conditions of different splits (and within one split) are at least this far apart in
+# parameter space normalised by the in-range widths (0.30 kg, 0.60).
+min_condition_separation = 0.02
+# Two initial states count as the same unless the block centres or the target centres differ by at
+# least this much (m) or the block yaw (modulo the cube's 90-degree symmetry) by at least this much.
+min_layout_separation = 0.005
+min_layout_yaw_separation_deg = 5.0
+# Block-to-target directions are stratified over this many equal sectors.
+goal_direction_sectors = 8
+
+[statistics]
+confidence = 0.95
+bootstrap_resamples = 10000
+bootstrap_seed = 2718281
+# Clusters for uncertainty: episodes under the same physical condition (condition_id).
+cluster_key = "condition_id"
+
+[metrics]
+# Metric definitions used by every report (benchmark.py implements exactly these names).
+version = 1
+success_rate = "successes / episodes; CI: cluster bootstrap over physical conditions (percentile) and a conservative Wilson score interval with n = number of conditions"
+final_distance_mm = "block-centre to target-centre distance at the end of every episode (all episodes)"
+pushes_used = "declared pushes + unplanned robot/block contacts; over all episodes and over successes"
+sim_seconds = "simulated time at the episode outcome; over all episodes and over successes"
+failures_by_reason = "count of each failure reason (push.toml / evaluation.FAILURE_REASONS)"
+limit_violations = "episodes ending with limit_violation; forbidden contact events; aborted pushes"
+probe_actions = "pushes the agent declared as probes (diagnostic pushes), counted against the budget"
+contact = "robot/block contact time and normal force, block/table normal force ratio, block lift and tilt"
+compute_seconds = "wall time per episode: total, simulation + evaluator, waiting for the agent"
+
+[replay]
+# Same machine, same MuJoCo build: rerunning a scenario and replaying its logged commands must give a
+# bitwise-identical integration state after every control update (0.0 = exact). Other machines,
+# CPU architectures and MuJoCo builds are NOT covered.
+state_abs_tolerance = 0.0
+scenarios_per_split = 2
+
+[feasibility]
+# Effective-contact and scene-feasibility checks that fix the out-of-range cohort. Criteria declared
+# before the checks ran. Baseline success is reported, never used to choose the ranges.
+candidate_mass = [0.05, 0.60]
+candidate_sliding_friction = [0.10, 1.00]
+mass_only = [0.05, 0.10, 0.25, 0.40, 0.60]          # at nominal friction 0.5
+friction_only = [0.10, 0.20, 0.50, 0.80, 1.00]      # at nominal mass 0.25
+kick_seed = 30000
+kick_directions_deg = [0.0, 120.0]
+hold_seconds = 30.0
+hold_seed = 30000
+push_seeds = [30000, 30001, 30002]
+inertia_rel_tolerance = 1.0e-12
+max_block_lift = 0.005       # m, block centre above its placement height during pushing
+max_block_tilt_deg = 10.0    # largest tilt of the block from face-down during pushing
+# Acceptance (declared before the checks ran): a tested value is feasible when, at every condition that
+# uses it, (1) the applied mass, inertia and pair friction read back exactly (inertia within
+# inertia_rel_tolerance), (2) every block/table contact uses the pair friction, (3) the resting normal
+# force is within scene.toml checks.normal_force_rel_tolerance of m*g, (4) the kick-test effective
+# friction is within scene.toml checks.kick_mu_rel_tolerance of the applied value in every direction,
+# (5) the 30 s hold is stable, and (6) baseline pushes on push_seeds stay stable (no "unstable"
+# outcome) with block lift <= max_block_lift and tilt <= max_block_tilt_deg. Baseline success or
+# failure is reported but is not a criterion. If an extreme fails, that side of the out-of-range box
+# moves inward to the most extreme tested value on that axis that passes; the bands are then
+# re-declared inside the reduced box. Reach does not depend on mass or friction (the layout regions
+# are unchanged), so the Phase 1 reach check covers both cohorts.

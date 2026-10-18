@@ -1,0 +1,335 @@
+{
+  "kind": "phase3_replay",
+  "split": "train",
+  "mode": "baseline",
+  "run": "runs\\phase3\\evaluate\\train\\20261003T180003Z",
+  "manifest_sha256": "6eadee60c6ae2a2fa51696ceeac7faafe3441ebbf1e1f956b635b63777f62e06",
+  "tolerance": 0.0,
+  "comparison": "bitwise state digest (SHA-256 of the full MuJoCo integration state, first 8 bytes) after every control update",
+  "episodes": [
+    {
+      "episode_index": 1,
+      "scenario_id": "s6e19d07a3fa5",
+      "outcome": "success",
+      "logged_final_state_digest": "a8df3139f4a8f935",
+      "command_replay": {
+        "control_updates": 449,
+        "initial_state_digest": "2ae4c09fc14842fc",
+        "final_state_digest": "a8df3139f4a8f935",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.2499333999985538,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 2.244065300001239,
+        "control_updates": 449,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "a8df3139f4a8f935",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 2,
+      "scenario_id": "sbcff67f40af1",
+      "outcome": "success",
+      "logged_final_state_digest": "af4614d724e7bc30",
+      "command_replay": {
+        "control_updates": 412,
+        "initial_state_digest": "01c91382a3a68d76",
+        "final_state_digest": "af4614d724e7bc30",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.21266830000240589,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 2.266919300000154,
+        "control_updates": 412,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "af4614d724e7bc30",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 3,
+      "scenario_id": "s0847a81aa73b",
+      "outcome": "success",
+      "logged_final_state_digest": "cea6f229b89cea66",
+      "command_replay": {
+        "control_updates": 231,
+        "initial_state_digest": "fe673fbe8823a887",
+        "final_state_digest": "cea6f229b89cea66",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.1564992000021448,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 1.3599206999970193,
+        "control_updates": 231,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "cea6f229b89cea66",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 4,
+      "scenario_id": "s6c0354bb830e",
+      "outcome": "success",
+      "logged_final_state_digest": "68c9f8a9266ceda1",
+      "command_replay": {
+        "control_updates": 399,
+        "initial_state_digest": "9da1adbaa7b28a82",
+        "final_state_digest": "68c9f8a9266ceda1",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.21409270000003744,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 2.1220401999999012,
+        "control_updates": 399,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "68c9f8a9266ceda1",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 5,
+      "scenario_id": "sc4f4dc4678fc",
+      "outcome": "success",
+      "logged_final_state_digest": "56a67f60b6202ce7",
+      "command_replay": {
+        "control_updates": 233,
+        "initial_state_digest": "88b8303f9e38c45c",
+        "final_state_digest": "56a67f60b6202ce7",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.13003109999772278,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 1.2271313999990525,
+        "control_updates": 233,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "56a67f60b6202ce7",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 6,
+      "scenario_id": "s740c59383eab",
+      "outcome": "success",
+      "logged_final_state_digest": "5b9a9d6e79664a80",
+      "command_replay": {
+        "control_updates": 466,
+        "initial_state_digest": "998de6eff7baef8f",
+        "final_state_digest": "5b9a9d6e79664a80",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.25324900000123307,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 2.142251599998417,
+        "control_updates": 466,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "5b9a9d6e79664a80",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 7,
+      "scenario_id": "s0e23e7987930",
+      "outcome": "success",
+      "logged_final_state_digest": "da0ed6139d334e9d",
+      "command_replay": {
+        "control_updates": 473,
+        "initial_state_digest": "7a73a2561e7a8a4d",
+        "final_state_digest": "da0ed6139d334e9d",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.2505436000028567,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 2.330981900002371,
+        "control_updates": 473,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "da0ed6139d334e9d",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 8,
+      "scenario_id": "sc749ffe7d65e",
+      "outcome": "success",
+      "logged_final_state_digest": "0d638566e1f6c95a",
+      "command_replay": {
+        "control_updates": 444,
+        "initial_state_digest": "01bc3414280078a3",
+        "final_state_digest": "0d638566e1f6c95a",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.23481750000064494,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 2.2249914000021818,
+        "control_updates": 444,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "0d638566e1f6c95a",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 9,
+      "scenario_id": "sab7b1e85d6b2",
+      "outcome": "success",
+      "logged_final_state_digest": "c07e976b988ef263",
+      "command_replay": {
+        "control_updates": 443,
+        "initial_state_digest": "55a7f38b3cd65e98",
+        "final_state_digest": "c07e976b988ef263",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.23155670000051032,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 2.08590710000135,
+        "control_updates": 443,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "c07e976b988ef263",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 10,
+      "scenario_id": "sbd4ab501b972",
+      "outcome": "success",
+      "logged_final_state_digest": "f1c7788fd0f55d0c",
+      "command_replay": {
+        "control_updates": 231,
+        "initial_state_digest": "482d41dd849a4fbe",
+        "final_state_digest": "f1c7788fd0f55d0c",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.13111779999962891,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 1.3199413000002096,
+        "control_updates": 231,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "f1c7788fd0f55d0c",
+        "matches": true
+      }
+    }
+  ],
+  "all_match": true,
+  "started_utc": "2026-10-03T18:11:12+00:00",
+  "finished_utc": "2026-10-03T18:11:35+00:00",
+  "command": "python -m physical_ai_lab replay --run runs\\phase3\\evaluate\\train\\20261003T180003Z --count 10"
+}

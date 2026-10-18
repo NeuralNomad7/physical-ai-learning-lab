@@ -1,0 +1,2401 @@
+{
+  "kind": "phase3_contact_checks",
+  "started_utc": "2026-10-03T17:58:49+00:00",
+  "wall_seconds": 65.24900419999904,
+  "benchmark": {
+    "benchmark_version": "phase3-v1",
+    "schema_version": 1,
+    "metrics_version": 1,
+    "config_sha256": "140e4f7d70340cc3f90e547385426f9a30ec68f8003b2ac54ba7fd5e0fcf2f25",
+    "out_of_range_status": "fixed",
+    "out_of_range_fixed_utc": "2026-10-03T17:31:59Z"
+  },
+  "criteria": {
+    "inertia_rel_tolerance": 1e-12,
+    "normal_force_rel_tolerance": 0.01,
+    "kick_mu_rel_tolerance": 0.05,
+    "kick_speed": 0.5,
+    "hold_seconds": 30.0,
+    "hold_max_final_qvel": 1e-06,
+    "hold_max_block_drift": 1e-06,
+    "max_block_lift": 0.005,
+    "max_block_tilt_deg": 10.0,
+    "push_seeds": [
+      30000,
+      30001,
+      30002
+    ],
+    "kick_seed": 30000,
+    "hold_seed": 30000
+  },
+  "groups": {
+    "mass_only": [
+      {
+        "block_mass": 0.05,
+        "sliding_friction": 0.5
+      },
+      {
+        "block_mass": 0.1,
+        "sliding_friction": 0.5
+      },
+      {
+        "block_mass": 0.25,
+        "sliding_friction": 0.5
+      },
+      {
+        "block_mass": 0.4,
+        "sliding_friction": 0.5
+      },
+      {
+        "block_mass": 0.6,
+        "sliding_friction": 0.5
+      }
+    ],
+    "friction_only": [
+      {
+        "block_mass": 0.25,
+        "sliding_friction": 0.1
+      },
+      {
+        "block_mass": 0.25,
+        "sliding_friction": 0.2
+      },
+      {
+        "block_mass": 0.25,
+        "sliding_friction": 0.5
+      },
+      {
+        "block_mass": 0.25,
+        "sliding_friction": 0.8
+      },
+      {
+        "block_mass": 0.25,
+        "sliding_friction": 1.0
+      }
+    ],
+    "joint_in_range_corners": [
+      {
+        "block_mass": 0.1,
+        "sliding_friction": 0.2
+      },
+      {
+        "block_mass": 0.1,
+        "sliding_friction": 0.8
+      },
+      {
+        "block_mass": 0.4,
+        "sliding_friction": 0.2
+      },
+      {
+        "block_mass": 0.4,
+        "sliding_friction": 0.8
+      }
+    ],
+    "joint_candidate_corners": [
+      {
+        "block_mass": 0.05,
+        "sliding_friction": 0.1
+      },
+      {
+        "block_mass": 0.05,
+        "sliding_friction": 1.0
+      },
+      {
+        "block_mass": 0.6,
+        "sliding_friction": 0.1
+      },
+      {
+        "block_mass": 0.6,
+        "sliding_friction": 1.0
+      }
+    ]
+  },
+  "results": {
+    "readback": [
+      {
+        "physics": {
+          "block_mass": 0.05,
+          "sliding_friction": 0.5
+        },
+        "applied": {
+          "block_mass": 0.05,
+          "sliding_friction": 0.5
+        },
+        "inertia": [
+          2.083333333333334e-05,
+          2.083333333333334e-05,
+          2.083333333333334e-05
+        ],
+        "expected_inertia": 2.083333333333334e-05,
+        "inertia_rel_error": 0.0,
+        "block_geom_friction_unused": 1.0,
+        "contact_count": 4,
+        "contact_frictions": [
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "normal_force": 0.4904999994315659,
+        "expected_normal_force": 0.49050000000000005,
+        "normal_force_rel_error": -1.1588871215024033e-09,
+        "rest_height_m": -0.00010775542627653248,
+        "rest_tilt_deg": 8.537736462515939e-07,
+        "checks": {
+          "mass_readback": true,
+          "friction_readback": true,
+          "inertia": true,
+          "contacts_use_pair_friction": true,
+          "no_other_block_contacts": true,
+          "normal_force": true
+        },
+        "ok": true
+      },
+      {
+        "physics": {
+          "block_mass": 0.1,
+          "sliding_friction": 0.5
+        },
+        "applied": {
+          "block_mass": 0.1,
+          "sliding_friction": 0.5
+        },
+        "inertia": [
+          4.166666666666668e-05,
+          4.166666666666668e-05,
+          4.166666666666668e-05
+        ],
+        "expected_inertia": 4.166666666666668e-05,
+        "inertia_rel_error": 0.0,
+        "block_geom_friction_unused": 1.0,
+        "contact_count": 4,
+        "contact_frictions": [
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "normal_force": 0.9809999988631316,
+        "expected_normal_force": 0.9810000000000001,
+        "normal_force_rel_error": -1.1588873478475663e-09,
+        "rest_height_m": -0.00010775542627653248,
+        "rest_tilt_deg": 8.537736462515939e-07,
+        "checks": {
+          "mass_readback": true,
+          "friction_readback": true,
+          "inertia": true,
+          "contacts_use_pair_friction": true,
+          "no_other_block_contacts": true,
+          "normal_force": true
+        },
+        "ok": true
+      },
+      {
+        "physics": {
+          "block_mass": 0.25,
+          "sliding_friction": 0.5
+        },
+        "applied": {
+          "block_mass": 0.25,
+          "sliding_friction": 0.5
+        },
+        "inertia": [
+          0.00010416666666666669,
+          0.00010416666666666669,
+          0.00010416666666666669
+        ],
+        "expected_inertia": 0.00010416666666666669,
+        "inertia_rel_error": 0.0,
+        "block_geom_friction_unused": 1.0,
+        "contact_count": 4,
+        "contact_frictions": [
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "normal_force": 2.45249999715783,
+        "expected_normal_force": 2.4525,
+        "normal_force_rel_error": -1.158886872522724e-09,
+        "rest_height_m": -0.00010775542627653248,
+        "rest_tilt_deg": 8.537736462515939e-07,
+        "checks": {
+          "mass_readback": true,
+          "friction_readback": true,
+          "inertia": true,
+          "contacts_use_pair_friction": true,
+          "no_other_block_contacts": true,
+          "normal_force": true
+        },
+        "ok": true
+      },
+      {
+        "physics": {
+          "block_mass": 0.4,
+          "sliding_friction": 0.5
+        },
+        "applied": {
+          "block_mass": 0.4,
+          "sliding_friction": 0.5
+        },
+        "inertia": [
+          0.00016666666666666672,
+          0.00016666666666666672,
+          0.00016666666666666672
+        ],
+        "expected_inertia": 0.00016666666666666672,
+        "inertia_rel_error": 0.0,
+        "block_geom_friction_unused": 1.0,
+        "contact_count": 4,
+        "contact_frictions": [
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "normal_force": 3.9239999954525264,
+        "expected_normal_force": 3.9240000000000004,
+        "normal_force_rel_error": -1.1588873478475663e-09,
+        "rest_height_m": -0.00010775542627653248,
+        "rest_tilt_deg": 8.537736462515939e-07,
+        "checks": {
+          "mass_readback": true,
+          "friction_readback": true,
+          "inertia": true,
+          "contacts_use_pair_friction": true,
+          "no_other_block_contacts": true,
+          "normal_force": true
+        },
+        "ok": true
+      },
+      {
+        "physics": {
+          "block_mass": 0.6,
+          "sliding_friction": 0.5
+        },
+        "applied": {
+          "block_mass": 0.6,
+          "sliding_friction": 0.5
+        },
+        "inertia": [
+          0.00025,
+          0.00025,
+          0.00025
+        ],
+        "expected_inertia": 0.00025000000000000006,
+        "inertia_rel_error": 2.1684043449710084e-16,
+        "block_geom_friction_unused": 1.0,
+        "contact_count": 4,
+        "contact_frictions": [
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "normal_force": 5.88599999317879,
+        "expected_normal_force": 5.886,
+        "normal_force_rel_error": -1.158887234674985e-09,
+        "rest_height_m": -0.00010775542627653248,
+        "rest_tilt_deg": 8.537736462515939e-07,
+        "checks": {
+          "mass_readback": true,
+          "friction_readback": true,
+          "inertia": true,
+          "contacts_use_pair_friction": true,
+          "no_other_block_contacts": true,
+          "normal_force": true
+        },
+        "ok": true
+      },
+      {
+        "physics": {
+          "block_mass": 0.25,
+          "sliding_friction": 0.1
+        },
+        "applied": {
+          "block_mass": 0.25,
+          "sliding_friction": 0.1
+        },
+        "inertia": [
+          0.00010416666666666669,
+          0.00010416666666666669,
+          0.00010416666666666669
+        ],
+        "expected_inertia": 0.00010416666666666669,
+        "inertia_rel_error": 0.0,
+        "block_geom_friction_unused": 1.0,
+        "contact_count": 4,
+        "contact_frictions": [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        "normal_force": 2.45249999715783,
+        "expected_normal_force": 2.4525,
+        "normal_force_rel_error": -1.158886872522724e-09,
+        "rest_height_m": -0.00010775542627653248,
+        "rest_tilt_deg": 8.537736462515939e-07,
+        "checks": {
+          "mass_readback": true,
+          "friction_readback": true,
+          "inertia": true,
+          "contacts_use_pair_friction": true,
+          "no_other_block_contacts": true,
+          "normal_force": true
+        },
+        "ok": true
+      },
+      {
+        "physics": {
+          "block_mass": 0.25,
+          "sliding_friction": 0.2
+        },
+        "applied": {
+          "block_mass": 0.25,
+          "sliding_friction": 0.2
+        },
+        "inertia": [
+          0.00010416666666666669,
+          0.00010416666666666669,
+          0.00010416666666666669
+        ],
+        "expected_inertia": 0.00010416666666666669,
+        "inertia_rel_error": 0.0,
+        "block_geom_friction_unused": 1.0,
+        "contact_count": 4,
+        "contact_frictions": [
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        "normal_force": 2.45249999715783,
+        "expected_normal_force": 2.4525,
+        "normal_force_rel_error": -1.158886872522724e-09,
+        "rest_height_m": -0.00010775542627653248,
+        "rest_tilt_deg": 8.537736462515939e-07,
+        "checks": {
+          "mass_readback": true,
+          "friction_readback": true,
+          "inertia": true,
+          "contacts_use_pair_friction": true,
+          "no_other_block_contacts": true,
+          "normal_force": true
+        },
+        "ok": true
+      },
+      {
+        "physics": {
+          "block_mass": 0.25,
+          "sliding_friction": 0.8
+        },
+        "applied": {
+          "block_mass": 0.25,
+          "sliding_friction": 0.8
+        },
+        "inertia": [
+          0.00010416666666666669,
+          0.00010416666666666669,
+          0.00010416666666666669
+        ],
+        "expected_inertia": 0.00010416666666666669,
+        "inertia_rel_error": 0.0,
+        "block_geom_friction_unused": 1.0,
+        "contact_count": 4,
+        "contact_frictions": [
+          0.8,
+          0.8,
+          0.8,
+          0.8
+        ],
+        "normal_force": 2.45249999715783,
+        "expected_normal_force": 2.4525,
+        "normal_force_rel_error": -1.158886872522724e-09,
+        "rest_height_m": -0.00010775542627653248,
+        "rest_tilt_deg": 8.537736462515939e-07,
+        "checks": {
+          "mass_readback": true,
+          "friction_readback": true,
+          "inertia": true,
+          "contacts_use_pair_friction": true,
+          "no_other_block_contacts": true,
+          "normal_force": true
+        },
+        "ok": true
+      },
+      {
+        "physics": {
+          "block_mass": 0.25,
+          "sliding_friction": 1.0
+        },
+        "applied": {
+          "block_mass": 0.25,
+          "sliding_friction": 1.0
+        },
+        "inertia": [
+          0.00010416666666666669,
+          0.00010416666666666669,
+          0.00010416666666666669
+        ],
+        "expected_inertia": 0.00010416666666666669,
+        "inertia_rel_error": 0.0,
+        "block_geom_friction_unused": 1.0,
+        "contact_count": 4,
+        "contact_frictions": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "normal_force": 2.45249999715783,
+        "expected_normal_force": 2.4525,
+        "normal_force_rel_error": -1.158886872522724e-09,
+        "rest_height_m": -0.00010775542627653248,
+        "rest_tilt_deg": 8.537736462515939e-07,
+        "checks": {
+          "mass_readback": true,
+          "friction_readback": true,
+          "inertia": true,
+          "contacts_use_pair_friction": true,
+          "no_other_block_contacts": true,
+          "normal_force": true
+        },
+        "ok": true
+      },
+      {
+        "physics": {
+          "block_mass": 0.1,
+          "sliding_friction": 0.2
+        },
+        "applied": {
+          "block_mass": 0.1,
+          "sliding_friction": 0.2
+        },
+        "inertia": [
+          4.166666666666668e-05,
+          4.166666666666668e-05,
+          4.166666666666668e-05
+        ],
+        "expected_inertia": 4.166666666666668e-05,
+        "inertia_rel_error": 0.0,
+        "block_geom_friction_unused": 1.0,
+        "contact_count": 4,
+        "contact_frictions": [
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        "normal_force": 0.9809999988631316,
+        "expected_normal_force": 0.9810000000000001,
+        "normal_force_rel_error": -1.1588873478475663e-09,
+        "rest_height_m": -0.00010775542627653248,
+        "rest_tilt_deg": 8.537736462515939e-07,
+        "checks": {
+          "mass_readback": true,
+          "friction_readback": true,
+          "inertia": true,
+          "contacts_use_pair_friction": true,
+          "no_other_block_contacts": true,
+          "normal_force": true
+        },
+        "ok": true
+      },
+      {
+        "physics": {
+          "block_mass": 0.1,
+          "sliding_friction": 0.8
+        },
+        "applied": {
+          "block_mass": 0.1,
+          "sliding_friction": 0.8
+        },
+        "inertia": [
+          4.166666666666668e-05,
+          4.166666666666668e-05,
+          4.166666666666668e-05
+        ],
+        "expected_inertia": 4.166666666666668e-05,
+        "inertia_rel_error": 0.0,
+        "block_geom_friction_unused": 1.0,
+        "contact_count": 4,
+        "contact_frictions": [
+          0.8,
+          0.8,
+          0.8,
+          0.8
+        ],
+        "normal_force": 0.9809999988631316,
+        "expected_normal_force": 0.9810000000000001,
+        "normal_force_rel_error": -1.1588873478475663e-09,
+        "rest_height_m": -0.00010775542627653248,
+        "rest_tilt_deg": 8.537736462515939e-07,
+        "checks": {
+          "mass_readback": true,
+          "friction_readback": true,
+          "inertia": true,
+          "contacts_use_pair_friction": true,
+          "no_other_block_contacts": true,
+          "normal_force": true
+        },
+        "ok": true
+      },
+      {
+        "physics": {
+          "block_mass": 0.4,
+          "sliding_friction": 0.2
+        },
+        "applied": {
+          "block_mass": 0.4,
+          "sliding_friction": 0.2
+        },
+        "inertia": [
+          0.00016666666666666672,
+          0.00016666666666666672,
+          0.00016666666666666672
+        ],
+        "expected_inertia": 0.00016666666666666672,
+        "inertia_rel_error": 0.0,
+        "block_geom_friction_unused": 1.0,
+        "contact_count": 4,
+        "contact_frictions": [
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        "normal_force": 3.9239999954525264,
+        "expected_normal_force": 3.9240000000000004,
+        "normal_force_rel_error": -1.1588873478475663e-09,
+        "rest_height_m": -0.00010775542627653248,
+        "rest_tilt_deg": 8.537736462515939e-07,
+        "checks": {
+          "mass_readback": true,
+          "friction_readback": true,
+          "inertia": true,
+          "contacts_use_pair_friction": true,
+          "no_other_block_contacts": true,
+          "normal_force": true
+        },
+        "ok": true
+      },
+      {
+        "physics": {
+          "block_mass": 0.4,
+          "sliding_friction": 0.8
+        },
+        "applied": {
+          "block_mass": 0.4,
+          "sliding_friction": 0.8
+        },
+        "inertia": [
+          0.00016666666666666672,
+          0.00016666666666666672,
+          0.00016666666666666672
+        ],
+        "expected_inertia": 0.00016666666666666672,
+        "inertia_rel_error": 0.0,
+        "block_geom_friction_unused": 1.0,
+        "contact_count": 4,
+        "contact_frictions": [
+          0.8,
+          0.8,
+          0.8,
+          0.8
+        ],
+        "normal_force": 3.9239999954525264,
+        "expected_normal_force": 3.9240000000000004,
+        "normal_force_rel_error": -1.1588873478475663e-09,
+        "rest_height_m": -0.00010775542627653248,
+        "rest_tilt_deg": 8.537736462515939e-07,
+        "checks": {
+          "mass_readback": true,
+          "friction_readback": true,
+          "inertia": true,
+          "contacts_use_pair_friction": true,
+          "no_other_block_contacts": true,
+          "normal_force": true
+        },
+        "ok": true
+      },
+      {
+        "physics": {
+          "block_mass": 0.05,
+          "sliding_friction": 0.1
+        },
+        "applied": {
+          "block_mass": 0.05,
+          "sliding_friction": 0.1
+        },
+        "inertia": [
+          2.083333333333334e-05,
+          2.083333333333334e-05,
+          2.083333333333334e-05
+        ],
+        "expected_inertia": 2.083333333333334e-05,
+        "inertia_rel_error": 0.0,
+        "block_geom_friction_unused": 1.0,
+        "contact_count": 4,
+        "contact_frictions": [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        "normal_force": 0.4904999994315659,
+        "expected_normal_force": 0.49050000000000005,
+        "normal_force_rel_error": -1.1588871215024033e-09,
+        "rest_height_m": -0.00010775542627653248,
+        "rest_tilt_deg": 8.537736462515939e-07,
+        "checks": {
+          "mass_readback": true,
+          "friction_readback": true,
+          "inertia": true,
+          "contacts_use_pair_friction": true,
+          "no_other_block_contacts": true,
+          "normal_force": true
+        },
+        "ok": true
+      },
+      {
+        "physics": {
+          "block_mass": 0.05,
+          "sliding_friction": 1.0
+        },
+        "applied": {
+          "block_mass": 0.05,
+          "sliding_friction": 1.0
+        },
+        "inertia": [
+          2.083333333333334e-05,
+          2.083333333333334e-05,
+          2.083333333333334e-05
+        ],
+        "expected_inertia": 2.083333333333334e-05,
+        "inertia_rel_error": 0.0,
+        "block_geom_friction_unused": 1.0,
+        "contact_count": 4,
+        "contact_frictions": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "normal_force": 0.4904999994315659,
+        "expected_normal_force": 0.49050000000000005,
+        "normal_force_rel_error": -1.1588871215024033e-09,
+        "rest_height_m": -0.00010775542627653248,
+        "rest_tilt_deg": 8.537736462515939e-07,
+        "checks": {
+          "mass_readback": true,
+          "friction_readback": true,
+          "inertia": true,
+          "contacts_use_pair_friction": true,
+          "no_other_block_contacts": true,
+          "normal_force": true
+        },
+        "ok": true
+      },
+      {
+        "physics": {
+          "block_mass": 0.6,
+          "sliding_friction": 0.1
+        },
+        "applied": {
+          "block_mass": 0.6,
+          "sliding_friction": 0.1
+        },
+        "inertia": [
+          0.00025,
+          0.00025,
+          0.00025
+        ],
+        "expected_inertia": 0.00025000000000000006,
+        "inertia_rel_error": 2.1684043449710084e-16,
+        "block_geom_friction_unused": 1.0,
+        "contact_count": 4,
+        "contact_frictions": [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        "normal_force": 5.88599999317879,
+        "expected_normal_force": 5.886,
+        "normal_force_rel_error": -1.158887234674985e-09,
+        "rest_height_m": -0.00010775542627653248,
+        "rest_tilt_deg": 8.537736462515939e-07,
+        "checks": {
+          "mass_readback": true,
+          "friction_readback": true,
+          "inertia": true,
+          "contacts_use_pair_friction": true,
+          "no_other_block_contacts": true,
+          "normal_force": true
+        },
+        "ok": true
+      },
+      {
+        "physics": {
+          "block_mass": 0.6,
+          "sliding_friction": 1.0
+        },
+        "applied": {
+          "block_mass": 0.6,
+          "sliding_friction": 1.0
+        },
+        "inertia": [
+          0.00025,
+          0.00025,
+          0.00025
+        ],
+        "expected_inertia": 0.00025000000000000006,
+        "inertia_rel_error": 2.1684043449710084e-16,
+        "block_geom_friction_unused": 1.0,
+        "contact_count": 4,
+        "contact_frictions": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "normal_force": 5.88599999317879,
+        "expected_normal_force": 5.886,
+        "normal_force_rel_error": -1.158887234674985e-09,
+        "rest_height_m": -0.00010775542627653248,
+        "rest_tilt_deg": 8.537736462515939e-07,
+        "checks": {
+          "mass_readback": true,
+          "friction_readback": true,
+          "inertia": true,
+          "contacts_use_pair_friction": true,
+          "no_other_block_contacts": true,
+          "normal_force": true
+        },
+        "ok": true
+      }
+    ],
+    "kick": [
+      {
+        "physics": {
+          "block_mass": 0.05,
+          "sliding_friction": 0.5
+        },
+        "kicks": [
+          {
+            "direction_deg": 0.0,
+            "distance_m": 0.02508433417168416,
+            "mu_effective": 0.507970425320151,
+            "relative_error": 0.01594085064030204,
+            "stop_time": 0.16,
+            "final_speed": 1.1732621991355036e-10,
+            "yaw_change_deg": 0.2958098651552897,
+            "normal_force": 0.4904999994315659,
+            "expected_normal_force": 0.49050000000000005
+          },
+          {
+            "direction_deg": 120.0,
+            "distance_m": 0.025492571545167864,
+            "mu_effective": 0.49983580022465307,
+            "relative_error": -0.0003283995506938586,
+            "stop_time": 0.14,
+            "final_speed": 8.326164129119413e-11,
+            "yaw_change_deg": -0.4756467824994174,
+            "normal_force": 0.4904999994315659,
+            "expected_normal_force": 0.49050000000000005
+          }
+        ],
+        "worst_relative_error": 0.01594085064030204,
+        "ok": true
+      },
+      {
+        "physics": {
+          "block_mass": 0.1,
+          "sliding_friction": 0.5
+        },
+        "kicks": [
+          {
+            "direction_deg": 0.0,
+            "distance_m": 0.02508433417168455,
+            "mu_effective": 0.5079704253201431,
+            "relative_error": 0.015940850640286275,
+            "stop_time": 0.16,
+            "final_speed": 1.1732683047261674e-10,
+            "yaw_change_deg": 0.29580986515527696,
+            "normal_force": 0.9809999988631316,
+            "expected_normal_force": 0.9810000000000001
+          },
+          {
+            "direction_deg": 120.0,
+            "distance_m": 0.02549257154516791,
+            "mu_effective": 0.4998358002246522,
+            "relative_error": -0.000328399550695635,
+            "stop_time": 0.14,
+            "final_speed": 8.326174408917228e-11,
+            "yaw_change_deg": -0.47564678249940945,
+            "normal_force": 0.9809999988631316,
+            "expected_normal_force": 0.9810000000000001
+          }
+        ],
+        "worst_relative_error": 0.015940850640286275,
+        "ok": true
+      },
+      {
+        "physics": {
+          "block_mass": 0.25,
+          "sliding_friction": 0.5
+        },
+        "kicks": [
+          {
+            "direction_deg": 0.0,
+            "distance_m": 0.025084334171684108,
+            "mu_effective": 0.507970425320152,
+            "relative_error": 0.01594085064030404,
+            "stop_time": 0.16,
+            "final_speed": 1.1732634262331907e-10,
+            "yaw_change_deg": 0.2958098651552738,
+            "normal_force": 2.45249999715783,
+            "expected_normal_force": 2.4525
+          },
+          {
+            "direction_deg": 120.0,
+            "distance_m": 0.025492571545167812,
+            "mu_effective": 0.49983580022465407,
+            "relative_error": -0.0003283995506918602,
+            "stop_time": 0.14,
+            "final_speed": 8.326157908374514e-11,
+            "yaw_change_deg": -0.47564678249940145,
+            "normal_force": 2.45249999715783,
+            "expected_normal_force": 2.4525
+          }
+        ],
+        "worst_relative_error": 0.01594085064030404,
+        "ok": true
+      },
+      {
+        "physics": {
+          "block_mass": 0.4,
+          "sliding_friction": 0.5
+        },
+        "kicks": [
+          {
+            "direction_deg": 0.0,
+            "distance_m": 0.025084334171684493,
+            "mu_effective": 0.5079704253201442,
+            "relative_error": 0.015940850640288495,
+            "stop_time": 0.16,
+            "final_speed": 1.173265319785115e-10,
+            "yaw_change_deg": 0.2958098651552929,
+            "normal_force": 3.9239999954525264,
+            "expected_normal_force": 3.9240000000000004
+          },
+          {
+            "direction_deg": 120.0,
+            "distance_m": 0.025492571545167816,
+            "mu_effective": 0.49983580022465407,
+            "relative_error": -0.0003283995506918602,
+            "stop_time": 0.14,
+            "final_speed": 8.326151780370706e-11,
+            "yaw_change_deg": -0.4756467824993983,
+            "normal_force": 3.9239999954525264,
+            "expected_normal_force": 3.9240000000000004
+          }
+        ],
+        "worst_relative_error": 0.015940850640288495,
+        "ok": true
+      },
+      {
+        "physics": {
+          "block_mass": 0.6,
+          "sliding_friction": 0.5
+        },
+        "kicks": [
+          {
+            "direction_deg": 0.0,
+            "distance_m": 0.025084334171683938,
+            "mu_effective": 0.5079704253201555,
+            "relative_error": 0.015940850640310922,
+            "stop_time": 0.16,
+            "final_speed": 1.1732581528153825e-10,
+            "yaw_change_deg": 0.2958098651553056,
+            "normal_force": 5.88599999317879,
+            "expected_normal_force": 5.886
+          },
+          {
+            "direction_deg": 120.0,
+            "distance_m": 0.025492571545168013,
+            "mu_effective": 0.4998358002246502,
+            "relative_error": -0.0003283995506996318,
+            "stop_time": 0.14,
+            "final_speed": 8.326123214027943e-11,
+            "yaw_change_deg": -0.4756467824993999,
+            "normal_force": 5.88599999317879,
+            "expected_normal_force": 5.886
+          }
+        ],
+        "worst_relative_error": 0.015940850640310922,
+        "ok": true
+      },
+      {
+        "physics": {
+          "block_mass": 0.25,
+          "sliding_friction": 0.1
+        },
+        "kicks": [
+          {
+            "direction_deg": 0.0,
+            "distance_m": 0.12704453208711425,
+            "mu_effective": 0.10029632671893318,
+            "relative_error": 0.002963267189331764,
+            "stop_time": 0.52,
+            "final_speed": 8.319895304558478e-11,
+            "yaw_change_deg": 0.7341865072962442,
+            "normal_force": 2.45249999715783,
+            "expected_normal_force": 2.4525
+          },
+          {
+            "direction_deg": 120.0,
+            "distance_m": 0.12724895140687792,
+            "mu_effective": 0.1001352054943101,
+            "relative_error": 0.0013520549431009221,
+            "stop_time": 0.52,
+            "final_speed": 8.555397222657605e-11,
+            "yaw_change_deg": 0.7299412502672976,
+            "normal_force": 2.45249999715783,
+            "expected_normal_force": 2.4525
+          }
+        ],
+        "worst_relative_error": 0.002963267189331764,
+        "ok": true
+      },
+      {
+        "physics": {
+          "block_mass": 0.25,
+          "sliding_friction": 0.2
+        },
+        "kicks": [
+          {
+            "direction_deg": 0.0,
+            "distance_m": 0.06350035187630415,
+            "mu_effective": 0.2006618785811493,
+            "relative_error": 0.0033093929057465,
+            "stop_time": 0.28,
+            "final_speed": 9.476909872745848e-11,
+            "yaw_change_deg": -0.09608228351829165,
+            "normal_force": 2.45249999715783,
+            "expected_normal_force": 2.4525
+          },
+          {
+            "direction_deg": 120.0,
+            "distance_m": 0.06369202344528328,
+            "mu_effective": 0.20005801682544624,
+            "relative_error": 0.00029008412723116606,
+            "stop_time": 0.3,
+            "final_speed": 7.981336785969179e-11,
+            "yaw_change_deg": -0.9276229713306098,
+            "normal_force": 2.45249999715783,
+            "expected_normal_force": 2.4525
+          }
+        ],
+        "worst_relative_error": 0.0033093929057465,
+        "ok": true
+      },
+      {
+        "physics": {
+          "block_mass": 0.25,
+          "sliding_friction": 0.8
+        },
+        "kicks": [
+          {
+            "direction_deg": 0.0,
+            "distance_m": 0.015894326395522972,
+            "mu_effective": 0.8016759931174137,
+            "relative_error": 0.0020949913967670264,
+            "stop_time": 0.12,
+            "final_speed": 8.689654869060056e-11,
+            "yaw_change_deg": 0.07304006541937859,
+            "normal_force": 2.45249999715783,
+            "expected_normal_force": 2.4525
+          },
+          {
+            "direction_deg": 120.0,
+            "distance_m": 0.016085111617724177,
+            "mu_effective": 0.7921673284519013,
+            "relative_error": -0.009790839435123433,
+            "stop_time": 0.1,
+            "final_speed": 8.670471509758434e-11,
+            "yaw_change_deg": -0.5499770964509891,
+            "normal_force": 2.45249999715783,
+            "expected_normal_force": 2.4525
+          }
+        ],
+        "worst_relative_error": 0.009790839435123433,
+        "ok": true
+      },
+      {
+        "physics": {
+          "block_mass": 0.25,
+          "sliding_friction": 1.0
+        },
+        "kicks": [
+          {
+            "direction_deg": 0.0,
+            "distance_m": 0.012752594608410115,
+            "mu_effective": 0.9991770529316448,
+            "relative_error": -0.0008229470683551732,
+            "stop_time": 0.08,
+            "final_speed": 1.3726514059314764e-10,
+            "yaw_change_deg": 0.008547600752142052,
+            "normal_force": 2.45249999715783,
+            "expected_normal_force": 2.4525
+          },
+          {
+            "direction_deg": 120.0,
+            "distance_m": 0.012865085433635029,
+            "mu_effective": 0.9904403638665087,
+            "relative_error": -0.009559636133491312,
+            "stop_time": 0.14,
+            "final_speed": 9.618639989193287e-11,
+            "yaw_change_deg": 0.007602045039696991,
+            "normal_force": 2.45249999715783,
+            "expected_normal_force": 2.4525
+          }
+        ],
+        "worst_relative_error": 0.009559636133491312,
+        "ok": true
+      },
+      {
+        "physics": {
+          "block_mass": 0.1,
+          "sliding_friction": 0.2
+        },
+        "kicks": [
+          {
+            "direction_deg": 0.0,
+            "distance_m": 0.06350035187630433,
+            "mu_effective": 0.20066187858114873,
+            "relative_error": 0.0033093929057435856,
+            "stop_time": 0.28,
+            "final_speed": 9.476910125299327e-11,
+            "yaw_change_deg": -0.09608228351829165,
+            "normal_force": 0.9809999988631316,
+            "expected_normal_force": 0.9810000000000001
+          },
+          {
+            "direction_deg": 120.0,
+            "distance_m": 0.06369202344528291,
+            "mu_effective": 0.2000580168254474,
+            "relative_error": 0.0002900841272369947,
+            "stop_time": 0.3,
+            "final_speed": 7.981371258204936e-11,
+            "yaw_change_deg": -0.9276229713306161,
+            "normal_force": 0.9809999988631316,
+            "expected_normal_force": 0.9810000000000001
+          }
+        ],
+        "worst_relative_error": 0.0033093929057435856,
+        "ok": true
+      },
+      {
+        "physics": {
+          "block_mass": 0.1,
+          "sliding_friction": 0.8
+        },
+        "kicks": [
+          {
+            "direction_deg": 0.0,
+            "distance_m": 0.015894326395523028,
+            "mu_effective": 0.8016759931174108,
+            "relative_error": 0.002094991396763418,
+            "stop_time": 0.12,
+            "final_speed": 8.689655005952064e-11,
+            "yaw_change_deg": 0.07304006541937541,
+            "normal_force": 0.9809999988631316,
+            "expected_normal_force": 0.9810000000000001
+          },
+          {
+            "direction_deg": 120.0,
+            "distance_m": 0.016085111617724322,
+            "mu_effective": 0.792167328451894,
+            "relative_error": -0.009790839435132592,
+            "stop_time": 0.1,
+            "final_speed": 8.670485265943996e-11,
+            "yaw_change_deg": -0.549977096450997,
+            "normal_force": 0.9809999988631316,
+            "expected_normal_force": 0.9810000000000001
+          }
+        ],
+        "worst_relative_error": 0.009790839435132592,
+        "ok": true
+      },
+      {
+        "physics": {
+          "block_mass": 0.4,
+          "sliding_friction": 0.2
+        },
+        "kicks": [
+          {
+            "direction_deg": 0.0,
+            "distance_m": 0.06350035187630455,
+            "mu_effective": 0.20066187858114803,
+            "relative_error": 0.003309392905740116,
+            "stop_time": 0.28,
+            "final_speed": 9.476945879699437e-11,
+            "yaw_change_deg": -0.09608228351829005,
+            "normal_force": 3.9239999954525264,
+            "expected_normal_force": 3.9240000000000004
+          },
+          {
+            "direction_deg": 120.0,
+            "distance_m": 0.06369202344528312,
+            "mu_effective": 0.20005801682544677,
+            "relative_error": 0.00029008412723380284,
+            "stop_time": 0.3,
+            "final_speed": 7.981367046263915e-11,
+            "yaw_change_deg": -0.9276229713306146,
+            "normal_force": 3.9239999954525264,
+            "expected_normal_force": 3.9240000000000004
+          }
+        ],
+        "worst_relative_error": 0.003309392905740116,
+        "ok": true
+      },
+      {
+        "physics": {
+          "block_mass": 0.4,
+          "sliding_friction": 0.8
+        },
+        "kicks": [
+          {
+            "direction_deg": 0.0,
+            "distance_m": 0.01589432639552303,
+            "mu_effective": 0.8016759931174107,
+            "relative_error": 0.0020949913967632794,
+            "stop_time": 0.12,
+            "final_speed": 8.689652736208793e-11,
+            "yaw_change_deg": 0.07304006541938336,
+            "normal_force": 3.9239999954525264,
+            "expected_normal_force": 3.9240000000000004
+          },
+          {
+            "direction_deg": 120.0,
+            "distance_m": 0.016085111617724298,
+            "mu_effective": 0.7921673284518953,
+            "relative_error": -0.009790839435130927,
+            "stop_time": 0.1,
+            "final_speed": 8.670430736424604e-11,
+            "yaw_change_deg": -0.5499770964509939,
+            "normal_force": 3.9239999954525264,
+            "expected_normal_force": 3.9240000000000004
+          }
+        ],
+        "worst_relative_error": 0.009790839435130927,
+        "ok": true
+      },
+      {
+        "physics": {
+          "block_mass": 0.05,
+          "sliding_friction": 0.1
+        },
+        "kicks": [
+          {
+            "direction_deg": 0.0,
+            "distance_m": 0.12704453208711458,
+            "mu_effective": 0.10029632671893292,
+            "relative_error": 0.0029632671893291274,
+            "stop_time": 0.52,
+            "final_speed": 8.319960340874982e-11,
+            "yaw_change_deg": 0.7341865072962442,
+            "normal_force": 0.4904999994315659,
+            "expected_normal_force": 0.49050000000000005
+          },
+          {
+            "direction_deg": 120.0,
+            "distance_m": 0.12724895140687792,
+            "mu_effective": 0.1001352054943101,
+            "relative_error": 0.0013520549431009221,
+            "stop_time": 0.52,
+            "final_speed": 8.555389394720759e-11,
+            "yaw_change_deg": 0.7299412502672881,
+            "normal_force": 0.4904999994315659,
+            "expected_normal_force": 0.49050000000000005
+          }
+        ],
+        "worst_relative_error": 0.0029632671893291274,
+        "ok": true
+      },
+      {
+        "physics": {
+          "block_mass": 0.05,
+          "sliding_friction": 1.0
+        },
+        "kicks": [
+          {
+            "direction_deg": 0.0,
+            "distance_m": 0.012752594608409561,
+            "mu_effective": 0.999177052931688,
+            "relative_error": -0.0008229470683119855,
+            "stop_time": 0.08,
+            "final_speed": 1.37264215841215e-10,
+            "yaw_change_deg": 0.008547600752145234,
+            "normal_force": 0.4904999994315659,
+            "expected_normal_force": 0.49050000000000005
+          },
+          {
+            "direction_deg": 120.0,
+            "distance_m": 0.012865085433634897,
+            "mu_effective": 0.9904403638665189,
+            "relative_error": -0.009559636133481098,
+            "stop_time": 0.14,
+            "final_speed": 9.618635307050579e-11,
+            "yaw_change_deg": 0.0076020450396954015,
+            "normal_force": 0.4904999994315659,
+            "expected_normal_force": 0.49050000000000005
+          }
+        ],
+        "worst_relative_error": 0.009559636133481098,
+        "ok": true
+      },
+      {
+        "physics": {
+          "block_mass": 0.6,
+          "sliding_friction": 0.1
+        },
+        "kicks": [
+          {
+            "direction_deg": 0.0,
+            "distance_m": 0.12704453208711458,
+            "mu_effective": 0.10029632671893292,
+            "relative_error": 0.0029632671893291274,
+            "stop_time": 0.52,
+            "final_speed": 8.319968398313472e-11,
+            "yaw_change_deg": 0.7341865072962459,
+            "normal_force": 5.88599999317879,
+            "expected_normal_force": 5.886
+          },
+          {
+            "direction_deg": 120.0,
+            "distance_m": 0.1272489514068778,
+            "mu_effective": 0.10013520549431018,
+            "relative_error": 0.0013520549431017548,
+            "stop_time": 0.52,
+            "final_speed": 8.555384677716254e-11,
+            "yaw_change_deg": 0.7299412502672912,
+            "normal_force": 5.88599999317879,
+            "expected_normal_force": 5.886
+          }
+        ],
+        "worst_relative_error": 0.0029632671893291274,
+        "ok": true
+      },
+      {
+        "physics": {
+          "block_mass": 0.6,
+          "sliding_friction": 1.0
+        },
+        "kicks": [
+          {
+            "direction_deg": 0.0,
+            "distance_m": 0.012752594608410559,
+            "mu_effective": 0.99917705293161,
+            "relative_error": -0.0008229470683900342,
+            "stop_time": 0.08,
+            "final_speed": 1.3726582827997042e-10,
+            "yaw_change_deg": 0.008547600752150004,
+            "normal_force": 5.88599999317879,
+            "expected_normal_force": 5.886
+          },
+          {
+            "direction_deg": 120.0,
+            "distance_m": 0.012865085433635156,
+            "mu_effective": 0.9904403638664991,
+            "relative_error": -0.00955963613350086,
+            "stop_time": 0.14,
+            "final_speed": 9.618579390464462e-11,
+            "yaw_change_deg": 0.0076020450396954015,
+            "normal_force": 5.88599999317879,
+            "expected_normal_force": 5.886
+          }
+        ],
+        "worst_relative_error": 0.00955963613350086,
+        "ok": true
+      }
+    ],
+    "hold": [
+      {
+        "physics": {
+          "block_mass": 0.1,
+          "sliding_friction": 0.2
+        },
+        "seed": 30000,
+        "seconds": 30.0,
+        "stable": true,
+        "reason": "stable",
+        "max_abs_qvel": 0.053860219790292874,
+        "final_max_abs_qvel": 2.103761809760878e-10,
+        "block_planar_drift_m": 2.88170167921294e-09,
+        "contact": {
+          "physics_steps": 15000,
+          "robot_block_contact_seconds": 0.0,
+          "robot_block_contact_intervals": 0,
+          "robot_block_max_normal_force": 0.0,
+          "robot_block_mean_normal_force": 0.0,
+          "table_normal_ratio_min": 0.9999682099674229,
+          "table_normal_ratio_max": 1.000000002644859,
+          "table_normal_ratio_free_mean": 0.9999999686656823,
+          "block_airborne_seconds": 0.002,
+          "max_table_contacts": 4,
+          "max_block_lift": 0.0,
+          "max_block_tilt_deg": 8.537736462515939e-07,
+          "final_block_tilt_deg": 8.537736462515939e-07
+        },
+        "wall_seconds": 0.9869422000010672,
+        "ok": true
+      },
+      {
+        "physics": {
+          "block_mass": 0.1,
+          "sliding_friction": 0.8
+        },
+        "seed": 30000,
+        "seconds": 30.0,
+        "stable": true,
+        "reason": "stable",
+        "max_abs_qvel": 0.053860219790292874,
+        "final_max_abs_qvel": 2.103761809760878e-10,
+        "block_planar_drift_m": 2.88170167921294e-09,
+        "contact": {
+          "physics_steps": 15000,
+          "robot_block_contact_seconds": 0.0,
+          "robot_block_contact_intervals": 0,
+          "robot_block_max_normal_force": 0.0,
+          "robot_block_mean_normal_force": 0.0,
+          "table_normal_ratio_min": 0.9999682099674229,
+          "table_normal_ratio_max": 1.000000002644859,
+          "table_normal_ratio_free_mean": 0.9999999686656823,
+          "block_airborne_seconds": 0.002,
+          "max_table_contacts": 4,
+          "max_block_lift": 0.0,
+          "max_block_tilt_deg": 8.537736462515939e-07,
+          "final_block_tilt_deg": 8.537736462515939e-07
+        },
+        "wall_seconds": 1.096858399996563,
+        "ok": true
+      },
+      {
+        "physics": {
+          "block_mass": 0.4,
+          "sliding_friction": 0.2
+        },
+        "seed": 30000,
+        "seconds": 30.0,
+        "stable": true,
+        "reason": "stable",
+        "max_abs_qvel": 0.053860219790292874,
+        "final_max_abs_qvel": 2.103761809760878e-10,
+        "block_planar_drift_m": 2.88170167921294e-09,
+        "contact": {
+          "physics_steps": 15000,
+          "robot_block_contact_seconds": 0.0,
+          "robot_block_contact_intervals": 0,
+          "robot_block_max_normal_force": 0.0,
+          "robot_block_mean_normal_force": 0.0,
+          "table_normal_ratio_min": 0.9999682099674229,
+          "table_normal_ratio_max": 1.000000002644859,
+          "table_normal_ratio_free_mean": 0.9999999686656823,
+          "block_airborne_seconds": 0.002,
+          "max_table_contacts": 4,
+          "max_block_lift": 0.0,
+          "max_block_tilt_deg": 8.537736462515939e-07,
+          "final_block_tilt_deg": 8.537736462515939e-07
+        },
+        "wall_seconds": 1.0654411999967124,
+        "ok": true
+      },
+      {
+        "physics": {
+          "block_mass": 0.4,
+          "sliding_friction": 0.8
+        },
+        "seed": 30000,
+        "seconds": 30.0,
+        "stable": true,
+        "reason": "stable",
+        "max_abs_qvel": 0.053860219790292874,
+        "final_max_abs_qvel": 2.103761809760878e-10,
+        "block_planar_drift_m": 2.88170167921294e-09,
+        "contact": {
+          "physics_steps": 15000,
+          "robot_block_contact_seconds": 0.0,
+          "robot_block_contact_intervals": 0,
+          "robot_block_max_normal_force": 0.0,
+          "robot_block_mean_normal_force": 0.0,
+          "table_normal_ratio_min": 0.9999682099674229,
+          "table_normal_ratio_max": 1.000000002644859,
+          "table_normal_ratio_free_mean": 0.9999999686656823,
+          "block_airborne_seconds": 0.002,
+          "max_table_contacts": 4,
+          "max_block_lift": 0.0,
+          "max_block_tilt_deg": 8.537736462515939e-07,
+          "final_block_tilt_deg": 8.537736462515939e-07
+        },
+        "wall_seconds": 1.0637822999997297,
+        "ok": true
+      },
+      {
+        "physics": {
+          "block_mass": 0.05,
+          "sliding_friction": 0.1
+        },
+        "seed": 30000,
+        "seconds": 30.0,
+        "stable": true,
+        "reason": "stable",
+        "max_abs_qvel": 0.053860219790292874,
+        "final_max_abs_qvel": 1.0089081210947817e-09,
+        "block_planar_drift_m": 2.88370316387615e-09,
+        "contact": {
+          "physics_steps": 15000,
+          "robot_block_contact_seconds": 0.0,
+          "robot_block_contact_intervals": 0,
+          "robot_block_max_normal_force": 0.0,
+          "robot_block_mean_normal_force": 0.0,
+          "table_normal_ratio_min": 0.9999682099674232,
+          "table_normal_ratio_max": 1.0000000026448106,
+          "table_normal_ratio_free_mean": 0.9999999686656821,
+          "block_airborne_seconds": 0.002,
+          "max_table_contacts": 4,
+          "max_block_lift": 0.0,
+          "max_block_tilt_deg": 8.537736462515939e-07,
+          "final_block_tilt_deg": 8.537736462515939e-07
+        },
+        "wall_seconds": 1.0563448000029894,
+        "ok": true
+      },
+      {
+        "physics": {
+          "block_mass": 0.05,
+          "sliding_friction": 1.0
+        },
+        "seed": 30000,
+        "seconds": 30.0,
+        "stable": true,
+        "reason": "stable",
+        "max_abs_qvel": 0.053860219790292874,
+        "final_max_abs_qvel": 1.008945141527055e-09,
+        "block_planar_drift_m": 2.8838228794451397e-09,
+        "contact": {
+          "physics_steps": 15000,
+          "robot_block_contact_seconds": 0.0,
+          "robot_block_contact_intervals": 0,
+          "robot_block_max_normal_force": 0.0,
+          "robot_block_mean_normal_force": 0.0,
+          "table_normal_ratio_min": 0.9999682099674232,
+          "table_normal_ratio_max": 1.0000000026448106,
+          "table_normal_ratio_free_mean": 0.9999999686656821,
+          "block_airborne_seconds": 0.002,
+          "max_table_contacts": 4,
+          "max_block_lift": 0.0,
+          "max_block_tilt_deg": 8.537736462515939e-07,
+          "final_block_tilt_deg": 8.537736462515939e-07
+        },
+        "wall_seconds": 1.0522051000007195,
+        "ok": true
+      },
+      {
+        "physics": {
+          "block_mass": 0.6,
+          "sliding_friction": 0.1
+        },
+        "seed": 30000,
+        "seconds": 30.0,
+        "stable": true,
+        "reason": "stable",
+        "max_abs_qvel": 0.053860219790292874,
+        "final_max_abs_qvel": 5.869431453809076e-10,
+        "block_planar_drift_m": 2.880752550041741e-09,
+        "contact": {
+          "physics_steps": 15000,
+          "robot_block_contact_seconds": 0.0,
+          "robot_block_contact_intervals": 0,
+          "robot_block_max_normal_force": 0.0,
+          "robot_block_mean_normal_force": 0.0,
+          "table_normal_ratio_min": 0.9999682099674229,
+          "table_normal_ratio_max": 1.0000000026448443,
+          "table_normal_ratio_free_mean": 0.9999999686656821,
+          "block_airborne_seconds": 0.002,
+          "max_table_contacts": 4,
+          "max_block_lift": 0.0,
+          "max_block_tilt_deg": 8.537736462515939e-07,
+          "final_block_tilt_deg": 8.537736462515939e-07
+        },
+        "wall_seconds": 1.043779399999039,
+        "ok": true
+      },
+      {
+        "physics": {
+          "block_mass": 0.6,
+          "sliding_friction": 1.0
+        },
+        "seed": 30000,
+        "seconds": 30.0,
+        "stable": true,
+        "reason": "stable",
+        "max_abs_qvel": 0.053860219790292874,
+        "final_max_abs_qvel": 5.866636846401838e-10,
+        "block_planar_drift_m": 2.883719413482473e-09,
+        "contact": {
+          "physics_steps": 15000,
+          "robot_block_contact_seconds": 0.0,
+          "robot_block_contact_intervals": 0,
+          "robot_block_max_normal_force": 0.0,
+          "robot_block_mean_normal_force": 0.0,
+          "table_normal_ratio_min": 0.9999682099674229,
+          "table_normal_ratio_max": 1.0000000026448443,
+          "table_normal_ratio_free_mean": 0.9999999686656821,
+          "block_airborne_seconds": 0.002,
+          "max_table_contacts": 4,
+          "max_block_lift": 0.0,
+          "max_block_tilt_deg": 8.537736462515939e-07,
+          "final_block_tilt_deg": 8.537736462515939e-07
+        },
+        "wall_seconds": 1.0690733999981603,
+        "ok": true
+      },
+      {
+        "physics": {
+          "block_mass": 0.25,
+          "sliding_friction": 0.5
+        },
+        "seed": 30000,
+        "seconds": 30.0,
+        "stable": true,
+        "reason": "stable",
+        "max_abs_qvel": 0.053860219790292874,
+        "final_max_abs_qvel": 4.260117764093887e-10,
+        "block_planar_drift_m": 2.8791189942648594e-09,
+        "contact": {
+          "physics_steps": 15000,
+          "robot_block_contact_seconds": 0.0,
+          "robot_block_contact_intervals": 0,
+          "robot_block_max_normal_force": 0.0,
+          "robot_block_mean_normal_force": 0.0,
+          "table_normal_ratio_min": 0.9999682099674227,
+          "table_normal_ratio_max": 1.0000000026447775,
+          "table_normal_ratio_free_mean": 0.9999999686656821,
+          "block_airborne_seconds": 0.002,
+          "max_table_contacts": 4,
+          "max_block_lift": 0.0,
+          "max_block_tilt_deg": 8.537736462515939e-07,
+          "final_block_tilt_deg": 8.537736462515939e-07
+        },
+        "wall_seconds": 1.0725934999973106,
+        "ok": true
+      }
+    ],
+    "push": [
+      {
+        "physics": {
+          "block_mass": 0.1,
+          "sliding_friction": 0.2
+        },
+        "episodes": [
+          {
+            "seed": 30000,
+            "success": true,
+            "reason": "success",
+            "detail": "block 10.7 mm from target, at rest",
+            "pushes_used": 2,
+            "end_time": 8.485999999999503,
+            "final_distance_mm": 10.734699750845913,
+            "contact": {
+              "physics_steps": 4250,
+              "robot_block_contact_seconds": 1.234,
+              "robot_block_contact_intervals": 54,
+              "robot_block_max_normal_force": 1.1465659014771616,
+              "robot_block_mean_normal_force": 0.2806670656152856,
+              "table_normal_ratio_min": 0.0,
+              "table_normal_ratio_max": 2.272606697009233,
+              "table_normal_ratio_free_mean": 0.9995441158125887,
+              "block_airborne_seconds": 0.026000000000000002,
+              "max_table_contacts": 4,
+              "max_block_lift": 2.682690104586008e-05,
+              "max_block_tilt_deg": 0.19387606384491257,
+              "final_block_tilt_deg": 3.4150945850063763e-06
+            },
+            "wall_seconds": 1.9658484999999928
+          },
+          {
+            "seed": 30001,
+            "success": true,
+            "reason": "success",
+            "detail": "block 7.8 mm from target, at rest",
+            "pushes_used": 2,
+            "end_time": 8.881999999999636,
+            "final_distance_mm": 7.7989416181734885,
+            "contact": {
+              "physics_steps": 4450,
+              "robot_block_contact_seconds": 1.592,
+              "robot_block_contact_intervals": 99,
+              "robot_block_max_normal_force": 1.869897661386519,
+              "robot_block_mean_normal_force": 0.3174077811498761,
+              "table_normal_ratio_min": 0.0,
+              "table_normal_ratio_max": 3.1187138940481067,
+              "table_normal_ratio_free_mean": 0.9994883187275497,
+              "block_airborne_seconds": 0.054,
+              "max_table_contacts": 4,
+              "max_block_lift": 4.122996587149069e-05,
+              "max_block_tilt_deg": 0.22526682046866242,
+              "final_block_tilt_deg": 0.0
+            },
+            "wall_seconds": 1.9558854999995674
+          },
+          {
+            "seed": 30002,
+            "success": true,
+            "reason": "success",
+            "detail": "block 11.1 mm from target, at rest",
+            "pushes_used": 2,
+            "end_time": 7.805999999999362,
+            "final_distance_mm": 11.112614753069401,
+            "contact": {
+              "physics_steps": 3910,
+              "robot_block_contact_seconds": 1.532,
+              "robot_block_contact_intervals": 76,
+              "robot_block_max_normal_force": 1.7766806389189747,
+              "robot_block_mean_normal_force": 0.3074746474837776,
+              "table_normal_ratio_min": 0.0,
+              "table_normal_ratio_max": 3.01897675300085,
+              "table_normal_ratio_free_mean": 1.0029578422648917,
+              "block_airborne_seconds": 0.064,
+              "max_table_contacts": 4,
+              "max_block_lift": 5.4606157301573255e-05,
+              "max_block_tilt_deg": 0.2675414286671886,
+              "final_block_tilt_deg": 0.0
+            },
+            "wall_seconds": 1.7961907999997493
+          }
+        ],
+        "max_block_lift_m": 5.4606157301573255e-05,
+        "max_block_tilt_deg": 0.2675414286671886,
+        "unstable_seeds": [],
+        "ok": true
+      },
+      {
+        "physics": {
+          "block_mass": 0.1,
+          "sliding_friction": 0.8
+        },
+        "episodes": [
+          {
+            "seed": 30000,
+            "success": true,
+            "reason": "success",
+            "detail": "block 13.7 mm from target, at rest",
+            "pushes_used": 2,
+            "end_time": 8.529999999999518,
+            "final_distance_mm": 13.661921707348899,
+            "contact": {
+              "physics_steps": 4270,
+              "robot_block_contact_seconds": 1.572,
+              "robot_block_contact_intervals": 26,
+              "robot_block_max_normal_force": 8.53696093750743,
+              "robot_block_mean_normal_force": 2.2411382801483435,
+              "table_normal_ratio_min": 0.0,
+              "table_normal_ratio_max": 10.165151105015154,
+              "table_normal_ratio_free_mean": 1.0000941343371723,
+              "block_airborne_seconds": 0.216,
+              "max_table_contacts": 4,
+              "max_block_lift": 0.0002926394559619287,
+              "max_block_tilt_deg": 0.8477402622728889,
+              "final_block_tilt_deg": 0.0
+            },
+            "wall_seconds": 1.9605684000016481
+          },
+          {
+            "seed": 30001,
+            "success": true,
+            "reason": "success",
+            "detail": "block 12.7 mm from target, at rest",
+            "pushes_used": 2,
+            "end_time": 8.92399999999965,
+            "final_distance_mm": 12.669304345292504,
+            "contact": {
+              "physics_steps": 4470,
+              "robot_block_contact_seconds": 1.966,
+              "robot_block_contact_intervals": 53,
+              "robot_block_max_normal_force": 13.494870349546138,
+              "robot_block_mean_normal_force": 3.2373514583681238,
+              "table_normal_ratio_min": 0.0,
+              "table_normal_ratio_max": 15.532678915111612,
+              "table_normal_ratio_free_mean": 1.0021962864017164,
+              "block_airborne_seconds": 0.418,
+              "max_table_contacts": 4,
+              "max_block_lift": 0.00042125186789178024,
+              "max_block_tilt_deg": 0.8308896710956433,
+              "final_block_tilt_deg": 3.4150945850063763e-06
+            },
+            "wall_seconds": 2.027797799997643
+          },
+          {
+            "seed": 30002,
+            "success": true,
+            "reason": "success",
+            "detail": "block 12.9 mm from target, at rest",
+            "pushes_used": 2,
+            "end_time": 7.859999999999356,
+            "final_distance_mm": 12.944083727696027,
+            "contact": {
+              "physics_steps": 3930,
+              "robot_block_contact_seconds": 1.732,
+              "robot_block_contact_intervals": 27,
+              "robot_block_max_normal_force": 14.150528435206343,
+              "robot_block_mean_normal_force": 3.365455201336157,
+              "table_normal_ratio_min": 0.0,
+              "table_normal_ratio_max": 16.309398408756007,
+              "table_normal_ratio_free_mean": 1.0173000094906113,
+              "block_airborne_seconds": 0.462,
+              "max_table_contacts": 4,
+              "max_block_lift": 0.0008790683890596736,
+              "max_block_tilt_deg": 1.6239649291796208,
+              "final_block_tilt_deg": 1.9090959104164224e-06
+            },
+            "wall_seconds": 1.891787900000054
+          }
+        ],
+        "max_block_lift_m": 0.0008790683890596736,
+        "max_block_tilt_deg": 1.6239649291796208,
+        "unstable_seeds": [],
+        "ok": true
+      },
+      {
+        "physics": {
+          "block_mass": 0.4,
+          "sliding_friction": 0.2
+        },
+        "episodes": [
+          {
+            "seed": 30000,
+            "success": true,
+            "reason": "success",
+            "detail": "block 10.6 mm from target, at rest",
+            "pushes_used": 2,
+            "end_time": 8.489999999999505,
+            "final_distance_mm": 10.606393385067998,
+            "contact": {
+              "physics_steps": 4250,
+              "robot_block_contact_seconds": 1.294,
+              "robot_block_contact_intervals": 53,
+              "robot_block_max_normal_force": 4.456795204450812,
+              "robot_block_mean_normal_force": 1.0636238609462583,
+              "table_normal_ratio_min": 0.0,
+              "table_normal_ratio_max": 2.240078233461892,
+              "table_normal_ratio_free_mean": 1.0003246535057748,
+              "block_airborne_seconds": 0.024,
+              "max_table_contacts": 4,
+              "max_block_lift": 2.616737008198644e-05,
+              "max_block_tilt_deg": 0.184560563303891,
+              "final_block_tilt_deg": 2.4148365394514667e-06
+            },
+            "wall_seconds": 1.956032599999162
+          },
+          {
+            "seed": 30001,
+            "success": true,
+            "reason": "success",
+            "detail": "block 7.3 mm from target, at rest",
+            "pushes_used": 2,
+            "end_time": 8.885999999999637,
+            "final_distance_mm": 7.259212402528211,
+            "contact": {
+              "physics_steps": 4450,
+              "robot_block_contact_seconds": 1.702,
+              "robot_block_contact_intervals": 82,
+              "robot_block_max_normal_force": 6.3974318959340835,
+              "robot_block_mean_normal_force": 1.186793691840605,
+              "table_normal_ratio_min": 0.0,
+              "table_normal_ratio_max": 2.8045423490272765,
+              "table_normal_ratio_free_mean": 0.9994105104835428,
+              "block_airborne_seconds": 0.058,
+              "max_table_contacts": 4,
+              "max_block_lift": 3.3499114430738525e-05,
+              "max_block_tilt_deg": 0.1799706066765305,
+              "final_block_tilt_deg": 0.0
+            },
+            "wall_seconds": 1.982566799997585
+          },
+          {
+            "seed": 30002,
+            "success": true,
+            "reason": "success",
+            "detail": "block 11.2 mm from target, at rest",
+            "pushes_used": 2,
+            "end_time": 7.82999999999936,
+            "final_distance_mm": 11.182873642246793,
+            "contact": {
+              "physics_steps": 3920,
+              "robot_block_contact_seconds": 1.676,
+              "robot_block_contact_intervals": 83,
+              "robot_block_max_normal_force": 5.420656061578859,
+              "robot_block_mean_normal_force": 1.141735985680392,
+              "table_normal_ratio_min": 0.0,
+              "table_normal_ratio_max": 2.497481721995688,
+              "table_normal_ratio_free_mean": 1.0044573561952288,
+              "block_airborne_seconds": 0.082,
+              "max_table_contacts": 4,
+              "max_block_lift": 5.862694332406729e-05,
+              "max_block_tilt_deg": 0.35517692419009644,
+              "final_block_tilt_deg": 0.0
+            },
+            "wall_seconds": 1.8215871000029438
+          }
+        ],
+        "max_block_lift_m": 5.862694332406729e-05,
+        "max_block_tilt_deg": 0.35517692419009644,
+        "unstable_seeds": [],
+        "ok": true
+      },
+      {
+        "physics": {
+          "block_mass": 0.4,
+          "sliding_friction": 0.8
+        },
+        "episodes": [
+          {
+            "seed": 30000,
+            "success": true,
+            "reason": "success",
+            "detail": "block 14.4 mm from target, at rest",
+            "pushes_used": 2,
+            "end_time": 8.577999999999534,
+            "final_distance_mm": 14.428948185681849,
+            "contact": {
+              "physics_steps": 4290,
+              "robot_block_contact_seconds": 1.758,
+              "robot_block_contact_intervals": 15,
+              "robot_block_max_normal_force": 21.945199881085273,
+              "robot_block_mean_normal_force": 6.9629267055213315,
+              "table_normal_ratio_min": 0.0,
+              "table_normal_ratio_max": 6.620867795787232,
+              "table_normal_ratio_free_mean": 0.9997666612734596,
+              "block_airborne_seconds": 0.186,
+              "max_table_contacts": 4,
+              "max_block_lift": 0.001040009137595669,
+              "max_block_tilt_deg": 2.9316929754823136,
+              "final_block_tilt_deg": 0.0
+            },
+            "wall_seconds": 2.062138599998434
+          },
+          {
+            "seed": 30001,
+            "success": true,
+            "reason": "success",
+            "detail": "block 8.6 mm from target, at rest",
+            "pushes_used": 2,
+            "end_time": 8.937999999999654,
+            "final_distance_mm": 8.635331105307023,
+            "contact": {
+              "physics_steps": 4470,
+              "robot_block_contact_seconds": 2.164,
+              "robot_block_contact_intervals": 38,
+              "robot_block_max_normal_force": 34.45087430829724,
+              "robot_block_mean_normal_force": 10.446141881636464,
+              "table_normal_ratio_min": 0.0,
+              "table_normal_ratio_max": 10.21747834476365,
+              "table_normal_ratio_free_mean": 1.0154443007652196,
+              "block_airborne_seconds": 0.47600000000000003,
+              "max_table_contacts": 4,
+              "max_block_lift": 0.00035991642711774574,
+              "max_block_tilt_deg": 0.9960982248947482,
+              "final_block_tilt_deg": 2.4148365394514667e-06
+            },
+            "wall_seconds": 2.049250000000029
+          },
+          {
+            "seed": 30002,
+            "success": true,
+            "reason": "success",
+            "detail": "block 15.9 mm from target, at rest",
+            "pushes_used": 2,
+            "end_time": 7.893999999999353,
+            "final_distance_mm": 15.861684727155534,
+            "contact": {
+              "physics_steps": 3950,
+              "robot_block_contact_seconds": 2.378,
+              "robot_block_contact_intervals": 13,
+              "robot_block_max_normal_force": 21.21210632647513,
+              "robot_block_mean_normal_force": 7.429898194703208,
+              "table_normal_ratio_min": 0.0,
+              "table_normal_ratio_max": 6.645637944764805,
+              "table_normal_ratio_free_mean": 1.0006684429588086,
+              "block_airborne_seconds": 0.47800000000000004,
+              "max_table_contacts": 4,
+              "max_block_lift": 0.0012782059648518314,
+              "max_block_tilt_deg": 3.0109916252692863,
+              "final_block_tilt_deg": 2.4148365394514667e-06
+            },
+            "wall_seconds": 1.812955500001408
+          }
+        ],
+        "max_block_lift_m": 0.0012782059648518314,
+        "max_block_tilt_deg": 3.0109916252692863,
+        "unstable_seeds": [],
+        "ok": true
+      },
+      {
+        "physics": {
+          "block_mass": 0.05,
+          "sliding_friction": 0.1
+        },
+        "episodes": [
+          {
+            "seed": 30000,
+            "success": true,
+            "reason": "success",
+            "detail": "block 8.8 mm from target, at rest",
+            "pushes_used": 2,
+            "end_time": 8.483999999999503,
+            "final_distance_mm": 8.83121865492711,
+            "contact": {
+              "physics_steps": 4250,
+              "robot_block_contact_seconds": 1.154,
+              "robot_block_contact_intervals": 33,
+              "robot_block_max_normal_force": 0.40968331956018555,
+              "robot_block_mean_normal_force": 0.07114147653004062,
+              "table_normal_ratio_min": 0.3833526632544169,
+              "table_normal_ratio_max": 1.8596829256538696,
+              "table_normal_ratio_free_mean": 1.0004322802349874,
+              "block_airborne_seconds": 0.002,
+              "max_table_contacts": 4,
+              "max_block_lift": 3.708478710763574e-06,
+              "max_block_tilt_deg": 0.17051736314295343,
+              "final_block_tilt_deg": 2.4148365394514667e-06
+            },
+            "wall_seconds": 1.9518570000000182
+          },
+          {
+            "seed": 30001,
+            "success": true,
+            "reason": "success",
+            "detail": "block 3.6 mm from target, at rest",
+            "pushes_used": 2,
+            "end_time": 8.869999999999632,
+            "final_distance_mm": 3.5760174229525803,
+            "contact": {
+              "physics_steps": 4440,
+              "robot_block_contact_seconds": 1.438,
+              "robot_block_contact_intervals": 63,
+              "robot_block_max_normal_force": 0.7315926713115763,
+              "robot_block_mean_normal_force": 0.08371125804305171,
+              "table_normal_ratio_min": 0.0,
+              "table_normal_ratio_max": 2.5840492060205413,
+              "table_normal_ratio_free_mean": 0.99984558357656,
+              "block_airborne_seconds": 0.008,
+              "max_table_contacts": 4,
+              "max_block_lift": 1.1786181112822397e-05,
+              "max_block_tilt_deg": 0.14511848542339909,
+              "final_block_tilt_deg": 3.1945284701301985e-06
+            },
+            "wall_seconds": 1.9714290000010806
+          },
+          {
+            "seed": 30002,
+            "success": true,
+            "reason": "success",
+            "detail": "block 10.9 mm from target, at rest",
+            "pushes_used": 2,
+            "end_time": 7.803999999999363,
+            "final_distance_mm": 10.868594949812852,
+            "contact": {
+              "physics_steps": 3910,
+              "robot_block_contact_seconds": 1.494,
+              "robot_block_contact_intervals": 64,
+              "robot_block_max_normal_force": 0.7122176064267519,
+              "robot_block_mean_normal_force": 0.07899018235936812,
+              "table_normal_ratio_min": 0.0,
+              "table_normal_ratio_max": 2.5530956216638327,
+              "table_normal_ratio_free_mean": 1.0006948594593306,
+              "block_airborne_seconds": 0.008,
+              "max_table_contacts": 4,
+              "max_block_lift": 1.4917718796924467e-05,
+              "max_block_tilt_deg": 0.22008942664698236,
+              "final_block_tilt_deg": 2.091309789151873e-06
+            },
+            "wall_seconds": 1.810624600002484
+          }
+        ],
+        "max_block_lift_m": 1.4917718796924467e-05,
+        "max_block_tilt_deg": 0.22008942664698236,
+        "unstable_seeds": [],
+        "ok": true
+      },
+      {
+        "physics": {
+          "block_mass": 0.05,
+          "sliding_friction": 1.0
+        },
+        "episodes": [
+          {
+            "seed": 30000,
+            "success": true,
+            "reason": "success",
+            "detail": "block 11.4 mm from target, at rest",
+            "pushes_used": 2,
+            "end_time": 8.56599999999953,
+            "final_distance_mm": 11.4164085184894,
+            "contact": {
+              "physics_steps": 4290,
+              "robot_block_contact_seconds": 1.79,
+              "robot_block_contact_intervals": 9,
+              "robot_block_max_normal_force": 8.972322988340748,
+              "robot_block_mean_normal_force": 1.6984636372787407,
+              "table_normal_ratio_min": 0.0,
+              "table_normal_ratio_max": 18.01617048473533,
+              "table_normal_ratio_free_mean": 0.9989893738963556,
+              "block_airborne_seconds": 0.138,
+              "max_table_contacts": 4,
+              "max_block_lift": 0.0012472431269334276,
+              "max_block_tilt_deg": 2.946869993700715,
+              "final_block_tilt_deg": 2.831646840510158e-06
+            },
+            "wall_seconds": 2.0282384999991336
+          },
+          {
+            "seed": 30001,
+            "success": true,
+            "reason": "success",
+            "detail": "block 4.8 mm from target, at rest",
+            "pushes_used": 2,
+            "end_time": 8.969999999999665,
+            "final_distance_mm": 4.784394543592752,
+            "contact": {
+              "physics_steps": 4490,
+              "robot_block_contact_seconds": 2.498,
+              "robot_block_contact_intervals": 16,
+              "robot_block_max_normal_force": 10.20644639907695,
+              "robot_block_mean_normal_force": 1.8860506999972677,
+              "table_normal_ratio_min": 0.0,
+              "table_normal_ratio_max": 20.079014329995207,
+              "table_normal_ratio_free_mean": 0.9987763222104092,
+              "block_airborne_seconds": 0.328,
+              "max_table_contacts": 4,
+              "max_block_lift": 0.0012581478372896346,
+              "max_block_tilt_deg": 2.9688863130581824,
+              "final_block_tilt_deg": 0.0
+            },
+            "wall_seconds": 2.092751000000135
+          },
+          {
+            "seed": 30002,
+            "success": true,
+            "reason": "success",
+            "detail": "block 15.8 mm from target, at rest",
+            "pushes_used": 2,
+            "end_time": 7.887999999999353,
+            "final_distance_mm": 15.798271963201602,
+            "contact": {
+              "physics_steps": 3950,
+              "robot_block_contact_seconds": 2.396,
+              "robot_block_contact_intervals": 14,
+              "robot_block_max_normal_force": 11.41374312669103,
+              "robot_block_mean_normal_force": 2.1603481873618273,
+              "table_normal_ratio_min": 0.0,
+              "table_normal_ratio_max": 22.47441157685266,
+              "table_normal_ratio_free_mean": 0.9986069422061697,
+              "block_airborne_seconds": 0.372,
+              "max_table_contacts": 4,
+              "max_block_lift": 0.0013582435898451053,
+              "max_block_tilt_deg": 3.062234306645364,
+              "final_block_tilt_deg": 0.0
+            },
+            "wall_seconds": 1.8860002999972494
+          }
+        ],
+        "max_block_lift_m": 0.0013582435898451053,
+        "max_block_tilt_deg": 3.062234306645364,
+        "unstable_seeds": [],
+        "ok": true
+      },
+      {
+        "physics": {
+          "block_mass": 0.6,
+          "sliding_friction": 0.1
+        },
+        "episodes": [
+          {
+            "seed": 30000,
+            "success": true,
+            "reason": "success",
+            "detail": "block 8.2 mm from target, at rest",
+            "pushes_used": 2,
+            "end_time": 8.485999999999503,
+            "final_distance_mm": 8.21053927010762,
+            "contact": {
+              "physics_steps": 4250,
+              "robot_block_contact_seconds": 1.288,
+              "robot_block_contact_intervals": 31,
+              "robot_block_max_normal_force": 4.734007586749796,
+              "robot_block_mean_normal_force": 0.7802187866398044,
+              "table_normal_ratio_min": 0.0,
+              "table_normal_ratio_max": 1.8419319012413746,
+              "table_normal_ratio_free_mean": 1.000030081048472,
+              "block_airborne_seconds": 0.006,
+              "max_table_contacts": 4,
+              "max_block_lift": 6.87189420835177e-06,
+              "max_block_tilt_deg": 0.170581802155807,
+              "final_block_tilt_deg": 1.7075472925031877e-06
+            },
+            "wall_seconds": 1.9561646000001929
+          },
+          {
+            "seed": 30001,
+            "success": true,
+            "reason": "success",
+            "detail": "block 4.4 mm from target, at rest",
+            "pushes_used": 2,
+            "end_time": 8.883999999999636,
+            "final_distance_mm": 4.36135764475092,
+            "contact": {
+              "physics_steps": 4450,
+              "robot_block_contact_seconds": 1.614,
+              "robot_block_contact_intervals": 50,
+              "robot_block_max_normal_force": 7.003044618264086,
+              "robot_block_mean_normal_force": 0.8893347714233505,
+              "table_normal_ratio_min": 0.0,
+              "table_normal_ratio_max": 2.260031651814446,
+              "table_normal_ratio_free_mean": 1.0005813438700504,
+              "block_airborne_seconds": 0.02,
+              "max_table_contacts": 4,
+              "max_block_lift": 9.073300413567353e-06,
+              "max_block_tilt_deg": 0.1681596442049684,
+              "final_block_tilt_deg": 0.0
+            },
+            "wall_seconds": 1.9639454999996815
+          },
+          {
+            "seed": 30002,
+            "success": true,
+            "reason": "success",
+            "detail": "block 11.0 mm from target, at rest",
+            "pushes_used": 2,
+            "end_time": 7.807999999999362,
+            "final_distance_mm": 11.007269512503154,
+            "contact": {
+              "physics_steps": 3910,
+              "robot_block_contact_seconds": 1.6620000000000001,
+              "robot_block_contact_intervals": 55,
+              "robot_block_max_normal_force": 6.0200381563590275,
+              "robot_block_mean_normal_force": 0.831833459941341,
+              "table_normal_ratio_min": 0.0,
+              "table_normal_ratio_max": 1.9069496833877109,
+              "table_normal_ratio_free_mean": 1.0014687688932957,
+              "block_airborne_seconds": 0.014,
+              "max_table_contacts": 4,
+              "max_block_lift": 2.3081369457479683e-05,
+              "max_block_tilt_deg": 0.17749737970063792,
+              "final_block_tilt_deg": 1.7075472925031877e-06
+            },
+            "wall_seconds": 1.8400437999989663
+          }
+        ],
+        "max_block_lift_m": 2.3081369457479683e-05,
+        "max_block_tilt_deg": 0.17749737970063792,
+        "unstable_seeds": [],
+        "ok": true
+      },
+      {
+        "physics": {
+          "block_mass": 0.6,
+          "sliding_friction": 1.0
+        },
+        "episodes": [
+          {
+            "seed": 30000,
+            "success": true,
+            "reason": "success",
+            "detail": "block 14.0 mm from target, at rest",
+            "pushes_used": 2,
+            "end_time": 8.583999999999536,
+            "final_distance_mm": 14.03200018559618,
+            "contact": {
+              "physics_steps": 4300,
+              "robot_block_contact_seconds": 1.82,
+              "robot_block_contact_intervals": 9,
+              "robot_block_max_normal_force": 64.10753512899859,
+              "robot_block_mean_normal_force": 12.928583176316703,
+              "table_normal_ratio_min": 0.0,
+              "table_normal_ratio_max": 10.57671944223751,
+              "table_normal_ratio_free_mean": 0.9990228515763911,
+              "block_airborne_seconds": 0.188,
+              "max_table_contacts": 4,
+              "max_block_lift": 0.0013064522649772932,
+              "max_block_tilt_deg": 3.1120204039386254,
+              "final_block_tilt_deg": 0.0
+            },
+            "wall_seconds": 2.0069849000028626
+          },
+          {
+            "seed": 30001,
+            "success": true,
+            "reason": "success",
+            "detail": "block 6.7 mm from target, at rest",
+            "pushes_used": 2,
+            "end_time": 8.979999999999668,
+            "final_distance_mm": 6.6607056113169705,
+            "contact": {
+              "physics_steps": 4490,
+              "robot_block_contact_seconds": 2.536,
+              "robot_block_contact_intervals": 9,
+              "robot_block_max_normal_force": 58.48569038714192,
+              "robot_block_mean_normal_force": 13.945459238341703,
+              "table_normal_ratio_min": 0.0,
+              "table_normal_ratio_max": 10.215524156233357,
+              "table_normal_ratio_free_mean": 0.998798150983451,
+              "block_airborne_seconds": 0.47800000000000004,
+              "max_table_contacts": 4,
+              "max_block_lift": 0.0013175531914400782,
+              "max_block_tilt_deg": 3.1033157201158503,
+              "final_block_tilt_deg": 2.4148365394514667e-06
+            },
+            "wall_seconds": 2.071738099999493
+          },
+          {
+            "seed": 30002,
+            "success": true,
+            "reason": "success",
+            "detail": "block 1.9 mm from target, at rest",
+            "pushes_used": 2,
+            "end_time": 8.375999999999467,
+            "final_distance_mm": 1.9240559891362445,
+            "contact": {
+              "physics_steps": 4190,
+              "robot_block_contact_seconds": 2.926,
+              "robot_block_contact_intervals": 8,
+              "robot_block_max_normal_force": 38.70831538762793,
+              "robot_block_mean_normal_force": 11.119995442372048,
+              "table_normal_ratio_min": 0.0,
+              "table_normal_ratio_max": 6.193736095320247,
+              "table_normal_ratio_free_mean": 0.9994660392503999,
+              "block_airborne_seconds": 0.67,
+              "max_table_contacts": 4,
+              "max_block_lift": 0.0014569658015747937,
+              "max_block_tilt_deg": 3.342279758539457,
+              "final_block_tilt_deg": 2.9575586669421963e-06
+            },
+            "wall_seconds": 1.9840044000011403
+          }
+        ],
+        "max_block_lift_m": 0.0014569658015747937,
+        "max_block_tilt_deg": 3.342279758539457,
+        "unstable_seeds": [],
+        "ok": true
+      },
+      {
+        "physics": {
+          "block_mass": 0.25,
+          "sliding_friction": 0.5
+        },
+        "episodes": [
+          {
+            "seed": 30000,
+            "success": true,
+            "reason": "success",
+            "detail": "block 11.8 mm from target, at rest",
+            "pushes_used": 2,
+            "end_time": 8.50399999999951,
+            "final_distance_mm": 11.839891869641788,
+            "contact": {
+              "physics_steps": 4260,
+              "robot_block_contact_seconds": 1.5,
+              "robot_block_contact_intervals": 46,
+              "robot_block_max_normal_force": 7.466270473601527,
+              "robot_block_mean_normal_force": 1.9435134830998326,
+              "table_normal_ratio_min": 0.0,
+              "table_normal_ratio_max": 4.380034312438856,
+              "table_normal_ratio_free_mean": 0.9981071375997844,
+              "block_airborne_seconds": 0.14200000000000002,
+              "max_table_contacts": 4,
+              "max_block_lift": 0.00010397477736743405,
+              "max_block_tilt_deg": 0.2804632626363897,
+              "final_block_tilt_deg": 1.2074182697257333e-06
+            },
+            "wall_seconds": 1.9517851999989944
+          },
+          {
+            "seed": 30001,
+            "success": true,
+            "reason": "success",
+            "detail": "block 11.3 mm from target, at rest",
+            "pushes_used": 2,
+            "end_time": 8.89599999999964,
+            "final_distance_mm": 11.325688271628923,
+            "contact": {
+              "physics_steps": 4450,
+              "robot_block_contact_seconds": 1.948,
+              "robot_block_contact_intervals": 86,
+              "robot_block_max_normal_force": 8.741616540601267,
+              "robot_block_mean_normal_force": 2.2963929185623924,
+              "table_normal_ratio_min": 0.0,
+              "table_normal_ratio_max": 4.955193941544954,
+              "table_normal_ratio_free_mean": 0.9905316098519126,
+              "block_airborne_seconds": 0.254,
+              "max_table_contacts": 4,
+              "max_block_lift": 0.00011632874816982011,
+              "max_block_tilt_deg": 0.3658296940058372,
+              "final_block_tilt_deg": 0.0
+            },
+            "wall_seconds": 2.0305020999985572
+          },
+          {
+            "seed": 30002,
+            "success": true,
+            "reason": "success",
+            "detail": "block 11.6 mm from target, at rest",
+            "pushes_used": 2,
+            "end_time": 7.839999999999359,
+            "final_distance_mm": 11.59826402419588,
+            "contact": {
+              "physics_steps": 3920,
+              "robot_block_contact_seconds": 1.934,
+              "robot_block_contact_intervals": 77,
+              "robot_block_max_normal_force": 7.6211097429003765,
+              "robot_block_mean_normal_force": 2.120182017602453,
+              "table_normal_ratio_min": 0.0,
+              "table_normal_ratio_max": 4.682906766362441,
+              "table_normal_ratio_free_mean": 0.9941554747182584,
+              "block_airborne_seconds": 0.272,
+              "max_table_contacts": 4,
+              "max_block_lift": 0.00021048255194528603,
+              "max_block_tilt_deg": 0.41856511458082035,
+              "final_block_tilt_deg": 2.831646840510158e-06
+            },
+            "wall_seconds": 1.7712140000003274
+          }
+        ],
+        "max_block_lift_m": 0.00021048255194528603,
+        "max_block_tilt_deg": 0.41856511458082035,
+        "unstable_seeds": [],
+        "ok": true
+      }
+    ]
+  },
+  "assessment": {
+    "failing_values": {
+      "mass": [],
+      "sliding_friction": []
+    },
+    "feasible_box": {
+      "mass": [
+        0.05,
+        0.6
+      ],
+      "sliding_friction": [
+        0.1,
+        1.0
+      ]
+    },
+    "candidate_box_accepted": true
+  },
+  "command": "python -m physical_ai_lab contact-check --out runs\\phase3\\contact_checks\\run2"
+}

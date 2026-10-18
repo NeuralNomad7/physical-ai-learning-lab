@@ -1,0 +1,3743 @@
+{
+ "benchmark": {
+  "benchmark_version": "phase3-v1",
+  "config_sha256": "140e4f7d70340cc3f90e547385426f9a30ec68f8003b2ac54ba7fd5e0fcf2f25",
+  "metrics_version": 1,
+  "out_of_range_fixed_utc": "2026-10-03T17:31:59Z",
+  "schema_version": 1
+ },
+ "conditions": [
+  {
+   "band": "in_range",
+   "block_mass": 0.3028,
+   "cohort": "in_range",
+   "condition_id": "c05a39f20d18a",
+   "sliding_friction": 0.4024
+  },
+  {
+   "band": "in_range",
+   "block_mass": 0.1183,
+   "cohort": "in_range",
+   "condition_id": "c0b9b849fe7c9",
+   "sliding_friction": 0.2106
+  },
+  {
+   "band": "in_range",
+   "block_mass": 0.28,
+   "cohort": "in_range",
+   "condition_id": "c0ea58fa41281",
+   "sliding_friction": 0.718
+  },
+  {
+   "band": "in_range",
+   "block_mass": 0.3923,
+   "cohort": "in_range",
+   "condition_id": "c1cf36309b46a",
+   "sliding_friction": 0.5482
+  },
+  {
+   "band": "in_range",
+   "block_mass": 0.1783,
+   "cohort": "in_range",
+   "condition_id": "c1d853fd60a42",
+   "sliding_friction": 0.2318
+  },
+  {
+   "band": "in_range",
+   "block_mass": 0.1296,
+   "cohort": "in_range",
+   "condition_id": "c258a19ceaeda",
+   "sliding_friction": 0.5761
+  },
+  {
+   "band": "in_range",
+   "block_mass": 0.2978,
+   "cohort": "in_range",
+   "condition_id": "c2b723255aa1c",
+   "sliding_friction": 0.2719
+  },
+  {
+   "band": "in_range",
+   "block_mass": 0.1111,
+   "cohort": "in_range",
+   "condition_id": "c376b7607dfdb",
+   "sliding_friction": 0.46
+  },
+  {
+   "band": "in_range",
+   "block_mass": 0.2026,
+   "cohort": "in_range",
+   "condition_id": "c395a1e727dbc",
+   "sliding_friction": 0.2253
+  },
+  {
+   "band": "in_range",
+   "block_mass": 0.358,
+   "cohort": "in_range",
+   "condition_id": "c3a660ba7be4a",
+   "sliding_friction": 0.3235
+  },
+  {
+   "band": "in_range",
+   "block_mass": 0.1712,
+   "cohort": "in_range",
+   "condition_id": "c3c36ac11556a",
+   "sliding_friction": 0.4237
+  },
+  {
+   "band": "in_range",
+   "block_mass": 0.1428,
+   "cohort": "in_range",
+   "condition_id": "c3e71073e538c",
+   "sliding_friction": 0.6289
+  },
+  {
+   "band": "in_range",
+   "block_mass": 0.2505,
+   "cohort": "in_range",
+   "condition_id": "c3fb510dce781",
+   "sliding_friction": 0.4801
+  },
+  {
+   "band": "in_range",
+   "block_mass": 0.1972,
+   "cohort": "in_range",
+   "condition_id": "c407ada03b2a0",
+   "sliding_friction": 0.3784
+  },
+  {
+   "band": "in_range",
+   "block_mass": 0.3814,
+   "cohort": "in_range",
+   "condition_id": "c4720a3d6b064",
+   "sliding_friction": 0.6187
+  },
+  {
+   "band": "in_range",
+   "block_mass": 0.347,
+   "cohort": "in_range",
+   "condition_id": "c4da016f60bdb",
+   "sliding_friction": 0.2822
+  },
+  {
+   "band": "in_range",
+   "block_mass": 0.2361,
+   "cohort": "in_range",
+   "condition_id": "c6e6e37750591",
+   "sliding_friction": 0.6724
+  },
+  {
+   "band": "in_range",
+   "block_mass": 0.3266,
+   "cohort": "in_range",
+   "condition_id": "c70a53256a55e",
+   "sliding_friction": 0.7253
+  },
+  {
+   "band": "in_range",
+   "block_mass": 0.3336,
+   "cohort": "in_range",
+   "condition_id": "c749fa7ee7050",
+   "sliding_friction": 0.599
+  },
+  {
+   "band": "in_range",
+   "block_mass": 0.3969,
+   "cohort": "in_range",
+   "condition_id": "c7b6aad6da17a",
+   "sliding_friction": 0.253
+  },
+  {
+   "band": "in_range",
+   "block_mass": 0.3247,
+   "cohort": "in_range",
+   "condition_id": "c82739e908981",
+   "sliding_friction": 0.5024
+  },
+  {
+   "band": "in_range",
+   "block_mass": 0.1036,
+   "cohort": "in_range",
+   "condition_id": "c82cbabf2267c",
+   "sliding_friction": 0.6556
+  },
+  {
+   "band": "in_range",
+   "block_mass": 0.2325,
+   "cohort": "in_range",
+   "condition_id": "c8620e83e57bf",
+   "sliding_friction": 0.7472
+  },
+  {
+   "band": "in_range",
+   "block_mass": 0.2658,
+   "cohort": "in_range",
+   "condition_id": "c8711e997e09d",
+   "sliding_friction": 0.353
+  },
+  {
+   "band": "in_range",
+   "block_mass": 0.1611,
+   "cohort": "in_range",
+   "condition_id": "c89cf6f0ab41b",
+   "sliding_friction": 0.7705
+  },
+  {
+   "band": "in_range",
+   "block_mass": 0.2609,
+   "cohort": "in_range",
+   "condition_id": "c8c8496582021",
+   "sliding_friction": 0.696
+  },
+  {
+   "band": "in_range",
+   "block_mass": 0.2181,
+   "cohort": "in_range",
+   "condition_id": "c97535669bf03",
+   "sliding_friction": 0.68
+  },
+  {
+   "band": "in_range",
+   "block_mass": 0.3143,
+   "cohort": "in_range",
+   "condition_id": "ca185f6cd0a6a",
+   "sliding_friction": 0.574
+  },
+  {
+   "band": "in_range",
+   "block_mass": 0.2078,
+   "cohort": "in_range",
+   "condition_id": "ca2994ad8684d",
+   "sliding_friction": 0.3104
+  },
+  {
+   "band": "in_range",
+   "block_mass": 0.1329,
+   "cohort": "in_range",
+   "condition_id": "ca9a9bf61a56c",
+   "sliding_friction": 0.4492
+  },
+  {
+   "band": "in_range",
+   "block_mass": 0.3666,
+   "cohort": "in_range",
+   "condition_id": "cb259fc913c8a",
+   "sliding_friction": 0.4356
+  },
+  {
+   "band": "in_range",
+   "block_mass": 0.2468,
+   "cohort": "in_range",
+   "condition_id": "cb264242eaf35",
+   "sliding_friction": 0.3497
+  },
+  {
+   "band": "in_range",
+   "block_mass": 0.1844,
+   "cohort": "in_range",
+   "condition_id": "cc5f01136d4c4",
+   "sliding_friction": 0.5351
+  },
+  {
+   "band": "in_range",
+   "block_mass": 0.2726,
+   "cohort": "in_range",
+   "condition_id": "cc9836cfc48ab",
+   "sliding_friction": 0.2993
+  },
+  {
+   "band": "in_range",
+   "block_mass": 0.1457,
+   "cohort": "in_range",
+   "condition_id": "cc98a48ba9963",
+   "sliding_friction": 0.3854
+  },
+  {
+   "band": "in_range",
+   "block_mass": 0.3521,
+   "cohort": "in_range",
+   "condition_id": "cd55788193698",
+   "sliding_friction": 0.7973
+  },
+  {
+   "band": "in_range",
+   "block_mass": 0.1577,
+   "cohort": "in_range",
+   "condition_id": "cd9994e687001",
+   "sliding_friction": 0.4905
+  },
+  {
+   "band": "in_range",
+   "block_mass": 0.3726,
+   "cohort": "in_range",
+   "condition_id": "cda7751f433de",
+   "sliding_friction": 0.6418
+  },
+  {
+   "band": "in_range",
+   "block_mass": 0.2231,
+   "cohort": "in_range",
+   "condition_id": "ce4d8b7a62f65",
+   "sliding_friction": 0.525
+  },
+  {
+   "band": "in_range",
+   "block_mass": 0.2877,
+   "cohort": "in_range",
+   "condition_id": "cef815b44a296",
+   "sliding_friction": 0.7625
+  }
+ ],
+ "counts": {
+  "by_cohort": {
+   "in_range": 200,
+   "out_of_range": 0
+  },
+  "conditions": 40,
+  "scenarios": 200
+ },
+ "from_split": null,
+ "generator_seed": 3141593,
+ "kind": "phase3_manifest",
+ "manifest_schema_version": 1,
+ "provenance": {
+  "config_sha256": {
+   "benchmark.toml": "140e4f7d70340cc3f90e547385426f9a30ec68f8003b2ac54ba7fd5e0fcf2f25",
+   "panda_push_scene.xml": "e194f53adcaa24bac56dbf679bfd6c0b929fc18fe9b8bbf0ccc157b26cf49791",
+   "push.toml": "97b6d9172b0f518cb1c826cb3eafc478af42c9dc19b14252a61752b10647f8d7",
+   "scene.toml": "d04d248d5d538a936d56635b454dfc9bce0f2bac2983b4ffba69f73d52f17fce"
+  },
+  "mujoco_version": "3.14.0",
+  "panda_asset": {
+   "commit": "4d038b3feae26ec82b46a4d586379114012a8ac7",
+   "files": 72,
+   "manifest_sha256": "85c43d8d698ca3b4bba7164f6f4b1a54c0fac5f42c0d46605bc8653528eb7f07",
+   "path": "franka_emika_panda",
+   "repository": "https://github.com/google-deepmind/mujoco_menagerie"
+  },
+  "python": "3.12.13",
+  "python_platform": "win-amd64",
+  "simulation": {
+   "cone": 1,
+   "control_dt": 0.02,
+   "integrator": 3,
+   "iterations": 100,
+   "noslip_iterations": 0,
+   "solver": 2,
+   "substeps": 10,
+   "timestep": 0.002,
+   "tolerance": 1e-08
+  },
+  "versions": {
+   "mujoco": "3.14.0",
+   "numpy": "2.5.3",
+   "physical_ai_lab": "0.1.0",
+   "pillow": "12.3.0",
+   "pytest": "9.1.1"
+  }
+ },
+ "scenarios": [
+  {
+   "condition_id": "c407ada03b2a0",
+   "goal_sector": 2,
+   "layout": {
+    "block_xy": [
+     0.43213,
+     -0.11231
+    ],
+    "block_yaw": 2.45933,
+    "target_xy": [
+     0.42798,
+     0.00958
+    ]
+   },
+   "reset_seed": 31154,
+   "scenario_id": "s6e19d07a3fa5"
+  },
+  {
+   "condition_id": "ca9a9bf61a56c",
+   "goal_sector": 1,
+   "layout": {
+    "block_xy": [
+     0.51432,
+     -0.10074
+    ],
+    "block_yaw": -1.26273,
+    "target_xy": [
+     0.53088,
+     0.0384
+    ]
+   },
+   "reset_seed": 31113,
+   "scenario_id": "sbcff67f40af1"
+  },
+  {
+   "condition_id": "c258a19ceaeda",
+   "goal_sector": 3,
+   "layout": {
+    "block_xy": [
+     0.59843,
+     0.04956
+    ],
+    "block_yaw": -2.32792,
+    "target_xy": [
+     0.50283,
+     0.10907
+    ]
+   },
+   "reset_seed": 31027,
+   "scenario_id": "s0847a81aa73b"
+  },
+  {
+   "condition_id": "cb259fc913c8a",
+   "goal_sector": 5,
+   "layout": {
+    "block_xy": [
+     0.49446,
+     0.14779
+    ],
+    "block_yaw": -1.774,
+    "target_xy": [
+     0.49261,
+     -0.03335
+    ]
+   },
+   "reset_seed": 31189,
+   "scenario_id": "s6c0354bb830e"
+  },
+  {
+   "condition_id": "c3a660ba7be4a",
+   "goal_sector": 2,
+   "layout": {
+    "block_xy": [
+     0.56578,
+     -0.09869
+    ],
+    "block_yaw": 2.98559,
+    "target_xy": [
+     0.56095,
+     0.01363
+    ]
+   },
+   "reset_seed": 31162,
+   "scenario_id": "sc4f4dc4678fc"
+  },
+  {
+   "condition_id": "c3c36ac11556a",
+   "goal_sector": 4,
+   "layout": {
+    "block_xy": [
+     0.56259,
+     0.01281
+    ],
+    "block_yaw": -3.04778,
+    "target_xy": [
+     0.44004,
+     -0.07716
+    ]
+   },
+   "reset_seed": 31116,
+   "scenario_id": "s740c59383eab"
+  },
+  {
+   "condition_id": "c89cf6f0ab41b",
+   "goal_sector": 0,
+   "layout": {
+    "block_xy": [
+     0.44681,
+     0.02091
+    ],
+    "block_yaw": -1.79873,
+    "target_xy": [
+     0.56402,
+     0.05761
+    ]
+   },
+   "reset_seed": 31104,
+   "scenario_id": "s0e23e7987930"
+  },
+  {
+   "condition_id": "c3a660ba7be4a",
+   "goal_sector": 0,
+   "layout": {
+    "block_xy": [
+     0.49888,
+     -0.06579
+    ],
+    "block_yaw": -2.8454,
+    "target_xy": [
+     0.59501,
+     0.0033
+    ]
+   },
+   "reset_seed": 31160,
+   "scenario_id": "sc749ffe7d65e"
+  },
+  {
+   "condition_id": "c3fb510dce781",
+   "goal_sector": 4,
+   "layout": {
+    "block_xy": [
+     0.58966,
+     0.01244
+    ],
+    "block_yaw": 1.78335,
+    "target_xy": [
+     0.46114,
+     -0.08596
+    ]
+   },
+   "reset_seed": 31004,
+   "scenario_id": "sab7b1e85d6b2"
+  },
+  {
+   "condition_id": "c7b6aad6da17a",
+   "goal_sector": 1,
+   "layout": {
+    "block_xy": [
+     0.45515,
+     0.06629
+    ],
+    "block_yaw": 1.10723,
+    "target_xy": [
+     0.50328,
+     0.14789
+    ]
+   },
+   "reset_seed": 31129,
+   "scenario_id": "sbd4ab501b972"
+  },
+  {
+   "condition_id": "c3fb510dce781",
+   "goal_sector": 1,
+   "layout": {
+    "block_xy": [
+     0.445,
+     -0.1279
+    ],
+    "block_yaw": 1.61757,
+    "target_xy": [
+     0.4816,
+     0.06256
+    ]
+   },
+   "reset_seed": 31001,
+   "scenario_id": "sfe306aba9fd1"
+  },
+  {
+   "condition_id": "cda7751f433de",
+   "goal_sector": 3,
+   "layout": {
+    "block_xy": [
+     0.50568,
+     -0.09633
+    ],
+    "block_yaw": -1.1167,
+    "target_xy": [
+     0.43546,
+     -0.0415
+    ]
+   },
+   "reset_seed": 31139,
+   "scenario_id": "s25d9d3a422e4"
+  },
+  {
+   "condition_id": "c0b9b849fe7c9",
+   "goal_sector": 6,
+   "layout": {
+    "block_xy": [
+     0.53114,
+     0.11449
+    ],
+    "block_yaw": -2.93587,
+    "target_xy": [
+     0.59054,
+     -0.03109
+    ]
+   },
+   "reset_seed": 31142,
+   "scenario_id": "s77881c0308ca"
+  },
+  {
+   "condition_id": "cb264242eaf35",
+   "goal_sector": 6,
+   "layout": {
+    "block_xy": [
+     0.48534,
+     0.0658
+    ],
+    "block_yaw": -0.71124,
+    "target_xy": [
+     0.48619,
+     -0.11883
+    ]
+   },
+   "reset_seed": 31134,
+   "scenario_id": "sd80441cf48c1"
+  },
+  {
+   "condition_id": "c8711e997e09d",
+   "goal_sector": 0,
+   "layout": {
+    "block_xy": [
+     0.48788,
+     -0.01616
+    ],
+    "block_yaw": -1.0919,
+    "target_xy": [
+     0.5856,
+     0.02617
+    ]
+   },
+   "reset_seed": 31016,
+   "scenario_id": "s0e689b88c2eb"
+  },
+  {
+   "condition_id": "c258a19ceaeda",
+   "goal_sector": 1,
+   "layout": {
+    "block_xy": [
+     0.44796,
+     -0.14215
+    ],
+    "block_yaw": -0.63208,
+    "target_xy": [
+     0.52857,
+     -0.03897
+    ]
+   },
+   "reset_seed": 31025,
+   "scenario_id": "scc925ed3a6c1"
+  },
+  {
+   "condition_id": "ce4d8b7a62f65",
+   "goal_sector": 6,
+   "layout": {
+    "block_xy": [
+     0.49874,
+     0.14221
+    ],
+    "block_yaw": 0.07376,
+    "target_xy": [
+     0.51676,
+     -0.0242
+    ]
+   },
+   "reset_seed": 31086,
+   "scenario_id": "sf0ebca531d51"
+  },
+  {
+   "condition_id": "cb259fc913c8a",
+   "goal_sector": 1,
+   "layout": {
+    "block_xy": [
+     0.44034,
+     -0.08294
+    ],
+    "block_yaw": -2.67153,
+    "target_xy": [
+     0.50301,
+     0.05599
+    ]
+   },
+   "reset_seed": 31185,
+   "scenario_id": "sbe52a1c075b0"
+  },
+  {
+   "condition_id": "c4720a3d6b064",
+   "goal_sector": 0,
+   "layout": {
+    "block_xy": [
+     0.49981,
+     -0.0997
+    ],
+    "block_yaw": 0.04197,
+    "target_xy": [
+     0.60759,
+     -0.08365
+    ]
+   },
+   "reset_seed": 31072,
+   "scenario_id": "sfb27aaca9d69"
+  },
+  {
+   "condition_id": "c1cf36309b46a",
+   "goal_sector": 6,
+   "layout": {
+    "block_xy": [
+     0.54041,
+     0.12903
+    ],
+    "block_yaw": 3.1267,
+    "target_xy": [
+     0.61289,
+     0.0283
+    ]
+   },
+   "reset_seed": 31038,
+   "scenario_id": "s575c26e2c83c"
+  },
+  {
+   "condition_id": "c82739e908981",
+   "goal_sector": 4,
+   "layout": {
+    "block_xy": [
+     0.57209,
+     -0.00061
+    ],
+    "block_yaw": 1.45072,
+    "target_xy": [
+     0.44809,
+     -0.03074
+    ]
+   },
+   "reset_seed": 31012,
+   "scenario_id": "s58f4850defa0"
+  },
+  {
+   "condition_id": "c0ea58fa41281",
+   "goal_sector": 5,
+   "layout": {
+    "block_xy": [
+     0.55339,
+     0.01735
+    ],
+    "block_yaw": 0.5498,
+    "target_xy": [
+     0.48538,
+     -0.12358
+    ]
+   },
+   "reset_seed": 31005,
+   "scenario_id": "sa6448c700ca1"
+  },
+  {
+   "condition_id": "c376b7607dfdb",
+   "goal_sector": 7,
+   "layout": {
+    "block_xy": [
+     0.4406,
+     0.01867
+    ],
+    "block_yaw": -1.62306,
+    "target_xy": [
+     0.61607,
+     -0.07444
+    ]
+   },
+   "reset_seed": 31047,
+   "scenario_id": "s11a16aff4966"
+  },
+  {
+   "condition_id": "c6e6e37750591",
+   "goal_sector": 7,
+   "layout": {
+    "block_xy": [
+     0.44835,
+     0.02628
+    ],
+    "block_yaw": -0.61834,
+    "target_xy": [
+     0.56381,
+     0.01244
+    ]
+   },
+   "reset_seed": 31095,
+   "scenario_id": "s746d638561d7"
+  },
+  {
+   "condition_id": "cd55788193698",
+   "goal_sector": 7,
+   "layout": {
+    "block_xy": [
+     0.47905,
+     -0.0021
+    ],
+    "block_yaw": 1.05591,
+    "target_xy": [
+     0.57034,
+     -0.03432
+    ]
+   },
+   "reset_seed": 31199,
+   "scenario_id": "s0a18ce1798a3"
+  },
+  {
+   "condition_id": "c8c8496582021",
+   "goal_sector": 5,
+   "layout": {
+    "block_xy": [
+     0.49342,
+     0.11832
+    ],
+    "block_yaw": 0.85071,
+    "target_xy": [
+     0.477,
+     -0.02943
+    ]
+   },
+   "reset_seed": 31077,
+   "scenario_id": "sc4d8729a8078"
+  },
+  {
+   "condition_id": "c8c8496582021",
+   "goal_sector": 3,
+   "layout": {
+    "block_xy": [
+     0.59755,
+     -0.04169
+    ],
+    "block_yaw": -2.50793,
+    "target_xy": [
+     0.47814,
+     -0.03586
+    ]
+   },
+   "reset_seed": 31075,
+   "scenario_id": "s5a0af08818b6"
+  },
+  {
+   "condition_id": "cef815b44a296",
+   "goal_sector": 0,
+   "layout": {
+    "block_xy": [
+     0.52047,
+     -0.00445
+    ],
+    "block_yaw": -1.45688,
+    "target_xy": [
+     0.60308,
+     0.03132
+    ]
+   },
+   "reset_seed": 31080,
+   "scenario_id": "s34f27bd627b7"
+  },
+  {
+   "condition_id": "c05a39f20d18a",
+   "goal_sector": 5,
+   "layout": {
+    "block_xy": [
+     0.55804,
+     0.11647
+    ],
+    "block_yaw": -0.86522,
+    "target_xy": [
+     0.5361,
+     -0.04804
+    ]
+   },
+   "reset_seed": 31093,
+   "scenario_id": "se1be714fa25e"
+  },
+  {
+   "condition_id": "ce4d8b7a62f65",
+   "goal_sector": 7,
+   "layout": {
+    "block_xy": [
+     0.42948,
+     0.12357
+    ],
+    "block_yaw": -2.03644,
+    "target_xy": [
+     0.50531,
+     0.05156
+    ]
+   },
+   "reset_seed": 31087,
+   "scenario_id": "s8cccd72e0fda"
+  },
+  {
+   "condition_id": "c3c36ac11556a",
+   "goal_sector": 6,
+   "layout": {
+    "block_xy": [
+     0.55036,
+     0.00435
+    ],
+    "block_yaw": 2.09996,
+    "target_xy": [
+     0.60745,
+     -0.05485
+    ]
+   },
+   "reset_seed": 31118,
+   "scenario_id": "s04f3ac9a4354"
+  },
+  {
+   "condition_id": "c0b9b849fe7c9",
+   "goal_sector": 4,
+   "layout": {
+    "block_xy": [
+     0.54585,
+     0.03765
+    ],
+    "block_yaw": -2.72655,
+    "target_xy": [
+     0.46348,
+     -0.01598
+    ]
+   },
+   "reset_seed": 31140,
+   "scenario_id": "sc7784796a988"
+  },
+  {
+   "condition_id": "c82cbabf2267c",
+   "goal_sector": 3,
+   "layout": {
+    "block_xy": [
+     0.55677,
+     -0.07515
+    ],
+    "block_yaw": -0.7368,
+    "target_xy": [
+     0.4471,
+     -0.06456
+    ]
+   },
+   "reset_seed": 31107,
+   "scenario_id": "s51ad9f0331bd"
+  },
+  {
+   "condition_id": "cb259fc913c8a",
+   "goal_sector": 3,
+   "layout": {
+    "block_xy": [
+     0.5948,
+     -0.03684
+    ],
+    "block_yaw": 0.63506,
+    "target_xy": [
+     0.50614,
+     0.00553
+    ]
+   },
+   "reset_seed": 31187,
+   "scenario_id": "sd05d512546a4"
+  },
+  {
+   "condition_id": "c3fb510dce781",
+   "goal_sector": 0,
+   "layout": {
+    "block_xy": [
+     0.4498,
+     -0.01898
+    ],
+    "block_yaw": -0.72967,
+    "target_xy": [
+     0.56739,
+     0.06011
+    ]
+   },
+   "reset_seed": 31000,
+   "scenario_id": "sc0ffdd3a5535"
+  },
+  {
+   "condition_id": "c89cf6f0ab41b",
+   "goal_sector": 7,
+   "layout": {
+    "block_xy": [
+     0.45517,
+     0.02825
+    ],
+    "block_yaw": -1.30915,
+    "target_xy": [
+     0.56188,
+     -0.06491
+    ]
+   },
+   "reset_seed": 31103,
+   "scenario_id": "sec0ca6597ae1"
+  },
+  {
+   "condition_id": "c8711e997e09d",
+   "goal_sector": 3,
+   "layout": {
+    "block_xy": [
+     0.54584,
+     0.02831
+    ],
+    "block_yaw": 0.98724,
+    "target_xy": [
+     0.44067,
+     0.04764
+    ]
+   },
+   "reset_seed": 31019,
+   "scenario_id": "s6d9cf6b700cb"
+  },
+  {
+   "condition_id": "c8620e83e57bf",
+   "goal_sector": 4,
+   "layout": {
+    "block_xy": [
+     0.61181,
+     -0.02164
+    ],
+    "block_yaw": 2.51308,
+    "target_xy": [
+     0.47919,
+     -0.12729
+    ]
+   },
+   "reset_seed": 31172,
+   "scenario_id": "s2048c8f671de"
+  },
+  {
+   "condition_id": "c89cf6f0ab41b",
+   "goal_sector": 4,
+   "layout": {
+    "block_xy": [
+     0.52885,
+     0.01131
+    ],
+    "block_yaw": 2.32565,
+    "target_xy": [
+     0.43242,
+     -0.06016
+    ]
+   },
+   "reset_seed": 31100,
+   "scenario_id": "sb74af129e99f"
+  },
+  {
+   "condition_id": "c2b723255aa1c",
+   "goal_sector": 2,
+   "layout": {
+    "block_xy": [
+     0.55931,
+     -0.07387
+    ],
+    "block_yaw": 0.15621,
+    "target_xy": [
+     0.55586,
+     0.04103
+    ]
+   },
+   "reset_seed": 31050,
+   "scenario_id": "s982eb6eac7ea"
+  },
+  {
+   "condition_id": "cb264242eaf35",
+   "goal_sector": 2,
+   "layout": {
+    "block_xy": [
+     0.56534,
+     0.01021
+    ],
+    "block_yaw": 1.33354,
+    "target_xy": [
+     0.51554,
+     0.13057
+    ]
+   },
+   "reset_seed": 31130,
+   "scenario_id": "s241d9a46599b"
+  },
+  {
+   "condition_id": "c749fa7ee7050",
+   "goal_sector": 7,
+   "layout": {
+    "block_xy": [
+     0.45242,
+     0.05219
+    ],
+    "block_yaw": 1.99532,
+    "target_xy": [
+     0.53683,
+     0.00255
+    ]
+   },
+   "reset_seed": 31055,
+   "scenario_id": "s960a24ecdc7a"
+  },
+  {
+   "condition_id": "ca185f6cd0a6a",
+   "goal_sector": 3,
+   "layout": {
+    "block_xy": [
+     0.54999,
+     -0.00445
+    ],
+    "block_yaw": -1.45309,
+    "target_xy": [
+     0.42144,
+     0.10163
+    ]
+   },
+   "reset_seed": 31147,
+   "scenario_id": "s6a81eae1c2c9"
+  },
+  {
+   "condition_id": "ca9a9bf61a56c",
+   "goal_sector": 6,
+   "layout": {
+    "block_xy": [
+     0.49689,
+     -0.0039
+    ],
+    "block_yaw": 2.65776,
+    "target_xy": [
+     0.54462,
+     -0.08805
+    ]
+   },
+   "reset_seed": 31110,
+   "scenario_id": "s29607e3b1991"
+  },
+  {
+   "condition_id": "cd9994e687001",
+   "goal_sector": 3,
+   "layout": {
+    "block_xy": [
+     0.50361,
+     -0.11415
+    ],
+    "block_yaw": -1.73977,
+    "target_xy": [
+     0.42203,
+     -0.0895
+    ]
+   },
+   "reset_seed": 31123,
+   "scenario_id": "s36cb6ec7184c"
+  },
+  {
+   "condition_id": "cef815b44a296",
+   "goal_sector": 1,
+   "layout": {
+    "block_xy": [
+     0.49318,
+     -0.01339
+    ],
+    "block_yaw": 2.92175,
+    "target_xy": [
+     0.51714,
+     0.14854
+    ]
+   },
+   "reset_seed": 31081,
+   "scenario_id": "sd5b67482a5dc"
+  },
+  {
+   "condition_id": "c1d853fd60a42",
+   "goal_sector": 4,
+   "layout": {
+    "block_xy": [
+     0.58627,
+     -0.05356
+    ],
+    "block_yaw": 0.54153,
+    "target_xy": [
+     0.4458,
+     -0.12338
+    ]
+   },
+   "reset_seed": 31180,
+   "scenario_id": "s862354671b84"
+  },
+  {
+   "condition_id": "c7b6aad6da17a",
+   "goal_sector": 5,
+   "layout": {
+    "block_xy": [
+     0.51684,
+     -0.00094
+    ],
+    "block_yaw": -0.62575,
+    "target_xy": [
+     0.4688,
+     -0.11471
+    ]
+   },
+   "reset_seed": 31125,
+   "scenario_id": "s33bdb278cc13"
+  },
+  {
+   "condition_id": "c395a1e727dbc",
+   "goal_sector": 0,
+   "layout": {
+    "block_xy": [
+     0.47486,
+     -0.00532
+    ],
+    "block_yaw": 0.27321,
+    "target_xy": [
+     0.55527,
+     0.07418
+    ]
+   },
+   "reset_seed": 31040,
+   "scenario_id": "s282c62223fa9"
+  },
+  {
+   "condition_id": "cd9994e687001",
+   "goal_sector": 2,
+   "layout": {
+    "block_xy": [
+     0.53718,
+     0.01423
+    ],
+    "block_yaw": -0.91015,
+    "target_xy": [
+     0.46858,
+     0.1465
+    ]
+   },
+   "reset_seed": 31122,
+   "scenario_id": "s23ff3a4649b4"
+  },
+  {
+   "condition_id": "c1d853fd60a42",
+   "goal_sector": 0,
+   "layout": {
+    "block_xy": [
+     0.43355,
+     0.01761
+    ],
+    "block_yaw": -0.40831,
+    "target_xy": [
+     0.5829,
+     0.11889
+    ]
+   },
+   "reset_seed": 31184,
+   "scenario_id": "sea359b11862a"
+  },
+  {
+   "condition_id": "ca2994ad8684d",
+   "goal_sector": 0,
+   "layout": {
+    "block_xy": [
+     0.42246,
+     0.01014
+    ],
+    "block_yaw": 0.68537,
+    "target_xy": [
+     0.53623,
+     0.09132
+    ]
+   },
+   "reset_seed": 31168,
+   "scenario_id": "sb09c15069462"
+  },
+  {
+   "condition_id": "c4720a3d6b064",
+   "goal_sector": 6,
+   "layout": {
+    "block_xy": [
+     0.60404,
+     0.11151
+    ],
+    "block_yaw": 1.29014,
+    "target_xy": [
+     0.61772,
+     -0.03967
+    ]
+   },
+   "reset_seed": 31070,
+   "scenario_id": "s0506740b810b"
+  },
+  {
+   "condition_id": "c4da016f60bdb",
+   "goal_sector": 0,
+   "layout": {
+    "block_xy": [
+     0.47582,
+     0.02899
+    ],
+    "block_yaw": -2.16278,
+    "target_xy": [
+     0.6044,
+     0.13828
+    ]
+   },
+   "reset_seed": 31024,
+   "scenario_id": "sc3d24e3875a3"
+  },
+  {
+   "condition_id": "ce4d8b7a62f65",
+   "goal_sector": 5,
+   "layout": {
+    "block_xy": [
+     0.57112,
+     -0.01514
+    ],
+    "block_yaw": 0.07693,
+    "target_xy": [
+     0.51082,
+     -0.14059
+    ]
+   },
+   "reset_seed": 31085,
+   "scenario_id": "s8fda341f127f"
+  },
+  {
+   "condition_id": "ca9a9bf61a56c",
+   "goal_sector": 0,
+   "layout": {
+    "block_xy": [
+     0.42656,
+     -0.0795
+    ],
+    "block_yaw": -2.20049,
+    "target_xy": [
+     0.56525,
+     -0.01991
+    ]
+   },
+   "reset_seed": 31112,
+   "scenario_id": "sc1dca14ce7eb"
+  },
+  {
+   "condition_id": "c3a660ba7be4a",
+   "goal_sector": 4,
+   "layout": {
+    "block_xy": [
+     0.55105,
+     0.06276
+    ],
+    "block_yaw": 0.3319,
+    "target_xy": [
+     0.42631,
+     0.03852
+    ]
+   },
+   "reset_seed": 31164,
+   "scenario_id": "sf83cbba642f0"
+  },
+  {
+   "condition_id": "c3c36ac11556a",
+   "goal_sector": 5,
+   "layout": {
+    "block_xy": [
+     0.49822,
+     0.11266
+    ],
+    "block_yaw": 1.77178,
+    "target_xy": [
+     0.43278,
+     -0.04745
+    ]
+   },
+   "reset_seed": 31117,
+   "scenario_id": "s635d0040c56e"
+  },
+  {
+   "condition_id": "c89cf6f0ab41b",
+   "goal_sector": 6,
+   "layout": {
+    "block_xy": [
+     0.44111,
+     -0.0475
+    ],
+    "block_yaw": -1.24093,
+    "target_xy": [
+     0.44188,
+     -0.13734
+    ]
+   },
+   "reset_seed": 31102,
+   "scenario_id": "s27777dab8326"
+  },
+  {
+   "condition_id": "c1d853fd60a42",
+   "goal_sector": 7,
+   "layout": {
+    "block_xy": [
+     0.4583,
+     -0.08929
+    ],
+    "block_yaw": 2.28951,
+    "target_xy": [
+     0.54454,
+     -0.14504
+    ]
+   },
+   "reset_seed": 31183,
+   "scenario_id": "s98243697bbee"
+  },
+  {
+   "condition_id": "c6e6e37750591",
+   "goal_sector": 3,
+   "layout": {
+    "block_xy": [
+     0.61525,
+     -0.08269
+    ],
+    "block_yaw": 1.57169,
+    "target_xy": [
+     0.49549,
+     -0.07006
+    ]
+   },
+   "reset_seed": 31099,
+   "scenario_id": "se3ddcd505555"
+  },
+  {
+   "condition_id": "c8c8496582021",
+   "goal_sector": 7,
+   "layout": {
+    "block_xy": [
+     0.4856,
+     0.0148
+    ],
+    "block_yaw": 1.09016,
+    "target_xy": [
+     0.57452,
+     -0.00315
+    ]
+   },
+   "reset_seed": 31079,
+   "scenario_id": "s1ef0b4d38610"
+  },
+  {
+   "condition_id": "ce4d8b7a62f65",
+   "goal_sector": 0,
+   "layout": {
+    "block_xy": [
+     0.4893,
+     0.06088
+    ],
+    "block_yaw": -2.91924,
+    "target_xy": [
+     0.61368,
+     0.10177
+    ]
+   },
+   "reset_seed": 31088,
+   "scenario_id": "s18bcdaa063db"
+  },
+  {
+   "condition_id": "c0ea58fa41281",
+   "goal_sector": 0,
+   "layout": {
+    "block_xy": [
+     0.4446,
+     -0.09696
+    ],
+    "block_yaw": 1.32459,
+    "target_xy": [
+     0.55755,
+     0.01135
+    ]
+   },
+   "reset_seed": 31008,
+   "scenario_id": "sb31d25394cae"
+  },
+  {
+   "condition_id": "c0ea58fa41281",
+   "goal_sector": 6,
+   "layout": {
+    "block_xy": [
+     0.42591,
+     -0.03294
+    ],
+    "block_yaw": -1.32509,
+    "target_xy": [
+     0.47742,
+     -0.13025
+    ]
+   },
+   "reset_seed": 31006,
+   "scenario_id": "sa76f405f2d20"
+  },
+  {
+   "condition_id": "c395a1e727dbc",
+   "goal_sector": 4,
+   "layout": {
+    "block_xy": [
+     0.55849,
+     -0.0928
+    ],
+    "block_yaw": 2.28208,
+    "target_xy": [
+     0.47988,
+     -0.1081
+    ]
+   },
+   "reset_seed": 31044,
+   "scenario_id": "sb1d4ee2880a3"
+  },
+  {
+   "condition_id": "c407ada03b2a0",
+   "goal_sector": 0,
+   "layout": {
+    "block_xy": [
+     0.50611,
+     -0.02269
+    ],
+    "block_yaw": -2.26149,
+    "target_xy": [
+     0.60288,
+     -0.01441
+    ]
+   },
+   "reset_seed": 31152,
+   "scenario_id": "s31e14946e58d"
+  },
+  {
+   "condition_id": "cda7751f433de",
+   "goal_sector": 0,
+   "layout": {
+    "block_xy": [
+     0.46205,
+     0.00533
+    ],
+    "block_yaw": 2.67051,
+    "target_xy": [
+     0.60341,
+     0.14233
+    ]
+   },
+   "reset_seed": 31136,
+   "scenario_id": "s968cba8fcff5"
+  },
+  {
+   "condition_id": "c3a660ba7be4a",
+   "goal_sector": 3,
+   "layout": {
+    "block_xy": [
+     0.61683,
+     -0.11254
+    ],
+    "block_yaw": 1.95247,
+    "target_xy": [
+     0.4461,
+     -0.06235
+    ]
+   },
+   "reset_seed": 31163,
+   "scenario_id": "s6c0b18b2021c"
+  },
+  {
+   "condition_id": "c376b7607dfdb",
+   "goal_sector": 5,
+   "layout": {
+    "block_xy": [
+     0.58508,
+     -0.03819
+    ],
+    "block_yaw": -2.44251,
+    "target_xy": [
+     0.52298,
+     -0.10788
+    ]
+   },
+   "reset_seed": 31045,
+   "scenario_id": "s28354462fef5"
+  },
+  {
+   "condition_id": "cc5f01136d4c4",
+   "goal_sector": 5,
+   "layout": {
+    "block_xy": [
+     0.56533,
+     0.12828
+    ],
+    "block_yaw": -2.20935,
+    "target_xy": [
+     0.53649,
+     0.04825
+    ]
+   },
+   "reset_seed": 31061,
+   "scenario_id": "sa301cc8db489"
+  },
+  {
+   "condition_id": "c8c8496582021",
+   "goal_sector": 4,
+   "layout": {
+    "block_xy": [
+     0.61659,
+     -0.04
+    ],
+    "block_yaw": -2.32024,
+    "target_xy": [
+     0.47574,
+     -0.10382
+    ]
+   },
+   "reset_seed": 31076,
+   "scenario_id": "s84488388382c"
+  },
+  {
+   "condition_id": "c8c8496582021",
+   "goal_sector": 6,
+   "layout": {
+    "block_xy": [
+     0.44922,
+     0.12264
+    ],
+    "block_yaw": -0.40989,
+    "target_xy": [
+     0.47765,
+     0.04338
+    ]
+   },
+   "reset_seed": 31078,
+   "scenario_id": "s7ee2dca34f0a"
+  },
+  {
+   "condition_id": "cc98a48ba9963",
+   "goal_sector": 3,
+   "layout": {
+    "block_xy": [
+     0.56939,
+     0.09206
+    ],
+    "block_yaw": -0.13401,
+    "target_xy": [
+     0.4485,
+     0.09885
+    ]
+   },
+   "reset_seed": 31179,
+   "scenario_id": "s1f17b0b6a8fe"
+  },
+  {
+   "condition_id": "c6e6e37750591",
+   "goal_sector": 1,
+   "layout": {
+    "block_xy": [
+     0.50419,
+     -0.08397
+    ],
+    "block_yaw": 1.93918,
+    "target_xy": [
+     0.54693,
+     0.08225
+    ]
+   },
+   "reset_seed": 31097,
+   "scenario_id": "s052cb43aff0c"
+  },
+  {
+   "condition_id": "cc9836cfc48ab",
+   "goal_sector": 2,
+   "layout": {
+    "block_xy": [
+     0.57663,
+     -0.01388
+    ],
+    "block_yaw": -0.30516,
+    "target_xy": [
+     0.57328,
+     0.10998
+    ]
+   },
+   "reset_seed": 31034,
+   "scenario_id": "s4734f9d50e75"
+  },
+  {
+   "condition_id": "c1cf36309b46a",
+   "goal_sector": 3,
+   "layout": {
+    "block_xy": [
+     0.57951,
+     0.02736
+    ],
+    "block_yaw": -1.71701,
+    "target_xy": [
+     0.49823,
+     0.07357
+    ]
+   },
+   "reset_seed": 31035,
+   "scenario_id": "s52ef85956c8f"
+  },
+  {
+   "condition_id": "cb264242eaf35",
+   "goal_sector": 4,
+   "layout": {
+    "block_xy": [
+     0.57198,
+     0.05067
+    ],
+    "block_yaw": 1.64705,
+    "target_xy": [
+     0.4554,
+     -0.06476
+    ]
+   },
+   "reset_seed": 31132,
+   "scenario_id": "s9d03825aed99"
+  },
+  {
+   "condition_id": "ca185f6cd0a6a",
+   "goal_sector": 5,
+   "layout": {
+    "block_xy": [
+     0.52965,
+     -0.0009
+    ],
+    "block_yaw": -1.98039,
+    "target_xy": [
+     0.52439,
+     -0.11271
+    ]
+   },
+   "reset_seed": 31149,
+   "scenario_id": "s0697f4e60496"
+  },
+  {
+   "condition_id": "ca2994ad8684d",
+   "goal_sector": 1,
+   "layout": {
+    "block_xy": [
+     0.50624,
+     -0.06568
+    ],
+    "block_yaw": -2.71614,
+    "target_xy": [
+     0.61675,
+     0.0656
+    ]
+   },
+   "reset_seed": 31169,
+   "scenario_id": "s8a5e98809abe"
+  },
+  {
+   "condition_id": "c395a1e727dbc",
+   "goal_sector": 2,
+   "layout": {
+    "block_xy": [
+     0.50944,
+     -0.11641
+    ],
+    "block_yaw": 0.86955,
+    "target_xy": [
+     0.42918,
+     0.01285
+    ]
+   },
+   "reset_seed": 31042,
+   "scenario_id": "s3f474ea4bae6"
+  },
+  {
+   "condition_id": "c97535669bf03",
+   "goal_sector": 1,
+   "layout": {
+    "block_xy": [
+     0.47522,
+     0.04581
+    ],
+    "block_yaw": 1.15414,
+    "target_xy": [
+     0.53011,
+     0.11165
+    ]
+   },
+   "reset_seed": 31193,
+   "scenario_id": "s2c2aad23af48"
+  },
+  {
+   "condition_id": "c05a39f20d18a",
+   "goal_sector": 6,
+   "layout": {
+    "block_xy": [
+     0.43654,
+     0.04878
+    ],
+    "block_yaw": 2.98734,
+    "target_xy": [
+     0.46543,
+     -0.02606
+    ]
+   },
+   "reset_seed": 31094,
+   "scenario_id": "s4aa2daac621d"
+  },
+  {
+   "condition_id": "c2b723255aa1c",
+   "goal_sector": 4,
+   "layout": {
+    "block_xy": [
+     0.5504,
+     0.03853
+    ],
+    "block_yaw": -2.08321,
+    "target_xy": [
+     0.43153,
+     -0.04578
+    ]
+   },
+   "reset_seed": 31052,
+   "scenario_id": "s07199ff0a52a"
+  },
+  {
+   "condition_id": "c3c36ac11556a",
+   "goal_sector": 7,
+   "layout": {
+    "block_xy": [
+     0.53803,
+     0.11812
+    ],
+    "block_yaw": 1.19712,
+    "target_xy": [
+     0.60642,
+     0.0564
+    ]
+   },
+   "reset_seed": 31119,
+   "scenario_id": "s0bc3bb99ca47"
+  },
+  {
+   "condition_id": "c7b6aad6da17a",
+   "goal_sector": 0,
+   "layout": {
+    "block_xy": [
+     0.42315,
+     0.00731
+    ],
+    "block_yaw": -3.05286,
+    "target_xy": [
+     0.50934,
+     0.02642
+    ]
+   },
+   "reset_seed": 31128,
+   "scenario_id": "s75fff4704baf"
+  },
+  {
+   "condition_id": "cc5f01136d4c4",
+   "goal_sector": 4,
+   "layout": {
+    "block_xy": [
+     0.57303,
+     0.10297
+    ],
+    "block_yaw": 2.4292,
+    "target_xy": [
+     0.4598,
+     0.05342
+    ]
+   },
+   "reset_seed": 31060,
+   "scenario_id": "s717ec1373584"
+  },
+  {
+   "condition_id": "c0b9b849fe7c9",
+   "goal_sector": 0,
+   "layout": {
+    "block_xy": [
+     0.47072,
+     -0.01578
+    ],
+    "block_yaw": -2.78381,
+    "target_xy": [
+     0.55158,
+     0.02116
+    ]
+   },
+   "reset_seed": 31144,
+   "scenario_id": "s6c3d409c1abc"
+  },
+  {
+   "condition_id": "cc9836cfc48ab",
+   "goal_sector": 1,
+   "layout": {
+    "block_xy": [
+     0.48671,
+     -0.12194
+    ],
+    "block_yaw": 1.04936,
+    "target_xy": [
+     0.54063,
+     -0.02804
+    ]
+   },
+   "reset_seed": 31033,
+   "scenario_id": "sa2499ea6085d"
+  },
+  {
+   "condition_id": "c70a53256a55e",
+   "goal_sector": 5,
+   "layout": {
+    "block_xy": [
+     0.46561,
+     0.12381
+    ],
+    "block_yaw": 0.22583,
+    "target_xy": [
+     0.43515,
+     0.01963
+    ]
+   },
+   "reset_seed": 31069,
+   "scenario_id": "sb90ec124b30f"
+  },
+  {
+   "condition_id": "c3fb510dce781",
+   "goal_sector": 3,
+   "layout": {
+    "block_xy": [
+     0.5849,
+     0.00626
+    ],
+    "block_yaw": -0.37319,
+    "target_xy": [
+     0.4605,
+     0.1136
+    ]
+   },
+   "reset_seed": 31003,
+   "scenario_id": "s3e84ebd1923c"
+  },
+  {
+   "condition_id": "c82739e908981",
+   "goal_sector": 3,
+   "layout": {
+    "block_xy": [
+     0.59498,
+     -0.04491
+    ],
+    "block_yaw": -1.77151,
+    "target_xy": [
+     0.48756,
+     -0.01364
+    ]
+   },
+   "reset_seed": 31011,
+   "scenario_id": "sbe965792ea39"
+  },
+  {
+   "condition_id": "c749fa7ee7050",
+   "goal_sector": 3,
+   "layout": {
+    "block_xy": [
+     0.59466,
+     0.04081
+    ],
+    "block_yaw": 0.04608,
+    "target_xy": [
+     0.53203,
+     0.10326
+    ]
+   },
+   "reset_seed": 31059,
+   "scenario_id": "sa0f500ac36b1"
+  },
+  {
+   "condition_id": "c0b9b849fe7c9",
+   "goal_sector": 5,
+   "layout": {
+    "block_xy": [
+     0.52306,
+     0.03168
+    ],
+    "block_yaw": -2.68199,
+    "target_xy": [
+     0.46014,
+     -0.09865
+    ]
+   },
+   "reset_seed": 31141,
+   "scenario_id": "s4c8abde943fa"
+  },
+  {
+   "condition_id": "c8620e83e57bf",
+   "goal_sector": 5,
+   "layout": {
+    "block_xy": [
+     0.57661,
+     0.04405
+    ],
+    "block_yaw": -2.77332,
+    "target_xy": [
+     0.52762,
+     -0.07222
+    ]
+   },
+   "reset_seed": 31173,
+   "scenario_id": "s2c4d8ea2a143"
+  },
+  {
+   "condition_id": "ca185f6cd0a6a",
+   "goal_sector": 4,
+   "layout": {
+    "block_xy": [
+     0.57082,
+     0.09511
+    ],
+    "block_yaw": -2.00485,
+    "target_xy": [
+     0.49893,
+     0.04603
+    ]
+   },
+   "reset_seed": 31148,
+   "scenario_id": "s4e4b9b31ec01"
+  },
+  {
+   "condition_id": "c6e6e37750591",
+   "goal_sector": 0,
+   "layout": {
+    "block_xy": [
+     0.48212,
+     -0.11276
+    ],
+    "block_yaw": 1.99947,
+    "target_xy": [
+     0.55553,
+     -0.0576
+    ]
+   },
+   "reset_seed": 31096,
+   "scenario_id": "sb50c98aa3c73"
+  },
+  {
+   "condition_id": "c258a19ceaeda",
+   "goal_sector": 5,
+   "layout": {
+    "block_xy": [
+     0.61695,
+     0.02546
+    ],
+    "block_yaw": -1.83173,
+    "target_xy": [
+     0.58653,
+     -0.07894
+    ]
+   },
+   "reset_seed": 31029,
+   "scenario_id": "s3cf37bc40fc8"
+  },
+  {
+   "condition_id": "c6e6e37750591",
+   "goal_sector": 2,
+   "layout": {
+    "block_xy": [
+     0.46534,
+     -0.02963
+    ],
+    "block_yaw": -2.64127,
+    "target_xy": [
+     0.4272,
+     0.1146
+    ]
+   },
+   "reset_seed": 31098,
+   "scenario_id": "s1f7a68489b49"
+  },
+  {
+   "condition_id": "cb264242eaf35",
+   "goal_sector": 3,
+   "layout": {
+    "block_xy": [
+     0.61799,
+     0.08411
+    ],
+    "block_yaw": -2.49932,
+    "target_xy": [
+     0.5328,
+     0.10497
+    ]
+   },
+   "reset_seed": 31131,
+   "scenario_id": "s52336da44e22"
+  },
+  {
+   "condition_id": "cd9994e687001",
+   "goal_sector": 4,
+   "layout": {
+    "block_xy": [
+     0.58564,
+     -0.03222
+    ],
+    "block_yaw": -1.41821,
+    "target_xy": [
+     0.49052,
+     -0.04862
+    ]
+   },
+   "reset_seed": 31124,
+   "scenario_id": "sa13299a819b3"
+  },
+  {
+   "condition_id": "cc98a48ba9963",
+   "goal_sector": 1,
+   "layout": {
+    "block_xy": [
+     0.42831,
+     -0.0544
+    ],
+    "block_yaw": -0.43216,
+    "target_xy": [
+     0.49158,
+     0.03143
+    ]
+   },
+   "reset_seed": 31177,
+   "scenario_id": "s6234a7564709"
+  },
+  {
+   "condition_id": "c82739e908981",
+   "goal_sector": 5,
+   "layout": {
+    "block_xy": [
+     0.57948,
+     0.00714
+    ],
+    "block_yaw": 1.81394,
+    "target_xy": [
+     0.52328,
+     -0.09435
+    ]
+   },
+   "reset_seed": 31013,
+   "scenario_id": "s6b642ceef763"
+  },
+  {
+   "condition_id": "c3e71073e538c",
+   "goal_sector": 7,
+   "layout": {
+    "block_xy": [
+     0.49907,
+     0.10382
+    ],
+    "block_yaw": -2.5469,
+    "target_xy": [
+     0.57484,
+     0.04707
+    ]
+   },
+   "reset_seed": 31159,
+   "scenario_id": "sb5284f1f6e9a"
+  },
+  {
+   "condition_id": "c4720a3d6b064",
+   "goal_sector": 7,
+   "layout": {
+    "block_xy": [
+     0.53016,
+     0.0639
+    ],
+    "block_yaw": 0.08622,
+    "target_xy": [
+     0.6142,
+     -0.00707
+    ]
+   },
+   "reset_seed": 31071,
+   "scenario_id": "scaf2d006be40"
+  },
+  {
+   "condition_id": "c749fa7ee7050",
+   "goal_sector": 1,
+   "layout": {
+    "block_xy": [
+     0.4822,
+     -0.00586
+    ],
+    "block_yaw": -1.89857,
+    "target_xy": [
+     0.56877,
+     0.09209
+    ]
+   },
+   "reset_seed": 31057,
+   "scenario_id": "s2dc18973e65c"
+  },
+  {
+   "condition_id": "cc98a48ba9963",
+   "goal_sector": 2,
+   "layout": {
+    "block_xy": [
+     0.56143,
+     -0.10888
+    ],
+    "block_yaw": 3.02809,
+    "target_xy": [
+     0.50982,
+     0.07649
+    ]
+   },
+   "reset_seed": 31178,
+   "scenario_id": "sb2290f2064a1"
+  },
+  {
+   "condition_id": "c376b7607dfdb",
+   "goal_sector": 0,
+   "layout": {
+    "block_xy": [
+     0.45511,
+     -0.11662
+    ],
+    "block_yaw": 0.20465,
+    "target_xy": [
+     0.5669,
+     -0.03174
+    ]
+   },
+   "reset_seed": 31048,
+   "scenario_id": "s4179fdb4a0fc"
+  },
+  {
+   "condition_id": "ca2994ad8684d",
+   "goal_sector": 5,
+   "layout": {
+    "block_xy": [
+     0.58515,
+     0.1316
+    ],
+    "block_yaw": 1.44248,
+    "target_xy": [
+     0.53814,
+     0.02273
+    ]
+   },
+   "reset_seed": 31165,
+   "scenario_id": "s993444abe81a"
+  },
+  {
+   "condition_id": "c376b7607dfdb",
+   "goal_sector": 6,
+   "layout": {
+    "block_xy": [
+     0.46081,
+     0.01252
+    ],
+    "block_yaw": 1.23802,
+    "target_xy": [
+     0.52429,
+     -0.08986
+    ]
+   },
+   "reset_seed": 31046,
+   "scenario_id": "sa18e84f67d4e"
+  },
+  {
+   "condition_id": "cb259fc913c8a",
+   "goal_sector": 2,
+   "layout": {
+    "block_xy": [
+     0.57529,
+     -0.07072
+    ],
+    "block_yaw": 0.00079,
+    "target_xy": [
+     0.55219,
+     0.02166
+    ]
+   },
+   "reset_seed": 31186,
+   "scenario_id": "sc5aa6e505e4f"
+  },
+  {
+   "condition_id": "c82cbabf2267c",
+   "goal_sector": 2,
+   "layout": {
+    "block_xy": [
+     0.51118,
+     0.01426
+    ],
+    "block_yaw": -1.92384,
+    "target_xy": [
+     0.46803,
+     0.13932
+    ]
+   },
+   "reset_seed": 31106,
+   "scenario_id": "scbed8751d731"
+  },
+  {
+   "condition_id": "ca185f6cd0a6a",
+   "goal_sector": 1,
+   "layout": {
+    "block_xy": [
+     0.44844,
+     0.05882
+    ],
+    "block_yaw": 1.58887,
+    "target_xy": [
+     0.4994,
+     0.12983
+    ]
+   },
+   "reset_seed": 31145,
+   "scenario_id": "sd7338030e5ff"
+  },
+  {
+   "condition_id": "c258a19ceaeda",
+   "goal_sector": 2,
+   "layout": {
+    "block_xy": [
+     0.49251,
+     -0.03865
+    ],
+    "block_yaw": -3.03653,
+    "target_xy": [
+     0.46737,
+     0.05928
+    ]
+   },
+   "reset_seed": 31026,
+   "scenario_id": "s865fa43aa462"
+  },
+  {
+   "condition_id": "cd55788193698",
+   "goal_sector": 5,
+   "layout": {
+    "block_xy": [
+     0.49393,
+     0.10939
+    ],
+    "block_yaw": 2.63015,
+    "target_xy": [
+     0.43533,
+     0.03225
+    ]
+   },
+   "reset_seed": 31197,
+   "scenario_id": "s0515fbd994ba"
+  },
+  {
+   "condition_id": "c8711e997e09d",
+   "goal_sector": 7,
+   "layout": {
+    "block_xy": [
+     0.48359,
+     -0.04282
+    ],
+    "block_yaw": -0.91396,
+    "target_xy": [
+     0.57029,
+     -0.08473
+    ]
+   },
+   "reset_seed": 31015,
+   "scenario_id": "s099db83fbe77"
+  },
+  {
+   "condition_id": "cc5f01136d4c4",
+   "goal_sector": 0,
+   "layout": {
+    "block_xy": [
+     0.42124,
+     -0.06013
+    ],
+    "block_yaw": 1.25622,
+    "target_xy": [
+     0.58276,
+     -0.00122
+    ]
+   },
+   "reset_seed": 31064,
+   "scenario_id": "s865b0c2d4556"
+  },
+  {
+   "condition_id": "ca185f6cd0a6a",
+   "goal_sector": 2,
+   "layout": {
+    "block_xy": [
+     0.51904,
+     0.0045
+    ],
+    "block_yaw": 2.07723,
+    "target_xy": [
+     0.4624,
+     0.12747
+    ]
+   },
+   "reset_seed": 31146,
+   "scenario_id": "sae5c0612c898"
+  },
+  {
+   "condition_id": "c1cf36309b46a",
+   "goal_sector": 5,
+   "layout": {
+    "block_xy": [
+     0.50174,
+     0.06146
+    ],
+    "block_yaw": -0.33429,
+    "target_xy": [
+     0.43941,
+     -0.05935
+    ]
+   },
+   "reset_seed": 31037,
+   "scenario_id": "s79511c1f691e"
+  },
+  {
+   "condition_id": "c4720a3d6b064",
+   "goal_sector": 1,
+   "layout": {
+    "block_xy": [
+     0.46266,
+     -0.09476
+    ],
+    "block_yaw": 2.02368,
+    "target_xy": [
+     0.5126,
+     0.07492
+    ]
+   },
+   "reset_seed": 31073,
+   "scenario_id": "s1e838eafe75e"
+  },
+  {
+   "condition_id": "cc9836cfc48ab",
+   "goal_sector": 7,
+   "layout": {
+    "block_xy": [
+     0.48418,
+     0.00357
+    ],
+    "block_yaw": 2.43377,
+    "target_xy": [
+     0.57577,
+     -0.07935
+    ]
+   },
+   "reset_seed": 31031,
+   "scenario_id": "sb92cf9ec9e4c"
+  },
+  {
+   "condition_id": "c70a53256a55e",
+   "goal_sector": 1,
+   "layout": {
+    "block_xy": [
+     0.5367,
+     -0.04742
+    ],
+    "block_yaw": -1.1674,
+    "target_xy": [
+     0.55609,
+     0.06056
+    ]
+   },
+   "reset_seed": 31065,
+   "scenario_id": "s80807de3e096"
+  },
+  {
+   "condition_id": "c82739e908981",
+   "goal_sector": 6,
+   "layout": {
+    "block_xy": [
+     0.53147,
+     0.12244
+    ],
+    "block_yaw": -2.19829,
+    "target_xy": [
+     0.56943,
+     0.03715
+    ]
+   },
+   "reset_seed": 31014,
+   "scenario_id": "sfeaacc5b30a6"
+  },
+  {
+   "condition_id": "c0ea58fa41281",
+   "goal_sector": 7,
+   "layout": {
+    "block_xy": [
+     0.42951,
+     0.09613
+    ],
+    "block_yaw": 1.07838,
+    "target_xy": [
+     0.52029,
+     0.00776
+    ]
+   },
+   "reset_seed": 31007,
+   "scenario_id": "s5a7cd9094eaa"
+  },
+  {
+   "condition_id": "c407ada03b2a0",
+   "goal_sector": 7,
+   "layout": {
+    "block_xy": [
+     0.46722,
+     -0.03756
+    ],
+    "block_yaw": -1.66518,
+    "target_xy": [
+     0.567,
+     -0.10635
+    ]
+   },
+   "reset_seed": 31151,
+   "scenario_id": "s543154d34183"
+  },
+  {
+   "condition_id": "c0b9b849fe7c9",
+   "goal_sector": 7,
+   "layout": {
+    "block_xy": [
+     0.50252,
+     0.14106
+    ],
+    "block_yaw": -3.07981,
+    "target_xy": [
+     0.59034,
+     0.11083
+    ]
+   },
+   "reset_seed": 31143,
+   "scenario_id": "s7471702fa244"
+  },
+  {
+   "condition_id": "c89cf6f0ab41b",
+   "goal_sector": 5,
+   "layout": {
+    "block_xy": [
+     0.51889,
+     0.10582
+    ],
+    "block_yaw": 2.35891,
+    "target_xy": [
+     0.45108,
+     0.01755
+    ]
+   },
+   "reset_seed": 31101,
+   "scenario_id": "s7c5bea99b0a8"
+  },
+  {
+   "condition_id": "cb264242eaf35",
+   "goal_sector": 5,
+   "layout": {
+    "block_xy": [
+     0.55511,
+     0.07523
+    ],
+    "block_yaw": -0.04809,
+    "target_xy": [
+     0.5535,
+     -0.03905
+    ]
+   },
+   "reset_seed": 31133,
+   "scenario_id": "seb003362a541"
+  },
+  {
+   "condition_id": "ca2994ad8684d",
+   "goal_sector": 7,
+   "layout": {
+    "block_xy": [
+     0.45225,
+     0.08216
+    ],
+    "block_yaw": -1.73469,
+    "target_xy": [
+     0.5344,
+     0.04201
+    ]
+   },
+   "reset_seed": 31167,
+   "scenario_id": "s57be1037e205"
+  },
+  {
+   "condition_id": "cc98a48ba9963",
+   "goal_sector": 7,
+   "layout": {
+    "block_xy": [
+     0.44098,
+     0.00052
+    ],
+    "block_yaw": 2.29565,
+    "target_xy": [
+     0.53789,
+     -0.08356
+    ]
+   },
+   "reset_seed": 31175,
+   "scenario_id": "s5439d60226c5"
+  },
+  {
+   "condition_id": "cef815b44a296",
+   "goal_sector": 3,
+   "layout": {
+    "block_xy": [
+     0.59582,
+     0.05285
+    ],
+    "block_yaw": -2.6978,
+    "target_xy": [
+     0.42476,
+     0.06354
+    ]
+   },
+   "reset_seed": 31083,
+   "scenario_id": "s909a13922338"
+  },
+  {
+   "condition_id": "cd55788193698",
+   "goal_sector": 3,
+   "layout": {
+    "block_xy": [
+     0.61215,
+     0.08541
+    ],
+    "block_yaw": -1.56726,
+    "target_xy": [
+     0.5282,
+     0.11973
+    ]
+   },
+   "reset_seed": 31195,
+   "scenario_id": "s88a5ff15c560"
+  },
+  {
+   "condition_id": "c1d853fd60a42",
+   "goal_sector": 6,
+   "layout": {
+    "block_xy": [
+     0.43877,
+     0.06154
+    ],
+    "block_yaw": 0.22798,
+    "target_xy": [
+     0.52807,
+     -0.07838
+    ]
+   },
+   "reset_seed": 31182,
+   "scenario_id": "s0de5143475b9"
+  },
+  {
+   "condition_id": "c8620e83e57bf",
+   "goal_sector": 6,
+   "layout": {
+    "block_xy": [
+     0.55515,
+     0.02977
+    ],
+    "block_yaw": 0.23242,
+    "target_xy": [
+     0.56167,
+     -0.11233
+    ]
+   },
+   "reset_seed": 31174,
+   "scenario_id": "s64ff9763838b"
+  },
+  {
+   "condition_id": "cef815b44a296",
+   "goal_sector": 2,
+   "layout": {
+    "block_xy": [
+     0.55384,
+     -0.00661
+    ],
+    "block_yaw": 2.69342,
+    "target_xy": [
+     0.47659,
+     0.12116
+    ]
+   },
+   "reset_seed": 31082,
+   "scenario_id": "s22d2257a612a"
+  },
+  {
+   "condition_id": "c8620e83e57bf",
+   "goal_sector": 2,
+   "layout": {
+    "block_xy": [
+     0.566,
+     -0.14215
+    ],
+    "block_yaw": 1.32727,
+    "target_xy": [
+     0.50628,
+     -0.00977
+    ]
+   },
+   "reset_seed": 31170,
+   "scenario_id": "sea216d34d7a7"
+  },
+  {
+   "condition_id": "cc9836cfc48ab",
+   "goal_sector": 6,
+   "layout": {
+    "block_xy": [
+     0.59328,
+     0.08843
+    ],
+    "block_yaw": 0.35744,
+    "target_xy": [
+     0.60511,
+     -0.01868
+    ]
+   },
+   "reset_seed": 31030,
+   "scenario_id": "s8b06c4e2964a"
+  },
+  {
+   "condition_id": "ce4d8b7a62f65",
+   "goal_sector": 1,
+   "layout": {
+    "block_xy": [
+     0.52866,
+     -0.12656
+    ],
+    "block_yaw": 0.9511,
+    "target_xy": [
+     0.54015,
+     0.00052
+    ]
+   },
+   "reset_seed": 31089,
+   "scenario_id": "se42225aa19b3"
+  },
+  {
+   "condition_id": "ca9a9bf61a56c",
+   "goal_sector": 2,
+   "layout": {
+    "block_xy": [
+     0.61361,
+     -0.10171
+    ],
+    "block_yaw": 2.1696,
+    "target_xy": [
+     0.54642,
+     -0.01796
+    ]
+   },
+   "reset_seed": 31114,
+   "scenario_id": "sa60cabe66dfd"
+  },
+  {
+   "condition_id": "c407ada03b2a0",
+   "goal_sector": 6,
+   "layout": {
+    "block_xy": [
+     0.52305,
+     0.02821
+    ],
+    "block_yaw": 1.03184,
+    "target_xy": [
+     0.53385,
+     -0.06238
+    ]
+   },
+   "reset_seed": 31150,
+   "scenario_id": "s6bc9e073722d"
+  },
+  {
+   "condition_id": "c82739e908981",
+   "goal_sector": 2,
+   "layout": {
+    "block_xy": [
+     0.58918,
+     -0.05885
+    ],
+    "block_yaw": -2.17768,
+    "target_xy": [
+     0.58272,
+     0.12215
+    ]
+   },
+   "reset_seed": 31010,
+   "scenario_id": "s9444e3328a81"
+  },
+  {
+   "condition_id": "c70a53256a55e",
+   "goal_sector": 4,
+   "layout": {
+    "block_xy": [
+     0.58731,
+     -0.10202
+    ],
+    "block_yaw": -2.74407,
+    "target_xy": [
+     0.44929,
+     -0.13668
+    ]
+   },
+   "reset_seed": 31068,
+   "scenario_id": "sca9c6ae03d1a"
+  },
+  {
+   "condition_id": "c97535669bf03",
+   "goal_sector": 2,
+   "layout": {
+    "block_xy": [
+     0.60871,
+     -0.12863
+    ],
+    "block_yaw": 1.89065,
+    "target_xy": [
+     0.6076,
+     -0.03464
+    ]
+   },
+   "reset_seed": 31194,
+   "scenario_id": "s9a1613ec79f4"
+  },
+  {
+   "condition_id": "cef815b44a296",
+   "goal_sector": 4,
+   "layout": {
+    "block_xy": [
+     0.61229,
+     0.1388
+    ],
+    "block_yaw": -1.17246,
+    "target_xy": [
+     0.46634,
+     0.05744
+    ]
+   },
+   "reset_seed": 31084,
+   "scenario_id": "sfdb0f2753b2b"
+  },
+  {
+   "condition_id": "c3a660ba7be4a",
+   "goal_sector": 1,
+   "layout": {
+    "block_xy": [
+     0.42192,
+     -0.02955
+    ],
+    "block_yaw": 1.79563,
+    "target_xy": [
+     0.49549,
+     0.04646
+    ]
+   },
+   "reset_seed": 31161,
+   "scenario_id": "scb9742a28361"
+  },
+  {
+   "condition_id": "cda7751f433de",
+   "goal_sector": 1,
+   "layout": {
+    "block_xy": [
+     0.53982,
+     -0.08184
+    ],
+    "block_yaw": -0.0227,
+    "target_xy": [
+     0.61236,
+     0.01897
+    ]
+   },
+   "reset_seed": 31137,
+   "scenario_id": "sbcb40e964a5a"
+  },
+  {
+   "condition_id": "c4da016f60bdb",
+   "goal_sector": 5,
+   "layout": {
+    "block_xy": [
+     0.55752,
+     0.1463
+    ],
+    "block_yaw": 0.35807,
+    "target_xy": [
+     0.45678,
+     0.01445
+    ]
+   },
+   "reset_seed": 31021,
+   "scenario_id": "s5c36bcf7e084"
+  },
+  {
+   "condition_id": "c395a1e727dbc",
+   "goal_sector": 1,
+   "layout": {
+    "block_xy": [
+     0.54745,
+     -0.03933
+    ],
+    "block_yaw": 2.79492,
+    "target_xy": [
+     0.61737,
+     0.05407
+    ]
+   },
+   "reset_seed": 31041,
+   "scenario_id": "s88889b44ab75"
+  },
+  {
+   "condition_id": "c1d853fd60a42",
+   "goal_sector": 5,
+   "layout": {
+    "block_xy": [
+     0.53934,
+     0.01253
+    ],
+    "block_yaw": 2.98555,
+    "target_xy": [
+     0.45513,
+     -0.12768
+    ]
+   },
+   "reset_seed": 31181,
+   "scenario_id": "s98ceee5fc0e1"
+  },
+  {
+   "condition_id": "c395a1e727dbc",
+   "goal_sector": 3,
+   "layout": {
+    "block_xy": [
+     0.56181,
+     0.07085
+    ],
+    "block_yaw": 0.69069,
+    "target_xy": [
+     0.50068,
+     0.12745
+    ]
+   },
+   "reset_seed": 31043,
+   "scenario_id": "s1473c5d9a1d3"
+  },
+  {
+   "condition_id": "c97535669bf03",
+   "goal_sector": 6,
+   "layout": {
+    "block_xy": [
+     0.4427,
+     0.08632
+    ],
+    "block_yaw": 0.086,
+    "target_xy": [
+     0.44361,
+     -0.00456
+    ]
+   },
+   "reset_seed": 31190,
+   "scenario_id": "s3b39162e537f"
+  },
+  {
+   "condition_id": "c82cbabf2267c",
+   "goal_sector": 5,
+   "layout": {
+    "block_xy": [
+     0.4832,
+     -0.03051
+    ],
+    "block_yaw": -2.31071,
+    "target_xy": [
+     0.43334,
+     -0.13732
+    ]
+   },
+   "reset_seed": 31109,
+   "scenario_id": "s21ccaaf18578"
+  },
+  {
+   "condition_id": "c4da016f60bdb",
+   "goal_sector": 4,
+   "layout": {
+    "block_xy": [
+     0.61997,
+     -0.02692
+    ],
+    "block_yaw": 2.8446,
+    "target_xy": [
+     0.53806,
+     -0.10601
+    ]
+   },
+   "reset_seed": 31020,
+   "scenario_id": "s8cfc1dc508fc"
+  },
+  {
+   "condition_id": "c97535669bf03",
+   "goal_sector": 7,
+   "layout": {
+    "block_xy": [
+     0.53933,
+     0.11649
+    ],
+    "block_yaw": 1.65667,
+    "target_xy": [
+     0.61586,
+     0.06666
+    ]
+   },
+   "reset_seed": 31191,
+   "scenario_id": "s60237d168b98"
+  },
+  {
+   "condition_id": "cc9836cfc48ab",
+   "goal_sector": 0,
+   "layout": {
+    "block_xy": [
+     0.51098,
+     0.05436
+    ],
+    "block_yaw": -3.11039,
+    "target_xy": [
+     0.59325,
+     0.07134
+    ]
+   },
+   "reset_seed": 31032,
+   "scenario_id": "scaa410dfb29c"
+  },
+  {
+   "condition_id": "c1cf36309b46a",
+   "goal_sector": 7,
+   "layout": {
+    "block_xy": [
+     0.45129,
+     0.08707
+    ],
+    "block_yaw": 0.89684,
+    "target_xy": [
+     0.58483,
+     0.04166
+    ]
+   },
+   "reset_seed": 31039,
+   "scenario_id": "s4cab850738ae"
+  },
+  {
+   "condition_id": "c749fa7ee7050",
+   "goal_sector": 0,
+   "layout": {
+    "block_xy": [
+     0.47377,
+     -0.0407
+    ],
+    "block_yaw": -2.24735,
+    "target_xy": [
+     0.5469,
+     0.01252
+    ]
+   },
+   "reset_seed": 31056,
+   "scenario_id": "se30a54bfbcfd"
+  },
+  {
+   "condition_id": "c1cf36309b46a",
+   "goal_sector": 4,
+   "layout": {
+    "block_xy": [
+     0.60471,
+     0.08078
+    ],
+    "block_yaw": -0.7146,
+    "target_xy": [
+     0.48935,
+     0.03171
+    ]
+   },
+   "reset_seed": 31036,
+   "scenario_id": "s99d1189d832f"
+  },
+  {
+   "condition_id": "c4da016f60bdb",
+   "goal_sector": 7,
+   "layout": {
+    "block_xy": [
+     0.52471,
+     -0.05615
+    ],
+    "block_yaw": 1.93145,
+    "target_xy": [
+     0.59904,
+     -0.11218
+    ]
+   },
+   "reset_seed": 31023,
+   "scenario_id": "s6f395de4557f"
+  },
+  {
+   "condition_id": "c3fb510dce781",
+   "goal_sector": 2,
+   "layout": {
+    "block_xy": [
+     0.57278,
+     -0.0206
+    ],
+    "block_yaw": 2.10148,
+    "target_xy": [
+     0.45306,
+     0.13072
+    ]
+   },
+   "reset_seed": 31002,
+   "scenario_id": "s239feb8eaaac"
+  },
+  {
+   "condition_id": "c7b6aad6da17a",
+   "goal_sector": 7,
+   "layout": {
+    "block_xy": [
+     0.45148,
+     0.05877
+    ],
+    "block_yaw": 2.79579,
+    "target_xy": [
+     0.56895,
+     -0.00223
+    ]
+   },
+   "reset_seed": 31127,
+   "scenario_id": "s36c8edc0695a"
+  },
+  {
+   "condition_id": "c3e71073e538c",
+   "goal_sector": 4,
+   "layout": {
+    "block_xy": [
+     0.55746,
+     -0.02151
+    ],
+    "block_yaw": -0.66086,
+    "target_xy": [
+     0.47761,
+     -0.10107
+    ]
+   },
+   "reset_seed": 31156,
+   "scenario_id": "sea5b121bfbc6"
+  },
+  {
+   "condition_id": "cc98a48ba9963",
+   "goal_sector": 0,
+   "layout": {
+    "block_xy": [
+     0.45001,
+     -0.07892
+    ],
+    "block_yaw": 3.0397,
+    "target_xy": [
+     0.59002,
+     -0.03254
+    ]
+   },
+   "reset_seed": 31176,
+   "scenario_id": "s65a7946ce09e"
+  },
+  {
+   "condition_id": "c4da016f60bdb",
+   "goal_sector": 6,
+   "layout": {
+    "block_xy": [
+     0.55454,
+     0.00561
+    ],
+    "block_yaw": 3.1033,
+    "target_xy": [
+     0.59693,
+     -0.10723
+    ]
+   },
+   "reset_seed": 31022,
+   "scenario_id": "s2dec284d1868"
+  },
+  {
+   "condition_id": "cd55788193698",
+   "goal_sector": 6,
+   "layout": {
+    "block_xy": [
+     0.56541,
+     0.1126
+    ],
+    "block_yaw": -0.4214,
+    "target_xy": [
+     0.59077,
+     0.03119
+    ]
+   },
+   "reset_seed": 31198,
+   "scenario_id": "sc5728834b68a"
+  },
+  {
+   "condition_id": "c0ea58fa41281",
+   "goal_sector": 1,
+   "layout": {
+    "block_xy": [
+     0.52088,
+     -0.09192
+    ],
+    "block_yaw": -1.17261,
+    "target_xy": [
+     0.58836,
+     0.09226
+    ]
+   },
+   "reset_seed": 31009,
+   "scenario_id": "s4dd26e1aa995"
+  },
+  {
+   "condition_id": "c407ada03b2a0",
+   "goal_sector": 1,
+   "layout": {
+    "block_xy": [
+     0.4667,
+     -0.10661
+    ],
+    "block_yaw": 1.52169,
+    "target_xy": [
+     0.50606,
+     -0.02502
+    ]
+   },
+   "reset_seed": 31153,
+   "scenario_id": "s095da4887f19"
+  },
+  {
+   "condition_id": "ca9a9bf61a56c",
+   "goal_sector": 7,
+   "layout": {
+    "block_xy": [
+     0.43947,
+     0.09499
+    ],
+    "block_yaw": 1.07495,
+    "target_xy": [
+     0.52144,
+     0.02777
+    ]
+   },
+   "reset_seed": 31111,
+   "scenario_id": "s8c3d3be26d2e"
+  },
+  {
+   "condition_id": "c8711e997e09d",
+   "goal_sector": 1,
+   "layout": {
+    "block_xy": [
+     0.50666,
+     0.05564
+    ],
+    "block_yaw": -2.598,
+    "target_xy": [
+     0.56757,
+     0.11668
+    ]
+   },
+   "reset_seed": 31017,
+   "scenario_id": "sf469b3acf550"
+  },
+  {
+   "condition_id": "c258a19ceaeda",
+   "goal_sector": 4,
+   "layout": {
+    "block_xy": [
+     0.58752,
+     0.13954
+    ],
+    "block_yaw": -0.96252,
+    "target_xy": [
+     0.48815,
+     0.07463
+    ]
+   },
+   "reset_seed": 31028,
+   "scenario_id": "s1b0a8472841e"
+  },
+  {
+   "condition_id": "c05a39f20d18a",
+   "goal_sector": 2,
+   "layout": {
+    "block_xy": [
+     0.5882,
+     -0.08281
+    ],
+    "block_yaw": 2.09739,
+    "target_xy": [
+     0.50542,
+     0.01547
+    ]
+   },
+   "reset_seed": 31090,
+   "scenario_id": "se35e117b71d8"
+  },
+  {
+   "condition_id": "c376b7607dfdb",
+   "goal_sector": 1,
+   "layout": {
+    "block_xy": [
+     0.53919,
+     -0.0084
+    ],
+    "block_yaw": -1.85059,
+    "target_xy": [
+     0.59294,
+     0.10726
+    ]
+   },
+   "reset_seed": 31049,
+   "scenario_id": "s9497aaf111e9"
+  },
+  {
+   "condition_id": "c3e71073e538c",
+   "goal_sector": 6,
+   "layout": {
+    "block_xy": [
+     0.5059,
+     0.02642
+    ],
+    "block_yaw": 0.78344,
+    "target_xy": [
+     0.51802,
+     -0.08585
+    ]
+   },
+   "reset_seed": 31158,
+   "scenario_id": "s57b6a934e558"
+  },
+  {
+   "condition_id": "c8620e83e57bf",
+   "goal_sector": 3,
+   "layout": {
+    "block_xy": [
+     0.59076,
+     0.07195
+    ],
+    "block_yaw": -1.95477,
+    "target_xy": [
+     0.50244,
+     0.11339
+    ]
+   },
+   "reset_seed": 31171,
+   "scenario_id": "s51933bacd0cd"
+  },
+  {
+   "condition_id": "c4720a3d6b064",
+   "goal_sector": 2,
+   "layout": {
+    "block_xy": [
+     0.58231,
+     -0.09348
+    ],
+    "block_yaw": 0.89522,
+    "target_xy": [
+     0.5695,
+     0.04509
+    ]
+   },
+   "reset_seed": 31074,
+   "scenario_id": "sd47665696ee9"
+  },
+  {
+   "condition_id": "c2b723255aa1c",
+   "goal_sector": 3,
+   "layout": {
+    "block_xy": [
+     0.59982,
+     0.06188
+    ],
+    "block_yaw": 2.12168,
+    "target_xy": [
+     0.43417,
+     0.14647
+    ]
+   },
+   "reset_seed": 31051,
+   "scenario_id": "sc55b0cb721f2"
+  },
+  {
+   "condition_id": "cd55788193698",
+   "goal_sector": 4,
+   "layout": {
+    "block_xy": [
+     0.57724,
+     0.07827
+    ],
+    "block_yaw": -2.10908,
+    "target_xy": [
+     0.47228,
+     0.0726
+    ]
+   },
+   "reset_seed": 31196,
+   "scenario_id": "s9cf3b299ed69"
+  },
+  {
+   "condition_id": "c749fa7ee7050",
+   "goal_sector": 2,
+   "layout": {
+    "block_xy": [
+     0.59561,
+     -0.11591
+    ],
+    "block_yaw": -2.91572,
+    "target_xy": [
+     0.57089,
+     0.01407
+    ]
+   },
+   "reset_seed": 31058,
+   "scenario_id": "se64563f50f14"
+  },
+  {
+   "condition_id": "cd9994e687001",
+   "goal_sector": 1,
+   "layout": {
+    "block_xy": [
+     0.56141,
+     0.02329
+    ],
+    "block_yaw": -0.64746,
+    "target_xy": [
+     0.58241,
+     0.11272
+    ]
+   },
+   "reset_seed": 31121,
+   "scenario_id": "s53ea297ac807"
+  },
+  {
+   "condition_id": "c82cbabf2267c",
+   "goal_sector": 1,
+   "layout": {
+    "block_xy": [
+     0.46528,
+     -0.05858
+    ],
+    "block_yaw": 0.6564,
+    "target_xy": [
+     0.51553,
+     0.06183
+    ]
+   },
+   "reset_seed": 31105,
+   "scenario_id": "seaa03f0e227c"
+  },
+  {
+   "condition_id": "c05a39f20d18a",
+   "goal_sector": 4,
+   "layout": {
+    "block_xy": [
+     0.5873,
+     -0.08131
+    ],
+    "block_yaw": 1.42786,
+    "target_xy": [
+     0.50225,
+     -0.08999
+    ]
+   },
+   "reset_seed": 31092,
+   "scenario_id": "s3fff7e776dba"
+  },
+  {
+   "condition_id": "c7b6aad6da17a",
+   "goal_sector": 6,
+   "layout": {
+    "block_xy": [
+     0.46491,
+     0.00996
+    ],
+    "block_yaw": 1.71676,
+    "target_xy": [
+     0.50258,
+     -0.12929
+    ]
+   },
+   "reset_seed": 31126,
+   "scenario_id": "s6579dee51737"
+  },
+  {
+   "condition_id": "cb259fc913c8a",
+   "goal_sector": 4,
+   "layout": {
+    "block_xy": [
+     0.56663,
+     -0.06527
+    ],
+    "block_yaw": 2.7784,
+    "target_xy": [
+     0.46187,
+     -0.12982
+    ]
+   },
+   "reset_seed": 31188,
+   "scenario_id": "s2b239cf028d7"
+  },
+  {
+   "condition_id": "c3e71073e538c",
+   "goal_sector": 5,
+   "layout": {
+    "block_xy": [
+     0.61504,
+     0.01657
+    ],
+    "block_yaw": -1.96775,
+    "target_xy": [
+     0.60519,
+     -0.11809
+    ]
+   },
+   "reset_seed": 31157,
+   "scenario_id": "s3c7b31c531b3"
+  },
+  {
+   "condition_id": "c82cbabf2267c",
+   "goal_sector": 4,
+   "layout": {
+    "block_xy": [
+     0.5789,
+     0.05571
+    ],
+    "block_yaw": -0.77112,
+    "target_xy": [
+     0.48898,
+     0.02428
+    ]
+   },
+   "reset_seed": 31108,
+   "scenario_id": "s0454f921b2cd"
+  },
+  {
+   "condition_id": "c3e71073e538c",
+   "goal_sector": 3,
+   "layout": {
+    "block_xy": [
+     0.56344,
+     -0.13776
+    ],
+    "block_yaw": -3.01427,
+    "target_xy": [
+     0.47539,
+     -0.08027
+    ]
+   },
+   "reset_seed": 31155,
+   "scenario_id": "sbceb19220dc0"
+  },
+  {
+   "condition_id": "c70a53256a55e",
+   "goal_sector": 3,
+   "layout": {
+    "block_xy": [
+     0.55321,
+     0.09392
+    ],
+    "block_yaw": -1.4762,
+    "target_xy": [
+     0.49066,
+     0.14851
+    ]
+   },
+   "reset_seed": 31067,
+   "scenario_id": "sd458b27c815f"
+  },
+  {
+   "condition_id": "cda7751f433de",
+   "goal_sector": 7,
+   "layout": {
+    "block_xy": [
+     0.44636,
+     0.05975
+    ],
+    "block_yaw": -1.67734,
+    "target_xy": [
+     0.55729,
+     0.04465
+    ]
+   },
+   "reset_seed": 31135,
+   "scenario_id": "s774c51666420"
+  },
+  {
+   "condition_id": "cc5f01136d4c4",
+   "goal_sector": 6,
+   "layout": {
+    "block_xy": [
+     0.48703,
+     0.04284
+    ],
+    "block_yaw": 1.77561,
+    "target_xy": [
+     0.54381,
+     -0.11424
+    ]
+   },
+   "reset_seed": 31062,
+   "scenario_id": "s96b7206ff22f"
+  },
+  {
+   "condition_id": "c3c36ac11556a",
+   "goal_sector": 3,
+   "layout": {
+    "block_xy": [
+     0.59197,
+     -0.08353
+    ],
+    "block_yaw": -2.38843,
+    "target_xy": [
+     0.42322,
+     -0.00829
+    ]
+   },
+   "reset_seed": 31115,
+   "scenario_id": "s39f3c6bdce60"
+  },
+  {
+   "condition_id": "c2b723255aa1c",
+   "goal_sector": 5,
+   "layout": {
+    "block_xy": [
+     0.54336,
+     0.10703
+    ],
+    "block_yaw": -3.03434,
+    "target_xy": [
+     0.43444,
+     -0.03005
+    ]
+   },
+   "reset_seed": 31053,
+   "scenario_id": "s3298fc7abb40"
+  },
+  {
+   "condition_id": "c97535669bf03",
+   "goal_sector": 0,
+   "layout": {
+    "block_xy": [
+     0.49314,
+     0.09638
+    ],
+    "block_yaw": 0.92845,
+    "target_xy": [
+     0.59705,
+     0.10937
+    ]
+   },
+   "reset_seed": 31192,
+   "scenario_id": "saa65b060d6f0"
+  },
+  {
+   "condition_id": "c2b723255aa1c",
+   "goal_sector": 6,
+   "layout": {
+    "block_xy": [
+     0.44385,
+     0.05769
+    ],
+    "block_yaw": 0.62379,
+    "target_xy": [
+     0.51942,
+     -0.0908
+    ]
+   },
+   "reset_seed": 31054,
+   "scenario_id": "s3daaa32eab0e"
+  },
+  {
+   "condition_id": "c05a39f20d18a",
+   "goal_sector": 3,
+   "layout": {
+    "block_xy": [
+     0.60569,
+     -0.01687
+    ],
+    "block_yaw": 0.76044,
+    "target_xy": [
+     0.51917,
+     0.06809
+    ]
+   },
+   "reset_seed": 31091,
+   "scenario_id": "scaf9b8f5065b"
+  },
+  {
+   "condition_id": "cd9994e687001",
+   "goal_sector": 0,
+   "layout": {
+    "block_xy": [
+     0.47637,
+     -0.05948
+    ],
+    "block_yaw": -1.47118,
+    "target_xy": [
+     0.61369,
+     0.02672
+    ]
+   },
+   "reset_seed": 31120,
+   "scenario_id": "sbe06f75c1922"
+  },
+  {
+   "condition_id": "cc5f01136d4c4",
+   "goal_sector": 7,
+   "layout": {
+    "block_xy": [
+     0.52062,
+     -0.08021
+    ],
+    "block_yaw": 0.04818,
+    "target_xy": [
+     0.5879,
+     -0.13585
+    ]
+   },
+   "reset_seed": 31063,
+   "scenario_id": "sbc338a3ccaff"
+  },
+  {
+   "condition_id": "cda7751f433de",
+   "goal_sector": 2,
+   "layout": {
+    "block_xy": [
+     0.42777,
+     -0.12189
+    ],
+    "block_yaw": 1.96179,
+    "target_xy": [
+     0.42176,
+     0.02835
+    ]
+   },
+   "reset_seed": 31138,
+   "scenario_id": "s152bf546e29e"
+  },
+  {
+   "condition_id": "c70a53256a55e",
+   "goal_sector": 2,
+   "layout": {
+    "block_xy": [
+     0.58851,
+     -0.13085
+    ],
+    "block_yaw": -1.35463,
+    "target_xy": [
+     0.48815,
+     -0.02508
+    ]
+   },
+   "reset_seed": 31066,
+   "scenario_id": "s3e2d1d4c33e4"
+  },
+  {
+   "condition_id": "c8711e997e09d",
+   "goal_sector": 2,
+   "layout": {
+    "block_xy": [
+     0.60148,
+     -0.12764
+    ],
+    "block_yaw": 0.77872,
+    "target_xy": [
+     0.55309,
+     -0.04401
+    ]
+   },
+   "reset_seed": 31018,
+   "scenario_id": "s9e2d200eacea"
+  },
+  {
+   "condition_id": "ca2994ad8684d",
+   "goal_sector": 6,
+   "layout": {
+    "block_xy": [
+     0.55558,
+     0.11097
+    ],
+    "block_yaw": 2.45642,
+    "target_xy": [
+     0.57836,
+     -0.05021
+    ]
+   },
+   "reset_seed": 31166,
+   "scenario_id": "s032e68745650"
+  }
+ ],
+ "sealed": false,
+ "split": "train"
+}

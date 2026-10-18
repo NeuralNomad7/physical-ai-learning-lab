@@ -1,0 +1,111 @@
+# Phase 1 scene configuration (BUILD_PLAN.md sections 4 and 7).
+# Units: metres, kilograms, seconds, radians. World origin = Panda base; tabletop plane z = 0.
+schema_version = 1
+
+[scene]
+mjcf = "assets/scenes/panda_push_scene.xml"
+cameras = ["overhead", "oblique"]
+
+[timing]
+physics_timestep = 0.002   # must equal <option timestep> in the MJCF
+control_hz = 50.0          # one control update = exactly `substeps` physics steps
+substeps = 10
+
+[robot]
+home_keyframe = "panda/home"   # arm joint targets are taken from this Menagerie keyframe
+arm_joints = ["panda/joint1", "panda/joint2", "panda/joint3", "panda/joint4", "panda/joint5", "panda/joint6", "panda/joint7"]
+arm_actuators = ["panda/actuator1", "panda/actuator2", "panda/actuator3", "panda/actuator4", "panda/actuator5", "panda/actuator6", "panda/actuator7"]
+finger_joints = ["panda/finger_joint1", "panda/finger_joint2"]
+gripper_actuator = "panda/actuator8"
+gripper_tendon = "panda/split"
+gripper_ctrl_closed = 0.0      # Menagerie actuator8: ctrl 0 = closed, 255 = open
+tcp_body = "panda/hand"
+tcp_offset = [0.0, 0.0, 0.1034] # Franka Hand TCP: 103.4 mm along the hand z-axis (between the finger pads)
+
+[block]
+body = "block"
+geom = "block"
+joint = "block_free"
+edge = 0.05
+
+[target]
+mocap_body = "target"
+zone_geom = "target_zone"
+
+[table]
+body = "table"
+top_geom = "table_top"
+top_z = 0.0
+x = [-0.25, 0.95]
+y = [-0.5, 0.5]
+
+[workspace]
+# Reset samples the block centre, block yaw and target centre uniformly in these regions.
+block_x = [0.42, 0.62]
+block_y = [-0.15, 0.15]
+block_yaw = [-3.141592653589793, 3.141592653589793]
+target_x = [0.42, 0.62]
+target_y = [-0.15, 0.15]
+block_target_distance = [0.08, 0.20]
+max_reset_attempts = 1000
+# Success radius on the block centre (BUILD_PLAN.md section 4); equals the target disc radius in the MJCF.
+target_tolerance = 0.02
+# Region the block centre must stay inside (failure condition used from Phase 2 onwards).
+allowed_block_x = [0.20, 0.85]
+allowed_block_y = [-0.40, 0.40]
+
+[physics]
+# Hidden from the agent. Applied by ScenarioRunner.reset; never part of an Observation.
+contact_pair = "block_table"
+nominal_mass = 0.25
+nominal_sliding_friction = 0.5
+# Development ranges (BUILD_PLAN.md section 4): starting design choices, not validated operating ranges.
+mass_range = [0.10, 0.40]
+sliding_friction_range = [0.20, 0.80]
+# Preserved across experiments (not randomized). With condim = 3 MuJoCo uses only the sliding coefficient.
+torsional_friction = 0.005
+rolling_friction = 0.0001
+
+[stability]
+max_abs_qvel = 50.0   # rad/s or m/s; larger joint velocities are treated as a simulation blow-up
+
+[reach_check]
+# Kinematic-only scene feasibility check (no actuation, no collision-free path planning).
+# The TCP must reach a grid covering the block/target regions expanded by `margin`,
+# pointing straight down, at block mid-height and at an approach height.
+margin = 0.10
+grid = 5
+heights = [0.025, 0.12]
+min_joint_margin = 0.05
+position_tolerance = 0.0005
+orientation_tolerance = 0.005
+
+[checks]
+# Phase 1 acceptance tolerances used by `python -m physical_ai_lab smoke` and the pytest suite.
+# Reproducibility: same seed on the same machine and MuJoCo build. 0.0 = bitwise identical full
+# integration state. Other machines, CPU architectures and MuJoCo builds are NOT covered.
+reset_state_tolerance = 0.0
+rollout_seconds = 5.0
+layout_seeds = 200            # resets sampled to check reset regions, distances and initial contacts
+hold_seconds = 5.0            # per seed, holding the home pose with constant servo targets
+hold_seeds = 5                # seeds 0..n-1, each with nominal and with randomized hidden physics
+long_hold_seconds = 30.0      # one hold over the full 30 s episode time budget
+hold_max_final_qvel = 1.0e-6  # rad/s or m/s at the end of a hold
+hold_max_block_drift = 1.0e-6 # m, planar block motion during a hold
+hold_max_arm_deviation = 0.01 # rad from the home targets (position-servo gravity sag)
+kick_speed = 0.5              # m/s initial block speed in the friction kick test
+kick_mu_rel_tolerance = 0.05  # effective friction v0^2/(2 g d) vs configured block/table friction
+normal_force_rel_tolerance = 0.01  # resting block/table normal force vs m g
+actuator_step = 0.1           # rad commanded on every arm joint from the home pose
+actuator_seconds = 1.0
+actuator_tracking_tolerance = 0.02  # rad after actuator_seconds
+gripper_tolerance = 0.002     # m, opening when commanded fully open / closed
+# Hidden-physics leakage at rest: max difference of any observation field (SI units) between
+# episodes that share a seed but differ in hidden mass/friction. Exactly 0 at reset; after
+# settling, soft-contact sink is mass-independent and only solver noise (~1e-9) remains.
+observation_rest_tolerance = 1.0e-6
+# Camera views: at reset (arm in the home pose) the robot may hide at most this fraction of the
+# block and of the goal disc in any configured camera, over seeds 0..visibility_seeds-1. Measured
+# with segmentation renders against the same view with the robot not drawn.
+visibility_seeds = 50
+max_arm_occlusion = 0.05

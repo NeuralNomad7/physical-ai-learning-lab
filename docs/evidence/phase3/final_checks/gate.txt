@@ -1,0 +1,40 @@
+START_UTC 2026-10-03T18:24:20Z
+Phase 2 baseline evaluation, seed set 'gate' (20 episodes, nominal physics)
+started (UTC): 2026-10-03T18:24:22+00:00
+command: python -m physical_ai_lab gate
+config: configs\push.toml, configs\scene.toml
+python 3.12.13 (AMD64), mujoco 3.14.0
+seeds: [20000, 20001, 20002, 20003, 20004, 20005, 20006, 20007, 20008, 20009, 20010, 20011, 20012, 20013, 20014, 20015, 20016, 20017, 20018, 20019]
+
+[SUCCESS] seed 20000: pushes 3 (declared 3, unplanned contacts 0), sim 12.20 s, start distance 173.0 mm, final 6.3 mm
+[SUCCESS] seed 20001: pushes 2 (declared 2, unplanned contacts 0), sim 9.38 s, start distance 188.5 mm, final 10.9 mm
+[SUCCESS] seed 20002: pushes 2 (declared 2, unplanned contacts 0), sim 9.38 s, start distance 105.7 mm, final 16.0 mm
+[SUCCESS] seed 20003: pushes 2 (declared 2, unplanned contacts 0), sim 7.86 s, start distance 125.9 mm, final 17.3 mm
+[SUCCESS] seed 20004: pushes 2 (declared 2, unplanned contacts 0), sim 7.29 s, start distance 85.8 mm, final 13.7 mm
+[SUCCESS] seed 20005: pushes 2 (declared 2, unplanned contacts 0), sim 9.36 s, start distance 112.1 mm, final 0.9 mm
+[SUCCESS] seed 20006: pushes 1 (declared 1, unplanned contacts 0), sim 4.67 s, start distance 154.2 mm, final 17.4 mm
+[SUCCESS] seed 20007: pushes 2 (declared 2, unplanned contacts 0), sim 8.81 s, start distance 94.6 mm, final 17.3 mm
+[SUCCESS] seed 20008: pushes 1 (declared 1, unplanned contacts 0), sim 4.63 s, start distance 158.1 mm, final 7.5 mm
+[SUCCESS] seed 20009: pushes 2 (declared 2, unplanned contacts 0), sim 8.14 s, start distance 142.5 mm, final 9.7 mm
+[SUCCESS] seed 20010: pushes 2 (declared 2, unplanned contacts 0), sim 9.35 s, start distance 149.8 mm, final 18.5 mm
+[SUCCESS] seed 20011: pushes 2 (declared 2, unplanned contacts 0), sim 7.98 s, start distance 192.9 mm, final 12.2 mm
+[SUCCESS] seed 20012: pushes 2 (declared 2, unplanned contacts 0), sim 8.82 s, start distance 98.3 mm, final 3.9 mm
+[SUCCESS] seed 20013: pushes 2 (declared 2, unplanned contacts 0), sim 7.85 s, start distance 186.8 mm, final 16.8 mm
+[SUCCESS] seed 20014: pushes 2 (declared 2, unplanned contacts 0), sim 9.42 s, start distance 197.2 mm, final 4.4 mm
+[SUCCESS] seed 20015: pushes 1 (declared 1, unplanned contacts 0), sim 4.60 s, start distance 109.2 mm, final 8.6 mm
+[SUCCESS] seed 20016: pushes 2 (declared 2, unplanned contacts 0), sim 8.94 s, start distance 90.4 mm, final 17.2 mm
+[SUCCESS] seed 20017: pushes 1 (declared 1, unplanned contacts 0), sim 4.67 s, start distance 161.9 mm, final 17.3 mm
+[SUCCESS] seed 20018: pushes 2 (declared 2, unplanned contacts 0), sim 8.90 s, start distance 84.9 mm, final 3.4 mm
+[SUCCESS] seed 20019: pushes 2 (declared 2, unplanned contacts 0), sim 8.95 s, start distance 115.1 mm, final 5.9 mm
+
+result: 20/20 episodes succeeded
+failures by reason: none
+successful episodes: pushes used mean 1.85, max 3; sim time mean 8.06 s
+forbidden contact events over all episodes: 0
+gate (>= 18/20 successes): PASS
+finished (UTC): 2026-10-03T18:24:55+00:00
+log: runs\phase2\gate\20261003T182421Z\gate_log.txt
+results: runs\phase2\gate\20261003T182421Z\gate_result.json
+
+END_UTC 2026-10-03T18:24:55Z
+EXIT 0

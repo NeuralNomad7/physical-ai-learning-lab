@@ -1,0 +1,9 @@
+START_UTC 2026-10-03T18:26:20Z
+manifests in C:\Users\vivan\OneDrive\Desktop\Projects\Physical AI_Agent\configs\manifests: hashes match hashes.json; disjointness checks passed (101025 initial-state pairs compared)
+  retention  e8c5857a7d7151a103f0d6fce2362d21ad6a177ac08b55d675fedf4485c9f2d4  conditions  10  scenarios  50  {'in_range': 50, 'out_of_range': 0}  SEALED
+  test       5673ce2e3763c0417674a7102eab3386cfe1defd9a3f6178142c0faa2e1d948f  conditions  20  scenarios 100  {'in_range': 70, 'out_of_range': 30}  SEALED
+  train      6eadee60c6ae2a2fa51696ceeac7faafe3441ebbf1e1f956b635b63777f62e06  conditions  40  scenarios 200  {'in_range': 200, 'out_of_range': 0}  open
+  validation 88dabaa6cb811ea48c8d0c88f0d74d3a09f3328e88006079d2391269f4557c15  conditions  20  scenarios 100  {'in_range': 60, 'out_of_range': 40}  open
+
+END_UTC 2026-10-03T18:26:21Z
+EXIT 0

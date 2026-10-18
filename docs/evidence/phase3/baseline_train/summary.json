@@ -1,0 +1,530 @@
+{
+  "kind": "phase3_evaluation",
+  "split": "train",
+  "mode": "baseline",
+  "command": "python -m physical_ai_lab evaluate --split train --mode baseline",
+  "started_utc": "2026-10-03T18:00:03+00:00",
+  "finished_utc": "2026-10-03T18:06:51+00:00",
+  "wall_seconds": 407.8600366999999,
+  "benchmark": {
+    "benchmark_version": "phase3-v1",
+    "schema_version": 1,
+    "metrics_version": 1,
+    "config_sha256": "140e4f7d70340cc3f90e547385426f9a30ec68f8003b2ac54ba7fd5e0fcf2f25",
+    "out_of_range_status": "fixed",
+    "out_of_range_fixed_utc": "2026-10-03T17:31:59Z"
+  },
+  "manifest_sha256": "6eadee60c6ae2a2fa51696ceeac7faafe3441ebbf1e1f956b635b63777f62e06",
+  "manifest_provenance": {
+    "config_sha256": {
+      "benchmark.toml": "140e4f7d70340cc3f90e547385426f9a30ec68f8003b2ac54ba7fd5e0fcf2f25",
+      "panda_push_scene.xml": "e194f53adcaa24bac56dbf679bfd6c0b929fc18fe9b8bbf0ccc157b26cf49791",
+      "push.toml": "97b6d9172b0f518cb1c826cb3eafc478af42c9dc19b14252a61752b10647f8d7",
+      "scene.toml": "d04d248d5d538a936d56635b454dfc9bce0f2bac2983b4ffba69f73d52f17fce"
+    },
+    "mujoco_version": "3.14.0",
+    "panda_asset": {
+      "commit": "4d038b3feae26ec82b46a4d586379114012a8ac7",
+      "files": 72,
+      "manifest_sha256": "85c43d8d698ca3b4bba7164f6f4b1a54c0fac5f42c0d46605bc8653528eb7f07",
+      "path": "franka_emika_panda",
+      "repository": "https://github.com/google-deepmind/mujoco_menagerie"
+    },
+    "python": "3.12.13",
+    "python_platform": "win-amd64",
+    "simulation": {
+      "cone": 1,
+      "control_dt": 0.02,
+      "integrator": 3,
+      "iterations": 100,
+      "noslip_iterations": 0,
+      "solver": 2,
+      "substeps": 10,
+      "timestep": 0.002,
+      "tolerance": 1e-08
+    },
+    "versions": {
+      "mujoco": "3.14.0",
+      "numpy": "2.5.3",
+      "physical_ai_lab": "0.1.0",
+      "pillow": "12.3.0",
+      "pytest": "9.1.1"
+    }
+  },
+  "push_config_schema_version": 1,
+  "episode_schema_version": 1,
+  "protocol_version": 1,
+  "episodes_in_manifest": 200,
+  "episodes_run": 200,
+  "partial": false,
+  "agent_process_restarts": 0,
+  "episodes_file": "episodes.jsonl",
+  "groups": {
+    "all": {
+      "episodes": 200,
+      "conditions": 40,
+      "successes": 200,
+      "failures": 0,
+      "success_rate": 1.0,
+      "success_ci": {
+        "confidence": 0.95,
+        "cluster_bootstrap": [
+          1.0,
+          1.0
+        ],
+        "wilson_conditions": [
+          0.9123783988027135,
+          1.0
+        ],
+        "wilson_episodes_unclustered": [
+          0.9811546736227335,
+          1.0
+        ]
+      },
+      "conditions_with_any_failure": 0,
+      "final_distance_mm": {
+        "all": {
+          "n": 200,
+          "mean": 10.127341558944888,
+          "median": 10.228655241876712,
+          "p90": 17.161305598777396,
+          "min": 0.7251156630165149,
+          "max": 19.969736348706054
+        },
+        "successes": {
+          "n": 200,
+          "mean": 10.127341558944888,
+          "median": 10.228655241876712,
+          "p90": 17.161305598777396,
+          "min": 0.7251156630165149,
+          "max": 19.969736348706054
+        },
+        "failures": {
+          "n": 0,
+          "mean": null,
+          "median": null,
+          "p90": null,
+          "min": null,
+          "max": null
+        },
+        "episodes_above_15mm": 40,
+        "episodes_above_tolerance": 0
+      },
+      "pushes_used": {
+        "all": {
+          "n": 200,
+          "mean": 1.72,
+          "median": 2.0,
+          "p90": 2.0,
+          "min": 1.0,
+          "max": 3.0
+        },
+        "successes": {
+          "n": 200,
+          "mean": 1.72,
+          "median": 2.0,
+          "p90": 2.0,
+          "min": 1.0,
+          "max": 3.0
+        }
+      },
+      "sim_seconds": {
+        "all": {
+          "n": 200,
+          "mean": 7.588059999999718,
+          "median": 8.393999999999473,
+          "p90": 9.420199999999815,
+          "min": 4.567999999999719,
+          "max": 13.65800000000123
+        },
+        "successes": {
+          "n": 200,
+          "mean": 7.588059999999718,
+          "median": 8.393999999999473,
+          "p90": 9.420199999999815,
+          "min": 4.567999999999719,
+          "max": 13.65800000000123
+        }
+      },
+      "failures_by_reason": {
+        "unstable": 0,
+        "forbidden_collision": 0,
+        "limit_violation": 0,
+        "block_out_of_bounds": 0,
+        "timeout": 0,
+        "push_budget_exceeded": 0,
+        "push_budget_exhausted": 0,
+        "no_feasible_push": 0,
+        "controller_error": 0
+      },
+      "violations": {
+        "limit_violation_episodes": 0,
+        "forbidden_collision_episodes": 0,
+        "forbidden_contact_events": 0,
+        "push_budget_exceeded_episodes": 0,
+        "aborted_pushes": 1,
+        "max_joint_speed_ratio": 0.7089981568398193,
+        "max_joint_range_excess": 0.0,
+        "min_tcp_z": 0.02184474298636277
+      },
+      "probe_pushes": 0,
+      "contact": {
+        "robot_block_contact_seconds": {
+          "n": 200,
+          "mean": 1.7565700000000002,
+          "median": 1.791,
+          "p90": 2.4646,
+          "min": 0.894,
+          "max": 3.318
+        },
+        "robot_block_contact_intervals": {
+          "n": 200,
+          "mean": 61.645,
+          "median": 60.0,
+          "p90": 92.29999999999998,
+          "min": 5.0,
+          "max": 132.0
+        },
+        "robot_block_max_normal_force_N": {
+          "n": 200,
+          "mean": 9.082352160185037,
+          "median": 6.563685821240956,
+          "p90": 18.35848997668703,
+          "min": 1.6763594694392785,
+          "max": 41.38115493125941
+        },
+        "robot_block_mean_normal_force_N": {
+          "n": 200,
+          "mean": 2.50602367256993,
+          "median": 1.756705663687157,
+          "p90": 4.912782876728776,
+          "min": 0.37321923447742233,
+          "max": 10.281446109587307
+        },
+        "table_normal_ratio_min": {
+          "n": 200,
+          "mean": 0.0,
+          "median": 0.0,
+          "p90": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "table_normal_ratio_max": {
+          "n": 200,
+          "mean": 5.146742809331304,
+          "median": 4.385177550207746,
+          "p90": 8.771154144303836,
+          "min": 2.2057599814289266,
+          "max": 14.348430803115967
+        },
+        "table_normal_ratio_free_mean": {
+          "n": 200,
+          "mean": 0.9983934831292492,
+          "median": 0.9977220295346372,
+          "p90": 1.0044495765413235,
+          "min": 0.9830580699861116,
+          "max": 1.0329474510349481
+        },
+        "block_airborne_seconds": {
+          "n": 200,
+          "mean": 0.22671,
+          "median": 0.219,
+          "p90": 0.39159999999999995,
+          "min": 0.038,
+          "max": 0.654
+        },
+        "max_block_lift_mm": {
+          "n": 200,
+          "mean": 0.1989278147389546,
+          "median": 0.14240122608101882,
+          "p90": 0.4083060301219488,
+          "min": 0.0350100725205818,
+          "max": 1.2608150589753822
+        },
+        "max_block_tilt_deg": {
+          "n": 200,
+          "mean": 0.4638772527731095,
+          "median": 0.3427197963113683,
+          "p90": 0.7837921467548807,
+          "min": 0.1736605666997486,
+          "max": 2.9876574591362983
+        },
+        "final_block_tilt_deg": {
+          "n": 200,
+          "mean": 1.5282826853477128e-06,
+          "median": 1.7075472925031877e-06,
+          "p90": 3.089945040292997e-06,
+          "min": 0.0,
+          "max": 3.6222548091772e-06
+        }
+      },
+      "compute_seconds": {
+        "total_wall": 404.0935535000026,
+        "per_episode_wall": {
+          "n": 200,
+          "mean": 2.020467767500013,
+          "median": 2.18251009999949,
+          "p90": 2.5644931800008632,
+          "min": 1.1344038000024739,
+          "max": 3.844229499998619
+        },
+        "per_episode_agent_wait": {
+          "n": 200,
+          "mean": 1.2984739470004933,
+          "median": 1.384491899947534,
+          "p90": 1.710250420041484,
+          "min": 0.7107415000464243,
+          "max": 2.5871689000268816
+        },
+        "per_episode_evaluator": {
+          "n": 200,
+          "mean": 0.7219938204995197,
+          "median": 0.7916064999753871,
+          "p90": 0.9634696799945232,
+          "min": 0.4052688000338094,
+          "max": 1.260908100000961
+        }
+      },
+      "traffic_scan": {
+        "messages": 79210,
+        "bytes": 96721854,
+        "hits": 0
+      }
+    },
+    "in_range": {
+      "episodes": 200,
+      "conditions": 40,
+      "successes": 200,
+      "failures": 0,
+      "success_rate": 1.0,
+      "success_ci": {
+        "confidence": 0.95,
+        "cluster_bootstrap": [
+          1.0,
+          1.0
+        ],
+        "wilson_conditions": [
+          0.9123783988027135,
+          1.0
+        ],
+        "wilson_episodes_unclustered": [
+          0.9811546736227335,
+          1.0
+        ]
+      },
+      "conditions_with_any_failure": 0,
+      "final_distance_mm": {
+        "all": {
+          "n": 200,
+          "mean": 10.127341558944888,
+          "median": 10.228655241876712,
+          "p90": 17.161305598777396,
+          "min": 0.7251156630165149,
+          "max": 19.969736348706054
+        },
+        "successes": {
+          "n": 200,
+          "mean": 10.127341558944888,
+          "median": 10.228655241876712,
+          "p90": 17.161305598777396,
+          "min": 0.7251156630165149,
+          "max": 19.969736348706054
+        },
+        "failures": {
+          "n": 0,
+          "mean": null,
+          "median": null,
+          "p90": null,
+          "min": null,
+          "max": null
+        },
+        "episodes_above_15mm": 40,
+        "episodes_above_tolerance": 0
+      },
+      "pushes_used": {
+        "all": {
+          "n": 200,
+          "mean": 1.72,
+          "median": 2.0,
+          "p90": 2.0,
+          "min": 1.0,
+          "max": 3.0
+        },
+        "successes": {
+          "n": 200,
+          "mean": 1.72,
+          "median": 2.0,
+          "p90": 2.0,
+          "min": 1.0,
+          "max": 3.0
+        }
+      },
+      "sim_seconds": {
+        "all": {
+          "n": 200,
+          "mean": 7.588059999999718,
+          "median": 8.393999999999473,
+          "p90": 9.420199999999815,
+          "min": 4.567999999999719,
+          "max": 13.65800000000123
+        },
+        "successes": {
+          "n": 200,
+          "mean": 7.588059999999718,
+          "median": 8.393999999999473,
+          "p90": 9.420199999999815,
+          "min": 4.567999999999719,
+          "max": 13.65800000000123
+        }
+      },
+      "failures_by_reason": {
+        "unstable": 0,
+        "forbidden_collision": 0,
+        "limit_violation": 0,
+        "block_out_of_bounds": 0,
+        "timeout": 0,
+        "push_budget_exceeded": 0,
+        "push_budget_exhausted": 0,
+        "no_feasible_push": 0,
+        "controller_error": 0
+      },
+      "violations": {
+        "limit_violation_episodes": 0,
+        "forbidden_collision_episodes": 0,
+        "forbidden_contact_events": 0,
+        "push_budget_exceeded_episodes": 0,
+        "aborted_pushes": 1,
+        "max_joint_speed_ratio": 0.7089981568398193,
+        "max_joint_range_excess": 0.0,
+        "min_tcp_z": 0.02184474298636277
+      },
+      "probe_pushes": 0,
+      "contact": {
+        "robot_block_contact_seconds": {
+          "n": 200,
+          "mean": 1.7565700000000002,
+          "median": 1.791,
+          "p90": 2.4646,
+          "min": 0.894,
+          "max": 3.318
+        },
+        "robot_block_contact_intervals": {
+          "n": 200,
+          "mean": 61.645,
+          "median": 60.0,
+          "p90": 92.29999999999998,
+          "min": 5.0,
+          "max": 132.0
+        },
+        "robot_block_max_normal_force_N": {
+          "n": 200,
+          "mean": 9.082352160185037,
+          "median": 6.563685821240956,
+          "p90": 18.35848997668703,
+          "min": 1.6763594694392785,
+          "max": 41.38115493125941
+        },
+        "robot_block_mean_normal_force_N": {
+          "n": 200,
+          "mean": 2.50602367256993,
+          "median": 1.756705663687157,
+          "p90": 4.912782876728776,
+          "min": 0.37321923447742233,
+          "max": 10.281446109587307
+        },
+        "table_normal_ratio_min": {
+          "n": 200,
+          "mean": 0.0,
+          "median": 0.0,
+          "p90": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "table_normal_ratio_max": {
+          "n": 200,
+          "mean": 5.146742809331304,
+          "median": 4.385177550207746,
+          "p90": 8.771154144303836,
+          "min": 2.2057599814289266,
+          "max": 14.348430803115967
+        },
+        "table_normal_ratio_free_mean": {
+          "n": 200,
+          "mean": 0.9983934831292492,
+          "median": 0.9977220295346372,
+          "p90": 1.0044495765413235,
+          "min": 0.9830580699861116,
+          "max": 1.0329474510349481
+        },
+        "block_airborne_seconds": {
+          "n": 200,
+          "mean": 0.22671,
+          "median": 0.219,
+          "p90": 0.39159999999999995,
+          "min": 0.038,
+          "max": 0.654
+        },
+        "max_block_lift_mm": {
+          "n": 200,
+          "mean": 0.1989278147389546,
+          "median": 0.14240122608101882,
+          "p90": 0.4083060301219488,
+          "min": 0.0350100725205818,
+          "max": 1.2608150589753822
+        },
+        "max_block_tilt_deg": {
+          "n": 200,
+          "mean": 0.4638772527731095,
+          "median": 0.3427197963113683,
+          "p90": 0.7837921467548807,
+          "min": 0.1736605666997486,
+          "max": 2.9876574591362983
+        },
+        "final_block_tilt_deg": {
+          "n": 200,
+          "mean": 1.5282826853477128e-06,
+          "median": 1.7075472925031877e-06,
+          "p90": 3.089945040292997e-06,
+          "min": 0.0,
+          "max": 3.6222548091772e-06
+        }
+      },
+      "compute_seconds": {
+        "total_wall": 404.0935535000026,
+        "per_episode_wall": {
+          "n": 200,
+          "mean": 2.020467767500013,
+          "median": 2.18251009999949,
+          "p90": 2.5644931800008632,
+          "min": 1.1344038000024739,
+          "max": 3.844229499998619
+        },
+        "per_episode_agent_wait": {
+          "n": 200,
+          "mean": 1.2984739470004933,
+          "median": 1.384491899947534,
+          "p90": 1.710250420041484,
+          "min": 0.7107415000464243,
+          "max": 2.5871689000268816
+        },
+        "per_episode_evaluator": {
+          "n": 200,
+          "mean": 0.7219938204995197,
+          "median": 0.7916064999753871,
+          "p90": 0.9634696799945232,
+          "min": 0.4052688000338094,
+          "max": 1.260908100000961
+        }
+      },
+      "traffic_scan": {
+        "messages": 79210,
+        "bytes": 96721854,
+        "hits": 0
+      }
+    },
+    "out_of_range_by_band": {}
+  },
+  "notes": [
+    "CEILING: the fixed baseline succeeded in all 200 episodes; this split cannot show a learner beating it on success rate (BUILD_PLAN.md section 6: report the ceiling)."
+  ]
+}

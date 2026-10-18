@@ -1,0 +1,3215 @@
+{
+  "kind": "phase3_replay",
+  "split": "validation",
+  "mode": "baseline",
+  "run": "runs\\phase3\\evaluate\\validation\\20261003T180737Z",
+  "manifest_sha256": "88dabaa6cb811ea48c8d0c88f0d74d3a09f3328e88006079d2391269f4557c15",
+  "tolerance": 0.0,
+  "comparison": "bitwise state digest (SHA-256 of the full MuJoCo integration state, first 8 bytes) after every control update",
+  "episodes": [
+    {
+      "episode_index": 1,
+      "scenario_id": "s4e37fe65d8f2",
+      "outcome": "success",
+      "logged_final_state_digest": "7ae0e536e211ecee",
+      "command_replay": {
+        "control_updates": 469,
+        "initial_state_digest": "5c9ffcc36c3b12ef",
+        "final_state_digest": "7ae0e536e211ecee",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.2713984000001801,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 2.268911399998615,
+        "control_updates": 469,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "7ae0e536e211ecee",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 2,
+      "scenario_id": "sd70a3cc670e0",
+      "outcome": "success",
+      "logged_final_state_digest": "1bf6af3dcb8ca129",
+      "command_replay": {
+        "control_updates": 656,
+        "initial_state_digest": "d76bcee848994826",
+        "final_state_digest": "1bf6af3dcb8ca129",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.3458747000004223,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 3.037402900001325,
+        "control_updates": 656,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "1bf6af3dcb8ca129",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 3,
+      "scenario_id": "sc6ce61e95b70",
+      "outcome": "success",
+      "logged_final_state_digest": "82c26ce8044b7b38",
+      "command_replay": {
+        "control_updates": 447,
+        "initial_state_digest": "ee1aa6e9016d9957",
+        "final_state_digest": "82c26ce8044b7b38",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.2341210000013234,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 2.2162242000013066,
+        "control_updates": 447,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "82c26ce8044b7b38",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 4,
+      "scenario_id": "s6f031ff17408",
+      "outcome": "success",
+      "logged_final_state_digest": "dc9b4299cdd4c166",
+      "command_replay": {
+        "control_updates": 236,
+        "initial_state_digest": "148047218e52a6d5",
+        "final_state_digest": "dc9b4299cdd4c166",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.1304279999967548,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 1.296293900002638,
+        "control_updates": 236,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "dc9b4299cdd4c166",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 5,
+      "scenario_id": "s42f913ed2aaf",
+      "outcome": "success",
+      "logged_final_state_digest": "91243c42c0c4d534",
+      "command_replay": {
+        "control_updates": 470,
+        "initial_state_digest": "fbd21076099dd44a",
+        "final_state_digest": "91243c42c0c4d534",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.2479053000024578,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 2.3730579000002763,
+        "control_updates": 470,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "91243c42c0c4d534",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 6,
+      "scenario_id": "s287758c2269a",
+      "outcome": "success",
+      "logged_final_state_digest": "9556044665fae72f",
+      "command_replay": {
+        "control_updates": 447,
+        "initial_state_digest": "aeef558e1a7d2464",
+        "final_state_digest": "9556044665fae72f",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.27216500000213273,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 2.458528600000136,
+        "control_updates": 447,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "9556044665fae72f",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 7,
+      "scenario_id": "s3103d711f0b2",
+      "outcome": "success",
+      "logged_final_state_digest": "615102903d7dda5e",
+      "command_replay": {
+        "control_updates": 608,
+        "initial_state_digest": "ddc194d28b5f2c91",
+        "final_state_digest": "615102903d7dda5e",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.32537580000280286,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 3.1477555000019493,
+        "control_updates": 608,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "615102903d7dda5e",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 8,
+      "scenario_id": "s2c102eaf6796",
+      "outcome": "success",
+      "logged_final_state_digest": "9a3efbd745b0f4a1",
+      "command_replay": {
+        "control_updates": 445,
+        "initial_state_digest": "a2d40803d777aee7",
+        "final_state_digest": "9a3efbd745b0f4a1",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.2891306999990775,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 2.3754435000009835,
+        "control_updates": 445,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "9a3efbd745b0f4a1",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 9,
+      "scenario_id": "s5cec76d1efb1",
+      "outcome": "success",
+      "logged_final_state_digest": "4686d317c5a4b686",
+      "command_replay": {
+        "control_updates": 231,
+        "initial_state_digest": "edcda0da399d613d",
+        "final_state_digest": "4686d317c5a4b686",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.1252096000025631,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 1.2318324999978358,
+        "control_updates": 231,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "4686d317c5a4b686",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 10,
+      "scenario_id": "sca2f7a8ec02f",
+      "outcome": "success",
+      "logged_final_state_digest": "b3777632f3e53587",
+      "command_replay": {
+        "control_updates": 232,
+        "initial_state_digest": "e22c580dceabc4d3",
+        "final_state_digest": "b3777632f3e53587",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.1285528999978851,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 1.1553588999995554,
+        "control_updates": 232,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "b3777632f3e53587",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 11,
+      "scenario_id": "s72c81caf6bc7",
+      "outcome": "success",
+      "logged_final_state_digest": "60e5a2cbe0b9bb73",
+      "command_replay": {
+        "control_updates": 230,
+        "initial_state_digest": "36889a34325d89a1",
+        "final_state_digest": "60e5a2cbe0b9bb73",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.1253485000015644,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 1.1488917999995465,
+        "control_updates": 230,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "60e5a2cbe0b9bb73",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 12,
+      "scenario_id": "s81b5204b4aec",
+      "outcome": "success",
+      "logged_final_state_digest": "532bc681f1a9092d",
+      "command_replay": {
+        "control_updates": 445,
+        "initial_state_digest": "0c285c5820cb80dc",
+        "final_state_digest": "532bc681f1a9092d",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.22883459999866318,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 2.1519499999994878,
+        "control_updates": 445,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "532bc681f1a9092d",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 13,
+      "scenario_id": "s2905486a9a0e",
+      "outcome": "success",
+      "logged_final_state_digest": "0b5c00cf8dd11c6d",
+      "command_replay": {
+        "control_updates": 230,
+        "initial_state_digest": "6a98ae84d37fdff6",
+        "final_state_digest": "0b5c00cf8dd11c6d",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.12473250000039116,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 1.2323661000009452,
+        "control_updates": 230,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "0b5c00cf8dd11c6d",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 14,
+      "scenario_id": "sa885b68c5d15",
+      "outcome": "success",
+      "logged_final_state_digest": "5d70cc5148fa3fb5",
+      "command_replay": {
+        "control_updates": 235,
+        "initial_state_digest": "131720ecc241e9b8",
+        "final_state_digest": "5d70cc5148fa3fb5",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.12938990000111517,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 1.2531605000003765,
+        "control_updates": 235,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "5d70cc5148fa3fb5",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 15,
+      "scenario_id": "s096bb3bd49af",
+      "outcome": "success",
+      "logged_final_state_digest": "d943fb0fdb196660",
+      "command_replay": {
+        "control_updates": 391,
+        "initial_state_digest": "c6c39916f6c37731",
+        "final_state_digest": "d943fb0fdb196660",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.19818219999797293,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 1.9299165000011271,
+        "control_updates": 391,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "d943fb0fdb196660",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 16,
+      "scenario_id": "sd76d1d75bbde",
+      "outcome": "success",
+      "logged_final_state_digest": "3e1422eba6d8b658",
+      "command_replay": {
+        "control_updates": 450,
+        "initial_state_digest": "7a28f2afb6fe9059",
+        "final_state_digest": "3e1422eba6d8b658",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.22540569999910076,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 2.2021482000018295,
+        "control_updates": 450,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "3e1422eba6d8b658",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 17,
+      "scenario_id": "s0bdefa1287cb",
+      "outcome": "success",
+      "logged_final_state_digest": "fdba8fbae997c8df",
+      "command_replay": {
+        "control_updates": 444,
+        "initial_state_digest": "d29ae972f860e889",
+        "final_state_digest": "fdba8fbae997c8df",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.22954790000221692,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 2.038644699998258,
+        "control_updates": 444,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "fdba8fbae997c8df",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 18,
+      "scenario_id": "s1f82e394c88b",
+      "outcome": "success",
+      "logged_final_state_digest": "a965c1da05722e7f",
+      "command_replay": {
+        "control_updates": 447,
+        "initial_state_digest": "d777fe33df5738c3",
+        "final_state_digest": "a965c1da05722e7f",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.23409250000258908,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 2.265853699998843,
+        "control_updates": 447,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "a965c1da05722e7f",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 19,
+      "scenario_id": "s48d3f0f7c0e9",
+      "outcome": "success",
+      "logged_final_state_digest": "d53fa92c12f0367d",
+      "command_replay": {
+        "control_updates": 417,
+        "initial_state_digest": "fc7166585289408e",
+        "final_state_digest": "d53fa92c12f0367d",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.23314029999892227,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 2.0910976999984996,
+        "control_updates": 417,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "d53fa92c12f0367d",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 20,
+      "scenario_id": "s74223db3f398",
+      "outcome": "success",
+      "logged_final_state_digest": "dab1df3bd8a6324c",
+      "command_replay": {
+        "control_updates": 449,
+        "initial_state_digest": "eced673890aad3c3",
+        "final_state_digest": "dab1df3bd8a6324c",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.24040959999911138,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 2.1817474000017683,
+        "control_updates": 449,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "dab1df3bd8a6324c",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 21,
+      "scenario_id": "s049796a0bf6b",
+      "outcome": "success",
+      "logged_final_state_digest": "9532f5436e813283",
+      "command_replay": {
+        "control_updates": 468,
+        "initial_state_digest": "cdfef2fdde31a4ae",
+        "final_state_digest": "9532f5436e813283",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.2457828000005975,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 2.275218300001143,
+        "control_updates": 468,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "9532f5436e813283",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 22,
+      "scenario_id": "scd6a9e73e2ff",
+      "outcome": "success",
+      "logged_final_state_digest": "cc144182fe6eb26e",
+      "command_replay": {
+        "control_updates": 420,
+        "initial_state_digest": "10c511bda27a8453",
+        "final_state_digest": "cc144182fe6eb26e",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.2117997999994259,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 2.0403316999982053,
+        "control_updates": 420,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "cc144182fe6eb26e",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 23,
+      "scenario_id": "s8cf2289e970a",
+      "outcome": "success",
+      "logged_final_state_digest": "2eb213d0dd060a40",
+      "command_replay": {
+        "control_updates": 654,
+        "initial_state_digest": "48498689c119d740",
+        "final_state_digest": "2eb213d0dd060a40",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.34560180000335095,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 3.3707551999978023,
+        "control_updates": 654,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "2eb213d0dd060a40",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 24,
+      "scenario_id": "saff74754f333",
+      "outcome": "success",
+      "logged_final_state_digest": "0b3e32650af757c3",
+      "command_replay": {
+        "control_updates": 444,
+        "initial_state_digest": "e5a3b64691cd2c30",
+        "final_state_digest": "0b3e32650af757c3",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.2609658000001218,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 2.2751285000013013,
+        "control_updates": 444,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "0b3e32650af757c3",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 25,
+      "scenario_id": "sb6e549663a1e",
+      "outcome": "success",
+      "logged_final_state_digest": "d929741e75127bfc",
+      "command_replay": {
+        "control_updates": 444,
+        "initial_state_digest": "0fa61e2ba8c7aa5d",
+        "final_state_digest": "d929741e75127bfc",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.22734670000136248,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 2.149633900000481,
+        "control_updates": 444,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "d929741e75127bfc",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 26,
+      "scenario_id": "s37e86f554554",
+      "outcome": "success",
+      "logged_final_state_digest": "8a907214c2a86358",
+      "command_replay": {
+        "control_updates": 418,
+        "initial_state_digest": "6e9f06d51c332417",
+        "final_state_digest": "8a907214c2a86358",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.2277259000002232,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 2.178926099997625,
+        "control_updates": 418,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "8a907214c2a86358",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 27,
+      "scenario_id": "s54b691e8fda8",
+      "outcome": "success",
+      "logged_final_state_digest": "1c87dd957a9284a5",
+      "command_replay": {
+        "control_updates": 409,
+        "initial_state_digest": "099874f2ddaaa8bd",
+        "final_state_digest": "1c87dd957a9284a5",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.21814610000001267,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 2.034302399999433,
+        "control_updates": 409,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "1c87dd957a9284a5",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 28,
+      "scenario_id": "s93ccb6578021",
+      "outcome": "success",
+      "logged_final_state_digest": "75152772a81f1399",
+      "command_replay": {
+        "control_updates": 230,
+        "initial_state_digest": "c5ce66958e31263a",
+        "final_state_digest": "75152772a81f1399",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.1225696000001335,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 1.1007323000012548,
+        "control_updates": 230,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "75152772a81f1399",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 29,
+      "scenario_id": "sb6dedafbae7a",
+      "outcome": "success",
+      "logged_final_state_digest": "3c46bdc5af6a5dfb",
+      "command_replay": {
+        "control_updates": 230,
+        "initial_state_digest": "f538b1a7638766fd",
+        "final_state_digest": "3c46bdc5af6a5dfb",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.12527520000003278,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 1.1366546999997809,
+        "control_updates": 230,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "3c46bdc5af6a5dfb",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 30,
+      "scenario_id": "sc3ac030ac61d",
+      "outcome": "success",
+      "logged_final_state_digest": "b847c83c753dccdf",
+      "command_replay": {
+        "control_updates": 371,
+        "initial_state_digest": "6ebcde4e33c88ba6",
+        "final_state_digest": "b847c83c753dccdf",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.19243850000202656,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 1.9130856999981916,
+        "control_updates": 371,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "b847c83c753dccdf",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 31,
+      "scenario_id": "scd9f5c165089",
+      "outcome": "success",
+      "logged_final_state_digest": "652e0528181bb7c5",
+      "command_replay": {
+        "control_updates": 441,
+        "initial_state_digest": "286a50dc7fc5feeb",
+        "final_state_digest": "652e0528181bb7c5",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.23005489999923157,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 2.2605591000028653,
+        "control_updates": 441,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "652e0528181bb7c5",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 32,
+      "scenario_id": "sb2db47a76552",
+      "outcome": "success",
+      "logged_final_state_digest": "f436b296815a4af2",
+      "command_replay": {
+        "control_updates": 419,
+        "initial_state_digest": "cc21adf42cac4bb4",
+        "final_state_digest": "f436b296815a4af2",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.22328829999969457,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 2.2293343000019377,
+        "control_updates": 419,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "f436b296815a4af2",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 33,
+      "scenario_id": "se4b141c86f61",
+      "outcome": "success",
+      "logged_final_state_digest": "6884a4a1e267cbdf",
+      "command_replay": {
+        "control_updates": 473,
+        "initial_state_digest": "e974e3cfd3babc61",
+        "final_state_digest": "6884a4a1e267cbdf",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.24852610000016284,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 2.3259139000001596,
+        "control_updates": 473,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "6884a4a1e267cbdf",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 34,
+      "scenario_id": "sa9195c005a54",
+      "outcome": "success",
+      "logged_final_state_digest": "83fb9fe131b0780f",
+      "command_replay": {
+        "control_updates": 398,
+        "initial_state_digest": "bc487799c9c69cb6",
+        "final_state_digest": "83fb9fe131b0780f",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.2093758999981219,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 1.9437835000026098,
+        "control_updates": 398,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "83fb9fe131b0780f",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 35,
+      "scenario_id": "s54f02dada354",
+      "outcome": "success",
+      "logged_final_state_digest": "2b31a35a77dc5ed6",
+      "command_replay": {
+        "control_updates": 471,
+        "initial_state_digest": "931a12a5893bfcd1",
+        "final_state_digest": "2b31a35a77dc5ed6",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.255914200002735,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 2.31157770000209,
+        "control_updates": 471,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "2b31a35a77dc5ed6",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 36,
+      "scenario_id": "saacb79b41573",
+      "outcome": "success",
+      "logged_final_state_digest": "6cea6a7046378a5f",
+      "command_replay": {
+        "control_updates": 445,
+        "initial_state_digest": "61f9168ef6134715",
+        "final_state_digest": "6cea6a7046378a5f",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.23701169999912963,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 2.26373820000299,
+        "control_updates": 445,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "6cea6a7046378a5f",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 37,
+      "scenario_id": "sa7503abcbf8e",
+      "outcome": "success",
+      "logged_final_state_digest": "c6abd6139581adb0",
+      "command_replay": {
+        "control_updates": 232,
+        "initial_state_digest": "1a240c8b4554555c",
+        "final_state_digest": "c6abd6139581adb0",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.1317869000013161,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 1.1994492999983777,
+        "control_updates": 232,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "c6abd6139581adb0",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 38,
+      "scenario_id": "s173f1b7bcf56",
+      "outcome": "success",
+      "logged_final_state_digest": "ac0b1e2f79d77314",
+      "command_replay": {
+        "control_updates": 445,
+        "initial_state_digest": "ca4b1cdfe903cf3e",
+        "final_state_digest": "ac0b1e2f79d77314",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.22120709999944665,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 2.275224099998013,
+        "control_updates": 445,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "ac0b1e2f79d77314",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 39,
+      "scenario_id": "s5d5b2b0fe86c",
+      "outcome": "success",
+      "logged_final_state_digest": "b258e6f9a99a30ee",
+      "command_replay": {
+        "control_updates": 447,
+        "initial_state_digest": "e3a346409d42c00e",
+        "final_state_digest": "b258e6f9a99a30ee",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.22807409999950323,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 2.0715525000014168,
+        "control_updates": 447,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "b258e6f9a99a30ee",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 40,
+      "scenario_id": "sf180165585c0",
+      "outcome": "success",
+      "logged_final_state_digest": "bbdebdb1789eec15",
+      "command_replay": {
+        "control_updates": 444,
+        "initial_state_digest": "b69777e193430938",
+        "final_state_digest": "bbdebdb1789eec15",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.23752539999986766,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 2.0421814000001177,
+        "control_updates": 444,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "bbdebdb1789eec15",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 41,
+      "scenario_id": "see0b6ca1795f",
+      "outcome": "success",
+      "logged_final_state_digest": "c320814e911ee0b1",
+      "command_replay": {
+        "control_updates": 235,
+        "initial_state_digest": "dad4acbd3f3b66c8",
+        "final_state_digest": "c320814e911ee0b1",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.1261451999998826,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 1.2494875000011234,
+        "control_updates": 235,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "c320814e911ee0b1",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 42,
+      "scenario_id": "s9c038dae17ed",
+      "outcome": "success",
+      "logged_final_state_digest": "c702ef225a3593cd",
+      "command_replay": {
+        "control_updates": 657,
+        "initial_state_digest": "5fc32d6658ab90b8",
+        "final_state_digest": "c702ef225a3593cd",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.33967800000027637,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 3.314708400001109,
+        "control_updates": 657,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "c702ef225a3593cd",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 43,
+      "scenario_id": "s2134b95b0d9a",
+      "outcome": "success",
+      "logged_final_state_digest": "2a7a643f5c77e1d1",
+      "command_replay": {
+        "control_updates": 235,
+        "initial_state_digest": "ac8fcd7f1ae56ec8",
+        "final_state_digest": "2a7a643f5c77e1d1",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.13005830000111018,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 1.2170942000011564,
+        "control_updates": 235,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "2a7a643f5c77e1d1",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 44,
+      "scenario_id": "sde3a8c9a157d",
+      "outcome": "success",
+      "logged_final_state_digest": "ec5f70f89a8abb8c",
+      "command_replay": {
+        "control_updates": 444,
+        "initial_state_digest": "fa2799e85fd47316",
+        "final_state_digest": "ec5f70f89a8abb8c",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.24143399999957182,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 2.203314999998838,
+        "control_updates": 444,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "ec5f70f89a8abb8c",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 45,
+      "scenario_id": "s365dab9c8dc2",
+      "outcome": "success",
+      "logged_final_state_digest": "a3787991b41d1d2a",
+      "command_replay": {
+        "control_updates": 447,
+        "initial_state_digest": "18346745dea97dbd",
+        "final_state_digest": "a3787991b41d1d2a",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.23539420000088285,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 2.168321900000592,
+        "control_updates": 447,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "a3787991b41d1d2a",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 46,
+      "scenario_id": "s79ca384f6028",
+      "outcome": "success",
+      "logged_final_state_digest": "620d56619cf19e9f",
+      "command_replay": {
+        "control_updates": 411,
+        "initial_state_digest": "e0054239b5b65bc7",
+        "final_state_digest": "620d56619cf19e9f",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.21732170000177575,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 2.050103500001569,
+        "control_updates": 411,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "620d56619cf19e9f",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 47,
+      "scenario_id": "s9bcfede104f9",
+      "outcome": "success",
+      "logged_final_state_digest": "950039352fb6046e",
+      "command_replay": {
+        "control_updates": 229,
+        "initial_state_digest": "83a7892b96ce53e6",
+        "final_state_digest": "950039352fb6046e",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.11744560000079218,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 1.1405425000011746,
+        "control_updates": 229,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "950039352fb6046e",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 48,
+      "scenario_id": "s821533ef5748",
+      "outcome": "success",
+      "logged_final_state_digest": "ac0b3eadc3094adb",
+      "command_replay": {
+        "control_updates": 450,
+        "initial_state_digest": "c5f66141d7ebf4af",
+        "final_state_digest": "ac0b3eadc3094adb",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.2436429000008502,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 2.232020100000227,
+        "control_updates": 450,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "ac0b3eadc3094adb",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 49,
+      "scenario_id": "s61a80b6c6e0f",
+      "outcome": "success",
+      "logged_final_state_digest": "0bdb9bb0aeed2ac3",
+      "command_replay": {
+        "control_updates": 447,
+        "initial_state_digest": "f22c958bc5525f3a",
+        "final_state_digest": "0bdb9bb0aeed2ac3",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.2242800999993051,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 2.05635489999986,
+        "control_updates": 447,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "0bdb9bb0aeed2ac3",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 50,
+      "scenario_id": "s00864b018630",
+      "outcome": "success",
+      "logged_final_state_digest": "183247a074d2cf73",
+      "command_replay": {
+        "control_updates": 231,
+        "initial_state_digest": "d35ac2ff2781439b",
+        "final_state_digest": "183247a074d2cf73",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.12167979999867384,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 1.1079142000016873,
+        "control_updates": 231,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "183247a074d2cf73",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 51,
+      "scenario_id": "sc3e9c2eb2c01",
+      "outcome": "success",
+      "logged_final_state_digest": "c57e9b53094aba39",
+      "command_replay": {
+        "control_updates": 230,
+        "initial_state_digest": "ccb2aa0c948246ec",
+        "final_state_digest": "c57e9b53094aba39",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.128411400000914,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 1.2472410999980639,
+        "control_updates": 230,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "c57e9b53094aba39",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 52,
+      "scenario_id": "s71bbda341902",
+      "outcome": "success",
+      "logged_final_state_digest": "7487f9adf5eb70a3",
+      "command_replay": {
+        "control_updates": 235,
+        "initial_state_digest": "0e1b8a7f6bdf0fe3",
+        "final_state_digest": "7487f9adf5eb70a3",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.13141879999966477,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 1.3313304999974207,
+        "control_updates": 235,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "7487f9adf5eb70a3",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 53,
+      "scenario_id": "se5ebcaffece6",
+      "outcome": "success",
+      "logged_final_state_digest": "84c3153246ff7ef3",
+      "command_replay": {
+        "control_updates": 425,
+        "initial_state_digest": "b859865fe87b41e2",
+        "final_state_digest": "84c3153246ff7ef3",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.23491229999854113,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 2.061621999997442,
+        "control_updates": 425,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "84c3153246ff7ef3",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 54,
+      "scenario_id": "s4991ac2318b4",
+      "outcome": "success",
+      "logged_final_state_digest": "44962b74de68fb3e",
+      "command_replay": {
+        "control_updates": 232,
+        "initial_state_digest": "35509dfbb18a144b",
+        "final_state_digest": "44962b74de68fb3e",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.13314850000097067,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 1.1864714000003005,
+        "control_updates": 232,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "44962b74de68fb3e",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 55,
+      "scenario_id": "se6a1497d5b14",
+      "outcome": "success",
+      "logged_final_state_digest": "aa816cf1ddd50450",
+      "command_replay": {
+        "control_updates": 446,
+        "initial_state_digest": "1c28c2724bb0b50f",
+        "final_state_digest": "aa816cf1ddd50450",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.23277439999947092,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 2.3829455000013695,
+        "control_updates": 446,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "aa816cf1ddd50450",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 56,
+      "scenario_id": "sbc2cdabd5e4a",
+      "outcome": "success",
+      "logged_final_state_digest": "e8e202d47bad78e5",
+      "command_replay": {
+        "control_updates": 471,
+        "initial_state_digest": "d159e1fe8a641109",
+        "final_state_digest": "e8e202d47bad78e5",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.24976210000022547,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 2.32652379999854,
+        "control_updates": 471,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "e8e202d47bad78e5",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 57,
+      "scenario_id": "sa3f7f0626c35",
+      "outcome": "success",
+      "logged_final_state_digest": "4ac29b17e2166bf5",
+      "command_replay": {
+        "control_updates": 234,
+        "initial_state_digest": "39c19a2b41df1f0d",
+        "final_state_digest": "4ac29b17e2166bf5",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.1338538999989396,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 1.3046224000026996,
+        "control_updates": 234,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "4ac29b17e2166bf5",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 58,
+      "scenario_id": "s85933e937753",
+      "outcome": "success",
+      "logged_final_state_digest": "71812cbaba35a8f7",
+      "command_replay": {
+        "control_updates": 442,
+        "initial_state_digest": "dbb271e8ea2c148d",
+        "final_state_digest": "71812cbaba35a8f7",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.25788420000026235,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 2.218732200002705,
+        "control_updates": 442,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "71812cbaba35a8f7",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 59,
+      "scenario_id": "s49288bc9072f",
+      "outcome": "success",
+      "logged_final_state_digest": "851b90c3e4b56900",
+      "command_replay": {
+        "control_updates": 393,
+        "initial_state_digest": "8a0bf32291cb4c43",
+        "final_state_digest": "851b90c3e4b56900",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.19909000000188826,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 1.983823599999596,
+        "control_updates": 393,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "851b90c3e4b56900",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 60,
+      "scenario_id": "sa5502736c7e6",
+      "outcome": "success",
+      "logged_final_state_digest": "83ac62c464a47b68",
+      "command_replay": {
+        "control_updates": 447,
+        "initial_state_digest": "41627fbc76364225",
+        "final_state_digest": "83ac62c464a47b68",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.2305134000016551,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 2.168053299999883,
+        "control_updates": 447,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "83ac62c464a47b68",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 61,
+      "scenario_id": "sf040809fd451",
+      "outcome": "success",
+      "logged_final_state_digest": "81b8d114f305f9ab",
+      "command_replay": {
+        "control_updates": 234,
+        "initial_state_digest": "4bf925d466a57171",
+        "final_state_digest": "81b8d114f305f9ab",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.12350779999906081,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 1.2217170000003534,
+        "control_updates": 234,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "81b8d114f305f9ab",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 62,
+      "scenario_id": "sebab1492d222",
+      "outcome": "success",
+      "logged_final_state_digest": "d4004b08860883f7",
+      "command_replay": {
+        "control_updates": 424,
+        "initial_state_digest": "066383d80e15a2c5",
+        "final_state_digest": "d4004b08860883f7",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.21513619999677758,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 2.1604114999972808,
+        "control_updates": 424,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "d4004b08860883f7",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 63,
+      "scenario_id": "s2d03bf72cca8",
+      "outcome": "success",
+      "logged_final_state_digest": "cb87f101cf772520",
+      "command_replay": {
+        "control_updates": 442,
+        "initial_state_digest": "0a6046e377961a72",
+        "final_state_digest": "cb87f101cf772520",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.22879850000026636,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 2.1251004000005196,
+        "control_updates": 442,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "cb87f101cf772520",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 64,
+      "scenario_id": "s8f10def0d601",
+      "outcome": "success",
+      "logged_final_state_digest": "88439edd5df635fd",
+      "command_replay": {
+        "control_updates": 231,
+        "initial_state_digest": "a11ba63bdd6d9900",
+        "final_state_digest": "88439edd5df635fd",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.1259925000013027,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 1.1600045999985014,
+        "control_updates": 231,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "88439edd5df635fd",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 65,
+      "scenario_id": "s46f9fdc7c558",
+      "outcome": "success",
+      "logged_final_state_digest": "874b99b7eda0e5f6",
+      "command_replay": {
+        "control_updates": 468,
+        "initial_state_digest": "a6639819e3c68d2c",
+        "final_state_digest": "874b99b7eda0e5f6",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.23943470000085654,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 2.1293107999990752,
+        "control_updates": 468,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "874b99b7eda0e5f6",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 66,
+      "scenario_id": "s0caf01d26a31",
+      "outcome": "success",
+      "logged_final_state_digest": "57e15d2200e9c191",
+      "command_replay": {
+        "control_updates": 445,
+        "initial_state_digest": "3429cf558000d1ac",
+        "final_state_digest": "57e15d2200e9c191",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.23471019999851706,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 2.1473095000001194,
+        "control_updates": 445,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "57e15d2200e9c191",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 67,
+      "scenario_id": "s9f6552e6dc6e",
+      "outcome": "success",
+      "logged_final_state_digest": "c8f34536c7175451",
+      "command_replay": {
+        "control_updates": 234,
+        "initial_state_digest": "b80b536c197e3362",
+        "final_state_digest": "c8f34536c7175451",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.12630849999914062,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 1.2045445999974618,
+        "control_updates": 234,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "c8f34536c7175451",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 68,
+      "scenario_id": "sb01fffc63add",
+      "outcome": "success",
+      "logged_final_state_digest": "85d88e62ee27d90b",
+      "command_replay": {
+        "control_updates": 229,
+        "initial_state_digest": "1ec2aab7e8fe69c8",
+        "final_state_digest": "85d88e62ee27d90b",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.1252543999980844,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 1.2891622999995889,
+        "control_updates": 229,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "85d88e62ee27d90b",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 69,
+      "scenario_id": "sde65972296fa",
+      "outcome": "success",
+      "logged_final_state_digest": "4b4f31dc1377c9fb",
+      "command_replay": {
+        "control_updates": 441,
+        "initial_state_digest": "702c7053a7e82797",
+        "final_state_digest": "4b4f31dc1377c9fb",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.23192259999996168,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 2.092381899998145,
+        "control_updates": 441,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "4b4f31dc1377c9fb",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 70,
+      "scenario_id": "s6af6524e41ed",
+      "outcome": "success",
+      "logged_final_state_digest": "1a4e6dad25a67e98",
+      "command_replay": {
+        "control_updates": 604,
+        "initial_state_digest": "ca335b188c602dee",
+        "final_state_digest": "1a4e6dad25a67e98",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.3153963000004296,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 2.9186853999999585,
+        "control_updates": 604,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "1a4e6dad25a67e98",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 71,
+      "scenario_id": "s9e2e3f220b30",
+      "outcome": "success",
+      "logged_final_state_digest": "fea895dfb0597146",
+      "command_replay": {
+        "control_updates": 392,
+        "initial_state_digest": "42f436d9904e2278",
+        "final_state_digest": "fea895dfb0597146",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.20165149999957066,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 1.9795379000024695,
+        "control_updates": 392,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "fea895dfb0597146",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 72,
+      "scenario_id": "s049584e96184",
+      "outcome": "success",
+      "logged_final_state_digest": "882504ff74e06675",
+      "command_replay": {
+        "control_updates": 443,
+        "initial_state_digest": "990b93d2b0d63f9c",
+        "final_state_digest": "882504ff74e06675",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.2250958000004175,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 2.052546799997799,
+        "control_updates": 443,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "882504ff74e06675",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 73,
+      "scenario_id": "s40338aa509d7",
+      "outcome": "success",
+      "logged_final_state_digest": "f8b55aadc685e3ec",
+      "command_replay": {
+        "control_updates": 395,
+        "initial_state_digest": "cea98d21d3b7a62f",
+        "final_state_digest": "f8b55aadc685e3ec",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.20386510000025737,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 1.954679499998747,
+        "control_updates": 395,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "f8b55aadc685e3ec",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 74,
+      "scenario_id": "s94b04bc41b4c",
+      "outcome": "success",
+      "logged_final_state_digest": "2b7b5a080fd15da1",
+      "command_replay": {
+        "control_updates": 229,
+        "initial_state_digest": "deec075f84d4d453",
+        "final_state_digest": "2b7b5a080fd15da1",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.12418389999947976,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 1.115946800000529,
+        "control_updates": 229,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "2b7b5a080fd15da1",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 75,
+      "scenario_id": "s05967b137af3",
+      "outcome": "success",
+      "logged_final_state_digest": "c9cb477a8724aa5c",
+      "command_replay": {
+        "control_updates": 446,
+        "initial_state_digest": "34f7d3d932c05722",
+        "final_state_digest": "c9cb477a8724aa5c",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.22266540000055102,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 2.3217383999981394,
+        "control_updates": 446,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "c9cb477a8724aa5c",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 76,
+      "scenario_id": "se4d59caec171",
+      "outcome": "success",
+      "logged_final_state_digest": "d9aa6cc72fa61d68",
+      "command_replay": {
+        "control_updates": 471,
+        "initial_state_digest": "c07c4634a22b52c3",
+        "final_state_digest": "d9aa6cc72fa61d68",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.2437194999984058,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 2.2972408999994514,
+        "control_updates": 471,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "d9aa6cc72fa61d68",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 77,
+      "scenario_id": "s8ab8357429a9",
+      "outcome": "success",
+      "logged_final_state_digest": "a831a49a1d634d19",
+      "command_replay": {
+        "control_updates": 468,
+        "initial_state_digest": "e8f36a42253a5489",
+        "final_state_digest": "a831a49a1d634d19",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.24548670000149286,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 2.118084599998838,
+        "control_updates": 468,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "a831a49a1d634d19",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 78,
+      "scenario_id": "s183f0a07790d",
+      "outcome": "success",
+      "logged_final_state_digest": "3b913fdfe0e4d1f3",
+      "command_replay": {
+        "control_updates": 230,
+        "initial_state_digest": "9accbfa110e46d89",
+        "final_state_digest": "3b913fdfe0e4d1f3",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.12333880000005593,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 1.1820412000015494,
+        "control_updates": 230,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "3b913fdfe0e4d1f3",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 79,
+      "scenario_id": "sc00e65d3da4e",
+      "outcome": "success",
+      "logged_final_state_digest": "55ed44291f738c04",
+      "command_replay": {
+        "control_updates": 445,
+        "initial_state_digest": "f7d669df3de02fa0",
+        "final_state_digest": "55ed44291f738c04",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.2264671000011731,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 2.1342527000015252,
+        "control_updates": 445,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "55ed44291f738c04",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 80,
+      "scenario_id": "sd09f72e35ef8",
+      "outcome": "success",
+      "logged_final_state_digest": "35ef7e4dd5376a66",
+      "command_replay": {
+        "control_updates": 471,
+        "initial_state_digest": "0275b72a6cb6b638",
+        "final_state_digest": "35ef7e4dd5376a66",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.24620140000115498,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 2.3036054000003787,
+        "control_updates": 471,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "35ef7e4dd5376a66",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 81,
+      "scenario_id": "s0c4665d6ed69",
+      "outcome": "success",
+      "logged_final_state_digest": "eb5ef47e9c47101c",
+      "command_replay": {
+        "control_updates": 236,
+        "initial_state_digest": "70904ca5bfb79657",
+        "final_state_digest": "eb5ef47e9c47101c",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.12611779999861028,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 1.3205180000004475,
+        "control_updates": 236,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "eb5ef47e9c47101c",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 82,
+      "scenario_id": "sfe5462b5b8e0",
+      "outcome": "success",
+      "logged_final_state_digest": "a0225c734cddbb8e",
+      "command_replay": {
+        "control_updates": 468,
+        "initial_state_digest": "4d8626ba6662a938",
+        "final_state_digest": "a0225c734cddbb8e",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.25142609999966226,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 2.339397200001258,
+        "control_updates": 468,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "a0225c734cddbb8e",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 83,
+      "scenario_id": "sf49f4cc31a27",
+      "outcome": "success",
+      "logged_final_state_digest": "668eacfbfcf48051",
+      "command_replay": {
+        "control_updates": 393,
+        "initial_state_digest": "3168ccad431c3c6f",
+        "final_state_digest": "668eacfbfcf48051",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.2113059000002977,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 2.172364900001412,
+        "control_updates": 393,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "668eacfbfcf48051",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 84,
+      "scenario_id": "s74c0512ba998",
+      "outcome": "success",
+      "logged_final_state_digest": "737c24044becf208",
+      "command_replay": {
+        "control_updates": 447,
+        "initial_state_digest": "f5e49fddc47152fb",
+        "final_state_digest": "737c24044becf208",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.23010239999712212,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 2.1959604999974545,
+        "control_updates": 447,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "737c24044becf208",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 85,
+      "scenario_id": "s0f2e7c94c93e",
+      "outcome": "success",
+      "logged_final_state_digest": "8df2c74d68c909a2",
+      "command_replay": {
+        "control_updates": 442,
+        "initial_state_digest": "71b5fdb913a23fc3",
+        "final_state_digest": "8df2c74d68c909a2",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.22689979999995558,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 2.1331273000032525,
+        "control_updates": 442,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "8df2c74d68c909a2",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 86,
+      "scenario_id": "sd612f600d08b",
+      "outcome": "success",
+      "logged_final_state_digest": "e1303c3d2293230d",
+      "command_replay": {
+        "control_updates": 371,
+        "initial_state_digest": "4d43a090a99834ab",
+        "final_state_digest": "e1303c3d2293230d",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.19146510000064154,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 1.8860684999999648,
+        "control_updates": 371,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "e1303c3d2293230d",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 87,
+      "scenario_id": "sb77cd18a463b",
+      "outcome": "success",
+      "logged_final_state_digest": "ee30d514310d558c",
+      "command_replay": {
+        "control_updates": 441,
+        "initial_state_digest": "d80d90473d180017",
+        "final_state_digest": "ee30d514310d558c",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.23137259999930393,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 2.1514262999990024,
+        "control_updates": 441,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "ee30d514310d558c",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 88,
+      "scenario_id": "s6a1bedafcf81",
+      "outcome": "success",
+      "logged_final_state_digest": "6c29b5f63fdb5969",
+      "command_replay": {
+        "control_updates": 447,
+        "initial_state_digest": "57f7b26cbb0b33f9",
+        "final_state_digest": "6c29b5f63fdb5969",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.2294980000006035,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 2.238976600001479,
+        "control_updates": 447,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "6c29b5f63fdb5969",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 89,
+      "scenario_id": "sc1dd265339ca",
+      "outcome": "success",
+      "logged_final_state_digest": "97b89f489e469f97",
+      "command_replay": {
+        "control_updates": 237,
+        "initial_state_digest": "22e3fc30d796b7df",
+        "final_state_digest": "97b89f489e469f97",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.1277953000026173,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 1.206172099999094,
+        "control_updates": 237,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "97b89f489e469f97",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 90,
+      "scenario_id": "sc5f2159b3a0a",
+      "outcome": "success",
+      "logged_final_state_digest": "8673ad5d52139ca2",
+      "command_replay": {
+        "control_updates": 234,
+        "initial_state_digest": "826d384caa371d5a",
+        "final_state_digest": "8673ad5d52139ca2",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.1334835000016028,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 1.1972121999970113,
+        "control_updates": 234,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "8673ad5d52139ca2",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 91,
+      "scenario_id": "s5af03254cde2",
+      "outcome": "success",
+      "logged_final_state_digest": "fd1cb211a579e8a7",
+      "command_replay": {
+        "control_updates": 234,
+        "initial_state_digest": "93a0e7653a2c237a",
+        "final_state_digest": "fd1cb211a579e8a7",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.12391240000215475,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 1.2433987999975216,
+        "control_updates": 234,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "fd1cb211a579e8a7",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 92,
+      "scenario_id": "s665af997dacb",
+      "outcome": "success",
+      "logged_final_state_digest": "ac92df12fa076667",
+      "command_replay": {
+        "control_updates": 234,
+        "initial_state_digest": "da9983481c4f7640",
+        "final_state_digest": "ac92df12fa076667",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.1229672000008577,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 1.222132300001249,
+        "control_updates": 234,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "ac92df12fa076667",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 93,
+      "scenario_id": "s3560b18324da",
+      "outcome": "success",
+      "logged_final_state_digest": "3cc014e2949867cb",
+      "command_replay": {
+        "control_updates": 448,
+        "initial_state_digest": "e8cc0623c097e9cf",
+        "final_state_digest": "3cc014e2949867cb",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.2289813999996113,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 2.2514105000009295,
+        "control_updates": 448,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "3cc014e2949867cb",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 94,
+      "scenario_id": "sf337c8b97d84",
+      "outcome": "success",
+      "logged_final_state_digest": "255fdc436e7015cc",
+      "command_replay": {
+        "control_updates": 238,
+        "initial_state_digest": "dd014b5abd758d32",
+        "final_state_digest": "255fdc436e7015cc",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.13116249999802676,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 1.2754709999971965,
+        "control_updates": 238,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "255fdc436e7015cc",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 95,
+      "scenario_id": "s95fb9bb09cbd",
+      "outcome": "success",
+      "logged_final_state_digest": "5468044c31c085e3",
+      "command_replay": {
+        "control_updates": 393,
+        "initial_state_digest": "e59dc8b9b9af38a7",
+        "final_state_digest": "5468044c31c085e3",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.20101940000313334,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 2.001780200000212,
+        "control_updates": 393,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "5468044c31c085e3",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 96,
+      "scenario_id": "s31c1c844aa70",
+      "outcome": "success",
+      "logged_final_state_digest": "032dc345b0492dc9",
+      "command_replay": {
+        "control_updates": 229,
+        "initial_state_digest": "2c9dff9e066ac46b",
+        "final_state_digest": "032dc345b0492dc9",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.13200750000032713,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 1.1598625000005995,
+        "control_updates": 229,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "032dc345b0492dc9",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 97,
+      "scenario_id": "s4126bc53ac6e",
+      "outcome": "success",
+      "logged_final_state_digest": "82442e07322771ef",
+      "command_replay": {
+        "control_updates": 476,
+        "initial_state_digest": "9b6bd81f6833dec5",
+        "final_state_digest": "82442e07322771ef",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.24509200000102283,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 2.2773619999970833,
+        "control_updates": 476,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "82442e07322771ef",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 98,
+      "scenario_id": "sb54340548547",
+      "outcome": "success",
+      "logged_final_state_digest": "a76b3d7222431af9",
+      "command_replay": {
+        "control_updates": 444,
+        "initial_state_digest": "e7203eea813684a3",
+        "final_state_digest": "a76b3d7222431af9",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.22473119999995106,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 2.0901316000017687,
+        "control_updates": 444,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "a76b3d7222431af9",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 99,
+      "scenario_id": "s84fed0297571",
+      "outcome": "success",
+      "logged_final_state_digest": "113f63fa39688136",
+      "command_replay": {
+        "control_updates": 449,
+        "initial_state_digest": "77ca2728b320313f",
+        "final_state_digest": "113f63fa39688136",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.24991880000015954,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 2.468947199999093,
+        "control_updates": 449,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "113f63fa39688136",
+        "matches": true
+      }
+    },
+    {
+      "episode_index": 100,
+      "scenario_id": "s24f7b05ad978",
+      "outcome": "success",
+      "logged_final_state_digest": "b322e5b1aabc52d6",
+      "command_replay": {
+        "control_updates": 474,
+        "initial_state_digest": "48003d2790c9728b",
+        "final_state_digest": "b322e5b1aabc52d6",
+        "first_mismatch_update": null,
+        "tolerance": 0.0,
+        "wall_seconds": 0.25333349999709753,
+        "matches": true
+      },
+      "rerun": {
+        "wall_seconds": 2.3386940000018512,
+        "control_updates": 474,
+        "same_number_of_updates": true,
+        "first_mismatch_update": null,
+        "ctrl_identical": true,
+        "fields_identical": {
+          "outcome": true,
+          "pushes_used": true,
+          "final_distance_m": true,
+          "contact": true,
+          "limits": true
+        },
+        "learner_view_identical_except_episode_ordinal": true,
+        "final_state_digest": "b322e5b1aabc52d6",
+        "matches": true
+      }
+    }
+  ],
+  "all_match": true,
+  "started_utc": "2026-10-03T18:19:30+00:00",
+  "finished_utc": "2026-10-03T18:23:07+00:00",
+  "command": "python -m physical_ai_lab replay --run runs\\phase3\\evaluate\\validation\\20261003T180737Z --count 100"
+}

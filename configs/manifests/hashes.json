@@ -1,0 +1,58 @@
+{
+ "benchmark": {
+  "benchmark_version": "phase3-v1",
+  "config_sha256": "140e4f7d70340cc3f90e547385426f9a30ec68f8003b2ac54ba7fd5e0fcf2f25",
+  "metrics_version": 1,
+  "out_of_range_fixed_utc": "2026-10-03T17:31:59Z",
+  "schema_version": 1
+ },
+ "command": "python -m physical_ai_lab manifests",
+ "generated_utc": "2026-10-03T17:38:33+00:00",
+ "kind": "phase3_manifest_hashes",
+ "manifests": {
+  "retention": {
+   "by_cohort": {
+    "in_range": 50,
+    "out_of_range": 0
+   },
+   "conditions": 10,
+   "file": "retention.json",
+   "scenarios": 50,
+   "sealed": true,
+   "sha256": "e8c5857a7d7151a103f0d6fce2362d21ad6a177ac08b55d675fedf4485c9f2d4"
+  },
+  "test": {
+   "by_cohort": {
+    "in_range": 70,
+    "out_of_range": 30
+   },
+   "conditions": 20,
+   "file": "test.json",
+   "scenarios": 100,
+   "sealed": true,
+   "sha256": "5673ce2e3763c0417674a7102eab3386cfe1defd9a3f6178142c0faa2e1d948f"
+  },
+  "train": {
+   "by_cohort": {
+    "in_range": 200,
+    "out_of_range": 0
+   },
+   "conditions": 40,
+   "file": "train.json",
+   "scenarios": 200,
+   "sealed": false,
+   "sha256": "6eadee60c6ae2a2fa51696ceeac7faafe3441ebbf1e1f956b635b63777f62e06"
+  },
+  "validation": {
+   "by_cohort": {
+    "in_range": 60,
+    "out_of_range": 40
+   },
+   "conditions": 20,
+   "file": "validation.json",
+   "scenarios": 100,
+   "sealed": false,
+   "sha256": "88dabaa6cb811ea48c8d0c88f0d74d3a09f3328e88006079d2391269f4557c15"
+  }
+ }
+}

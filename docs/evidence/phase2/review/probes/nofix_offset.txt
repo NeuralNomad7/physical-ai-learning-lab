@@ -1,0 +1,6 @@
+=== REVIEW2_NOFIX=offset ===
+[review2_nofix] gravity feedforward disabled (mode=offset)
+FAILED tests/test_kinematics.py::test_gravity_offset_holds_the_tcp_where_commanded
+FAILED tests/test_kinematics.py::test_gravity_offset_matches_the_simulator_and_ignores_the_block
+FAILED tests/test_push_controller.py::test_executed_tcp_holds_the_push_height
+3 failed, 24 passed in 5.08s
